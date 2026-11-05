@@ -1,0 +1,15 @@
+SERVICE CONTRACT INVOICE
+Provider: Lee Group
+Invoice: INV-532332
+Date: 16 May 2022
+
+Client Name: A. Kolawole
+Phone: 08061254107
+Email: gift_danjuma@yahoo.com
+Client Address: 35 Ahmadu Bello Way, Maitama, Abuja
+Ref No: 93247774763
+NIN: 92904691189
+
+Service: Annual Software Maintenance
+Fee: NGN 458,771.00
+Account Manager: Yakubu, Ifeanyi I.

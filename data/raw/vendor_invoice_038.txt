@@ -1,0 +1,13 @@
+LOCAL PURCHASE ORDER
+LPO No: LPO-537290
+27496626086
+Date: 03 April 2025
+
+Vendor Contact: Arc. Ismaila Umar
+Phone: 08156968476
+Delivery Address: 33 Obafemi Awolowo Way, Lekki, Lagos
+Identifier: 29405100908
+
+Item: Office Furniture (10 units)
+Total Value: NGN 939,673.00
+Procurement Officer: Yetunde Ogundimu

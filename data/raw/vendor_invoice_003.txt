@@ -1,0 +1,15 @@
+PROFORMA INVOICE
+Issuer: Holland and Sons
+PI No: LPO-904787
+Date: 06 June 2025
+
+Buyer Name: T. Akinola
+Phone: +234-805-601-4901
+Email: fatima_yusuf@corpmail.ng
+Buyer Address: 65 Idejo Street, D-Line, Port Harcourt
+National ID Number: 88947358505
+Item No: 22967666251
+
+Description: Industrial Generator Supply
+Proforma Amount: NGN 8,116,886.00
+Sales Rep: Hafsat Zubairu

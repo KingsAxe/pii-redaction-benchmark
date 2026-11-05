@@ -1,0 +1,16 @@
+TAX INVOICE
+Wright Giles and Norman
+Invoice No: PO-927496
+PO No: PO-314178
+Date: 12 May 2026
+
+Billed To: Barr. Precious Alabi
+Phone: +234 813 295 1260
+Email: chika.samuel@outlook.com
+Address: 29 Murtala Muhammed Way, Ajah, Lagos
+National Identifier: 48752159646
+Batch: 08131101048
+
+Description: IT Equipment Supply
+Amount: NGN 8,745,688.00
+Authorised by: Oluwaseun Abubakar

@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Brown-Naylor
+Invoice: INV-58174
+Date: 21 May 2022
+
+Client Name: Chukwuemeka Danjuma
+Phone: 07058484646
+Email: innocentogah@nigeriamail.ng
+Client Address: 34 Ladoke Akintola Boulevard, Kano Municipal, Kano
+ID: 73723150641
+NIN - 35158422066
+Batch: 37477980439
+
+Service: Annual Software Maintenance
+Fee: NGN 1,680,586.00
+Account Manager: P. Adebisi

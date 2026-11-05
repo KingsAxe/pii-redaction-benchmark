@@ -1,0 +1,16 @@
+TAX INVOICE
+Jones Hutchinson and Coles
+Invoice No: PO-540155
+PO No: PO-180595
+Date: 29 August 2023
+
+Billed To: U. Agboola
+Phone: +234 812 173 9385
+Email: halimadike@outlook.com
+Address: 7 Corporation Drive, Fagge, Kano
+Bank Verification Number: 47004569615
+Tracking No. 95568051546
+
+Description: IT Equipment Supply
+Amount: NGN 4,671,529.00
+Authorised by: Engr. Uchenna Adebisi

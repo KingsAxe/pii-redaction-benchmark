@@ -1,0 +1,16 @@
+TAX INVOICE
+Morris Bennett and Smith
+Invoice No: INV-579578
+PO No: PO-592984
+Date: 19 April 2025
+
+Billed To: V. Obi
+Phone: 08198100519
+Email: ibrahim.nkemdirim@healthng.gov.ng
+Address: 38 Adeola Odeku Street, Old GRA, Port Harcourt
+BVN - 47974122085
+67303079385
+
+Description: IT Equipment Supply
+Amount: NGN 3,056,805.00
+Authorised by: BALOGUN, Adebayo

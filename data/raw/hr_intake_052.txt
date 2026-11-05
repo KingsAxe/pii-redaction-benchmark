@@ -1,0 +1,15 @@
+EMPLOYEE ONBOARDING FORM
+Date: 06 March 2026
+Employee ID: INV-782399
+
+Full Name: Ojukwu, Oluwafemi O.
+Phone: +234 815 279 3159
+Email: victory_peters@yahoo.com
+Home Address: 118 Lugard Avenue, Trans-Amadi, Port Harcourt
+BVN No: 88576530849
+NIN - 99576467144
+
+Department: Finance
+Position: Senior Analyst
+Start Date: 06 March 2026
+HR Officer: Innocent Garba

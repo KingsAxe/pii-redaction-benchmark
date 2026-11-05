@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Fraser-Lee
+Invoice: PO-481023
+Date: 26 December 2024
+
+Client Name: ANYANWU, Yetunde
+Phone: +234-802-981-6642
+Email: taiwoagboola@corpmail.ng
+Client Address: 5 Nnamdi Azikiwe Street, GRA Phase 2, Port Harcourt
+National Identifier: 40797349833
+ID No: 90722261346
+Ref: 08039601085
+
+Service: Annual Software Maintenance
+Fee: NGN 7,919,005.00
+Account Manager: Ugochi Ogundimu

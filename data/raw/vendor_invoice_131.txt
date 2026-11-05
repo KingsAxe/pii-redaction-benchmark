@@ -1,0 +1,16 @@
+TAX INVOICE
+Sinclair Parker and Jones
+Invoice No: PO-705578
+PO No: PO-778636
+Date: 12 May 2022
+
+Billed To: Mrs. Amarachi Orji
+Phone: 08058205123
+Email: kehindeogah@gmail.com
+Address: 25 Obafemi Awolowo Way, Maitama, Abuja
+Bank Verification Number: 73971509018
+Order Ref: 08160840206
+
+Description: IT Equipment Supply
+Amount: NGN 2,870,721.00
+Authorised by: Kayode Obi

@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Fitzgerald Williams and Robinson
+Invoice: PO-452983
+Date: 13 October 2024
+
+Client Name: A. Jibril
+Phone: +234 802 783 0807
+Email: favour_ekwueme@hotmail.com
+Client Address: 102 Corporation Drive, Peter Odili Road, Port Harcourt
+Ref No: 70740456642
+NIN: 81823221084
+Lot: 22556952733
+
+Service: Annual Software Maintenance
+Fee: NGN 4,949,543.00
+Account Manager: Ita, Chidi C.

@@ -1,0 +1,12 @@
+LOCAL PURCHASE ORDER
+LPO No: RFQ-749142
+Date: 25 October 2026
+
+Vendor Contact: U. Sani
+Phone: 08149804038
+Delivery Address: 143 Corporation Drive, Ikeja, Lagos
+National Identifier: 55049925208
+
+Item: Office Furniture (10 units)
+Total Value: NGN 3,487,544.00
+Procurement Officer: Suleiman Jibril

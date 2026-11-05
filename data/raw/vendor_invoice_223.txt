@@ -1,0 +1,16 @@
+TAX INVOICE
+Morris Coleman and Pearce
+Invoice No: GRN-65708
+PO No: PO-100884
+Date: 24 January 2025
+
+Billed To: Joy Amadi
+Phone: +234-803-596-0133
+Email: halimaudoh@hotmail.com
+Address: 33 Corporation Drive, Central Business District, Abuja
+Identifier: 24427845839
+Item No: 22321838360
+
+Description: IT Equipment Supply
+Amount: NGN 9,405,748.00
+Authorised by: A. Achebe

@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Smith-Walker
+Invoice: PO-311244
+Date: 21 February 2026
+
+Client Name: OKAFOR, Folake
+Phone: 08027183767
+Email: ngozi_anyanwu@outlook.com
+Client Address: 133 Kingsway Road, Gwarinpa, Abuja
+BVN No: 20058782837
+National ID Number: 37288237610
+Ref: 74541979802
+
+Service: Annual Software Maintenance
+Fee: NGN 1,570,439.00
+Account Manager: EKWUEME, Chidi

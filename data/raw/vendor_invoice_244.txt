@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Lloyd-Roberts
+Invoice: PO-126506
+Date: 01 October 2022
+
+Client Name: C. Fashola
+Phone: 08146475875
+Email: amarachi.okafor@outlook.com
+Client Address: 33 Adeola Odeku Street, Gwarinpa, Abuja
+Bank Verification Number: 41540418784
+Record No: 88039278666
+Tracking No. 22488542730
+
+Service: Annual Software Maintenance
+Fee: NGN 7,820,369.00
+Account Manager: E. Alabi

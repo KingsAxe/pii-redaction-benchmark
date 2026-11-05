@@ -1,0 +1,15 @@
+TAX INVOICE
+Taylor LLC
+Invoice No: INV-534139
+PO No: PO-986392
+Date: 28 February 2026
+
+Billed To: Dr. Ebuka Ezechukwu
+Phone: 08034156213
+Email: obinnazubairu@hotmail.com
+Address: 15 Lugard Avenue, Wuse II, Abuja
+ID: 88732207806
+
+Description: IT Equipment Supply
+Amount: NGN 7,289,795.00
+Authorised by: TAIWO, Ayodele

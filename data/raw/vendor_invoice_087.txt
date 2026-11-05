@@ -1,0 +1,15 @@
+TAX INVOICE
+Hammond Ltd
+Invoice No: INV-425594
+PO No: PO-755993
+Date: 19 September 2023
+
+Billed To: Oluwaseun Peters
+Phone: +234 813 895 4489
+Email: chineduzubairu@outlook.com
+Address: 65 Allen Avenue, Trans-Amadi, Port Harcourt
+National Identifier: 43308468481
+
+Description: IT Equipment Supply
+Amount: NGN 5,135,594.00
+Authorised by: Dr. Kayode Amadi

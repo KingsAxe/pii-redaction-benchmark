@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Smith Group
+Invoice: PO-45695
+Date: 18 January 2022
+
+Client Name: F. Adebisi
+Phone: +234-806-537-1702
+Email: adebayo_ogbonna@outlook.com
+Client Address: 57 Nnamdi Azikiwe Street, Rumuola, Port Harcourt
+ID: 98473684779
+Record No: 19105232368
+Tracking No. 22011358031
+
+Service: Annual Software Maintenance
+Fee: NGN 407,627.00
+Account Manager: Okafor, Oluwaseun O.

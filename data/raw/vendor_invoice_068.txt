@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Ryan Patel and Wade
+Invoice: INV-323814
+Date: 28 February 2026
+
+Client Name: Ifeanyi Yusuf
+Phone: +234 808 577 0539
+Email: abubakar_afolabi@gmail.com
+Client Address: 54 Ladoke Akintola Boulevard, Yaba, Lagos
+Bank Verification Number: 65187934976
+NIN: 30357050515
+Ref: 76858828800
+
+Service: Annual Software Maintenance
+Fee: NGN 2,735,462.00
+Account Manager: Barr. Suleiman Agboola

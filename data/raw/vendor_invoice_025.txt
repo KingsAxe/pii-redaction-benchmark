@@ -1,0 +1,15 @@
+SERVICE CONTRACT INVOICE
+Provider: Palmer Group
+Invoice: LPO-391995
+Date: 28 October 2023
+
+Client Name: O. Musa
+Phone: +234-810-166-2962
+Email: sadiyapeters@healthng.gov.ng
+Client Address: 43 Nnamdi Azikiwe Street, Nasarawa GRA, Kano
+Ref No: 51277193030
+ID No: 84019479028
+
+Service: Annual Software Maintenance
+Fee: NGN 3,995,095.00
+Account Manager: I. Obasi

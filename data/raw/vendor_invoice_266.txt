@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Miles-Freeman
+Invoice: GRN-437066
+Date: 22 May 2022
+
+Client Name: Prof. Fatima Jibril
+Phone: 07055051895
+Email: blessing_amadi@hotmail.com
+Client Address: 80 Marina Street, Gwale, Kano
+ID: 37607885145
+Ref No: 77870947549
+Tracking No. 08108318412
+
+Service: Annual Software Maintenance
+Fee: NGN 4,885,279.00
+Account Manager: Arc. Confidence Okonkwo

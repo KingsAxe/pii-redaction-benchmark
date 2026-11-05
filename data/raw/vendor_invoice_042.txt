@@ -1,0 +1,12 @@
+LOCAL PURCHASE ORDER
+LPO No: LPO-34302
+Date: 01 September 2026
+
+Vendor Contact: Williams, Maryam M.
+Phone: 07051942610
+Delivery Address: 132 Idejo Street, Tarauni, Kano
+ID No: 72300409580
+
+Item: Office Furniture (10 units)
+Total Value: NGN 1,520,773.00
+Procurement Officer: Chukwuemeka Lawan

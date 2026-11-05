@@ -1,0 +1,13 @@
+LOCAL PURCHASE ORDER
+LPO No: INV-73780
+Order ID: 08167520810
+Date: 17 September 2022
+
+Vendor Contact: Garba, Blessing B.
+Phone: +234 806 462 8254
+Delivery Address: 12 Nnamdi Azikiwe Street, Peter Odili Road, Port Harcourt
+Ref No: 74888201959
+
+Item: Office Furniture (10 units)
+Total Value: NGN 8,045,982.00
+Procurement Officer: Ms. Miracle Akinola

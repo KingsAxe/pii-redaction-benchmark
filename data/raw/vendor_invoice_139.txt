@@ -1,0 +1,16 @@
+TAX INVOICE
+Moss-Armstrong
+Invoice No: PO-754904
+PO No: PO-781664
+Date: 16 July 2022
+
+Billed To: Ogbonna, Halima H.
+Phone: +234-705-728-9069
+Email: glory.musa@yahoo.com
+Address: 54 Ligali Ayorinde Avenue, Borokiri, Port Harcourt
+Bank Verification Number: 98881393138
+Tracking No. 22148369653
+
+Description: IT Equipment Supply
+Amount: NGN 2,993,202.00
+Authorised by: Ngozi Etim

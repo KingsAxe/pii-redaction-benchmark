@@ -1,0 +1,15 @@
+TAX INVOICE
+Ryan Inc
+Invoice No: PO-542294
+PO No: PO-330374
+Date: 08 February 2022
+
+Billed To: Victory Sani
+Phone: +234 815 714 7147
+Email: rejoice.balogun@outlook.com
+Address: 50 Ikorodu Road, Peter Odili Road, Port Harcourt
+ID No: 72951155849
+
+Description: IT Equipment Supply
+Amount: NGN 9,869,277.00
+Authorised by: H. Dike

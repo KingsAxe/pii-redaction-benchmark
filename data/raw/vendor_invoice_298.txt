@@ -1,0 +1,14 @@
+PROFORMA INVOICE
+Issuer: Rees Andrews and Thomas
+PI No: INV-563971
+Date: 01 October 2023
+
+Buyer Name: J. Onuoha
+Phone: 08126109081
+Email: adebayo.awolowo@hotmail.com
+Buyer Address: 103 Ikorodu Road, Gwale, Kano
+NIN: 84371010100
+
+Description: Industrial Generator Supply
+Proforma Amount: NGN 329,096.00
+Sales Rep: A. Samuel

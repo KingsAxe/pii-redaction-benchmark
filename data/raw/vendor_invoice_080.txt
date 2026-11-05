@@ -1,0 +1,15 @@
+PROFORMA INVOICE
+Issuer: Hill-Jenkins
+PI No: GRN-737117
+Date: 01 April 2023
+
+Buyer Name: ZUBAIRU, Confidence
+Phone: +234-802-397-6852
+Email: ngozi.okonkwo@nigeriamail.ng
+Buyer Address: 99 Herbert Macaulay Way, Ajah, Lagos
+NIN No: 50757702169
+Order Ref: 22327899285
+
+Description: Industrial Generator Supply
+Proforma Amount: NGN 2,916,397.00
+Sales Rep: C. Ibeh

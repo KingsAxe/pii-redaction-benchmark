@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Hunter Roberts and Bartlett
+Invoice: INV-674721
+Date: 03 June 2026
+
+Client Name: GUSAU, Damilola
+Phone: +234 805 473 2420
+Email: joy.williams@corpmail.ng
+Client Address: 77 Herbert Macaulay Way, Kano Municipal, Kano
+ID No: 97132193083
+NIN - 42647044029
+Order Ref: 22868585704
+
+Service: Annual Software Maintenance
+Fee: NGN 3,425,137.00
+Account Manager: BALOGUN, Nkechi

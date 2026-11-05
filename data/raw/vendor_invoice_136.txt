@@ -1,0 +1,12 @@
+LOCAL PURCHASE ORDER
+LPO No: LPO-129562
+Date: 11 April 2025
+
+Vendor Contact: C. Umar
+Phone: +234 705 372 0889
+Delivery Address: 117 Danmole Street, Kano Municipal, Kano
+Identifier: 10952396600
+
+Item: Office Furniture (10 units)
+Total Value: NGN 1,644,721.00
+Procurement Officer: Usman Ogbonna

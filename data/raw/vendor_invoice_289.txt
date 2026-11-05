@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Mills-Murphy
+Invoice: GRN-814098
+Date: 21 January 2024
+
+Client Name: Taiwo Balogun
+Phone: +234 803 208 4654
+Email: victory.balogun@corpmail.ng
+Client Address: 131 Constitution Avenue, Victoria Island, Lagos
+BVN No: 22543079180
+Identifier: 25792201842
+Tracking No. 08167679933
+
+Service: Annual Software Maintenance
+Fee: NGN 9,586,230.00
+Account Manager: Barr. Afolabi Eze

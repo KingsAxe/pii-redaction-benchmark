@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Davies Inc
+Invoice: LPO-202811
+Date: 19 July 2026
+
+Client Name: Victory Agboola
+Phone: +234-708-687-6244
+Email: innocent_jibril@corpmail.ng
+Client Address: 107 Herbert Macaulay Way, Ikeja, Lagos
+Bank Verification Number: 43712662607
+National Identifier: 83261936957
+Order Ref: 35390032737
+
+Service: Annual Software Maintenance
+Fee: NGN 9,034,938.00
+Account Manager: Jibril, Grace G.

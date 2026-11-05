@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Hunt Inc
+Invoice: INV-748793
+Date: 08 March 2023
+
+Client Name: ORJI, Afolabi
+Phone: +234 905 942 7997
+Email: usman_sani@hotmail.com
+Client Address: 12 Allen Avenue, Borokiri, Port Harcourt
+Ref No: 42491480097
+Ref No: 80948992884
+Tracking No. 22407754288
+
+Service: Annual Software Maintenance
+Fee: NGN 8,814,983.00
+Account Manager: ONYEKACHI, Kehinde

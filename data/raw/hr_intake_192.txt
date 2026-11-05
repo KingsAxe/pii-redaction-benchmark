@@ -1,0 +1,16 @@
+EMPLOYEE ONBOARDING FORM
+Date: 29 October 2024
+Employee ID: INV-329588
+
+Full Name: Damilola Udoh
+Phone: 08059007115
+Email: destiny.alabi@healthng.gov.ng
+Home Address: 59 Nnamdi Azikiwe Street, Jabi, Abuja
+BVN No: 84385898126
+NIN No: 43061664632
+Order Ref: 22040127441
+
+Department: Finance
+Position: Senior Analyst
+Start Date: 29 October 2024
+HR Officer: B. Yusuf

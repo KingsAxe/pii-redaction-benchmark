@@ -1,0 +1,15 @@
+TAX INVOICE
+Miller Clarke and Jones
+Invoice No: LPO-424798
+PO No: PO-130610
+Date: 07 June 2022
+
+Billed To: JIBRIL, Amarachi
+Phone: 07055736985
+Email: obinna.gusau@healthng.gov.ng
+Address: 104 Lugard Avenue, Lekki, Lagos
+BVN: 63384522963
+
+Description: IT Equipment Supply
+Amount: NGN 3,320,554.00
+Authorised by: Chukwuemeka Oyelaran

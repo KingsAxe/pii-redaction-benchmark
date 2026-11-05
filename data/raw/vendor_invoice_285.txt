@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Payne Graham and Kirk
+Invoice: INV-314289
+Date: 23 August 2026
+
+Client Name: OJUKWU, Joy
+Phone: +234-701-220-4636
+Email: destinyfashola@yahoo.com
+Client Address: 108 Broad Street, Dala, Kano
+BVN - 58311157785
+National ID Number: 29193700356
+Order Ref: 07038290765
+
+Service: Annual Software Maintenance
+Fee: NGN 4,402,266.00
+Account Manager: YUSUF, Favour

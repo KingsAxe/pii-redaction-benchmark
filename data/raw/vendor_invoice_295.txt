@@ -1,0 +1,12 @@
+LOCAL PURCHASE ORDER
+LPO No: GRN-28785
+Date: 06 June 2026
+
+Vendor Contact: NWACHUKWU, Ugochi
+Phone: +234-814-189-1281
+Delivery Address: 67 Marina Street, Jabi, Abuja
+NIN - 31531979308
+
+Item: Office Furniture (10 units)
+Total Value: NGN 108,097.00
+Procurement Officer: P. Zubairu

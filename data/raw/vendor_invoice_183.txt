@@ -1,0 +1,15 @@
+TAX INVOICE
+Walsh-Harrison
+Invoice No: LPO-385565
+PO No: PO-859587
+Date: 15 December 2023
+
+Billed To: Zubairu, Temitope T.
+Phone: +234 806 128 7992
+Email: usman_umar@nigeriamail.ng
+Address: 89 Idejo Street, Victoria Island, Lagos
+BVN - 74594111443
+
+Description: IT Equipment Supply
+Amount: NGN 2,270,430.00
+Authorised by: H. Hassan

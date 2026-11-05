@@ -1,0 +1,15 @@
+SERVICE CONTRACT INVOICE
+Provider: Cox PLC
+Invoice: LPO-303212
+Date: 26 January 2024
+
+Client Name: Abubakar, Abubakar A.
+Phone: 07053743013
+Email: ugochi_achebe@yahoo.com
+Client Address: 108 Murtala Muhammed Way, Borokiri, Port Harcourt
+BVN - 84027219522
+Ref No: 28021954298
+
+Service: Annual Software Maintenance
+Fee: NGN 7,571,977.00
+Account Manager: Engr. Temitope Abubakar

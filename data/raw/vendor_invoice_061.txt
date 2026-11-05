@@ -1,0 +1,16 @@
+TAX INVOICE
+Read-Cook
+Invoice No: GRN-642209
+PO No: PO-141468
+Date: 30 May 2026
+
+Billed To: Uchenna Oyelaran
+Phone: 07080807369
+Email: divine.achebe@nigeriamail.ng
+Address: 49 Adeola Odeku Street, Old GRA, Port Harcourt
+BVN No: 90580872532
+22143980993
+
+Description: IT Equipment Supply
+Amount: NGN 1,231,118.00
+Authorised by: Righteousness Oyelaran

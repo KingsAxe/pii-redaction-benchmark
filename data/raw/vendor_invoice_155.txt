@@ -1,0 +1,15 @@
+PROFORMA INVOICE
+Issuer: McDonald Inc
+PI No: RFQ-520511
+Date: 05 February 2024
+
+Buyer Name: Obi, Destiny D.
+Phone: +234-708-919-1275
+Email: amarachi_okafor@hotmail.com
+Buyer Address: 58 Isaac John Street, Kano Municipal, Kano
+ID No: 78747813569
+Lot: 09069132678
+
+Description: Industrial Generator Supply
+Proforma Amount: NGN 8,098,465.00
+Sales Rep: OGUNDIMU, Miracle

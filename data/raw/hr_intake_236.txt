@@ -1,0 +1,15 @@
+EMPLOYEE ONBOARDING FORM
+Date: 27 September 2026
+Employee ID: RFQ-520135
+
+Full Name: Precious Etim
+Phone: +234-708-207-2893
+Email: sadiya.alabi@hotmail.com
+Home Address: 49 Corporation Drive, Fagge, Kano
+BVN No: 72847359942
+NIN No: 10829326917
+
+Department: Finance
+Position: Senior Analyst
+Start Date: 27 September 2026
+HR Officer: Mrs. Success Okafor

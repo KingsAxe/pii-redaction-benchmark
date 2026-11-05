@@ -1,0 +1,15 @@
+TAX INVOICE
+Summers and Sons
+Invoice No: LPO-507643
+PO No: PO-375382
+Date: 10 September 2024
+
+Billed To: Suleiman Agboola
+Phone: 08060532745
+Email: chisom_kabir@hotmail.com
+Address: 78 Ikorodu Road, Yaba, Lagos
+Bank Verification Number: 11867169740
+
+Description: IT Equipment Supply
+Amount: NGN 2,445,210.00
+Authorised by: Peace Okafor

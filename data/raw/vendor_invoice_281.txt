@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Bell-Robinson
+Invoice: PO-742411
+Date: 31 March 2023
+
+Client Name: Mrs. Glory Nkemdirim
+Phone: 08038428055
+Email: ismailapeters@hotmail.com
+Client Address: 86 Murtala Muhammed Way, Fagge, Kano
+Bank Verification Number: 67345786343
+NIN No: 96123108643
+Tracking No. 74063263190
+
+Service: Annual Software Maintenance
+Fee: NGN 4,388,351.00
+Account Manager: NKEMDIRIM, Miracle

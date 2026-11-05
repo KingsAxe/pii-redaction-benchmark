@@ -1,0 +1,15 @@
+EMPLOYEE ONBOARDING FORM
+Date: 28 July 2022
+Employee ID: RFQ-420133
+
+Full Name: Prof. Joy Awolowo
+Phone: +234-903-227-8366
+Email: muhammadnkemdirim@nigeriamail.ng
+Home Address: 149 Murtala Muhammed Way, Ajah, Lagos
+BVN No: 90228079908
+NIN: 74530005238
+
+Department: Finance
+Position: Senior Analyst
+Start Date: 28 July 2022
+HR Officer: Prof. Hafsat Onuoha

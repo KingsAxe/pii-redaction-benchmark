@@ -1,0 +1,15 @@
+SERVICE CONTRACT INVOICE
+Provider: Warner Cox and Kaur
+Invoice: PO-92804
+Date: 11 January 2023
+
+Client Name: Damilola Eze
+Phone: +234 805 441 2385
+Email: ayodeleibeh@hotmail.com
+Client Address: 145 Marina Street, Lekki, Lagos
+Record No: 75458865527
+National ID Number: 97879969723
+
+Service: Annual Software Maintenance
+Fee: NGN 6,428,028.00
+Account Manager: Arc. Precious Anyanwu

@@ -1,0 +1,12 @@
+LOCAL PURCHASE ORDER
+LPO No: PO-728651
+Date: 27 May 2026
+
+Vendor Contact: Afolabi Ita
+Phone: +234-813-358-7245
+Delivery Address: 38 Idejo Street, Asokoro, Abuja
+NIN: 23253472097
+
+Item: Office Furniture (10 units)
+Total Value: NGN 6,281,672.00
+Procurement Officer: SANI, Obinna

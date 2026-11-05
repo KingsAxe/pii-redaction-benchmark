@@ -1,0 +1,12 @@
+LOCAL PURCHASE ORDER
+LPO No: PO-850181
+Date: 11 December 2024
+
+Vendor Contact: Obi, Chika C.
+Phone: 08154724616
+Delivery Address: 129 Isaac John Street, Dala, Kano
+National Identifier: 96123456461
+
+Item: Office Furniture (10 units)
+Total Value: NGN 2,331,942.00
+Procurement Officer: Prof. Confidence Jibril

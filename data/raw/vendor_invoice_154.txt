@@ -1,0 +1,12 @@
+LOCAL PURCHASE ORDER
+LPO No: LPO-972489
+Date: 22 February 2026
+
+Vendor Contact: Mrs. Success Taiwo
+Phone: +234-805-239-0701
+Delivery Address: 53 Isaac John Street, Old GRA, Port Harcourt
+ID: 55735065545
+
+Item: Office Furniture (10 units)
+Total Value: NGN 7,637,651.00
+Procurement Officer: Aminu Ogbonna

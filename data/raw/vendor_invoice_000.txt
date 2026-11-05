@@ -1,0 +1,16 @@
+TAX INVOICE
+Cox and Sons
+Invoice No: LPO-114555
+PO No: PO-651499
+Date: 15 October 2022
+
+Billed To: R. Amadi
+Phone: 08076792492
+Email: ismaila.ekwueme@yahoo.com
+Address: 129 Ladoke Akintola Boulevard, GRA Phase 2, Port Harcourt
+BVN No: 66453717646
+Order Ref: 22046865930
+
+Description: IT Equipment Supply
+Amount: NGN 7,675,981.00
+Authorised by: Ifeanyi Abubakar

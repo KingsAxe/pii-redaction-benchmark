@@ -1,0 +1,15 @@
+PROFORMA INVOICE
+Issuer: Jones Ltd
+PI No: INV-97336
+Date: 27 December 2023
+
+Buyer Name: Uchenna Nwosu
+Phone: +234 812 083 8248
+Email: promise.yakubu@corpmail.ng
+Buyer Address: 119 Broad Street, Yaba, Lagos
+Record No: 54228059298
+Tracking No. 24658806724
+
+Description: Industrial Generator Supply
+Proforma Amount: NGN 6,993,542.00
+Sales Rep: P. Etim

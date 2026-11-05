@@ -1,0 +1,16 @@
+EMPLOYEE ONBOARDING FORM
+Date: 08 April 2024
+Employee ID: PO-534788
+
+Full Name: Muhammad Obi
+Phone: +234 812 301 7598
+Email: ibrahim_onuoha@gmail.com
+Home Address: 150 Ladoke Akintola Boulevard, Utako, Abuja
+Bank Verification Number: 64463182184
+NIN No: 27827457707
+Tracking No. 41590701658
+
+Department: Finance
+Position: Senior Analyst
+Start Date: 08 April 2024
+HR Officer: Onuoha, Sadiya S.

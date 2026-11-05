@@ -1,0 +1,16 @@
+EMPLOYEE ONBOARDING FORM
+Date: 05 February 2023
+Employee ID: INV-786383
+
+Full Name: Dr. Amarachi Ogundimu
+Phone: +234 708 372 4670
+Email: rejoice_danjuma@outlook.com
+Home Address: 86 Ligali Ayorinde Avenue, Nasarawa GRA, Kano
+BVN No: 33782782876
+ID: 80802799567
+Order Ref: 07052503452
+
+Department: Finance
+Position: Senior Analyst
+Start Date: 05 February 2023
+HR Officer: SAMUEL, Ifeanyi

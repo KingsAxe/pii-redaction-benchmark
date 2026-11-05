@@ -1,0 +1,16 @@
+TAX INVOICE
+Hussain-Sykes
+Invoice No: INV-618455
+PO No: PO-604923
+Date: 05 November 2021
+
+Billed To: Amadi, Nkechi N.
+Phone: +234-903-420-8948
+Email: victory_ojukwu@gmail.com
+Address: 10 Ladoke Akintola Boulevard, Kano Municipal, Kano
+Bank Verification Number: 81860357040
+Order ID: 09060124654
+
+Description: IT Equipment Supply
+Amount: NGN 1,353,236.00
+Authorised by: Prof. Promise Gusau

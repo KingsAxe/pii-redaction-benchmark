@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Jackson Inc
+Invoice: LPO-699461
+Date: 08 September 2026
+
+Client Name: Barr. Adaeze Gusau
+Phone: +234 812 494 8328
+Email: oluwafemidanjuma@nigeriamail.ng
+Client Address: 45 Nnamdi Azikiwe Street, Ikoyi, Lagos
+BVN No: 67486688316
+National ID Number: 57088275688
+Order ID: 08167673695
+
+Service: Annual Software Maintenance
+Fee: NGN 5,409,642.00
+Account Manager: OBASI, Peace

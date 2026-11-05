@@ -1,0 +1,15 @@
+TAX INVOICE
+Shaw LLC
+Invoice No: RFQ-916265
+PO No: PO-213132
+Date: 28 January 2022
+
+Billed To: Yetunde Agboola
+Phone: +234 814 808 4444
+Email: ayodele_anyanwu@corpmail.ng
+Address: 3 Allen Avenue, Tarauni, Kano
+BVN - 99693529960
+
+Description: IT Equipment Supply
+Amount: NGN 330,081.00
+Authorised by: Okafor, Emeka E.

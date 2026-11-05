@@ -1,0 +1,16 @@
+SERVICE CONTRACT INVOICE
+Provider: Williams-Day
+Invoice: GRN-706482
+Date: 16 September 2023
+
+Client Name: F. Samuel
+Phone: 08056871479
+Email: halimaorji@healthng.gov.ng
+Client Address: 36 Church Street, Garki, Abuja
+Identifier: 82720477670
+NIN: 40452386661
+Batch: 22645962806
+
+Service: Annual Software Maintenance
+Fee: NGN 9,747,827.00
+Account Manager: Nwachukwu, Ismaila I.

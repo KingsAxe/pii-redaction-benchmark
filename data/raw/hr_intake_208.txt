@@ -1,0 +1,15 @@
+EMPLOYEE ONBOARDING FORM
+Date: 17 June 2023
+Employee ID: INV-815843
+
+Full Name: Amarachi Ogundimu
+Phone: +234-701-676-9747
+Email: mojisolaonuoha@yahoo.com
+Home Address: 117 Nnamdi Azikiwe Street, GRA Phase 1, Port Harcourt
+Bank Verification Number: 20954189911
+National ID Number: 48050867375
+
+Department: Finance
+Position: Senior Analyst
+Start Date: 17 June 2023
+HR Officer: GUSAU, Glory

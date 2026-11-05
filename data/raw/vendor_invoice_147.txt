@@ -1,0 +1,13 @@
+LOCAL PURCHASE ORDER
+LPO No: RFQ-983128
+Order Ref: 08026785511
+Date: 02 December 2021
+
+Vendor Contact: Barr. Joy Ibeh
+Phone: +234 802 121 8762
+Delivery Address: 17 Obafemi Awolowo Way, Garki, Abuja
+NIN: 92898670059
+
+Item: Office Furniture (10 units)
+Total Value: NGN 8,446,204.00
+Procurement Officer: F. Etim

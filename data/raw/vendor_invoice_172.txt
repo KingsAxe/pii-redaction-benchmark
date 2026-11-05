@@ -1,0 +1,16 @@
+TAX INVOICE
+Clark Ltd
+Invoice No: RFQ-715893
+PO No: PO-635239
+Date: 12 August 2026
+
+Billed To: Barr. Uchenna Nwosu
+Phone: +234 806 359 9921
+Email: blessingjibril@nigeriamail.ng
+Address: 138 Broad Street, Borokiri, Port Harcourt
+Record No: 61876365307
+Order ID: 07036055937
+
+Description: IT Equipment Supply
+Amount: NGN 8,188,787.00
+Authorised by: UZOKA, Fatima

@@ -1,0 +1,13 @@
+LOCAL PURCHASE ORDER
+LPO No: INV-734087
+Item No: 76234926934
+Date: 24 June 2025
+
+Vendor Contact: Samuel, Oluwafemi O.
+Phone: 08087375172
+Delivery Address: 77 Constitution Avenue, Jabi, Abuja
+NIN - 47855060377
+
+Item: Office Furniture (10 units)
+Total Value: NGN 2,750,422.00
+Procurement Officer: Kehinde Onyekwere

@@ -1,0 +1,14 @@
+PROFORMA INVOICE
+Issuer: Smith King and Stevens
+PI No: GRN-646408
+Date: 12 June 2022
+
+Buyer Name: Mr. Aminu Umar
+Phone: +234-808-615-9830
+Email: oluwafemiachebe@outlook.com
+Buyer Address: 7 Marina Street, D-Line, Port Harcourt
+NIN: 50337263471
+
+Description: Industrial Generator Supply
+Proforma Amount: NGN 8,558,370.00
+Sales Rep: N. Danjuma

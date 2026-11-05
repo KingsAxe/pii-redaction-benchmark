@@ -1,0 +1,12 @@
+LOCAL PURCHASE ORDER
+LPO No: RFQ-358475
+Date: 10 May 2024
+
+Vendor Contact: B. Awolowo
+Phone: 07060886987
+Delivery Address: 46 Murtala Muhammed Way, Kano Municipal, Kano
+National Identifier: 20881234942
+
+Item: Office Furniture (10 units)
+Total Value: NGN 3,334,357.00
+Procurement Officer: O. Alabi

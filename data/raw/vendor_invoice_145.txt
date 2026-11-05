@@ -1,0 +1,14 @@
+PROFORMA INVOICE
+Issuer: Saunders-Mitchell
+PI No: INV-320833
+Date: 24 May 2024
+
+Buyer Name: Barr. Maryam Okafor
+Phone: +234 903 553 4633
+Email: obinnaafolabi@healthng.gov.ng
+Buyer Address: 96 Isaac John Street, Sabon Gari, Kano
+NIN: 31886966217
+
+Description: Industrial Generator Supply
+Proforma Amount: NGN 3,239,821.00
+Sales Rep: OYELARAN, Folake
