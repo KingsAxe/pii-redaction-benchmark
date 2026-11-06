@@ -1,0 +1,47 @@
+{
+  "completed_utc": "2026-11-06T08:37:07.602070+00:00",
+  "freeze_commit": "853bcbb5365f544aa6b58bb50bcc8095ed8a780a",
+  "freeze": {
+    "configs": {
+      "custom": {
+        "source": "scripts/custom_recognizers.py",
+        "sha256": "a10d7fa8e88be4633c998c294a540ee00ce90dc6a1f7f9eb2edfc4a36f6fde18"
+      },
+      "custom_generic": {
+        "source": "scripts/custom_generic_recognizers.py",
+        "sha256": "1cc272db3674b3e3d59cc8a8ed791419a3f45457fdfdfde69389f965b79b06f1"
+      }
+    },
+    "seed": 42,
+    "created_utc": "2026-11-06T08:33:07.498909+00:00",
+    "parent_commit": "26ed015ca2ecfcd1119cf6763547a657831a82bf",
+    "approval": "User accepted review and authorized freeze plus test runs for both configs; no new tuning"
+  },
+  "files": {
+    "spacy": {
+      "file": "data/predictions/spacy__test.json",
+      "sha256": "8e848e78344d39db65ab17b295bfb9217813292ce64fe82c300f368987b8a2e0",
+      "document_count": 200
+    },
+    "presidio_default": {
+      "file": "data/predictions/presidio_default__test.json",
+      "sha256": "c42c949e78c0dab2e086fef2189c01a52f14e88b221747bde35b4c0e2e092fa3",
+      "document_count": 200
+    },
+    "presidio_ng_phone": {
+      "file": "data/predictions/presidio_ng_phone__test.json",
+      "sha256": "f5f6fb07eb0ec2dc0aedd2b178dc83b7b76b277314b89d75ddd5954d423d639b",
+      "document_count": 200
+    },
+    "presidio_custom_generic": {
+      "file": "data/predictions/presidio_custom_generic__test.json",
+      "sha256": "6d721428707ca5c83c216f803dae2f3a57c12d5833eec28ebb8a29d469ed6878",
+      "document_count": 200
+    },
+    "presidio_custom": {
+      "file": "data/predictions/presidio_custom__test.json",
+      "sha256": "f7e84fd219e93946acfc08ec7dd2b0c3bf90d0a4b4dee936ce931c3126ec2e97",
+      "document_count": 200
+    }
+  }
+}

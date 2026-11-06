@@ -1,6 +1,6 @@
 # Current phase
 
-Phase 3 freeze accepted and recorded in the containing commit; test generation next.
+Phase 3 frozen test predictions complete and validated; Phase 4 evaluation next.
 
 ## Done
 
@@ -15,11 +15,11 @@ Phase 3 freeze accepted and recorded in the containing commit; test generation n
 - Accepted review diagnostics computed from archived dev predictions only; no new tuning or inference experiments.
 - custom_generic copied byte-for-byte from experiment 01; custom remains byte-for-byte experiment 02.
 - results/freeze.json records both source hashes; both configurations reject missing/mismatched freezes on test. Guard and diagnostic tests pass.
-- No custom test predictions or test error inspection occurred before this freeze commit.
+- No custom test predictions or test error inspection occurred before the freeze commit.
+- All five configurations regenerated on test after freeze; all test files passed structural validation and LF checks. results/test_run_manifest.json records provenance.
 
 ## Next
 
-- Regenerate test predictions for spacy, default, ng_phone, custom_generic, and custom; validate and commit.
 - Implement Phase 4 evaluation using the unchanged scorer; generate results.csv, results.md, and error_analysis.md; update state and commit.
 - No new tuning experiments and no pushes. User explicitly authorized freeze, all test runs, and Phase 4.
 
@@ -47,7 +47,8 @@ Phase 3 freeze accepted and recorded in the containing commit; test generation n
 - `31c0e58`: `docs: agent handoff files`.
 - `dd6b474`: `phase 3a: baseline runners`.
 - `26ed015`: `phase 3b: dev tuning for review`.
-- Containing commit: `freeze custom config`.
+- `853bcbb`: `freeze custom config`.
+- Containing commit: `phase 3: frozen test predictions`.
 
 ## Open questions
 
