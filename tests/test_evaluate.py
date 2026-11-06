@@ -1,7 +1,16 @@
 """Hand-built report diagnostics, independent of benchmark test records."""
+import contextlib
+import csv
+import io
+import json
+import tempfile
 import unittest
+from pathlib import Path
+from unittest.mock import patch
 
 from scripts.analysis_common import id_diagnostics
+from scripts.evaluate import CONFIGS, error_records, main as evaluate_main, measured_latency
+from scripts.runner_common import write_json
 
 
 class TestDiagnostics(unittest.TestCase):
@@ -25,6 +34,83 @@ class TestDiagnostics(unittest.TestCase):
         self.assertEqual(result["id_entities_phone_or_any_uncovered"], 3)
         self.assertEqual(result["id_precision_strict"], 0.0)
         self.assertAlmostEqual(result["id_precision_overlap"], 1 / 3)
+
+    def test_reported_latency_keeps_all_post_warmup_samples(self):
+        docs = [{"file": str(i)} for i in range(6)]
+        predictions = {str(i): {"ms": float(i + 1)} for i in range(6)}
+        result = measured_latency(docs, predictions)
+        self.assertEqual(result["measured_doc_count"], 6)
+        self.assertEqual(result["median_ms"], 3.5)
+        self.assertEqual(result["p95_ms"], 5.75)
+
+    def test_evaluation_refuses_before_reading_test_data(self):
+        with patch("scripts.evaluate.require_custom_freeze", side_effect=ValueError("not frozen")):
+            with patch("scripts.evaluate.load_ground_truth") as load:
+                with self.assertRaisesRegex(ValueError, "not frozen"):
+                    evaluate_main([])
+                load.assert_not_called()
+
+    def test_reports_use_scorer_and_list_all_decoy_hits(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            raw = root / "raw"
+            raw.mkdir()
+            docs, predictions = [], {}
+            for index in range(6):
+                file = f"fixture{index}.txt"
+                (raw / file).write_text("1234  5678", encoding="utf-8")
+                docs.append({"file": f"data/raw/{file}", "doc_id": f"exact{index}", "split": "test",
+                    "doc_type": "fixture", "length": 10,
+                    "entities": [{"type": "NIN", "start": 0, "end": 4, "cued": index % 2 == 0}],
+                    "decoys": [{"type": "ORDER_ID", "start": 6, "end": 10}]})
+                predictions[f"exact{index}"] = {"ms": float(index + 1), "spans": [
+                    {"label": "ID", "start": 0, "end": 4}, {"label": "ID", "start": 6, "end": 10}]}
+            gt = root / "gt.json"
+            write_json(gt, docs)
+            prediction_dir = root / "predictions"
+            for config in CONFIGS:
+                write_json(prediction_dir / f"{config}__test.json", predictions)
+            output = root / "reports"
+            with patch("scripts.evaluate.require_custom_freeze") as guard:
+                with contextlib.redirect_stdout(io.StringIO()):
+                    evaluate_main(["--ground-truth", str(gt), "--raw-dir", str(raw),
+                                   "--predictions-dir", str(prediction_dir), "--output-dir", str(output)])
+                self.assertEqual(guard.call_count, 2)
+            with (output / "results.csv").open(encoding="utf-8", newline="") as handle:
+                rows = list(csv.DictReader(handle))
+            self.assertEqual(len(rows), len(CONFIGS))
+            for row in rows:
+                self.assertEqual(float(row["leak_rate"]), 0.0)
+                self.assertEqual(float(row["id_precision_strict"]), 0.5)
+                self.assertEqual(float(row["id_recall_cued_strict"]), 1.0)
+                self.assertEqual(float(row["id_recall_bare_strict"]), 1.0)
+                self.assertEqual(int(row["decoy_hit_predictions"]), 6)
+                self.assertEqual(float(row["median_ms"]), 3.5)
+                self.assertEqual(float(row["scorer_median_ms_after_extra_drop"]), 6.0)
+            details = json.loads((output / "evaluation_details.json").read_text(encoding="utf-8"))
+            for detail in details["configs"].values():
+                self.assertEqual(len(detail["errors"]), 6)
+                self.assertTrue(all(record["kind"] == "decoy_hit" for record in detail["errors"]))
+            for path in output.iterdir():
+                self.assertNotIn(b"\r", path.read_bytes())
+
+    def test_error_categories_include_misses_confusions_partial_and_exposure(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            raw = Path(temporary)
+            (raw / "fixture").write_text("x" * 40, encoding="utf-8")
+            docs = [{"file": "fixture", "entities": [
+                {"type": "PERSON", "start": 0, "end": 4},
+                {"type": "BVN", "start": 10, "end": 14},
+                {"type": "EMAIL", "start": 30, "end": 34}],
+                "decoys": [{"type": "ORDER_ID", "start": 20, "end": 24}]}]
+            predictions = {"fixture": {"spans": [
+                {"label": "ID", "start": 0, "end": 2},
+                {"label": "ID", "start": 10, "end": 12},
+                {"label": "ID", "start": 20, "end": 24}]}}
+            from collections import Counter
+            counts = Counter(record["kind"] for record in error_records(docs, predictions, raw))
+            self.assertEqual(counts, {"miss": 1, "type_confusion": 1, "partial_match": 1,
+                                      "decoy_hit": 1, "fully_uncovered": 1, "partially_uncovered": 2})
 
 
 if __name__ == "__main__":

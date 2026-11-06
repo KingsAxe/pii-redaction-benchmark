@@ -1,6 +1,6 @@
 # Current phase
 
-Phase 3 frozen test predictions complete and validated; Phase 4 evaluation next.
+Phase 4 complete. Stop at the Phase 5 gate; README publication work is not yet requested.
 
 ## Done
 
@@ -17,11 +17,13 @@ Phase 3 frozen test predictions complete and validated; Phase 4 evaluation next.
 - results/freeze.json records both source hashes; both configurations reject missing/mismatched freezes on test. Guard and diagnostic tests pass.
 - No custom test predictions or test error inspection occurred before the freeze commit.
 - All five configurations regenerated on test after freeze; all test files passed structural validation and LF checks. results/test_run_manifest.json records provenance.
+- Phase 4 results.csv, results.md, evaluation_details.json, and complete error_analysis.md generated from frozen, validated test predictions. Report miss/decoy/exposure counts cross-check against the unchanged Phase 2 scorer.
+- Evaluator fixture tests, freeze guards, and original scoring tests pass. Custom source hashes and the Phase 2 scorer were verified unchanged; no new tuning experiments occurred.
 
 ## Next
 
-- Implement Phase 4 evaluation using the unchanged scorer; generate results.csv, results.md, and error_analysis.md; update state and commit.
-- No new tuning experiments and no pushes. User explicitly authorized freeze, all test runs, and Phase 4.
+- User reviews the generated test results and error analysis.
+- Phase 5 README work remains behind its gate. No new tuning experiments and no pushes.
 
 ## Decisions
 
@@ -36,6 +38,10 @@ Phase 3 frozen test predictions complete and validated; Phase 4 evaluation next.
 - Nonzero-leading ID candidates reduce phone-shaped matches on this synthetic dev set. This is a dataset-specific assumption, not a universal rule for real identifiers. Cued-only matching was rejected for its recall loss.
 - The generator's gen_11digit() never emits IDs starting with zero; the accepted review addendum makes this dependency explicit.
 - Freeze schema: configs.custom and configs.custom_generic each hold source and sha256; runner selects the corresponding source and checks its digest before any custom test processing.
+- Reported median/p95 use all stored post-warm-up test timings with the Phase 2 percentile helper. The scorer's extra-first-five-drop latency is preserved separately in the CSV and JSON; no scorer code or predictions are altered to work around it.
+- Phase 4 adapts exact document-ID prediction keys to Phase 2 file keys in memory. Matching, label mapping, leak, precision, recall, and decoy definitions remain the Phase 2 implementation.
+- Error analysis contains every scorer miss and decoy-hit prediction, with additional type-confusion, partial-match, and character-exposure records. Categories can overlap; they must not be summed as unique entity counts.
+- Test latencies are single sequential machine runs; cache and host-load effects prevent universal speed-ranking claims.
 - Source snapshots, experiment timestamps, hashes, raw dev predictions, and full dev metrics are archived under results/tuning/. The standard custom dev file matches the selected archived run; restoring it did not trigger a new experiment.
 - This file is updated in every commit. Each entry describes its containing commit by subject; its hash is recorded in the next commit to avoid self-referential hashes.
 
@@ -48,13 +54,14 @@ Phase 3 frozen test predictions complete and validated; Phase 4 evaluation next.
 - `dd6b474`: `phase 3a: baseline runners`.
 - `26ed015`: `phase 3b: dev tuning for review`.
 - `853bcbb`: `freeze custom config`.
-- Containing commit: `phase 3: frozen test predictions`.
+- `da55731`: `phase 3: frozen test predictions`.
+- Containing commit: `phase 4: evaluation and error analysis`.
 
 ## Open questions
 
 - User may override the documented legacy-ID compatibility assumption.
 - User accepted review and authorized both freezes and all five test configurations.
-- The unchanged Phase 2 scorer discards another five timing values even though runners already use unrecorded warm-up. Dev tuning precision/recall are unaffected; its archived latency values must not be published as the final Phase 4 runner latency summary without resolving this mismatch.
+- No implementation blockers remain. Review the explicit all-timings versus scorer-extra-drop latency distinction before quoting results; use results.md's main latency columns.
 
 ## Commands (PowerShell, repository root)
 
@@ -66,6 +73,8 @@ Phase 3 frozen test predictions complete and validated; Phase 4 evaluation next.
 .\venv\Scripts\python.exe scripts/validate_predictions.py data/predictions/spacy__dev.json data/predictions/presidio_default__dev.json data/predictions/presidio_ng_phone__dev.json --split dev --report results/baseline_validation_dev.json
 .\venv\Scripts\python.exe scripts/validate_predictions.py data/predictions/spacy__test.json data/predictions/presidio_default__test.json data/predictions/presidio_ng_phone__test.json --split test --report results/baseline_validation_test.json
 .\venv\Scripts\python.exe scripts/validate_predictions.py data/predictions/presidio_custom__dev.json --split dev --report results/custom_validation_dev.json
+.\venv\Scripts\python.exe scripts/summarize_dev_ids.py
+.\venv\Scripts\python.exe scripts/evaluate.py
 ```
 
-To reproduce a dev experiment, copy its archived custom_recognizers.py to scripts/custom_recognizers.py and invoke scripts/tune_custom_dev.py with a NEW --experiment name and a --change description. Do not overwrite an archived experiment. Stop before changing a frozen config in future phases.
+No further tuning experiments are authorized. Recompute archived dev diagnostics with summarize_dev_ids.py; regenerate reports with evaluate.py without inference. Do not overwrite archives or change either frozen source.
