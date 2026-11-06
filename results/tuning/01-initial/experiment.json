@@ -1,0 +1,13 @@
+{
+  "experiment": "01-initial",
+  "change": "Initial 11-digit pattern, base score 0.05 and original BVN/NIN contexts; no tuning yet.",
+  "timestamp_utc": "2026-11-06T08:14:31.855103+00:00",
+  "sha256": "1cc272db3674b3e3d59cc8a8ed791419a3f45457fdfdfde69389f965b79b06f1",
+  "split": "dev",
+  "status": "complete",
+  "doc_count": 100,
+  "id_recall_strict": 0.959349593495935,
+  "precision_strict": 0.3367088607594937,
+  "id_recall_overlap": 0.959349593495935,
+  "precision_overlap": 0.5430379746835443
+}

@@ -1,0 +1,47 @@
+{
+  "selected_experiment": "02-nonzero",
+  "sha256": "a10d7fa8e88be4633c998c294a540ee00ce90dc6a1f7f9eb2edfc4a36f6fde18",
+  "selection_rule": "Highest observed strict dev ID recall, then overall strict micro precision",
+  "status": "awaiting user review; not frozen",
+  "experiments": [
+    {
+      "experiment": "01-initial",
+      "change": "Initial 11-digit pattern, base score 0.05 and original BVN/NIN contexts; no tuning yet.",
+      "timestamp_utc": "2026-11-06T08:14:31.855103+00:00",
+      "sha256": "1cc272db3674b3e3d59cc8a8ed791419a3f45457fdfdfde69389f965b79b06f1",
+      "split": "dev",
+      "status": "complete",
+      "doc_count": 100,
+      "id_recall_strict": 0.959349593495935,
+      "precision_strict": 0.3367088607594937,
+      "id_recall_overlap": 0.959349593495935,
+      "precision_overlap": 0.5430379746835443
+    },
+    {
+      "experiment": "02-nonzero",
+      "change": "Exclude zero-leading 11-digit candidates to avoid local phone formats; dev ID values all start nonzero. Keep base score, context words, and boost unchanged.",
+      "timestamp_utc": "2026-11-06T08:15:15.155401+00:00",
+      "sha256": "a10d7fa8e88be4633c998c294a540ee00ce90dc6a1f7f9eb2edfc4a36f6fde18",
+      "split": "dev",
+      "status": "complete",
+      "doc_count": 100,
+      "id_recall_strict": 0.959349593495935,
+      "precision_strict": 0.4204081632653061,
+      "id_recall_overlap": 0.959349593495935,
+      "precision_overlap": 0.6421768707482993
+    },
+    {
+      "experiment": "03-cued-only",
+      "change": "Require a same-line explicit BVN/NIN cue seen in dev; variable-length lookbehind preserves digit-only spans. Retain nonzero-leading rule, base score, contexts, and boost. Measure recall loss versus precision.",
+      "timestamp_utc": "2026-11-06T08:15:51.896994+00:00",
+      "sha256": "b860551bd5b06ef58e47f7a91314a4933ab291d797d5d32b0bd5498a5980937e",
+      "split": "dev",
+      "status": "complete",
+      "doc_count": 100,
+      "id_recall_strict": 0.5934959349593496,
+      "precision_strict": 0.4018264840182648,
+      "id_recall_overlap": 0.5934959349593496,
+      "precision_overlap": 0.649923896499239
+    }
+  ]
+}

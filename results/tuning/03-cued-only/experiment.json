@@ -1,0 +1,13 @@
+{
+  "experiment": "03-cued-only",
+  "change": "Require a same-line explicit BVN/NIN cue seen in dev; variable-length lookbehind preserves digit-only spans. Retain nonzero-leading rule, base score, contexts, and boost. Measure recall loss versus precision.",
+  "timestamp_utc": "2026-11-06T08:15:51.896994+00:00",
+  "sha256": "b860551bd5b06ef58e47f7a91314a4933ab291d797d5d32b0bd5498a5980937e",
+  "split": "dev",
+  "status": "complete",
+  "doc_count": 100,
+  "id_recall_strict": 0.5934959349593496,
+  "precision_strict": 0.4018264840182648,
+  "id_recall_overlap": 0.5934959349593496,
+  "precision_overlap": 0.649923896499239
+}

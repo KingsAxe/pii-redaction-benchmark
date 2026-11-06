@@ -2,7 +2,7 @@
 from presidio_analyzer import Pattern, PatternRecognizer
 from presidio_analyzer.context_aware_enhancers import LemmaContextAwareEnhancer
 
-ID_REGEX = r"\b\d{11}\b"
+ID_REGEX = r"\b[1-9]\d{10}\b"
 ID_BASE_SCORE = 0.05
 CONTEXT_BOOST = 0.35
 MIN_CONTEXT_SCORE = 0.4

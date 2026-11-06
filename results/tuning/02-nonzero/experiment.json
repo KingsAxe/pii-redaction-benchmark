@@ -1,0 +1,13 @@
+{
+  "experiment": "02-nonzero",
+  "change": "Exclude zero-leading 11-digit candidates to avoid local phone formats; dev ID values all start nonzero. Keep base score, context words, and boost unchanged.",
+  "timestamp_utc": "2026-11-06T08:15:15.155401+00:00",
+  "sha256": "a10d7fa8e88be4633c998c294a540ee00ce90dc6a1f7f9eb2edfc4a36f6fde18",
+  "split": "dev",
+  "status": "complete",
+  "doc_count": 100,
+  "id_recall_strict": 0.959349593495935,
+  "precision_strict": 0.4204081632653061,
+  "id_recall_overlap": 0.959349593495935,
+  "precision_overlap": 0.6421768707482993
+}
