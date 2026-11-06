@@ -1,0 +1,57 @@
+[
+  {
+    "file": "spacy__test.json",
+    "split": "test",
+    "status": "pass",
+    "labels": {
+      "CARDINAL": 496,
+      "DATE": 454,
+      "FAC": 77,
+      "GPE": 195,
+      "LOC": 7,
+      "MONEY": 11,
+      "NORP": 14,
+      "ORG": 230,
+      "PERCENT": 6,
+      "PERSON": 561,
+      "PRODUCT": 2,
+      "WORK_OF_ART": 66
+    }
+  },
+  {
+    "file": "presidio_default__test.json",
+    "split": "test",
+    "status": "pass",
+    "labels": {
+      "DATE_TIME": 454,
+      "EMAIL_ADDRESS": 130,
+      "LOCATION": 202,
+      "NRP": 14,
+      "ORGANIZATION": 230,
+      "PERSON": 561,
+      "PHONE_NUMBER": 277,
+      "UK_NHS": 9,
+      "URL": 145,
+      "US_BANK_NUMBER": 444,
+      "US_DRIVER_LICENSE": 637
+    }
+  },
+  {
+    "file": "presidio_ng_phone__test.json",
+    "split": "test",
+    "status": "pass",
+    "labels": {
+      "DATE_TIME": 454,
+      "EMAIL_ADDRESS": 130,
+      "LOCATION": 202,
+      "NRP": 14,
+      "ORGANIZATION": 230,
+      "PERSON": 561,
+      "PHONE_NUMBER": 277,
+      "UK_NHS": 9,
+      "URL": 145,
+      "US_BANK_NUMBER": 444,
+      "US_DRIVER_LICENSE": 637
+    }
+  }
+]

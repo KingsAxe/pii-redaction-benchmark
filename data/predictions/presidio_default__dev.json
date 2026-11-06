@@ -1,0 +1,8102 @@
+{
+  "data/raw/health_report_007.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 39,
+        "end": 53
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 74,
+        "end": 105
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 127,
+        "end": 144
+      },
+      {
+        "label": "UK_NHS",
+        "start": 132,
+        "end": 144
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 136,
+        "end": 144
+      },
+      {
+        "label": "URL",
+        "start": 152,
+        "end": 161
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 152,
+        "end": 174
+      },
+      {
+        "label": "URL",
+        "start": 165,
+        "end": 174
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 201,
+        "end": 206
+      },
+      {
+        "label": "PERSON",
+        "start": 208,
+        "end": 231
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "PERSON",
+        "start": 232,
+        "end": 241
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 243,
+        "end": 254
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 243,
+        "end": 254
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 243,
+        "end": 254
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 243,
+        "end": 254
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 313,
+        "end": 316
+      }
+    ],
+    "ms": 53.22820006404072
+  },
+  "data/raw/health_report_008.txt": {
+    "spans": [
+      {
+        "label": "ORGANIZATION",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 49,
+        "end": 87
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 76,
+        "end": 82
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 89,
+        "end": 105
+      },
+      {
+        "label": "PERSON",
+        "start": 126,
+        "end": 136
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 146,
+        "end": 163
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 159,
+        "end": 163
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 171,
+        "end": 197
+      },
+      {
+        "label": "URL",
+        "start": 186,
+        "end": 197
+      },
+      {
+        "label": "LOCATION",
+        "start": 236,
+        "end": 241
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 256,
+        "end": 267
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 256,
+        "end": 267
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 273,
+        "end": 284
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 273,
+        "end": 284
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 387,
+        "end": 403
+      }
+    ],
+    "ms": 65.84540009498596
+  },
+  "data/raw/health_report_009.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 49,
+        "end": 62
+      },
+      {
+        "label": "PERSON",
+        "start": 79,
+        "end": 88
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 96,
+        "end": 113
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 121,
+        "end": 148
+      },
+      {
+        "label": "URL",
+        "start": 134,
+        "end": 148
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 149,
+        "end": 161
+      },
+      {
+        "label": "PERSON",
+        "start": 172,
+        "end": 184
+      },
+      {
+        "label": "LOCATION",
+        "start": 194,
+        "end": 207
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 215,
+        "end": 226
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 215,
+        "end": 226
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 235,
+        "end": 246
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 235,
+        "end": 246
+      },
+      {
+        "label": "PERSON",
+        "start": 248,
+        "end": 265
+      },
+      {
+        "label": "PERSON",
+        "start": 267,
+        "end": 271
+      },
+      {
+        "label": "PERSON",
+        "start": 273,
+        "end": 277
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 288,
+        "end": 301
+      }
+    ],
+    "ms": 62.16219998896122
+  },
+  "data/raw/health_report_015.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 39,
+        "end": 49
+      },
+      {
+        "label": "PERSON",
+        "start": 90,
+        "end": 107
+      },
+      {
+        "label": "PERSON",
+        "start": 127,
+        "end": 135
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 143,
+        "end": 154
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 143,
+        "end": 154
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 143,
+        "end": 154
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 162,
+        "end": 184
+      },
+      {
+        "label": "URL",
+        "start": 175,
+        "end": 184
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 214,
+        "end": 219
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 234,
+        "end": 245
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 234,
+        "end": 245
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 234,
+        "end": 245
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 251,
+        "end": 262
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 251,
+        "end": 262
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 251,
+        "end": 262
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 251,
+        "end": 262
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 321,
+        "end": 324
+      },
+      {
+        "label": "LOCATION",
+        "start": 339,
+        "end": 348
+      }
+    ],
+    "ms": 45.91190000064671
+  },
+  "data/raw/health_report_016.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 39,
+        "end": 48
+      },
+      {
+        "label": "PERSON",
+        "start": 69,
+        "end": 83
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 88,
+        "end": 112
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 141,
+        "end": 158
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 166,
+        "end": 191
+      },
+      {
+        "label": "URL",
+        "start": 182,
+        "end": 191
+      },
+      {
+        "label": "LOCATION",
+        "start": 204,
+        "end": 217
+      },
+      {
+        "label": "PERSON",
+        "start": 229,
+        "end": 252
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 241,
+        "end": 252
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 241,
+        "end": 252
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 311,
+        "end": 314
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 329,
+        "end": 335
+      },
+      {
+        "label": "PERSON",
+        "start": 337,
+        "end": 342
+      }
+    ],
+    "ms": 39.27479998674244
+  },
+  "data/raw/health_report_022.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 46,
+        "end": 58
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 75,
+        "end": 81
+      },
+      {
+        "label": "PERSON",
+        "start": 102,
+        "end": 118
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 120,
+        "end": 137
+      },
+      {
+        "label": "PERSON",
+        "start": 153,
+        "end": 170
+      },
+      {
+        "label": "LOCATION",
+        "start": 172,
+        "end": 187
+      },
+      {
+        "label": "LOCATION",
+        "start": 189,
+        "end": 194
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 203,
+        "end": 214
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 203,
+        "end": 214
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 203,
+        "end": 214
+      },
+      {
+        "label": "PERSON",
+        "start": 215,
+        "end": 224
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 226,
+        "end": 237
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 226,
+        "end": 237
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 226,
+        "end": 237
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 291,
+        "end": 294
+      },
+      {
+        "label": "PERSON",
+        "start": 313,
+        "end": 322
+      }
+    ],
+    "ms": 61.12830003257841
+  },
+  "data/raw/health_report_027.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 43,
+        "end": 56
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 73,
+        "end": 79
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 89,
+        "end": 93
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 95,
+        "end": 107
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 109,
+        "end": 126
+      },
+      {
+        "label": "PERSON",
+        "start": 142,
+        "end": 154
+      },
+      {
+        "label": "LOCATION",
+        "start": 162,
+        "end": 167
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 189,
+        "end": 200
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 189,
+        "end": 200
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 189,
+        "end": 200
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 189,
+        "end": 200
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 211,
+        "end": 222
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 211,
+        "end": 222
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 276,
+        "end": 279
+      },
+      {
+        "label": "PERSON",
+        "start": 298,
+        "end": 307
+      }
+    ],
+    "ms": 115.94749998766929
+  },
+  "data/raw/health_report_028.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 46,
+        "end": 59
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 76,
+        "end": 82
+      },
+      {
+        "label": "PERSON",
+        "start": 96,
+        "end": 112
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 120,
+        "end": 137
+      },
+      {
+        "label": "PERSON",
+        "start": 159,
+        "end": 171
+      },
+      {
+        "label": "PERSON",
+        "start": 173,
+        "end": 189
+      },
+      {
+        "label": "LOCATION",
+        "start": 191,
+        "end": 204
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 216,
+        "end": 227
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 216,
+        "end": 227
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 293,
+        "end": 296
+      },
+      {
+        "label": "PERSON",
+        "start": 319,
+        "end": 332
+      }
+    ],
+    "ms": 104.58019992802292
+  },
+  "data/raw/health_report_029.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 52,
+        "end": 65
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 106,
+        "end": 123
+      },
+      {
+        "label": "UK_NHS",
+        "start": 111,
+        "end": 123
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 131,
+        "end": 158
+      },
+      {
+        "label": "URL",
+        "start": 147,
+        "end": 158
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 159,
+        "end": 171
+      },
+      {
+        "label": "PERSON",
+        "start": 177,
+        "end": 189
+      },
+      {
+        "label": "PERSON",
+        "start": 191,
+        "end": 196
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 212,
+        "end": 223
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 212,
+        "end": 223
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 212,
+        "end": 223
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "PERSON",
+        "start": 263,
+        "end": 280
+      },
+      {
+        "label": "PERSON",
+        "start": 282,
+        "end": 286
+      },
+      {
+        "label": "PERSON",
+        "start": 288,
+        "end": 292
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 303,
+        "end": 319
+      }
+    ],
+    "ms": 57.69380007404834
+  },
+  "data/raw/health_report_030.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 52,
+        "end": 63
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 100,
+        "end": 117
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 125,
+        "end": 153
+      },
+      {
+        "label": "URL",
+        "start": 138,
+        "end": 153
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 154,
+        "end": 166
+      },
+      {
+        "label": "PERSON",
+        "start": 187,
+        "end": 191
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 236,
+        "end": 247
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 236,
+        "end": 247
+      },
+      {
+        "label": "PERSON",
+        "start": 268,
+        "end": 272
+      },
+      {
+        "label": "PERSON",
+        "start": 274,
+        "end": 278
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 289,
+        "end": 303
+      },
+      {
+        "label": "PERSON",
+        "start": 328,
+        "end": 343
+      }
+    ],
+    "ms": 43.072600034065545
+  },
+  "data/raw/health_report_032.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 49,
+        "end": 61
+      },
+      {
+        "label": "PERSON",
+        "start": 82,
+        "end": 97
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 105,
+        "end": 122
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 130,
+        "end": 153
+      },
+      {
+        "label": "URL",
+        "start": 142,
+        "end": 153
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 154,
+        "end": 166
+      },
+      {
+        "label": "LOCATION",
+        "start": 185,
+        "end": 191
+      },
+      {
+        "label": "PERSON",
+        "start": 193,
+        "end": 197
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 205,
+        "end": 216
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 205,
+        "end": 216
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "PERSON",
+        "start": 250,
+        "end": 267
+      },
+      {
+        "label": "PERSON",
+        "start": 269,
+        "end": 273
+      },
+      {
+        "label": "PERSON",
+        "start": 275,
+        "end": 279
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 290,
+        "end": 302
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 323,
+        "end": 330
+      }
+    ],
+    "ms": 45.27200001757592
+  },
+  "data/raw/health_report_033.txt": {
+    "spans": [
+      {
+        "label": "ORGANIZATION",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 40,
+        "end": 56
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 61,
+        "end": 79
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 104,
+        "end": 114
+      },
+      {
+        "label": "PERSON",
+        "start": 136,
+        "end": 147
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 157,
+        "end": 168
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 157,
+        "end": 168
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 157,
+        "end": 168
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 157,
+        "end": 168
+      },
+      {
+        "label": "PERSON",
+        "start": 169,
+        "end": 174
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 176,
+        "end": 203
+      },
+      {
+        "label": "URL",
+        "start": 189,
+        "end": 203
+      },
+      {
+        "label": "PERSON",
+        "start": 243,
+        "end": 257
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 275,
+        "end": 286
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 275,
+        "end": 286
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 297,
+        "end": 308
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 297,
+        "end": 308
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 411,
+        "end": 424
+      },
+      {
+        "label": "PERSON",
+        "start": 446,
+        "end": 456
+      }
+    ],
+    "ms": 54.00539992842823
+  },
+  "data/raw/health_report_036.txt": {
+    "spans": [
+      {
+        "label": "ORGANIZATION",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 40,
+        "end": 64
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 74,
+        "end": 80
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 87,
+        "end": 101
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 147,
+        "end": 164
+      },
+      {
+        "label": "UK_NHS",
+        "start": 152,
+        "end": 164
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 172,
+        "end": 202
+      },
+      {
+        "label": "URL",
+        "start": 187,
+        "end": 202
+      },
+      {
+        "label": "LOCATION",
+        "start": 227,
+        "end": 240
+      },
+      {
+        "label": "LOCATION",
+        "start": 255,
+        "end": 268
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 277,
+        "end": 288
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 277,
+        "end": 288
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 277,
+        "end": 288
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 277,
+        "end": 288
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 391,
+        "end": 405
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 421,
+        "end": 426
+      }
+    ],
+    "ms": 52.071699989028275
+  },
+  "data/raw/health_report_040.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 52,
+        "end": 60
+      },
+      {
+        "label": "PERSON",
+        "start": 82,
+        "end": 95
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 103,
+        "end": 114
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 103,
+        "end": 114
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 103,
+        "end": 114
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 122,
+        "end": 145
+      },
+      {
+        "label": "URL",
+        "start": 134,
+        "end": 145
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 146,
+        "end": 158
+      },
+      {
+        "label": "LOCATION",
+        "start": 176,
+        "end": 183
+      },
+      {
+        "label": "LOCATION",
+        "start": 185,
+        "end": 198
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 225,
+        "end": 236
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 225,
+        "end": 236
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 245,
+        "end": 256
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 245,
+        "end": 256
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 245,
+        "end": 256
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 245,
+        "end": 256
+      },
+      {
+        "label": "PERSON",
+        "start": 258,
+        "end": 275
+      },
+      {
+        "label": "PERSON",
+        "start": 277,
+        "end": 281
+      },
+      {
+        "label": "PERSON",
+        "start": 283,
+        "end": 287
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 298,
+        "end": 309
+      }
+    ],
+    "ms": 58.18229995202273
+  },
+  "data/raw/health_report_044.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 39,
+        "end": 53
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 88,
+        "end": 101
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 134,
+        "end": 151
+      },
+      {
+        "label": "UK_NHS",
+        "start": 139,
+        "end": 151
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 159,
+        "end": 185
+      },
+      {
+        "label": "URL",
+        "start": 174,
+        "end": 185
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 214,
+        "end": 225
+      },
+      {
+        "label": "LOCATION",
+        "start": 227,
+        "end": 240
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 246,
+        "end": 257
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 246,
+        "end": 257
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 246,
+        "end": 257
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 316,
+        "end": 319
+      },
+      {
+        "label": "PERSON",
+        "start": 343,
+        "end": 350
+      }
+    ],
+    "ms": 55.202600080519915
+  },
+  "data/raw/health_report_045.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 49,
+        "end": 63
+      },
+      {
+        "label": "PERSON",
+        "start": 80,
+        "end": 88
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 109,
+        "end": 126
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 134,
+        "end": 157
+      },
+      {
+        "label": "URL",
+        "start": 148,
+        "end": 157
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 158,
+        "end": 170
+      },
+      {
+        "label": "LOCATION",
+        "start": 200,
+        "end": 208
+      },
+      {
+        "label": "LOCATION",
+        "start": 210,
+        "end": 223
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 224,
+        "end": 227
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 230,
+        "end": 241
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 230,
+        "end": 241
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 246,
+        "end": 257
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 246,
+        "end": 257
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 263,
+        "end": 274
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 263,
+        "end": 274
+      },
+      {
+        "label": "PERSON",
+        "start": 295,
+        "end": 299
+      },
+      {
+        "label": "PERSON",
+        "start": 301,
+        "end": 305
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 316,
+        "end": 330
+      },
+      {
+        "label": "PERSON",
+        "start": 351,
+        "end": 355
+      }
+    ],
+    "ms": 62.069499981589615
+  },
+  "data/raw/health_report_046.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 43,
+        "end": 55
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 72,
+        "end": 78
+      },
+      {
+        "label": "PERSON",
+        "start": 93,
+        "end": 116
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 118,
+        "end": 135
+      },
+      {
+        "label": "PERSON",
+        "start": 173,
+        "end": 178
+      },
+      {
+        "label": "PERSON",
+        "start": 180,
+        "end": 203
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 192,
+        "end": 203
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 192,
+        "end": 203
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 257,
+        "end": 260
+      }
+    ],
+    "ms": 53.02469991147518
+  },
+  "data/raw/health_report_051.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 39,
+        "end": 49
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 70,
+        "end": 106
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 124,
+        "end": 141
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 149,
+        "end": 177
+      },
+      {
+        "label": "URL",
+        "start": 162,
+        "end": 177
+      },
+      {
+        "label": "LOCATION",
+        "start": 218,
+        "end": 231
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 254,
+        "end": 265
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 254,
+        "end": 265
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 254,
+        "end": 265
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 254,
+        "end": 265
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 324,
+        "end": 327
+      },
+      {
+        "label": "PERSON",
+        "start": 342,
+        "end": 349
+      }
+    ],
+    "ms": 59.78000001050532
+  },
+  "data/raw/health_report_053.txt": {
+    "spans": [
+      {
+        "label": "ORGANIZATION",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 40,
+        "end": 67
+      },
+      {
+        "label": "PERSON",
+        "start": 69,
+        "end": 79
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 73,
+        "end": 79
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 86,
+        "end": 101
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 143,
+        "end": 160
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 152,
+        "end": 160
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 168,
+        "end": 192
+      },
+      {
+        "label": "URL",
+        "start": 181,
+        "end": 192
+      },
+      {
+        "label": "LOCATION",
+        "start": 231,
+        "end": 239
+      },
+      {
+        "label": "LOCATION",
+        "start": 241,
+        "end": 254
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 263,
+        "end": 274
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 263,
+        "end": 274
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 377,
+        "end": 392
+      }
+    ],
+    "ms": 61.118400073610246
+  },
+  "data/raw/health_report_057.txt": {
+    "spans": [
+      {
+        "label": "ORGANIZATION",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 40,
+        "end": 71
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 77,
+        "end": 83
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 93,
+        "end": 101
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 117,
+        "end": 120
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 137,
+        "end": 148
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 137,
+        "end": 148
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 137,
+        "end": 148
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 156,
+        "end": 181
+      },
+      {
+        "label": "URL",
+        "start": 170,
+        "end": 181
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 249,
+        "end": 260
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 249,
+        "end": 260
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 261,
+        "end": 272
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 261,
+        "end": 272
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 261,
+        "end": 272
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 375,
+        "end": 386
+      },
+      {
+        "label": "PERSON",
+        "start": 406,
+        "end": 419
+      }
+    ],
+    "ms": 64.1589000588283
+  },
+  "data/raw/health_report_062.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 46,
+        "end": 54
+      },
+      {
+        "label": "PERSON",
+        "start": 55,
+        "end": 64
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 70,
+        "end": 76
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 101,
+        "end": 115
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 117,
+        "end": 134
+      },
+      {
+        "label": "LOCATION",
+        "start": 167,
+        "end": 179
+      },
+      {
+        "label": "LOCATION",
+        "start": 181,
+        "end": 186
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 207,
+        "end": 218
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 207,
+        "end": 218
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 207,
+        "end": 218
+      },
+      {
+        "label": "PERSON",
+        "start": 220,
+        "end": 227
+      },
+      {
+        "label": "PERSON",
+        "start": 242,
+        "end": 268
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 270,
+        "end": 281
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 270,
+        "end": 281
+      }
+    ],
+    "ms": 40.922699961811304
+  },
+  "data/raw/health_report_065.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 46,
+        "end": 59
+      },
+      {
+        "label": "PERSON",
+        "start": 60,
+        "end": 69
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 75,
+        "end": 80
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 118,
+        "end": 129
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 118,
+        "end": 129
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 118,
+        "end": 129
+      },
+      {
+        "label": "PERSON",
+        "start": 163,
+        "end": 173
+      },
+      {
+        "label": "PERSON",
+        "start": 175,
+        "end": 179
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 185,
+        "end": 196
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 185,
+        "end": 196
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 185,
+        "end": 196
+      },
+      {
+        "label": "PERSON",
+        "start": 198,
+        "end": 205
+      },
+      {
+        "label": "PERSON",
+        "start": 220,
+        "end": 245
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "PERSON",
+        "start": 285,
+        "end": 292
+      }
+    ],
+    "ms": 41.09650000464171
+  },
+  "data/raw/health_report_066.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 46,
+        "end": 54
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 71,
+        "end": 77
+      },
+      {
+        "label": "PERSON",
+        "start": 103,
+        "end": 120
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 103,
+        "end": 120
+      },
+      {
+        "label": "LOCATION",
+        "start": 150,
+        "end": 155
+      },
+      {
+        "label": "LOCATION",
+        "start": 157,
+        "end": 162
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 168,
+        "end": 179
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 168,
+        "end": 179
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 168,
+        "end": 179
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 168,
+        "end": 179
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 233,
+        "end": 236
+      },
+      {
+        "label": "PERSON",
+        "start": 255,
+        "end": 263
+      }
+    ],
+    "ms": 40.25960003491491
+  },
+  "data/raw/health_report_073.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 43,
+        "end": 55
+      },
+      {
+        "label": "PERSON",
+        "start": 56,
+        "end": 65
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 71,
+        "end": 77
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 113,
+        "end": 130
+      },
+      {
+        "label": "LOCATION",
+        "start": 165,
+        "end": 170
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 183,
+        "end": 194
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 183,
+        "end": 194
+      },
+      {
+        "label": "PERSON",
+        "start": 196,
+        "end": 203
+      },
+      {
+        "label": "PERSON",
+        "start": 218,
+        "end": 246
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 248,
+        "end": 259
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 248,
+        "end": 259
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 284,
+        "end": 291
+      }
+    ],
+    "ms": 50.888200057670474
+  },
+  "data/raw/health_report_075.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 39,
+        "end": 47
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 68,
+        "end": 94
+      },
+      {
+        "label": "PERSON",
+        "start": 96,
+        "end": 109
+      },
+      {
+        "label": "PERSON",
+        "start": 111,
+        "end": 128
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 111,
+        "end": 128
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 136,
+        "end": 162
+      },
+      {
+        "label": "URL",
+        "start": 151,
+        "end": 162
+      },
+      {
+        "label": "LOCATION",
+        "start": 210,
+        "end": 223
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 232,
+        "end": 243
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 232,
+        "end": 243
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 257,
+        "end": 268
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 257,
+        "end": 268
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 257,
+        "end": 268
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 257,
+        "end": 268
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 327,
+        "end": 330
+      }
+    ],
+    "ms": 72.62989995069802
+  },
+  "data/raw/health_report_081.txt": {
+    "spans": [
+      {
+        "label": "ORGANIZATION",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "label": "PERSON",
+        "start": 49,
+        "end": 57
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 62,
+        "end": 83
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 93,
+        "end": 99
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 106,
+        "end": 120
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 156,
+        "end": 173
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 181,
+        "end": 206
+      },
+      {
+        "label": "URL",
+        "start": 195,
+        "end": 206
+      },
+      {
+        "label": "PERSON",
+        "start": 232,
+        "end": 252
+      },
+      {
+        "label": "LOCATION",
+        "start": 254,
+        "end": 260
+      },
+      {
+        "label": "PERSON",
+        "start": 262,
+        "end": 266
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 275,
+        "end": 286
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 275,
+        "end": 286
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 275,
+        "end": 286
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 300,
+        "end": 311
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 300,
+        "end": 311
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 300,
+        "end": 311
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 414,
+        "end": 428
+      },
+      {
+        "label": "PERSON",
+        "start": 444,
+        "end": 458
+      }
+    ],
+    "ms": 106.58919997513294
+  },
+  "data/raw/health_report_083.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 36,
+        "end": 51
+      },
+      {
+        "label": "PERSON",
+        "start": 108,
+        "end": 124
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 132,
+        "end": 143
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 132,
+        "end": 143
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 132,
+        "end": 143
+      },
+      {
+        "label": "URL",
+        "start": 151,
+        "end": 162
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 151,
+        "end": 183
+      },
+      {
+        "label": "URL",
+        "start": 168,
+        "end": 183
+      },
+      {
+        "label": "LOCATION",
+        "start": 222,
+        "end": 235
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 262,
+        "end": 273
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 262,
+        "end": 273
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 262,
+        "end": 273
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 332,
+        "end": 335
+      }
+    ],
+    "ms": 68.22190003003925
+  },
+  "data/raw/health_report_089.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 39,
+        "end": 51
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 125,
+        "end": 136
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 125,
+        "end": 136
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 125,
+        "end": 136
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 125,
+        "end": 136
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 144,
+        "end": 167
+      },
+      {
+        "label": "URL",
+        "start": 156,
+        "end": 167
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 198,
+        "end": 203
+      },
+      {
+        "label": "PERSON",
+        "start": 205,
+        "end": 228
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 217,
+        "end": 228
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 217,
+        "end": 228
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 236,
+        "end": 247
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 236,
+        "end": 247
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 306,
+        "end": 309
+      },
+      {
+        "label": "PERSON",
+        "start": 324,
+        "end": 342
+      }
+    ],
+    "ms": 75.95450000371784
+  },
+  "data/raw/health_report_092.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 39,
+        "end": 53
+      },
+      {
+        "label": "PERSON",
+        "start": 74,
+        "end": 88
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 93,
+        "end": 106
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 137,
+        "end": 148
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 137,
+        "end": 148
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 137,
+        "end": 148
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 156,
+        "end": 186
+      },
+      {
+        "label": "URL",
+        "start": 175,
+        "end": 186
+      },
+      {
+        "label": "LOCATION",
+        "start": 214,
+        "end": 219
+      },
+      {
+        "label": "LOCATION",
+        "start": 221,
+        "end": 226
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 235,
+        "end": 246
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 235,
+        "end": 246
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 260,
+        "end": 271
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 260,
+        "end": 271
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 260,
+        "end": 271
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 330,
+        "end": 333
+      }
+    ],
+    "ms": 65.55439997464418
+  },
+  "data/raw/health_report_095.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 46,
+        "end": 60
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 77,
+        "end": 83
+      },
+      {
+        "label": "PERSON",
+        "start": 93,
+        "end": 99
+      },
+      {
+        "label": "PERSON",
+        "start": 101,
+        "end": 118
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 120,
+        "end": 137
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 129,
+        "end": 137
+      },
+      {
+        "label": "LOCATION",
+        "start": 171,
+        "end": 178
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 180,
+        "end": 193
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 194,
+        "end": 205
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 194,
+        "end": 205
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 194,
+        "end": 205
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 259,
+        "end": 262
+      },
+      {
+        "label": "PERSON",
+        "start": 281,
+        "end": 285
+      },
+      {
+        "label": "PERSON",
+        "start": 287,
+        "end": 305
+      }
+    ],
+    "ms": 58.57510003261268
+  },
+  "data/raw/health_report_100.txt": {
+    "spans": [
+      {
+        "label": "ORGANIZATION",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 40,
+        "end": 72
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 78,
+        "end": 84
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 94,
+        "end": 102
+      },
+      {
+        "label": "PERSON",
+        "start": 124,
+        "end": 141
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 151,
+        "end": 162
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 151,
+        "end": 162
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 151,
+        "end": 162
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 151,
+        "end": 162
+      },
+      {
+        "label": "URL",
+        "start": 170,
+        "end": 182
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 170,
+        "end": 198
+      },
+      {
+        "label": "URL",
+        "start": 184,
+        "end": 198
+      },
+      {
+        "label": "LOCATION",
+        "start": 250,
+        "end": 255
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 264,
+        "end": 275
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 264,
+        "end": 275
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 264,
+        "end": 275
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 264,
+        "end": 275
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 378,
+        "end": 389
+      },
+      {
+        "label": "PERSON",
+        "start": 411,
+        "end": 421
+      }
+    ],
+    "ms": 78.67319998331368
+  },
+  "data/raw/health_report_101.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 46,
+        "end": 58
+      },
+      {
+        "label": "PERSON",
+        "start": 59,
+        "end": 68
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 74,
+        "end": 80
+      },
+      {
+        "label": "PERSON",
+        "start": 95,
+        "end": 118
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 120,
+        "end": 131
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 120,
+        "end": 131
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 120,
+        "end": 131
+      },
+      {
+        "label": "PERSON",
+        "start": 145,
+        "end": 162
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 188,
+        "end": 199
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 188,
+        "end": 199
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 188,
+        "end": 199
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 188,
+        "end": 199
+      },
+      {
+        "label": "PERSON",
+        "start": 201,
+        "end": 208
+      },
+      {
+        "label": "PERSON",
+        "start": 223,
+        "end": 252
+      },
+      {
+        "label": "PERSON",
+        "start": 257,
+        "end": 268
+      }
+    ],
+    "ms": 58.1874999916181
+  },
+  "data/raw/health_report_103.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 49,
+        "end": 61
+      },
+      {
+        "label": "PERSON",
+        "start": 78,
+        "end": 82
+      },
+      {
+        "label": "PERSON",
+        "start": 84,
+        "end": 98
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 106,
+        "end": 117
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 106,
+        "end": 117
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 106,
+        "end": 117
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 125,
+        "end": 143
+      },
+      {
+        "label": "URL",
+        "start": 134,
+        "end": 143
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 144,
+        "end": 156
+      },
+      {
+        "label": "PERSON",
+        "start": 182,
+        "end": 186
+      },
+      {
+        "label": "PERSON",
+        "start": 188,
+        "end": 192
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 201,
+        "end": 212
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 201,
+        "end": 212
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 201,
+        "end": 212
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 224,
+        "end": 235
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 224,
+        "end": 235
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 224,
+        "end": 235
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 224,
+        "end": 235
+      },
+      {
+        "label": "PERSON",
+        "start": 237,
+        "end": 254
+      },
+      {
+        "label": "PERSON",
+        "start": 256,
+        "end": 260
+      },
+      {
+        "label": "PERSON",
+        "start": 262,
+        "end": 266
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 277,
+        "end": 289
+      },
+      {
+        "label": "PERSON",
+        "start": 315,
+        "end": 336
+      }
+    ],
+    "ms": 65.3029999230057
+  },
+  "data/raw/hr_intake_001.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 42,
+        "end": 56
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 77,
+        "end": 83
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 101,
+        "end": 121
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 123,
+        "end": 134
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 123,
+        "end": 134
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 123,
+        "end": 134
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 150,
+        "end": 173
+      },
+      {
+        "label": "URL",
+        "start": 162,
+        "end": 173
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 210,
+        "end": 215
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 230,
+        "end": 241
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 230,
+        "end": 241
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 252,
+        "end": 263
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 252,
+        "end": 263
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 252,
+        "end": 263
+      },
+      {
+        "label": "PERSON",
+        "start": 321,
+        "end": 337
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 353,
+        "end": 370
+      }
+    ],
+    "ms": 55.01370003912598
+  },
+  "data/raw/hr_intake_005.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 42,
+        "end": 55
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 73,
+        "end": 107
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 76,
+        "end": 82
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 128,
+        "end": 145
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 141,
+        "end": 145
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 161,
+        "end": 190
+      },
+      {
+        "label": "URL",
+        "start": 179,
+        "end": 190
+      },
+      {
+        "label": "LOCATION",
+        "start": 212,
+        "end": 224
+      },
+      {
+        "label": "LOCATION",
+        "start": 226,
+        "end": 231
+      },
+      {
+        "label": "LOCATION",
+        "start": 233,
+        "end": 238
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 259,
+        "end": 270
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 259,
+        "end": 270
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 259,
+        "end": 270
+      },
+      {
+        "label": "PERSON",
+        "start": 322,
+        "end": 346
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 348,
+        "end": 365
+      }
+    ],
+    "ms": 48.05019998457283
+  },
+  "data/raw/hr_intake_012.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 32,
+        "end": 43
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 58,
+        "end": 64
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 103,
+        "end": 114
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 103,
+        "end": 114
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 103,
+        "end": 114
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 103,
+        "end": 114
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 122,
+        "end": 150
+      },
+      {
+        "label": "URL",
+        "start": 136,
+        "end": 150
+      },
+      {
+        "label": "LOCATION",
+        "start": 177,
+        "end": 182
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 196,
+        "end": 207
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 196,
+        "end": 207
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 196,
+        "end": 207
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 208,
+        "end": 225
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 214,
+        "end": 225
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 214,
+        "end": 225
+      },
+      {
+        "label": "PERSON",
+        "start": 226,
+        "end": 235
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "PERSON",
+        "start": 316,
+        "end": 326
+      }
+    ],
+    "ms": 47.18399990815669
+  },
+  "data/raw/hr_intake_017.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 39,
+        "end": 55
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 76,
+        "end": 82
+      },
+      {
+        "label": "PERSON",
+        "start": 100,
+        "end": 118
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 120,
+        "end": 131
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 120,
+        "end": 131
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 120,
+        "end": 131
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 147,
+        "end": 169
+      },
+      {
+        "label": "URL",
+        "start": 158,
+        "end": 169
+      },
+      {
+        "label": "PERSON",
+        "start": 197,
+        "end": 209
+      },
+      {
+        "label": "LOCATION",
+        "start": 211,
+        "end": 215
+      },
+      {
+        "label": "LOCATION",
+        "start": 217,
+        "end": 222
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 231,
+        "end": 242
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 231,
+        "end": 242
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 324,
+        "end": 341
+      }
+    ],
+    "ms": 42.66969999298453
+  },
+  "data/raw/hr_intake_018.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 42,
+        "end": 54
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 75,
+        "end": 81
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 120,
+        "end": 137
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 153,
+        "end": 183
+      },
+      {
+        "label": "URL",
+        "start": 168,
+        "end": 183
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 184,
+        "end": 199
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 218,
+        "end": 230
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 232,
+        "end": 256
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 257,
+        "end": 268
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 257,
+        "end": 268
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 257,
+        "end": 268
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 344,
+        "end": 355
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 344,
+        "end": 355
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 344,
+        "end": 355
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 344,
+        "end": 355
+      }
+    ],
+    "ms": 43.74250001274049
+  },
+  "data/raw/hr_intake_020.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 36,
+        "end": 48
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 62,
+        "end": 68
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 80,
+        "end": 87
+      },
+      {
+        "label": "PERSON",
+        "start": 89,
+        "end": 107
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 109,
+        "end": 126
+      },
+      {
+        "label": "LOCATION",
+        "start": 170,
+        "end": 183
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 192,
+        "end": 203
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 192,
+        "end": 203
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 248,
+        "end": 254
+      },
+      {
+        "label": "PERSON",
+        "start": 309,
+        "end": 320
+      }
+    ],
+    "ms": 50.222599995322526
+  },
+  "data/raw/hr_intake_021.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 44,
+        "end": 54
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 107,
+        "end": 118
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 107,
+        "end": 118
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 107,
+        "end": 118
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 107,
+        "end": 118
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 126,
+        "end": 149
+      },
+      {
+        "label": "URL",
+        "start": 138,
+        "end": 149
+      },
+      {
+        "label": "LOCATION",
+        "start": 183,
+        "end": 208
+      },
+      {
+        "label": "PERSON",
+        "start": 210,
+        "end": 219
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "PERSON",
+        "start": 303,
+        "end": 307
+      },
+      {
+        "label": "PERSON",
+        "start": 309,
+        "end": 322
+      }
+    ],
+    "ms": 51.42359994351864
+  },
+  "data/raw/hr_intake_023.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 44,
+        "end": 54
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 71,
+        "end": 77
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 107,
+        "end": 118
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 107,
+        "end": 118
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 107,
+        "end": 118
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 107,
+        "end": 118
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 126,
+        "end": 153
+      },
+      {
+        "label": "URL",
+        "start": 139,
+        "end": 153
+      },
+      {
+        "label": "LOCATION",
+        "start": 194,
+        "end": 207
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 234,
+        "end": 245
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 234,
+        "end": 245
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 234,
+        "end": 245
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 296,
+        "end": 305
+      }
+    ],
+    "ms": 58.5222999798134
+  },
+  "data/raw/hr_intake_024.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 32,
+        "end": 41
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 56,
+        "end": 62
+      },
+      {
+        "label": "PERSON",
+        "start": 87,
+        "end": 91
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 99,
+        "end": 116
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 108,
+        "end": 116
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 124,
+        "end": 151
+      },
+      {
+        "label": "URL",
+        "start": 140,
+        "end": 151
+      },
+      {
+        "label": "PERSON",
+        "start": 165,
+        "end": 182
+      },
+      {
+        "label": "LOCATION",
+        "start": 197,
+        "end": 210
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 218,
+        "end": 229
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 218,
+        "end": 229
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 218,
+        "end": 229
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 235,
+        "end": 246
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 235,
+        "end": 246
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 235,
+        "end": 246
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 252,
+        "end": 263
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 252,
+        "end": 263
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 252,
+        "end": 263
+      },
+      {
+        "label": "PERSON",
+        "start": 331,
+        "end": 344
+      }
+    ],
+    "ms": 68.38660000357777
+  },
+  "data/raw/hr_intake_031.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 39,
+        "end": 52
+      },
+      {
+        "label": "PERSON",
+        "start": 83,
+        "end": 108
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 110,
+        "end": 127
+      },
+      {
+        "label": "PERSON",
+        "start": 163,
+        "end": 167
+      },
+      {
+        "label": "PERSON",
+        "start": 169,
+        "end": 173
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 178,
+        "end": 189
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 178,
+        "end": 189
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 178,
+        "end": 189
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 234,
+        "end": 240
+      },
+      {
+        "label": "PERSON",
+        "start": 263,
+        "end": 277
+      }
+    ],
+    "ms": 164.68360007274896
+  },
+  "data/raw/hr_intake_034.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 39,
+        "end": 51
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 72,
+        "end": 78
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 120,
+        "end": 137
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 153,
+        "end": 171
+      },
+      {
+        "label": "URL",
+        "start": 162,
+        "end": 171
+      },
+      {
+        "label": "LOCATION",
+        "start": 223,
+        "end": 236
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "PERSON",
+        "start": 256,
+        "end": 265
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 267,
+        "end": 278
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 267,
+        "end": 278
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 355,
+        "end": 372
+      }
+    ],
+    "ms": 66.05959997978061
+  },
+  "data/raw/hr_intake_039.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 36,
+        "end": 52
+      },
+      {
+        "label": "PERSON",
+        "start": 63,
+        "end": 73
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 67,
+        "end": 73
+      },
+      {
+        "label": "PERSON",
+        "start": 90,
+        "end": 103
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "LOCATION",
+        "start": 165,
+        "end": 178
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 187,
+        "end": 198
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 187,
+        "end": 198
+      },
+      {
+        "label": "PERSON",
+        "start": 199,
+        "end": 208
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 210,
+        "end": 221
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 210,
+        "end": 221
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 266,
+        "end": 272
+      },
+      {
+        "label": "LOCATION",
+        "start": 291,
+        "end": 297
+      },
+      {
+        "label": "PERSON",
+        "start": 299,
+        "end": 317
+      },
+      {
+        "label": "PERSON",
+        "start": 319,
+        "end": 326
+      },
+      {
+        "label": "PERSON",
+        "start": 328,
+        "end": 338
+      }
+    ],
+    "ms": 42.10409999359399
+  },
+  "data/raw/hr_intake_041.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 34,
+        "end": 45
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 63,
+        "end": 69
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 100,
+        "end": 117
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 125,
+        "end": 151
+      },
+      {
+        "label": "URL",
+        "start": 137,
+        "end": 151
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 152,
+        "end": 164
+      },
+      {
+        "label": "LOCATION",
+        "start": 192,
+        "end": 205
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 211,
+        "end": 222
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 211,
+        "end": 222
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 211,
+        "end": 222
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 223,
+        "end": 240
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 229,
+        "end": 240
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 229,
+        "end": 240
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 246,
+        "end": 257
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 246,
+        "end": 257
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 246,
+        "end": 257
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 304,
+        "end": 314
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 319,
+        "end": 330
+      }
+    ],
+    "ms": 70.58240007609129
+  },
+  "data/raw/hr_intake_047.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 44,
+        "end": 56
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 72,
+        "end": 78
+      },
+      {
+        "label": "PERSON",
+        "start": 95,
+        "end": 114
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 116,
+        "end": 127
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 116,
+        "end": 127
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 116,
+        "end": 127
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 135,
+        "end": 158
+      },
+      {
+        "label": "URL",
+        "start": 149,
+        "end": 158
+      },
+      {
+        "label": "PERSON",
+        "start": 172,
+        "end": 189
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 191,
+        "end": 203
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 216,
+        "end": 227
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 216,
+        "end": 227
+      },
+      {
+        "label": "PERSON",
+        "start": 263,
+        "end": 288
+      },
+      {
+        "label": "PERSON",
+        "start": 297,
+        "end": 304
+      }
+    ],
+    "ms": 129.91160003002733
+  },
+  "data/raw/hr_intake_049.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 39,
+        "end": 48
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 63,
+        "end": 69
+      },
+      {
+        "label": "PERSON",
+        "start": 81,
+        "end": 98
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "label": "PERSON",
+        "start": 124,
+        "end": 141
+      },
+      {
+        "label": "LOCATION",
+        "start": 143,
+        "end": 168
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 184,
+        "end": 195
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 184,
+        "end": 195
+      },
+      {
+        "label": "PERSON",
+        "start": 196,
+        "end": 205
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 207,
+        "end": 218
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 207,
+        "end": 218
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 207,
+        "end": 218
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 263,
+        "end": 269
+      },
+      {
+        "label": "PERSON",
+        "start": 288,
+        "end": 296
+      },
+      {
+        "label": "PERSON",
+        "start": 298,
+        "end": 317
+      },
+      {
+        "label": "PERSON",
+        "start": 323,
+        "end": 339
+      }
+    ],
+    "ms": 81.43960009329021
+  },
+  "data/raw/hr_intake_050.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 42,
+        "end": 54
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 75,
+        "end": 81
+      },
+      {
+        "label": "PERSON",
+        "start": 106,
+        "end": 111
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 120,
+        "end": 131
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 120,
+        "end": 131
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 120,
+        "end": 131
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 120,
+        "end": 131
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 147,
+        "end": 172
+      },
+      {
+        "label": "URL",
+        "start": 161,
+        "end": 172
+      },
+      {
+        "label": "LOCATION",
+        "start": 193,
+        "end": 206
+      },
+      {
+        "label": "LOCATION",
+        "start": 208,
+        "end": 223
+      },
+      {
+        "label": "LOCATION",
+        "start": 225,
+        "end": 230
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 239,
+        "end": 250
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 239,
+        "end": 250
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 312,
+        "end": 333
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 335,
+        "end": 352
+      }
+    ],
+    "ms": 45.46850000042468
+  },
+  "data/raw/hr_intake_052.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 34,
+        "end": 44
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 62,
+        "end": 68
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 81,
+        "end": 87
+      },
+      {
+        "label": "PERSON",
+        "start": 89,
+        "end": 107
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 109,
+        "end": 126
+      },
+      {
+        "label": "UK_NHS",
+        "start": 114,
+        "end": 126
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 122,
+        "end": 126
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 134,
+        "end": 158
+      },
+      {
+        "label": "URL",
+        "start": 149,
+        "end": 158
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 159,
+        "end": 171
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 192,
+        "end": 203
+      },
+      {
+        "label": "LOCATION",
+        "start": 205,
+        "end": 218
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 227,
+        "end": 238
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 227,
+        "end": 238
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 245,
+        "end": 256
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 245,
+        "end": 256
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 303,
+        "end": 313
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 318,
+        "end": 328
+      }
+    ],
+    "ms": 47.00649995356798
+  },
+  "data/raw/hr_intake_054.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 44,
+        "end": 57
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 74,
+        "end": 80
+      },
+      {
+        "label": "PERSON",
+        "start": 113,
+        "end": 130
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 113,
+        "end": 130
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 138,
+        "end": 165
+      },
+      {
+        "label": "URL",
+        "start": 154,
+        "end": 165
+      },
+      {
+        "label": "LOCATION",
+        "start": 193,
+        "end": 201
+      },
+      {
+        "label": "LOCATION",
+        "start": 203,
+        "end": 216
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 225,
+        "end": 236
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 225,
+        "end": 236
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 225,
+        "end": 236
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 225,
+        "end": 236
+      },
+      {
+        "label": "LOCATION",
+        "start": 309,
+        "end": 315
+      }
+    ],
+    "ms": 59.011599980294704
+  },
+  "data/raw/hr_intake_055.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 44,
+        "end": 54
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 71,
+        "end": 77
+      },
+      {
+        "label": "PERSON",
+        "start": 96,
+        "end": 111
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 113,
+        "end": 130
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 138,
+        "end": 165
+      },
+      {
+        "label": "URL",
+        "start": 154,
+        "end": 165
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 178,
+        "end": 203
+      },
+      {
+        "label": "LOCATION",
+        "start": 205,
+        "end": 212
+      },
+      {
+        "label": "PERSON",
+        "start": 214,
+        "end": 223
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "PERSON",
+        "start": 240,
+        "end": 249
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 251,
+        "end": 262
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 251,
+        "end": 262
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 251,
+        "end": 262
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 251,
+        "end": 262
+      },
+      {
+        "label": "PERSON",
+        "start": 304,
+        "end": 326
+      }
+    ],
+    "ms": 105.66430003382266
+  },
+  "data/raw/hr_intake_056.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 29,
+        "end": 41
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 56,
+        "end": 62
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 103,
+        "end": 114
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 103,
+        "end": 114
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 103,
+        "end": 114
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 122,
+        "end": 144
+      },
+      {
+        "label": "URL",
+        "start": 135,
+        "end": 144
+      },
+      {
+        "label": "LOCATION",
+        "start": 185,
+        "end": 198
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 204,
+        "end": 215
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 204,
+        "end": 215
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "PERSON",
+        "start": 296,
+        "end": 307
+      }
+    ],
+    "ms": 84.6968999831006
+  },
+  "data/raw/hr_intake_058.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 42,
+        "end": 50
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 71,
+        "end": 77
+      },
+      {
+        "label": "PERSON",
+        "start": 95,
+        "end": 111
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "URL",
+        "start": 140,
+        "end": 149
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 140,
+        "end": 164
+      },
+      {
+        "label": "URL",
+        "start": 153,
+        "end": 164
+      },
+      {
+        "label": "LOCATION",
+        "start": 208,
+        "end": 215
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 230,
+        "end": 241
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 230,
+        "end": 241
+      },
+      {
+        "label": "PERSON",
+        "start": 297,
+        "end": 311
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 327,
+        "end": 344
+      }
+    ],
+    "ms": 69.2188999382779
+  },
+  "data/raw/hr_intake_059.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 44,
+        "end": 57
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 74,
+        "end": 80
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 132,
+        "end": 162
+      },
+      {
+        "label": "URL",
+        "start": 147,
+        "end": 162
+      },
+      {
+        "label": "LOCATION",
+        "start": 200,
+        "end": 213
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 222,
+        "end": 233
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 222,
+        "end": 233
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "PERSON",
+        "start": 331,
+        "end": 343
+      }
+    ],
+    "ms": 63.718599965795875
+  },
+  "data/raw/hr_intake_064.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 41,
+        "end": 56
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 72,
+        "end": 78
+      },
+      {
+        "label": "PERSON",
+        "start": 90,
+        "end": 106
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 108,
+        "end": 119
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 108,
+        "end": 119
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 108,
+        "end": 119
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 127,
+        "end": 153
+      },
+      {
+        "label": "URL",
+        "start": 142,
+        "end": 153
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 203,
+        "end": 214
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 203,
+        "end": 214
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 203,
+        "end": 214
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 203,
+        "end": 214
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "PERSON",
+        "start": 271,
+        "end": 287
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 304,
+        "end": 310
+      }
+    ],
+    "ms": 54.8903999151662
+  },
+  "data/raw/hr_intake_070.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 42,
+        "end": 55
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 76,
+        "end": 82
+      },
+      {
+        "label": "PERSON",
+        "start": 106,
+        "end": 118
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 127,
+        "end": 144
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 160,
+        "end": 181
+      },
+      {
+        "label": "URL",
+        "start": 172,
+        "end": 181
+      },
+      {
+        "label": "LOCATION",
+        "start": 232,
+        "end": 245
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 266,
+        "end": 277
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 266,
+        "end": 277
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 338,
+        "end": 360
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 362,
+        "end": 373
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 362,
+        "end": 373
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 362,
+        "end": 373
+      }
+    ],
+    "ms": 58.34809993393719
+  },
+  "data/raw/hr_intake_071.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 29,
+        "end": 43
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 58,
+        "end": 64
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 102,
+        "end": 119
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 127,
+        "end": 156
+      },
+      {
+        "label": "URL",
+        "start": 141,
+        "end": 156
+      },
+      {
+        "label": "LOCATION",
+        "start": 169,
+        "end": 185
+      },
+      {
+        "label": "LOCATION",
+        "start": 196,
+        "end": 209
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 241,
+        "end": 252
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 241,
+        "end": 252
+      }
+    ],
+    "ms": 71.51769998017699
+  },
+  "data/raw/hr_intake_074.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 34,
+        "end": 47
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 64,
+        "end": 70
+      },
+      {
+        "label": "PERSON",
+        "start": 83,
+        "end": 96
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 98,
+        "end": 115
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 123,
+        "end": 150
+      },
+      {
+        "label": "URL",
+        "start": 136,
+        "end": 150
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 151,
+        "end": 163
+      },
+      {
+        "label": "LOCATION",
+        "start": 168,
+        "end": 181
+      },
+      {
+        "label": "PERSON",
+        "start": 183,
+        "end": 188
+      },
+      {
+        "label": "PERSON",
+        "start": 190,
+        "end": 199
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 204,
+        "end": 215
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 204,
+        "end": 215
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 204,
+        "end": 215
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 224,
+        "end": 235
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 224,
+        "end": 235
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 224,
+        "end": 235
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 297,
+        "end": 310
+      },
+      {
+        "label": "PERSON",
+        "start": 331,
+        "end": 338
+      }
+    ],
+    "ms": 72.69390008877963
+  },
+  "data/raw/hr_intake_076.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 34,
+        "end": 43
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 61,
+        "end": 67
+      },
+      {
+        "label": "PERSON",
+        "start": 86,
+        "end": 97
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 105,
+        "end": 122
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 130,
+        "end": 162
+      },
+      {
+        "label": "URL",
+        "start": 148,
+        "end": 162
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 163,
+        "end": 175
+      },
+      {
+        "label": "LOCATION",
+        "start": 209,
+        "end": 214
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 223,
+        "end": 234
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 223,
+        "end": 234
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 223,
+        "end": 234
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 240,
+        "end": 251
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 240,
+        "end": 251
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 313,
+        "end": 322
+      },
+      {
+        "label": "PERSON",
+        "start": 341,
+        "end": 354
+      }
+    ],
+    "ms": 107.22180001903325
+  },
+  "data/raw/hr_intake_077.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 39,
+        "end": 52
+      },
+      {
+        "label": "PERSON",
+        "start": 53,
+        "end": 61
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 67,
+        "end": 73
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 106,
+        "end": 123
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 151,
+        "end": 156
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 175,
+        "end": 186
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 175,
+        "end": 186
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 175,
+        "end": 186
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 175,
+        "end": 186
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 231,
+        "end": 237
+      },
+      {
+        "label": "PERSON",
+        "start": 260,
+        "end": 273
+      },
+      {
+        "label": "PERSON",
+        "start": 289,
+        "end": 301
+      }
+    ],
+    "ms": 86.15809993352741
+  },
+  "data/raw/hr_intake_079.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 31,
+        "end": 43
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 61,
+        "end": 67
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 97,
+        "end": 108
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 97,
+        "end": 108
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 97,
+        "end": 108
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 97,
+        "end": 108
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 116,
+        "end": 145
+      },
+      {
+        "label": "URL",
+        "start": 130,
+        "end": 145
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 146,
+        "end": 158
+      },
+      {
+        "label": "PERSON",
+        "start": 164,
+        "end": 181
+      },
+      {
+        "label": "LOCATION",
+        "start": 192,
+        "end": 205
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 206,
+        "end": 209
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 212,
+        "end": 223
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 212,
+        "end": 223
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 212,
+        "end": 223
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 253,
+        "end": 264
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 253,
+        "end": 264
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 311,
+        "end": 321
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 323,
+        "end": 335
+      },
+      {
+        "label": "PERSON",
+        "start": 352,
+        "end": 366
+      }
+    ],
+    "ms": 98.96630002185702
+  },
+  "data/raw/hr_intake_084.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 39,
+        "end": 55
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 76,
+        "end": 82
+      },
+      {
+        "label": "PERSON",
+        "start": 105,
+        "end": 121
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 123,
+        "end": 140
+      },
+      {
+        "label": "URL",
+        "start": 156,
+        "end": 165
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 156,
+        "end": 178
+      },
+      {
+        "label": "URL",
+        "start": 169,
+        "end": 178
+      },
+      {
+        "label": "PERSON",
+        "start": 207,
+        "end": 219
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "LOCATION",
+        "start": 234,
+        "end": 247
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 256,
+        "end": 267
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 256,
+        "end": 267
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 273,
+        "end": 284
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 273,
+        "end": 284
+      },
+      {
+        "label": "LOCATION",
+        "start": 345,
+        "end": 351
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 367,
+        "end": 384
+      }
+    ],
+    "ms": 88.38799991644919
+  },
+  "data/raw/hr_intake_088.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 32,
+        "end": 40
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 55,
+        "end": 61
+      },
+      {
+        "label": "PERSON",
+        "start": 78,
+        "end": 85
+      },
+      {
+        "label": "PERSON",
+        "start": 87,
+        "end": 103
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 105,
+        "end": 122
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 130,
+        "end": 162
+      },
+      {
+        "label": "URL",
+        "start": 151,
+        "end": 162
+      },
+      {
+        "label": "PERSON",
+        "start": 172,
+        "end": 187
+      },
+      {
+        "label": "PERSON",
+        "start": 189,
+        "end": 193
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 226,
+        "end": 237
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 226,
+        "end": 237
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 226,
+        "end": 237
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 319,
+        "end": 323
+      },
+      {
+        "label": "LOCATION",
+        "start": 325,
+        "end": 334
+      }
+    ],
+    "ms": 55.34500000067055
+  },
+  "data/raw/hr_intake_093.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 41,
+        "end": 53
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 69,
+        "end": 75
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 107,
+        "end": 124
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 132,
+        "end": 154
+      },
+      {
+        "label": "URL",
+        "start": 145,
+        "end": 154
+      },
+      {
+        "label": "PERSON",
+        "start": 202,
+        "end": 225
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 214,
+        "end": 225
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 214,
+        "end": 225
+      },
+      {
+        "label": "PERSON",
+        "start": 268,
+        "end": 291
+      }
+    ],
+    "ms": 45.380700030364096
+  },
+  "data/raw/hr_intake_098.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 34,
+        "end": 44
+      },
+      {
+        "label": "PERSON",
+        "start": 84,
+        "end": 98
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 106,
+        "end": 123
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 131,
+        "end": 154
+      },
+      {
+        "label": "URL",
+        "start": 143,
+        "end": 154
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 155,
+        "end": 167
+      },
+      {
+        "label": "LOCATION",
+        "start": 189,
+        "end": 193
+      },
+      {
+        "label": "LOCATION",
+        "start": 195,
+        "end": 200
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 205,
+        "end": 216
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 205,
+        "end": 216
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 205,
+        "end": 216
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 225,
+        "end": 236
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 225,
+        "end": 236
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 317,
+        "end": 327
+      },
+      {
+        "label": "PERSON",
+        "start": 346,
+        "end": 362
+      }
+    ],
+    "ms": 96.0033000446856
+  },
+  "data/raw/vendor_invoice_000.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 41,
+        "end": 47
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 58,
+        "end": 64
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 74,
+        "end": 86
+      },
+      {
+        "label": "PERSON",
+        "start": 99,
+        "end": 113
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 115,
+        "end": 126
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 115,
+        "end": 126
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 115,
+        "end": 126
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 115,
+        "end": 126
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 134,
+        "end": 159
+      },
+      {
+        "label": "URL",
+        "start": 150,
+        "end": 159
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 173,
+        "end": 198
+      },
+      {
+        "label": "LOCATION",
+        "start": 213,
+        "end": 226
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 235,
+        "end": 246
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 235,
+        "end": 246
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 235,
+        "end": 246
+      },
+      {
+        "label": "PERSON",
+        "start": 247,
+        "end": 256
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 258,
+        "end": 269
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 258,
+        "end": 269
+      },
+      {
+        "label": "PERSON",
+        "start": 312,
+        "end": 315
+      },
+      {
+        "label": "PERSON",
+        "start": 344,
+        "end": 361
+      }
+    ],
+    "ms": 81.1895999358967
+  },
+  "data/raw/vendor_invoice_002.txt": {
+    "spans": [
+      {
+        "label": "PERSON",
+        "start": 35,
+        "end": 45
+      },
+      {
+        "label": "PERSON",
+        "start": 50,
+        "end": 54
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 79,
+        "end": 94
+      },
+      {
+        "label": "PERSON",
+        "start": 109,
+        "end": 127
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 129,
+        "end": 146
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 138,
+        "end": 146
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 154,
+        "end": 177
+      },
+      {
+        "label": "URL",
+        "start": 166,
+        "end": 177
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 178,
+        "end": 192
+      },
+      {
+        "label": "LOCATION",
+        "start": 198,
+        "end": 211
+      },
+      {
+        "label": "LOCATION",
+        "start": 213,
+        "end": 218
+      },
+      {
+        "label": "LOCATION",
+        "start": 220,
+        "end": 225
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 269,
+        "end": 280
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 269,
+        "end": 280
+      },
+      {
+        "label": "PERSON",
+        "start": 372,
+        "end": 379
+      }
+    ],
+    "ms": 70.46419999096543
+  },
+  "data/raw/vendor_invoice_003.txt": {
+    "spans": [
+      {
+        "label": "NRP",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "label": "LOCATION",
+        "start": 25,
+        "end": 32
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 37,
+        "end": 44
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 53,
+        "end": 59
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 69,
+        "end": 78
+      },
+      {
+        "label": "PERSON",
+        "start": 80,
+        "end": 85
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 92,
+        "end": 108
+      },
+      {
+        "label": "PERSON",
+        "start": 110,
+        "end": 127
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 110,
+        "end": 127
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 135,
+        "end": 159
+      },
+      {
+        "label": "URL",
+        "start": 148,
+        "end": 159
+      },
+      {
+        "label": "LOCATION",
+        "start": 200,
+        "end": 213
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 234,
+        "end": 245
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 234,
+        "end": 245
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 234,
+        "end": 245
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 255,
+        "end": 266
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 255,
+        "end": 266
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 255,
+        "end": 266
+      },
+      {
+        "label": "PERSON",
+        "start": 354,
+        "end": 368
+      }
+    ],
+    "ms": 72.03020004089922
+  },
+  "data/raw/vendor_invoice_004.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 30,
+        "end": 36
+      },
+      {
+        "label": "PERSON",
+        "start": 37,
+        "end": 49
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 54,
+        "end": 66
+      },
+      {
+        "label": "PERSON",
+        "start": 83,
+        "end": 93
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 103,
+        "end": 120
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 142,
+        "end": 164
+      },
+      {
+        "label": "LOCATION",
+        "start": 166,
+        "end": 173
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 175,
+        "end": 204
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 206,
+        "end": 217
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 206,
+        "end": 217
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 235,
+        "end": 237
+      },
+      {
+        "label": "PERSON",
+        "start": 291,
+        "end": 306
+      }
+    ],
+    "ms": 71.47049997001886
+  },
+  "data/raw/vendor_invoice_006.txt": {
+    "spans": [
+      {
+        "label": "NRP",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "label": "PERSON",
+        "start": 25,
+        "end": 36
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 41,
+        "end": 48
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 57,
+        "end": 63
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 73,
+        "end": 85
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 114,
+        "end": 125
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 114,
+        "end": 125
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 114,
+        "end": 125
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 114,
+        "end": 125
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 133,
+        "end": 161
+      },
+      {
+        "label": "URL",
+        "start": 150,
+        "end": 161
+      },
+      {
+        "label": "PERSON",
+        "start": 177,
+        "end": 193
+      },
+      {
+        "label": "PERSON",
+        "start": 195,
+        "end": 209
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 239,
+        "end": 250
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 239,
+        "end": 250
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 239,
+        "end": 250
+      },
+      {
+        "label": "PERSON",
+        "start": 342,
+        "end": 357
+      }
+    ],
+    "ms": 63.37889994028956
+  },
+  "data/raw/vendor_invoice_010.txt": {
+    "spans": [
+      {
+        "label": "NRP",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 47,
+        "end": 53
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 63,
+        "end": 73
+      },
+      {
+        "label": "PERSON",
+        "start": 87,
+        "end": 94
+      },
+      {
+        "label": "PERSON",
+        "start": 96,
+        "end": 110
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 112,
+        "end": 129
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 137,
+        "end": 165
+      },
+      {
+        "label": "URL",
+        "start": 150,
+        "end": 165
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 241,
+        "end": 252
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 241,
+        "end": 252
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 241,
+        "end": 252
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 266,
+        "end": 277
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 266,
+        "end": 277
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 266,
+        "end": 277
+      },
+      {
+        "label": "PERSON",
+        "start": 371,
+        "end": 382
+      }
+    ],
+    "ms": 63.635499915108085
+  },
+  "data/raw/vendor_invoice_011.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 49,
+        "end": 60
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 49,
+        "end": 60
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 49,
+        "end": 60
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 49,
+        "end": 60
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 70,
+        "end": 84
+      },
+      {
+        "label": "PERSON",
+        "start": 109,
+        "end": 126
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 128,
+        "end": 145
+      },
+      {
+        "label": "PERSON",
+        "start": 190,
+        "end": 206
+      },
+      {
+        "label": "LOCATION",
+        "start": 208,
+        "end": 221
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 230,
+        "end": 241
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 230,
+        "end": 241
+      },
+      {
+        "label": "PERSON",
+        "start": 332,
+        "end": 347
+      }
+    ],
+    "ms": 76.21620001737028
+  },
+  "data/raw/vendor_invoice_013.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 31,
+        "end": 37
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 52,
+        "end": 67
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 107,
+        "end": 124
+      },
+      {
+        "label": "PERSON",
+        "start": 147,
+        "end": 159
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 161,
+        "end": 166
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 178,
+        "end": 189
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 178,
+        "end": 189
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 207,
+        "end": 209
+      },
+      {
+        "label": "PERSON",
+        "start": 259,
+        "end": 263
+      },
+      {
+        "label": "PERSON",
+        "start": 265,
+        "end": 280
+      }
+    ],
+    "ms": 55.59990007895976
+  },
+  "data/raw/vendor_invoice_014.txt": {
+    "spans": [
+      {
+        "label": "NRP",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 25,
+        "end": 44
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 49,
+        "end": 55
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 65,
+        "end": 76
+      },
+      {
+        "label": "PERSON",
+        "start": 95,
+        "end": 114
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 116,
+        "end": 133
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 141,
+        "end": 165
+      },
+      {
+        "label": "URL",
+        "start": 151,
+        "end": 165
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 184,
+        "end": 200
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "PERSON",
+        "start": 328,
+        "end": 340
+      }
+    ],
+    "ms": 62.097599962726235
+  },
+  "data/raw/vendor_invoice_019.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 30,
+        "end": 36
+      },
+      {
+        "label": "PERSON",
+        "start": 37,
+        "end": 49
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 51,
+        "end": 63
+      },
+      {
+        "label": "PERSON",
+        "start": 84,
+        "end": 95
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 105,
+        "end": 122
+      },
+      {
+        "label": "LOCATION",
+        "start": 158,
+        "end": 163
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 165,
+        "end": 194
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 196,
+        "end": 207
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 196,
+        "end": 207
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 225,
+        "end": 227
+      },
+      {
+        "label": "PERSON",
+        "start": 241,
+        "end": 244
+      }
+    ],
+    "ms": 54.62099995929748
+  },
+  "data/raw/vendor_invoice_025.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 61,
+        "end": 67
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 77,
+        "end": 89
+      },
+      {
+        "label": "PERSON",
+        "start": 104,
+        "end": 117
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 119,
+        "end": 136
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 144,
+        "end": 172
+      },
+      {
+        "label": "URL",
+        "start": 157,
+        "end": 172
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 173,
+        "end": 187
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 242,
+        "end": 253
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 242,
+        "end": 253
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 261,
+        "end": 272
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 261,
+        "end": 272
+      },
+      {
+        "label": "PERSON",
+        "start": 350,
+        "end": 358
+      }
+    ],
+    "ms": 65.26639999356121
+  },
+  "data/raw/vendor_invoice_026.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 32,
+        "end": 38
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 48,
+        "end": 61
+      },
+      {
+        "label": "PERSON",
+        "start": 84,
+        "end": 98
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 112,
+        "end": 128
+      },
+      {
+        "label": "PERSON",
+        "start": 134,
+        "end": 151
+      },
+      {
+        "label": "PERSON",
+        "start": 153,
+        "end": 157
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 185,
+        "end": 196
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 185,
+        "end": 196
+      },
+      {
+        "label": "PERSON",
+        "start": 289,
+        "end": 306
+      }
+    ],
+    "ms": 61.192500055767596
+  },
+  "data/raw/vendor_invoice_035.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 31,
+        "end": 37
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 55,
+        "end": 69
+      },
+      {
+        "label": "PERSON",
+        "start": 86,
+        "end": 101
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 111,
+        "end": 128
+      },
+      {
+        "label": "PERSON",
+        "start": 150,
+        "end": 166
+      },
+      {
+        "label": "LOCATION",
+        "start": 174,
+        "end": 179
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 186,
+        "end": 197
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 186,
+        "end": 197
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 186,
+        "end": 197
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 215,
+        "end": 217
+      }
+    ],
+    "ms": 60.96149992663413
+  },
+  "data/raw/vendor_invoice_037.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 31,
+        "end": 37
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 55,
+        "end": 64
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 107,
+        "end": 124
+      },
+      {
+        "label": "PERSON",
+        "start": 161,
+        "end": 177
+      },
+      {
+        "label": "LOCATION",
+        "start": 179,
+        "end": 192
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 199,
+        "end": 210
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 199,
+        "end": 210
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 228,
+        "end": 230
+      }
+    ],
+    "ms": 62.25580000318587
+  },
+  "data/raw/vendor_invoice_038.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 33,
+        "end": 39
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 40,
+        "end": 51
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 40,
+        "end": 51
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 61,
+        "end": 71
+      },
+      {
+        "label": "PERSON",
+        "start": 94,
+        "end": 112
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 114,
+        "end": 125
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 114,
+        "end": 125
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 114,
+        "end": 125
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 126,
+        "end": 142
+      },
+      {
+        "label": "LOCATION",
+        "start": 168,
+        "end": 173
+      },
+      {
+        "label": "LOCATION",
+        "start": 175,
+        "end": 180
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 193,
+        "end": 204
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 193,
+        "end": 204
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 193,
+        "end": 204
+      }
+    ],
+    "ms": 62.89830000605434
+  },
+  "data/raw/vendor_invoice_042.txt": {
+    "spans": [
+      {
+        "label": "DATE_TIME",
+        "start": 45,
+        "end": 62
+      },
+      {
+        "label": "PERSON",
+        "start": 80,
+        "end": 88
+      },
+      {
+        "label": "PERSON",
+        "start": 90,
+        "end": 105
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 107,
+        "end": 118
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 107,
+        "end": 118
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 107,
+        "end": 118
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 119,
+        "end": 135
+      },
+      {
+        "label": "LOCATION",
+        "start": 155,
+        "end": 162
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 176,
+        "end": 187
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 176,
+        "end": 187
+      }
+    ],
+    "ms": 63.10629996005446
+  },
+  "data/raw/vendor_invoice_043.txt": {
+    "spans": [
+      {
+        "label": "ORGANIZATION",
+        "start": 25,
+        "end": 39
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 48,
+        "end": 54
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 61,
+        "end": 73
+      },
+      {
+        "label": "PERSON",
+        "start": 87,
+        "end": 94
+      },
+      {
+        "label": "PERSON",
+        "start": 96,
+        "end": 111
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 132,
+        "end": 158
+      },
+      {
+        "label": "URL",
+        "start": 149,
+        "end": 158
+      },
+      {
+        "label": "PERSON",
+        "start": 177,
+        "end": 197
+      },
+      {
+        "label": "LOCATION",
+        "start": 199,
+        "end": 204
+      },
+      {
+        "label": "LOCATION",
+        "start": 206,
+        "end": 211
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 220,
+        "end": 231
+      }
+    ],
+    "ms": 60.4174000909552
+  },
+  "data/raw/vendor_invoice_048.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 33,
+        "end": 39
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 49,
+        "end": 61
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 94,
+        "end": 105
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 94,
+        "end": 105
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 94,
+        "end": 105
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 106,
+        "end": 122
+      },
+      {
+        "label": "PERSON",
+        "start": 128,
+        "end": 145
+      },
+      {
+        "label": "LOCATION",
+        "start": 147,
+        "end": 152
+      },
+      {
+        "label": "LOCATION",
+        "start": 154,
+        "end": 159
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 181,
+        "end": 192
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 181,
+        "end": 192
+      },
+      {
+        "label": "PERSON",
+        "start": 279,
+        "end": 294
+      }
+    ],
+    "ms": 53.20679990109056
+  },
+  "data/raw/vendor_invoice_060.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 59,
+        "end": 65
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 75,
+        "end": 84
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 122,
+        "end": 139
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 147,
+        "end": 174
+      },
+      {
+        "label": "URL",
+        "start": 163,
+        "end": 174
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 175,
+        "end": 189
+      },
+      {
+        "label": "PERSON",
+        "start": 195,
+        "end": 215
+      },
+      {
+        "label": "LOCATION",
+        "start": 217,
+        "end": 222
+      },
+      {
+        "label": "LOCATION",
+        "start": 224,
+        "end": 229
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 256,
+        "end": 267
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 256,
+        "end": 267
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 256,
+        "end": 267
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 268,
+        "end": 300
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 289,
+        "end": 300
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 289,
+        "end": 300
+      },
+      {
+        "label": "PERSON",
+        "start": 301,
+        "end": 310
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 312,
+        "end": 323
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 312,
+        "end": 323
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 312,
+        "end": 323
+      },
+      {
+        "label": "PERSON",
+        "start": 367,
+        "end": 383
+      },
+      {
+        "label": "PERSON",
+        "start": 401,
+        "end": 407
+      },
+      {
+        "label": "PERSON",
+        "start": 409,
+        "end": 418
+      }
+    ],
+    "ms": 58.23570000939071
+  },
+  "data/raw/vendor_invoice_061.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 38,
+        "end": 44
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 55,
+        "end": 61
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 71,
+        "end": 79
+      },
+      {
+        "label": "PERSON",
+        "start": 92,
+        "end": 114
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 116,
+        "end": 127
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 116,
+        "end": 127
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 116,
+        "end": 127
+      },
+      {
+        "label": "URL",
+        "start": 135,
+        "end": 144
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 135,
+        "end": 163
+      },
+      {
+        "label": "URL",
+        "start": 149,
+        "end": 163
+      },
+      {
+        "label": "PERSON",
+        "start": 183,
+        "end": 195
+      },
+      {
+        "label": "LOCATION",
+        "start": 206,
+        "end": 219
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 240,
+        "end": 251
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 240,
+        "end": 251
+      }
+    ],
+    "ms": 59.0125999879092
+  },
+  "data/raw/vendor_invoice_063.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 46,
+        "end": 52
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 62,
+        "end": 71
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 105,
+        "end": 116
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 105,
+        "end": 116
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 105,
+        "end": 116
+      },
+      {
+        "label": "URL",
+        "start": 124,
+        "end": 134
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 124,
+        "end": 154
+      },
+      {
+        "label": "URL",
+        "start": 140,
+        "end": 154
+      },
+      {
+        "label": "LOCATION",
+        "start": 196,
+        "end": 211
+      },
+      {
+        "label": "LOCATION",
+        "start": 213,
+        "end": 218
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 227,
+        "end": 238
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 227,
+        "end": 238
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 227,
+        "end": 238
+      },
+      {
+        "label": "PERSON",
+        "start": 239,
+        "end": 248
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "PERSON",
+        "start": 321,
+        "end": 347
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 349,
+        "end": 358
+      },
+      {
+        "label": "PERSON",
+        "start": 360,
+        "end": 368
+      }
+    ],
+    "ms": 61.852100072428584
+  },
+  "data/raw/vendor_invoice_067.txt": {
+    "spans": [
+      {
+        "label": "PERSON",
+        "start": 12,
+        "end": 18
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 39,
+        "end": 45
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 56,
+        "end": 62
+      },
+      {
+        "label": "PERSON",
+        "start": 102,
+        "end": 117
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 125,
+        "end": 136
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 125,
+        "end": 136
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 125,
+        "end": 136
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 144,
+        "end": 169
+      },
+      {
+        "label": "URL",
+        "start": 158,
+        "end": 169
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 216,
+        "end": 227
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 216,
+        "end": 227
+      },
+      {
+        "label": "PERSON",
+        "start": 309,
+        "end": 316
+      }
+    ],
+    "ms": 59.654499986208975
+  },
+  "data/raw/vendor_invoice_068.txt": {
+    "spans": [
+      {
+        "label": "PERSON",
+        "start": 35,
+        "end": 45
+      },
+      {
+        "label": "PERSON",
+        "start": 50,
+        "end": 54
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 68,
+        "end": 74
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 84,
+        "end": 97
+      },
+      {
+        "label": "PERSON",
+        "start": 112,
+        "end": 131
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 133,
+        "end": 150
+      },
+      {
+        "label": "UK_NHS",
+        "start": 138,
+        "end": 150
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 158,
+        "end": 184
+      },
+      {
+        "label": "URL",
+        "start": 175,
+        "end": 184
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 185,
+        "end": 199
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 204,
+        "end": 229
+      },
+      {
+        "label": "LOCATION",
+        "start": 231,
+        "end": 235
+      },
+      {
+        "label": "LOCATION",
+        "start": 237,
+        "end": 242
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 269,
+        "end": 280
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 269,
+        "end": 280
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 269,
+        "end": 280
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 286,
+        "end": 297
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 286,
+        "end": 297
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 303,
+        "end": 314
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 303,
+        "end": 314
+      },
+      {
+        "label": "PERSON",
+        "start": 392,
+        "end": 396
+      },
+      {
+        "label": "PERSON",
+        "start": 398,
+        "end": 414
+      }
+    ],
+    "ms": 64.81489993166178
+  },
+  "data/raw/vendor_invoice_069.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 33,
+        "end": 39
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 46,
+        "end": 57
+      },
+      {
+        "label": "PERSON",
+        "start": 85,
+        "end": 92
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "label": "PERSON",
+        "start": 133,
+        "end": 149
+      },
+      {
+        "label": "PERSON",
+        "start": 151,
+        "end": 167
+      },
+      {
+        "label": "LOCATION",
+        "start": 169,
+        "end": 182
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 191,
+        "end": 202
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 191,
+        "end": 202
+      },
+      {
+        "label": "PERSON",
+        "start": 289,
+        "end": 294
+      },
+      {
+        "label": "PERSON",
+        "start": 296,
+        "end": 307
+      }
+    ],
+    "ms": 43.78149996045977
+  },
+  "data/raw/vendor_invoice_072.txt": {
+    "spans": [
+      {
+        "label": "NRP",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 50,
+        "end": 56
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 63,
+        "end": 79
+      },
+      {
+        "label": "PERSON",
+        "start": 81,
+        "end": 86
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 115,
+        "end": 126
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 115,
+        "end": 126
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 115,
+        "end": 126
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 134,
+        "end": 166
+      },
+      {
+        "label": "URL",
+        "start": 151,
+        "end": 166
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 182,
+        "end": 197
+      },
+      {
+        "label": "LOCATION",
+        "start": 207,
+        "end": 220
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 226,
+        "end": 237
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 226,
+        "end": 237
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 226,
+        "end": 237
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 325,
+        "end": 334
+      },
+      {
+        "label": "PERSON",
+        "start": 336,
+        "end": 346
+      }
+    ],
+    "ms": 46.09939991496503
+  },
+  "data/raw/vendor_invoice_078.txt": {
+    "spans": [
+      {
+        "label": "PERSON",
+        "start": 12,
+        "end": 25
+      },
+      {
+        "label": "PERSON",
+        "start": 30,
+        "end": 35
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 52,
+        "end": 58
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 69,
+        "end": 75
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 82,
+        "end": 94
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 131,
+        "end": 142
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 131,
+        "end": 142
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 131,
+        "end": 142
+      },
+      {
+        "label": "URL",
+        "start": 150,
+        "end": 159
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 150,
+        "end": 178
+      },
+      {
+        "label": "URL",
+        "start": 163,
+        "end": 178
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 188,
+        "end": 205
+      },
+      {
+        "label": "LOCATION",
+        "start": 207,
+        "end": 212
+      },
+      {
+        "label": "LOCATION",
+        "start": 214,
+        "end": 219
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 225,
+        "end": 236
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 225,
+        "end": 236
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 225,
+        "end": 236
+      },
+      {
+        "label": "PERSON",
+        "start": 279,
+        "end": 282
+      },
+      {
+        "label": "PERSON",
+        "start": 311,
+        "end": 331
+      }
+    ],
+    "ms": 44.290399993769825
+  },
+  "data/raw/vendor_invoice_080.txt": {
+    "spans": [
+      {
+        "label": "NRP",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 25,
+        "end": 40
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 49,
+        "end": 55
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 62,
+        "end": 75
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 116,
+        "end": 133
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 141,
+        "end": 169
+      },
+      {
+        "label": "URL",
+        "start": 155,
+        "end": 169
+      },
+      {
+        "label": "PERSON",
+        "start": 188,
+        "end": 208
+      },
+      {
+        "label": "LOCATION",
+        "start": 216,
+        "end": 221
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 230,
+        "end": 241
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 230,
+        "end": 241
+      },
+      {
+        "label": "PERSON",
+        "start": 242,
+        "end": 251
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 253,
+        "end": 264
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 253,
+        "end": 264
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 253,
+        "end": 264
+      }
+    ],
+    "ms": 50.33060000278056
+  },
+  "data/raw/vendor_invoice_082.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 31,
+        "end": 37
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 55,
+        "end": 65
+      },
+      {
+        "label": "PERSON",
+        "start": 82,
+        "end": 94
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 104,
+        "end": 121
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 159,
+        "end": 164
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 176,
+        "end": 187
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 176,
+        "end": 187
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 205,
+        "end": 207
+      }
+    ],
+    "ms": 41.77559993695468
+  },
+  "data/raw/vendor_invoice_085.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 33,
+        "end": 39
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 49,
+        "end": 61
+      },
+      {
+        "label": "PERSON",
+        "start": 79,
+        "end": 93
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 95,
+        "end": 112
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 113,
+        "end": 129
+      },
+      {
+        "label": "LOCATION",
+        "start": 154,
+        "end": 162
+      },
+      {
+        "label": "LOCATION",
+        "start": 164,
+        "end": 177
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 198,
+        "end": 209
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 198,
+        "end": 209
+      },
+      {
+        "label": "PERSON",
+        "start": 307,
+        "end": 317
+      }
+    ],
+    "ms": 60.83909992594272
+  },
+  "data/raw/vendor_invoice_086.txt": {
+    "spans": [
+      {
+        "label": "PERSON",
+        "start": 35,
+        "end": 47
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 76,
+        "end": 84
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 126,
+        "end": 137
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 126,
+        "end": 137
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 126,
+        "end": 137
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 145,
+        "end": 172
+      },
+      {
+        "label": "URL",
+        "start": 158,
+        "end": 172
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 192,
+        "end": 217
+      },
+      {
+        "label": "PERSON",
+        "start": 219,
+        "end": 233
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 256,
+        "end": 273
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 262,
+        "end": 273
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 262,
+        "end": 273
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 281,
+        "end": 292
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 281,
+        "end": 292
+      },
+      {
+        "label": "PERSON",
+        "start": 370,
+        "end": 380
+      }
+    ],
+    "ms": 69.78670007083565
+  },
+  "data/raw/vendor_invoice_087.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 40,
+        "end": 46
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 57,
+        "end": 63
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 73,
+        "end": 87
+      },
+      {
+        "label": "PERSON",
+        "start": 100,
+        "end": 122
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 124,
+        "end": 141
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 149,
+        "end": 175
+      },
+      {
+        "label": "URL",
+        "start": 164,
+        "end": 175
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 202,
+        "end": 213
+      },
+      {
+        "label": "LOCATION",
+        "start": 215,
+        "end": 228
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "PERSON",
+        "start": 340,
+        "end": 352
+      }
+    ],
+    "ms": 70.50159992650151
+  },
+  "data/raw/vendor_invoice_090.txt": {
+    "spans": [
+      {
+        "label": "NRP",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "label": "PERSON",
+        "start": 25,
+        "end": 35
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 40,
+        "end": 50
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 59,
+        "end": 65
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 75,
+        "end": 84
+      },
+      {
+        "label": "PERSON",
+        "start": 102,
+        "end": 112
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 120,
+        "end": 137
+      },
+      {
+        "label": "EMAIL_ADDRESS",
+        "start": 145,
+        "end": 172
+      },
+      {
+        "label": "URL",
+        "start": 161,
+        "end": 172
+      },
+      {
+        "label": "LOCATION",
+        "start": 190,
+        "end": 203
+      },
+      {
+        "label": "LOCATION",
+        "start": 213,
+        "end": 226
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 232,
+        "end": 243
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 232,
+        "end": 243
+      },
+      {
+        "label": "PERSON",
+        "start": 331,
+        "end": 341
+      }
+    ],
+    "ms": 74.84629994723946
+  },
+  "data/raw/vendor_invoice_091.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 31,
+        "end": 37
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 51,
+        "end": 62
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 51,
+        "end": 62
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 77,
+        "end": 93
+      },
+      {
+        "label": "PERSON",
+        "start": 119,
+        "end": 136
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 138,
+        "end": 149
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 138,
+        "end": 149
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 138,
+        "end": 149
+      },
+      {
+        "label": "LOCATION",
+        "start": 171,
+        "end": 186
+      },
+      {
+        "label": "PERSON",
+        "start": 196,
+        "end": 200
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 205,
+        "end": 216
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 205,
+        "end": 216
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 234,
+        "end": 236
+      },
+      {
+        "label": "PERSON",
+        "start": 293,
+        "end": 300
+      }
+    ],
+    "ms": 84.46829998865724
+  },
+  "data/raw/vendor_invoice_094.txt": {
+    "spans": [
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 33,
+        "end": 39
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 53,
+        "end": 64
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 53,
+        "end": 64
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 53,
+        "end": 64
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 74,
+        "end": 85
+      },
+      {
+        "label": "DATE_TIME",
+        "start": 123,
+        "end": 134
+      },
+      {
+        "label": "PHONE_NUMBER",
+        "start": 123,
+        "end": 134
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 123,
+        "end": 134
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 123,
+        "end": 134
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 135,
+        "end": 151
+      },
+      {
+        "label": "ORGANIZATION",
+        "start": 153,
+        "end": 170
+      },
+      {
+        "label": "PERSON",
+        "start": 172,
+        "end": 177
+      },
+      {
+        "label": "US_BANK_NUMBER",
+        "start": 193,
+        "end": 204
+      },
+      {
+        "label": "US_DRIVER_LICENSE",
+        "start": 193,
+        "end": 204
+      }
+    ],
+    "ms": 79.07290000002831
+  }
+}

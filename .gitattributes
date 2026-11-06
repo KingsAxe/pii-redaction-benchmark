@@ -1,0 +1,10 @@
+data/predictions/** text eol=lf
+results/** text eol=lf
+scripts/run_*.py text eol=lf
+scripts/runner_common.py text eol=lf
+scripts/custom_recognizers.py text eol=lf
+scripts/validate_predictions.py text eol=lf
+scripts/tune_custom_dev.py text eol=lf
+tests/test_runners.py text eol=lf
+docs/PHASE3_SPEC.md text eol=lf
+docs/STATE.md text eol=lf

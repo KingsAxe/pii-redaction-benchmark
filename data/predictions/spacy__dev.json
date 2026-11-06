@@ -1,0 +1,5752 @@
+{
+  "data/raw/health_report_007.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 36,
+        "end": 38
+      },
+      {
+        "label": "DATE",
+        "start": 39,
+        "end": 53
+      },
+      {
+        "label": "ORG",
+        "start": 74,
+        "end": 105
+      },
+      {
+        "label": "DATE",
+        "start": 136,
+        "end": 144
+      },
+      {
+        "label": "CARDINAL",
+        "start": 184,
+        "end": 186
+      },
+      {
+        "label": "ORG",
+        "start": 201,
+        "end": 206
+      },
+      {
+        "label": "PERSON",
+        "start": 208,
+        "end": 231
+      },
+      {
+        "label": "PERSON",
+        "start": 232,
+        "end": 241
+      },
+      {
+        "label": "DATE",
+        "start": 243,
+        "end": 254
+      },
+      {
+        "label": "ORG",
+        "start": 313,
+        "end": 316
+      }
+    ],
+    "ms": 34.160900046117604
+  },
+  "data/raw/health_report_008.txt": {
+    "spans": [
+      {
+        "label": "ORG",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "label": "ORG",
+        "start": 49,
+        "end": 87
+      },
+      {
+        "label": "DATE",
+        "start": 89,
+        "end": 105
+      },
+      {
+        "label": "PERSON",
+        "start": 126,
+        "end": 136
+      },
+      {
+        "label": "DATE",
+        "start": 159,
+        "end": 163
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 198,
+        "end": 217
+      },
+      {
+        "label": "CARDINAL",
+        "start": 219,
+        "end": 221
+      },
+      {
+        "label": "FAC",
+        "start": 222,
+        "end": 234
+      },
+      {
+        "label": "GPE",
+        "start": 236,
+        "end": 241
+      },
+      {
+        "label": "CARDINAL",
+        "start": 256,
+        "end": 267
+      },
+      {
+        "label": "CARDINAL",
+        "start": 273,
+        "end": 284
+      },
+      {
+        "label": "DATE",
+        "start": 387,
+        "end": 403
+      }
+    ],
+    "ms": 26.607600040733814
+  },
+  "data/raw/health_report_009.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 49,
+        "end": 62
+      },
+      {
+        "label": "PERSON",
+        "start": 79,
+        "end": 88
+      },
+      {
+        "label": "ORG",
+        "start": 149,
+        "end": 161
+      },
+      {
+        "label": "CARDINAL",
+        "start": 163,
+        "end": 164
+      },
+      {
+        "label": "PERSON",
+        "start": 172,
+        "end": 184
+      },
+      {
+        "label": "GPE",
+        "start": 194,
+        "end": 207
+      },
+      {
+        "label": "CARDINAL",
+        "start": 215,
+        "end": 226
+      },
+      {
+        "label": "CARDINAL",
+        "start": 235,
+        "end": 246
+      },
+      {
+        "label": "PERSON",
+        "start": 248,
+        "end": 265
+      },
+      {
+        "label": "PERSON",
+        "start": 267,
+        "end": 271
+      },
+      {
+        "label": "PERSON",
+        "start": 273,
+        "end": 277
+      },
+      {
+        "label": "DATE",
+        "start": 288,
+        "end": 301
+      }
+    ],
+    "ms": 21.19709993712604
+  },
+  "data/raw/health_report_015.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 36,
+        "end": 38
+      },
+      {
+        "label": "DATE",
+        "start": 39,
+        "end": 49
+      },
+      {
+        "label": "PERSON",
+        "start": 90,
+        "end": 107
+      },
+      {
+        "label": "PERSON",
+        "start": 127,
+        "end": 135
+      },
+      {
+        "label": "CARDINAL",
+        "start": 143,
+        "end": 154
+      },
+      {
+        "label": "CARDINAL",
+        "start": 194,
+        "end": 196
+      },
+      {
+        "label": "ORG",
+        "start": 214,
+        "end": 219
+      },
+      {
+        "label": "DATE",
+        "start": 234,
+        "end": 245
+      },
+      {
+        "label": "DATE",
+        "start": 251,
+        "end": 262
+      },
+      {
+        "label": "ORG",
+        "start": 321,
+        "end": 324
+      },
+      {
+        "label": "LOC",
+        "start": 339,
+        "end": 348
+      }
+    ],
+    "ms": 21.540399990044534
+  },
+  "data/raw/health_report_016.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 36,
+        "end": 38
+      },
+      {
+        "label": "DATE",
+        "start": 39,
+        "end": 48
+      },
+      {
+        "label": "PERSON",
+        "start": 69,
+        "end": 83
+      },
+      {
+        "label": "ORG",
+        "start": 88,
+        "end": 112
+      },
+      {
+        "label": "CARDINAL",
+        "start": 201,
+        "end": 203
+      },
+      {
+        "label": "LOC",
+        "start": 204,
+        "end": 217
+      },
+      {
+        "label": "PERSON",
+        "start": 229,
+        "end": 252
+      },
+      {
+        "label": "ORG",
+        "start": 311,
+        "end": 314
+      },
+      {
+        "label": "ORG",
+        "start": 329,
+        "end": 335
+      },
+      {
+        "label": "PERSON",
+        "start": 337,
+        "end": 342
+      }
+    ],
+    "ms": 20.371400052681565
+  },
+  "data/raw/health_report_022.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 43,
+        "end": 45
+      },
+      {
+        "label": "DATE",
+        "start": 46,
+        "end": 58
+      },
+      {
+        "label": "PERSON",
+        "start": 102,
+        "end": 118
+      },
+      {
+        "label": "CARDINAL",
+        "start": 149,
+        "end": 152
+      },
+      {
+        "label": "PERSON",
+        "start": 153,
+        "end": 170
+      },
+      {
+        "label": "GPE",
+        "start": 172,
+        "end": 187
+      },
+      {
+        "label": "GPE",
+        "start": 189,
+        "end": 194
+      },
+      {
+        "label": "DATE",
+        "start": 203,
+        "end": 214
+      },
+      {
+        "label": "PERSON",
+        "start": 215,
+        "end": 224
+      },
+      {
+        "label": "CARDINAL",
+        "start": 226,
+        "end": 237
+      },
+      {
+        "label": "ORG",
+        "start": 291,
+        "end": 294
+      },
+      {
+        "label": "PERSON",
+        "start": 313,
+        "end": 322
+      }
+    ],
+    "ms": 30.096800066530704
+  },
+  "data/raw/health_report_027.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 43,
+        "end": 56
+      },
+      {
+        "label": "ORG",
+        "start": 89,
+        "end": 93
+      },
+      {
+        "label": "ORG",
+        "start": 95,
+        "end": 107
+      },
+      {
+        "label": "CARDINAL",
+        "start": 138,
+        "end": 141
+      },
+      {
+        "label": "PERSON",
+        "start": 142,
+        "end": 154
+      },
+      {
+        "label": "GPE",
+        "start": 162,
+        "end": 167
+      },
+      {
+        "label": "DATE",
+        "start": 189,
+        "end": 200
+      },
+      {
+        "label": "CARDINAL",
+        "start": 211,
+        "end": 222
+      },
+      {
+        "label": "ORG",
+        "start": 276,
+        "end": 279
+      },
+      {
+        "label": "PERSON",
+        "start": 298,
+        "end": 307
+      }
+    ],
+    "ms": 27.72110002115369
+  },
+  "data/raw/health_report_028.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 43,
+        "end": 45
+      },
+      {
+        "label": "DATE",
+        "start": 46,
+        "end": 59
+      },
+      {
+        "label": "PERSON",
+        "start": 96,
+        "end": 112
+      },
+      {
+        "label": "CARDINAL",
+        "start": 149,
+        "end": 151
+      },
+      {
+        "label": "PERSON",
+        "start": 159,
+        "end": 171
+      },
+      {
+        "label": "PERSON",
+        "start": 173,
+        "end": 189
+      },
+      {
+        "label": "GPE",
+        "start": 191,
+        "end": 204
+      },
+      {
+        "label": "DATE",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "ORG",
+        "start": 293,
+        "end": 296
+      },
+      {
+        "label": "PERSON",
+        "start": 319,
+        "end": 332
+      }
+    ],
+    "ms": 29.06480000820011
+  },
+  "data/raw/health_report_029.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 49,
+        "end": 51
+      },
+      {
+        "label": "DATE",
+        "start": 52,
+        "end": 65
+      },
+      {
+        "label": "ORG",
+        "start": 159,
+        "end": 171
+      },
+      {
+        "label": "CARDINAL",
+        "start": 173,
+        "end": 176
+      },
+      {
+        "label": "PERSON",
+        "start": 177,
+        "end": 189
+      },
+      {
+        "label": "PERSON",
+        "start": 191,
+        "end": 196
+      },
+      {
+        "label": "CARDINAL",
+        "start": 212,
+        "end": 223
+      },
+      {
+        "label": "DATE",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "DATE",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "PERSON",
+        "start": 263,
+        "end": 280
+      },
+      {
+        "label": "PERSON",
+        "start": 282,
+        "end": 286
+      },
+      {
+        "label": "PERSON",
+        "start": 288,
+        "end": 292
+      },
+      {
+        "label": "DATE",
+        "start": 303,
+        "end": 319
+      }
+    ],
+    "ms": 41.557000018656254
+  },
+  "data/raw/health_report_030.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 49,
+        "end": 51
+      },
+      {
+        "label": "DATE",
+        "start": 52,
+        "end": 63
+      },
+      {
+        "label": "ORG",
+        "start": 154,
+        "end": 166
+      },
+      {
+        "label": "CARDINAL",
+        "start": 168,
+        "end": 171
+      },
+      {
+        "label": "FAC",
+        "start": 172,
+        "end": 185
+      },
+      {
+        "label": "PERSON",
+        "start": 187,
+        "end": 191
+      },
+      {
+        "label": "DATE",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "CARDINAL",
+        "start": 236,
+        "end": 247
+      },
+      {
+        "label": "PERSON",
+        "start": 268,
+        "end": 272
+      },
+      {
+        "label": "PERSON",
+        "start": 274,
+        "end": 278
+      },
+      {
+        "label": "DATE",
+        "start": 289,
+        "end": 303
+      },
+      {
+        "label": "PERSON",
+        "start": 328,
+        "end": 343
+      }
+    ],
+    "ms": 43.80380001384765
+  },
+  "data/raw/health_report_032.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 49,
+        "end": 61
+      },
+      {
+        "label": "PERSON",
+        "start": 82,
+        "end": 97
+      },
+      {
+        "label": "ORG",
+        "start": 154,
+        "end": 166
+      },
+      {
+        "label": "CARDINAL",
+        "start": 168,
+        "end": 170
+      },
+      {
+        "label": "GPE",
+        "start": 185,
+        "end": 191
+      },
+      {
+        "label": "PERSON",
+        "start": 193,
+        "end": 197
+      },
+      {
+        "label": "CARDINAL",
+        "start": 205,
+        "end": 216
+      },
+      {
+        "label": "DATE",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "PERSON",
+        "start": 250,
+        "end": 267
+      },
+      {
+        "label": "PERSON",
+        "start": 269,
+        "end": 273
+      },
+      {
+        "label": "PERSON",
+        "start": 275,
+        "end": 279
+      },
+      {
+        "label": "DATE",
+        "start": 290,
+        "end": 302
+      },
+      {
+        "label": "ORG",
+        "start": 323,
+        "end": 330
+      }
+    ],
+    "ms": 49.0466000046581
+  },
+  "data/raw/health_report_033.txt": {
+    "spans": [
+      {
+        "label": "ORG",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "label": "ORG",
+        "start": 40,
+        "end": 56
+      },
+      {
+        "label": "ORG",
+        "start": 61,
+        "end": 79
+      },
+      {
+        "label": "CARDINAL",
+        "start": 101,
+        "end": 103
+      },
+      {
+        "label": "DATE",
+        "start": 104,
+        "end": 114
+      },
+      {
+        "label": "PERSON",
+        "start": 136,
+        "end": 147
+      },
+      {
+        "label": "DATE",
+        "start": 157,
+        "end": 168
+      },
+      {
+        "label": "PERSON",
+        "start": 169,
+        "end": 174
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 204,
+        "end": 223
+      },
+      {
+        "label": "CARDINAL",
+        "start": 225,
+        "end": 228
+      },
+      {
+        "label": "PERSON",
+        "start": 243,
+        "end": 257
+      },
+      {
+        "label": "CARDINAL",
+        "start": 275,
+        "end": 286
+      },
+      {
+        "label": "CARDINAL",
+        "start": 297,
+        "end": 308
+      },
+      {
+        "label": "DATE",
+        "start": 411,
+        "end": 424
+      },
+      {
+        "label": "PERSON",
+        "start": 446,
+        "end": 456
+      }
+    ],
+    "ms": 30.896199983544648
+  },
+  "data/raw/health_report_036.txt": {
+    "spans": [
+      {
+        "label": "ORG",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "label": "ORG",
+        "start": 40,
+        "end": 64
+      },
+      {
+        "label": "DATE",
+        "start": 87,
+        "end": 101
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 203,
+        "end": 222
+      },
+      {
+        "label": "CARDINAL",
+        "start": 224,
+        "end": 226
+      },
+      {
+        "label": "LOC",
+        "start": 227,
+        "end": 240
+      },
+      {
+        "label": "GPE",
+        "start": 255,
+        "end": 268
+      },
+      {
+        "label": "DATE",
+        "start": 277,
+        "end": 288
+      },
+      {
+        "label": "DATE",
+        "start": 391,
+        "end": 405
+      },
+      {
+        "label": "ORG",
+        "start": 421,
+        "end": 426
+      }
+    ],
+    "ms": 24.39429995138198
+  },
+  "data/raw/health_report_040.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 49,
+        "end": 51
+      },
+      {
+        "label": "DATE",
+        "start": 52,
+        "end": 60
+      },
+      {
+        "label": "PERSON",
+        "start": 82,
+        "end": 95
+      },
+      {
+        "label": "CARDINAL",
+        "start": 103,
+        "end": 114
+      },
+      {
+        "label": "ORG",
+        "start": 146,
+        "end": 158
+      },
+      {
+        "label": "CARDINAL",
+        "start": 160,
+        "end": 161
+      },
+      {
+        "label": "GPE",
+        "start": 176,
+        "end": 183
+      },
+      {
+        "label": "GPE",
+        "start": 185,
+        "end": 198
+      },
+      {
+        "label": "CARDINAL",
+        "start": 225,
+        "end": 236
+      },
+      {
+        "label": "DATE",
+        "start": 245,
+        "end": 256
+      },
+      {
+        "label": "PERSON",
+        "start": 258,
+        "end": 275
+      },
+      {
+        "label": "PERSON",
+        "start": 277,
+        "end": 281
+      },
+      {
+        "label": "PERSON",
+        "start": 283,
+        "end": 287
+      },
+      {
+        "label": "DATE",
+        "start": 298,
+        "end": 309
+      }
+    ],
+    "ms": 21.602499997243285
+  },
+  "data/raw/health_report_044.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 36,
+        "end": 38
+      },
+      {
+        "label": "DATE",
+        "start": 39,
+        "end": 53
+      },
+      {
+        "label": "ORG",
+        "start": 88,
+        "end": 101
+      },
+      {
+        "label": "CARDINAL",
+        "start": 195,
+        "end": 197
+      },
+      {
+        "label": "FAC",
+        "start": 198,
+        "end": 212
+      },
+      {
+        "label": "ORG",
+        "start": 214,
+        "end": 225
+      },
+      {
+        "label": "GPE",
+        "start": 227,
+        "end": 240
+      },
+      {
+        "label": "DATE",
+        "start": 246,
+        "end": 257
+      },
+      {
+        "label": "ORG",
+        "start": 316,
+        "end": 319
+      },
+      {
+        "label": "PERSON",
+        "start": 343,
+        "end": 350
+      }
+    ],
+    "ms": 34.9055000115186
+  },
+  "data/raw/health_report_045.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 49,
+        "end": 63
+      },
+      {
+        "label": "PERSON",
+        "start": 80,
+        "end": 88
+      },
+      {
+        "label": "ORG",
+        "start": 158,
+        "end": 170
+      },
+      {
+        "label": "CARDINAL",
+        "start": 172,
+        "end": 175
+      },
+      {
+        "label": "GPE",
+        "start": 200,
+        "end": 208
+      },
+      {
+        "label": "GPE",
+        "start": 210,
+        "end": 223
+      },
+      {
+        "label": "ORG",
+        "start": 224,
+        "end": 227
+      },
+      {
+        "label": "CARDINAL",
+        "start": 263,
+        "end": 274
+      },
+      {
+        "label": "PERSON",
+        "start": 295,
+        "end": 299
+      },
+      {
+        "label": "PERSON",
+        "start": 301,
+        "end": 305
+      },
+      {
+        "label": "DATE",
+        "start": 316,
+        "end": 330
+      },
+      {
+        "label": "PERSON",
+        "start": 351,
+        "end": 355
+      }
+    ],
+    "ms": 35.76460003387183
+  },
+  "data/raw/health_report_046.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 43,
+        "end": 55
+      },
+      {
+        "label": "PERSON",
+        "start": 93,
+        "end": 116
+      },
+      {
+        "label": "CARDINAL",
+        "start": 147,
+        "end": 149
+      },
+      {
+        "label": "FAC",
+        "start": 150,
+        "end": 171
+      },
+      {
+        "label": "PERSON",
+        "start": 173,
+        "end": 178
+      },
+      {
+        "label": "PERSON",
+        "start": 180,
+        "end": 203
+      },
+      {
+        "label": "ORG",
+        "start": 257,
+        "end": 260
+      }
+    ],
+    "ms": 24.876799900084734
+  },
+  "data/raw/health_report_051.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 36,
+        "end": 38
+      },
+      {
+        "label": "DATE",
+        "start": 39,
+        "end": 49
+      },
+      {
+        "label": "ORG",
+        "start": 70,
+        "end": 106
+      },
+      {
+        "label": "CARDINAL",
+        "start": 187,
+        "end": 190
+      },
+      {
+        "label": "GPE",
+        "start": 218,
+        "end": 231
+      },
+      {
+        "label": "DATE",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "DATE",
+        "start": 254,
+        "end": 265
+      },
+      {
+        "label": "ORG",
+        "start": 324,
+        "end": 327
+      },
+      {
+        "label": "PERSON",
+        "start": 342,
+        "end": 349
+      }
+    ],
+    "ms": 34.556300030089915
+  },
+  "data/raw/health_report_053.txt": {
+    "spans": [
+      {
+        "label": "ORG",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "label": "ORG",
+        "start": 40,
+        "end": 67
+      },
+      {
+        "label": "PERSON",
+        "start": 69,
+        "end": 79
+      },
+      {
+        "label": "DATE",
+        "start": 86,
+        "end": 101
+      },
+      {
+        "label": "DATE",
+        "start": 152,
+        "end": 160
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 193,
+        "end": 212
+      },
+      {
+        "label": "CARDINAL",
+        "start": 214,
+        "end": 216
+      },
+      {
+        "label": "FAC",
+        "start": 217,
+        "end": 229
+      },
+      {
+        "label": "GPE",
+        "start": 231,
+        "end": 239
+      },
+      {
+        "label": "GPE",
+        "start": 241,
+        "end": 254
+      },
+      {
+        "label": "DATE",
+        "start": 377,
+        "end": 392
+      }
+    ],
+    "ms": 33.52759999688715
+  },
+  "data/raw/health_report_057.txt": {
+    "spans": [
+      {
+        "label": "ORG",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "label": "ORG",
+        "start": 40,
+        "end": 71
+      },
+      {
+        "label": "CARDINAL",
+        "start": 90,
+        "end": 92
+      },
+      {
+        "label": "DATE",
+        "start": 93,
+        "end": 101
+      },
+      {
+        "label": "ORG",
+        "start": 117,
+        "end": 120
+      },
+      {
+        "label": "CARDINAL",
+        "start": 137,
+        "end": 148
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 182,
+        "end": 201
+      },
+      {
+        "label": "CARDINAL",
+        "start": 203,
+        "end": 205
+      },
+      {
+        "label": "DATE",
+        "start": 261,
+        "end": 272
+      },
+      {
+        "label": "DATE",
+        "start": 375,
+        "end": 386
+      },
+      {
+        "label": "PERSON",
+        "start": 406,
+        "end": 419
+      }
+    ],
+    "ms": 31.551400083117187
+  },
+  "data/raw/health_report_062.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 43,
+        "end": 45
+      },
+      {
+        "label": "DATE",
+        "start": 46,
+        "end": 54
+      },
+      {
+        "label": "PERSON",
+        "start": 55,
+        "end": 64
+      },
+      {
+        "label": "ORG",
+        "start": 101,
+        "end": 115
+      },
+      {
+        "label": "CARDINAL",
+        "start": 144,
+        "end": 146
+      },
+      {
+        "label": "GPE",
+        "start": 167,
+        "end": 179
+      },
+      {
+        "label": "GPE",
+        "start": 181,
+        "end": 186
+      },
+      {
+        "label": "DATE",
+        "start": 207,
+        "end": 218
+      },
+      {
+        "label": "PERSON",
+        "start": 220,
+        "end": 227
+      },
+      {
+        "label": "PERSON",
+        "start": 242,
+        "end": 268
+      },
+      {
+        "label": "CARDINAL",
+        "start": 270,
+        "end": 281
+      }
+    ],
+    "ms": 29.665399924851954
+  },
+  "data/raw/health_report_065.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 43,
+        "end": 45
+      },
+      {
+        "label": "DATE",
+        "start": 46,
+        "end": 59
+      },
+      {
+        "label": "PERSON",
+        "start": 60,
+        "end": 69
+      },
+      {
+        "label": "CARDINAL",
+        "start": 118,
+        "end": 129
+      },
+      {
+        "label": "CARDINAL",
+        "start": 139,
+        "end": 141
+      },
+      {
+        "label": "FAC",
+        "start": 149,
+        "end": 161
+      },
+      {
+        "label": "PERSON",
+        "start": 163,
+        "end": 173
+      },
+      {
+        "label": "PERSON",
+        "start": 175,
+        "end": 179
+      },
+      {
+        "label": "DATE",
+        "start": 185,
+        "end": 196
+      },
+      {
+        "label": "PERSON",
+        "start": 198,
+        "end": 205
+      },
+      {
+        "label": "PERSON",
+        "start": 220,
+        "end": 245
+      },
+      {
+        "label": "CARDINAL",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "PERSON",
+        "start": 285,
+        "end": 292
+      }
+    ],
+    "ms": 24.59129993803799
+  },
+  "data/raw/health_report_066.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 43,
+        "end": 45
+      },
+      {
+        "label": "DATE",
+        "start": 46,
+        "end": 54
+      },
+      {
+        "label": "PERSON",
+        "start": 103,
+        "end": 120
+      },
+      {
+        "label": "CARDINAL",
+        "start": 132,
+        "end": 134
+      },
+      {
+        "label": "FAC",
+        "start": 135,
+        "end": 148
+      },
+      {
+        "label": "GPE",
+        "start": 150,
+        "end": 155
+      },
+      {
+        "label": "GPE",
+        "start": 157,
+        "end": 162
+      },
+      {
+        "label": "DATE",
+        "start": 168,
+        "end": 179
+      },
+      {
+        "label": "ORG",
+        "start": 233,
+        "end": 236
+      },
+      {
+        "label": "PERSON",
+        "start": 255,
+        "end": 263
+      }
+    ],
+    "ms": 26.44649997819215
+  },
+  "data/raw/health_report_073.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 43,
+        "end": 55
+      },
+      {
+        "label": "PERSON",
+        "start": 56,
+        "end": 65
+      },
+      {
+        "label": "CARDINAL",
+        "start": 140,
+        "end": 142
+      },
+      {
+        "label": "GPE",
+        "start": 165,
+        "end": 170
+      },
+      {
+        "label": "CARDINAL",
+        "start": 183,
+        "end": 194
+      },
+      {
+        "label": "PERSON",
+        "start": 196,
+        "end": 203
+      },
+      {
+        "label": "PERSON",
+        "start": 218,
+        "end": 246
+      },
+      {
+        "label": "CARDINAL",
+        "start": 248,
+        "end": 259
+      },
+      {
+        "label": "ORG",
+        "start": 284,
+        "end": 291
+      }
+    ],
+    "ms": 32.776699983514845
+  },
+  "data/raw/health_report_075.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 36,
+        "end": 38
+      },
+      {
+        "label": "DATE",
+        "start": 39,
+        "end": 47
+      },
+      {
+        "label": "ORG",
+        "start": 68,
+        "end": 94
+      },
+      {
+        "label": "PERSON",
+        "start": 96,
+        "end": 109
+      },
+      {
+        "label": "PERSON",
+        "start": 111,
+        "end": 128
+      },
+      {
+        "label": "CARDINAL",
+        "start": 172,
+        "end": 175
+      },
+      {
+        "label": "GPE",
+        "start": 210,
+        "end": 223
+      },
+      {
+        "label": "CARDINAL",
+        "start": 232,
+        "end": 243
+      },
+      {
+        "label": "DATE",
+        "start": 257,
+        "end": 268
+      },
+      {
+        "label": "ORG",
+        "start": 327,
+        "end": 330
+      }
+    ],
+    "ms": 31.755600008182228
+  },
+  "data/raw/health_report_081.txt": {
+    "spans": [
+      {
+        "label": "ORG",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "label": "PERSON",
+        "start": 49,
+        "end": 57
+      },
+      {
+        "label": "ORG",
+        "start": 62,
+        "end": 83
+      },
+      {
+        "label": "DATE",
+        "start": 106,
+        "end": 120
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 207,
+        "end": 226
+      },
+      {
+        "label": "CARDINAL",
+        "start": 228,
+        "end": 231
+      },
+      {
+        "label": "PERSON",
+        "start": 232,
+        "end": 252
+      },
+      {
+        "label": "GPE",
+        "start": 254,
+        "end": 260
+      },
+      {
+        "label": "PERSON",
+        "start": 262,
+        "end": 266
+      },
+      {
+        "label": "DATE",
+        "start": 275,
+        "end": 286
+      },
+      {
+        "label": "DATE",
+        "start": 300,
+        "end": 311
+      },
+      {
+        "label": "DATE",
+        "start": 414,
+        "end": 428
+      },
+      {
+        "label": "PERSON",
+        "start": 444,
+        "end": 458
+      }
+    ],
+    "ms": 36.184599972330034
+  },
+  "data/raw/health_report_083.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 36,
+        "end": 51
+      },
+      {
+        "label": "PERSON",
+        "start": 108,
+        "end": 124
+      },
+      {
+        "label": "CARDINAL",
+        "start": 132,
+        "end": 143
+      },
+      {
+        "label": "CARDINAL",
+        "start": 193,
+        "end": 195
+      },
+      {
+        "label": "FAC",
+        "start": 196,
+        "end": 211
+      },
+      {
+        "label": "GPE",
+        "start": 222,
+        "end": 235
+      },
+      {
+        "label": "DATE",
+        "start": 262,
+        "end": 273
+      },
+      {
+        "label": "ORG",
+        "start": 332,
+        "end": 335
+      }
+    ],
+    "ms": 27.22459996584803
+  },
+  "data/raw/health_report_089.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 36,
+        "end": 38
+      },
+      {
+        "label": "DATE",
+        "start": 39,
+        "end": 51
+      },
+      {
+        "label": "DATE",
+        "start": 125,
+        "end": 136
+      },
+      {
+        "label": "CARDINAL",
+        "start": 177,
+        "end": 180
+      },
+      {
+        "label": "FAC",
+        "start": 181,
+        "end": 196
+      },
+      {
+        "label": "ORG",
+        "start": 198,
+        "end": 203
+      },
+      {
+        "label": "PERSON",
+        "start": 205,
+        "end": 228
+      },
+      {
+        "label": "ORG",
+        "start": 306,
+        "end": 309
+      },
+      {
+        "label": "PERSON",
+        "start": 324,
+        "end": 342
+      }
+    ],
+    "ms": 32.768000033684075
+  },
+  "data/raw/health_report_092.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 36,
+        "end": 38
+      },
+      {
+        "label": "DATE",
+        "start": 39,
+        "end": 53
+      },
+      {
+        "label": "PERSON",
+        "start": 74,
+        "end": 88
+      },
+      {
+        "label": "ORG",
+        "start": 93,
+        "end": 106
+      },
+      {
+        "label": "CARDINAL",
+        "start": 196,
+        "end": 199
+      },
+      {
+        "label": "FAC",
+        "start": 200,
+        "end": 212
+      },
+      {
+        "label": "GPE",
+        "start": 214,
+        "end": 219
+      },
+      {
+        "label": "GPE",
+        "start": 221,
+        "end": 226
+      },
+      {
+        "label": "CARDINAL",
+        "start": 235,
+        "end": 246
+      },
+      {
+        "label": "DATE",
+        "start": 260,
+        "end": 271
+      },
+      {
+        "label": "ORG",
+        "start": 330,
+        "end": 333
+      }
+    ],
+    "ms": 32.15560002718121
+  },
+  "data/raw/health_report_095.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 43,
+        "end": 45
+      },
+      {
+        "label": "DATE",
+        "start": 46,
+        "end": 60
+      },
+      {
+        "label": "PERSON",
+        "start": 93,
+        "end": 99
+      },
+      {
+        "label": "PERSON",
+        "start": 101,
+        "end": 118
+      },
+      {
+        "label": "DATE",
+        "start": 129,
+        "end": 137
+      },
+      {
+        "label": "CARDINAL",
+        "start": 149,
+        "end": 152
+      },
+      {
+        "label": "FAC",
+        "start": 153,
+        "end": 169
+      },
+      {
+        "label": "GPE",
+        "start": 171,
+        "end": 178
+      },
+      {
+        "label": "ORG",
+        "start": 180,
+        "end": 193
+      },
+      {
+        "label": "DATE",
+        "start": 194,
+        "end": 205
+      },
+      {
+        "label": "ORG",
+        "start": 259,
+        "end": 262
+      },
+      {
+        "label": "PERSON",
+        "start": 281,
+        "end": 285
+      },
+      {
+        "label": "PERSON",
+        "start": 287,
+        "end": 305
+      }
+    ],
+    "ms": 28.828399954363704
+  },
+  "data/raw/health_report_100.txt": {
+    "spans": [
+      {
+        "label": "ORG",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "label": "ORG",
+        "start": 40,
+        "end": 72
+      },
+      {
+        "label": "CARDINAL",
+        "start": 91,
+        "end": 93
+      },
+      {
+        "label": "DATE",
+        "start": 94,
+        "end": 102
+      },
+      {
+        "label": "PERSON",
+        "start": 124,
+        "end": 141
+      },
+      {
+        "label": "DATE",
+        "start": 151,
+        "end": 162
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 199,
+        "end": 218
+      },
+      {
+        "label": "FAC",
+        "start": 223,
+        "end": 242
+      },
+      {
+        "label": "GPE",
+        "start": 250,
+        "end": 255
+      },
+      {
+        "label": "DATE",
+        "start": 264,
+        "end": 275
+      },
+      {
+        "label": "DATE",
+        "start": 378,
+        "end": 389
+      },
+      {
+        "label": "PERSON",
+        "start": 411,
+        "end": 421
+      }
+    ],
+    "ms": 43.754099984653294
+  },
+  "data/raw/health_report_101.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 43,
+        "end": 45
+      },
+      {
+        "label": "DATE",
+        "start": 46,
+        "end": 58
+      },
+      {
+        "label": "PERSON",
+        "start": 59,
+        "end": 68
+      },
+      {
+        "label": "CARDINAL",
+        "start": 70,
+        "end": 80
+      },
+      {
+        "label": "PERSON",
+        "start": 95,
+        "end": 118
+      },
+      {
+        "label": "CARDINAL",
+        "start": 120,
+        "end": 131
+      },
+      {
+        "label": "CARDINAL",
+        "start": 141,
+        "end": 144
+      },
+      {
+        "label": "PERSON",
+        "start": 145,
+        "end": 162
+      },
+      {
+        "label": "DATE",
+        "start": 188,
+        "end": 199
+      },
+      {
+        "label": "PERSON",
+        "start": 201,
+        "end": 208
+      },
+      {
+        "label": "PERSON",
+        "start": 223,
+        "end": 252
+      },
+      {
+        "label": "PERSON",
+        "start": 257,
+        "end": 268
+      }
+    ],
+    "ms": 37.00940008275211
+  },
+  "data/raw/health_report_103.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 49,
+        "end": 61
+      },
+      {
+        "label": "PERSON",
+        "start": 78,
+        "end": 82
+      },
+      {
+        "label": "PERSON",
+        "start": 84,
+        "end": 98
+      },
+      {
+        "label": "CARDINAL",
+        "start": 106,
+        "end": 117
+      },
+      {
+        "label": "ORG",
+        "start": 144,
+        "end": 156
+      },
+      {
+        "label": "MONEY",
+        "start": 158,
+        "end": 180
+      },
+      {
+        "label": "PERSON",
+        "start": 182,
+        "end": 186
+      },
+      {
+        "label": "PERSON",
+        "start": 188,
+        "end": 192
+      },
+      {
+        "label": "DATE",
+        "start": 201,
+        "end": 212
+      },
+      {
+        "label": "DATE",
+        "start": 224,
+        "end": 235
+      },
+      {
+        "label": "PERSON",
+        "start": 237,
+        "end": 254
+      },
+      {
+        "label": "PERSON",
+        "start": 256,
+        "end": 260
+      },
+      {
+        "label": "PERSON",
+        "start": 262,
+        "end": 266
+      },
+      {
+        "label": "DATE",
+        "start": 277,
+        "end": 289
+      },
+      {
+        "label": "PERSON",
+        "start": 315,
+        "end": 336
+      }
+    ],
+    "ms": 29.05590005684644
+  },
+  "data/raw/hr_intake_001.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 39,
+        "end": 41
+      },
+      {
+        "label": "DATE",
+        "start": 42,
+        "end": 56
+      },
+      {
+        "label": "CARDINAL",
+        "start": 74,
+        "end": 83
+      },
+      {
+        "label": "ORG",
+        "start": 101,
+        "end": 121
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 135,
+        "end": 148
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 174,
+        "end": 189
+      },
+      {
+        "label": "CARDINAL",
+        "start": 191,
+        "end": 194
+      },
+      {
+        "label": "ORG",
+        "start": 210,
+        "end": 215
+      },
+      {
+        "label": "CARDINAL",
+        "start": 230,
+        "end": 241
+      },
+      {
+        "label": "DATE",
+        "start": 252,
+        "end": 263
+      },
+      {
+        "label": "PERSON",
+        "start": 321,
+        "end": 337
+      }
+    ],
+    "ms": 31.205200008116663
+  },
+  "data/raw/hr_intake_005.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 39,
+        "end": 41
+      },
+      {
+        "label": "DATE",
+        "start": 42,
+        "end": 55
+      },
+      {
+        "label": "ORG",
+        "start": 73,
+        "end": 107
+      },
+      {
+        "label": "DATE",
+        "start": 141,
+        "end": 145
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 146,
+        "end": 159
+      },
+      {
+        "label": "CARDINAL",
+        "start": 208,
+        "end": 211
+      },
+      {
+        "label": "GPE",
+        "start": 212,
+        "end": 224
+      },
+      {
+        "label": "GPE",
+        "start": 226,
+        "end": 231
+      },
+      {
+        "label": "GPE",
+        "start": 233,
+        "end": 238
+      },
+      {
+        "label": "DATE",
+        "start": 259,
+        "end": 270
+      },
+      {
+        "label": "PERSON",
+        "start": 322,
+        "end": 346
+      }
+    ],
+    "ms": 28.306599939242005
+  },
+  "data/raw/hr_intake_012.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 29,
+        "end": 31
+      },
+      {
+        "label": "DATE",
+        "start": 32,
+        "end": 43
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 44,
+        "end": 85
+      },
+      {
+        "label": "DATE",
+        "start": 103,
+        "end": 114
+      },
+      {
+        "label": "CARDINAL",
+        "start": 160,
+        "end": 162
+      },
+      {
+        "label": "FAC",
+        "start": 163,
+        "end": 175
+      },
+      {
+        "label": "GPE",
+        "start": 177,
+        "end": 182
+      },
+      {
+        "label": "CARDINAL",
+        "start": 196,
+        "end": 207
+      },
+      {
+        "label": "ORG",
+        "start": 208,
+        "end": 225
+      },
+      {
+        "label": "PERSON",
+        "start": 226,
+        "end": 235
+      },
+      {
+        "label": "DATE",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "PERSON",
+        "start": 316,
+        "end": 326
+      }
+    ],
+    "ms": 29.160400037653744
+  },
+  "data/raw/hr_intake_017.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 39,
+        "end": 55
+      },
+      {
+        "label": "PERSON",
+        "start": 100,
+        "end": 118
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 132,
+        "end": 145
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 170,
+        "end": 185
+      },
+      {
+        "label": "CARDINAL",
+        "start": 187,
+        "end": 189
+      },
+      {
+        "label": "PERSON",
+        "start": 197,
+        "end": 209
+      },
+      {
+        "label": "GPE",
+        "start": 211,
+        "end": 215
+      },
+      {
+        "label": "GPE",
+        "start": 217,
+        "end": 222
+      },
+      {
+        "label": "CARDINAL",
+        "start": 231,
+        "end": 242
+      }
+    ],
+    "ms": 26.87349996995181
+  },
+  "data/raw/hr_intake_018.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 39,
+        "end": 41
+      },
+      {
+        "label": "DATE",
+        "start": 42,
+        "end": 54
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 138,
+        "end": 151
+      },
+      {
+        "label": "ORG",
+        "start": 184,
+        "end": 199
+      },
+      {
+        "label": "CARDINAL",
+        "start": 201,
+        "end": 203
+      },
+      {
+        "label": "FAC",
+        "start": 204,
+        "end": 216
+      },
+      {
+        "label": "ORG",
+        "start": 218,
+        "end": 230
+      },
+      {
+        "label": "ORG",
+        "start": 232,
+        "end": 256
+      },
+      {
+        "label": "DATE",
+        "start": 257,
+        "end": 268
+      },
+      {
+        "label": "DATE",
+        "start": 344,
+        "end": 355
+      }
+    ],
+    "ms": 95.60869995038956
+  },
+  "data/raw/hr_intake_020.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 36,
+        "end": 48
+      },
+      {
+        "label": "ORG",
+        "start": 80,
+        "end": 87
+      },
+      {
+        "label": "PERSON",
+        "start": 89,
+        "end": 107
+      },
+      {
+        "label": "CARDINAL",
+        "start": 136,
+        "end": 138
+      },
+      {
+        "label": "FAC",
+        "start": 139,
+        "end": 158
+      },
+      {
+        "label": "GPE",
+        "start": 170,
+        "end": 183
+      },
+      {
+        "label": "DATE",
+        "start": 248,
+        "end": 254
+      },
+      {
+        "label": "PERSON",
+        "start": 309,
+        "end": 320
+      }
+    ],
+    "ms": 66.98360003065318
+  },
+  "data/raw/hr_intake_021.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 41,
+        "end": 43
+      },
+      {
+        "label": "DATE",
+        "start": 44,
+        "end": 54
+      },
+      {
+        "label": "DATE",
+        "start": 107,
+        "end": 118
+      },
+      {
+        "label": "MONEY",
+        "start": 159,
+        "end": 181
+      },
+      {
+        "label": "GPE",
+        "start": 183,
+        "end": 208
+      },
+      {
+        "label": "PERSON",
+        "start": 210,
+        "end": 219
+      },
+      {
+        "label": "DATE",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "PERSON",
+        "start": 303,
+        "end": 307
+      },
+      {
+        "label": "PERSON",
+        "start": 309,
+        "end": 322
+      }
+    ],
+    "ms": 27.393899974413216
+  },
+  "data/raw/hr_intake_023.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 41,
+        "end": 43
+      },
+      {
+        "label": "DATE",
+        "start": 44,
+        "end": 54
+      },
+      {
+        "label": "DATE",
+        "start": 107,
+        "end": 118
+      },
+      {
+        "label": "CARDINAL",
+        "start": 163,
+        "end": 165
+      },
+      {
+        "label": "GPE",
+        "start": 194,
+        "end": 207
+      },
+      {
+        "label": "DATE",
+        "start": 234,
+        "end": 245
+      },
+      {
+        "label": "ORG",
+        "start": 296,
+        "end": 305
+      }
+    ],
+    "ms": 28.17429997958243
+  },
+  "data/raw/hr_intake_024.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 29,
+        "end": 31
+      },
+      {
+        "label": "DATE",
+        "start": 32,
+        "end": 41
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 42,
+        "end": 77
+      },
+      {
+        "label": "PERSON",
+        "start": 87,
+        "end": 91
+      },
+      {
+        "label": "DATE",
+        "start": 108,
+        "end": 116
+      },
+      {
+        "label": "CARDINAL",
+        "start": 161,
+        "end": 164
+      },
+      {
+        "label": "PERSON",
+        "start": 165,
+        "end": 182
+      },
+      {
+        "label": "GPE",
+        "start": 197,
+        "end": 210
+      },
+      {
+        "label": "DATE",
+        "start": 218,
+        "end": 229
+      },
+      {
+        "label": "DATE",
+        "start": 235,
+        "end": 246
+      },
+      {
+        "label": "PERSON",
+        "start": 331,
+        "end": 344
+      }
+    ],
+    "ms": 39.95100001338869
+  },
+  "data/raw/hr_intake_031.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 36,
+        "end": 38
+      },
+      {
+        "label": "DATE",
+        "start": 39,
+        "end": 52
+      },
+      {
+        "label": "PERSON",
+        "start": 83,
+        "end": 108
+      },
+      {
+        "label": "CARDINAL",
+        "start": 137,
+        "end": 140
+      },
+      {
+        "label": "PERSON",
+        "start": 163,
+        "end": 167
+      },
+      {
+        "label": "PERSON",
+        "start": 169,
+        "end": 173
+      },
+      {
+        "label": "DATE",
+        "start": 178,
+        "end": 189
+      },
+      {
+        "label": "DATE",
+        "start": 234,
+        "end": 240
+      },
+      {
+        "label": "PERSON",
+        "start": 263,
+        "end": 277
+      }
+    ],
+    "ms": 42.03109990339726
+  },
+  "data/raw/hr_intake_034.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 39,
+        "end": 51
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 138,
+        "end": 151
+      },
+      {
+        "label": "CARDINAL",
+        "start": 189,
+        "end": 191
+      },
+      {
+        "label": "FAC",
+        "start": 192,
+        "end": 211
+      },
+      {
+        "label": "GPE",
+        "start": 223,
+        "end": 236
+      },
+      {
+        "label": "CARDINAL",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "PERSON",
+        "start": 256,
+        "end": 265
+      },
+      {
+        "label": "CARDINAL",
+        "start": 267,
+        "end": 278
+      }
+    ],
+    "ms": 49.99339999631047
+  },
+  "data/raw/hr_intake_039.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 36,
+        "end": 52
+      },
+      {
+        "label": "PERSON",
+        "start": 63,
+        "end": 73
+      },
+      {
+        "label": "PERSON",
+        "start": 90,
+        "end": 103
+      },
+      {
+        "label": "DATE",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "CARDINAL",
+        "start": 134,
+        "end": 136
+      },
+      {
+        "label": "FAC",
+        "start": 137,
+        "end": 150
+      },
+      {
+        "label": "GPE",
+        "start": 165,
+        "end": 178
+      },
+      {
+        "label": "CARDINAL",
+        "start": 187,
+        "end": 198
+      },
+      {
+        "label": "PERSON",
+        "start": 199,
+        "end": 208
+      },
+      {
+        "label": "CARDINAL",
+        "start": 210,
+        "end": 221
+      },
+      {
+        "label": "DATE",
+        "start": 266,
+        "end": 272
+      },
+      {
+        "label": "GPE",
+        "start": 291,
+        "end": 297
+      },
+      {
+        "label": "PERSON",
+        "start": 299,
+        "end": 317
+      },
+      {
+        "label": "PERSON",
+        "start": 319,
+        "end": 326
+      },
+      {
+        "label": "PERSON",
+        "start": 328,
+        "end": 338
+      }
+    ],
+    "ms": 44.56229996867478
+  },
+  "data/raw/hr_intake_041.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 31,
+        "end": 33
+      },
+      {
+        "label": "DATE",
+        "start": 34,
+        "end": 45
+      },
+      {
+        "label": "ORG",
+        "start": 152,
+        "end": 164
+      },
+      {
+        "label": "PERCENT",
+        "start": 166,
+        "end": 182
+      },
+      {
+        "label": "GPE",
+        "start": 192,
+        "end": 205
+      },
+      {
+        "label": "DATE",
+        "start": 211,
+        "end": 222
+      },
+      {
+        "label": "ORG",
+        "start": 223,
+        "end": 240
+      },
+      {
+        "label": "DATE",
+        "start": 246,
+        "end": 257
+      },
+      {
+        "label": "ORG",
+        "start": 304,
+        "end": 314
+      },
+      {
+        "label": "CARDINAL",
+        "start": 316,
+        "end": 318
+      },
+      {
+        "label": "DATE",
+        "start": 319,
+        "end": 330
+      }
+    ],
+    "ms": 44.61079998873174
+  },
+  "data/raw/hr_intake_047.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 41,
+        "end": 43
+      },
+      {
+        "label": "DATE",
+        "start": 44,
+        "end": 56
+      },
+      {
+        "label": "PERSON",
+        "start": 95,
+        "end": 114
+      },
+      {
+        "label": "CARDINAL",
+        "start": 116,
+        "end": 127
+      },
+      {
+        "label": "CARDINAL",
+        "start": 168,
+        "end": 171
+      },
+      {
+        "label": "PERSON",
+        "start": 172,
+        "end": 189
+      },
+      {
+        "label": "ORG",
+        "start": 191,
+        "end": 203
+      },
+      {
+        "label": "PERSON",
+        "start": 263,
+        "end": 288
+      },
+      {
+        "label": "PERSON",
+        "start": 297,
+        "end": 304
+      }
+    ],
+    "ms": 35.93189991079271
+  },
+  "data/raw/hr_intake_049.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 36,
+        "end": 38
+      },
+      {
+        "label": "DATE",
+        "start": 39,
+        "end": 48
+      },
+      {
+        "label": "PERSON",
+        "start": 81,
+        "end": 98
+      },
+      {
+        "label": "DATE",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "label": "CARDINAL",
+        "start": 121,
+        "end": 123
+      },
+      {
+        "label": "PERSON",
+        "start": 124,
+        "end": 141
+      },
+      {
+        "label": "GPE",
+        "start": 143,
+        "end": 168
+      },
+      {
+        "label": "CARDINAL",
+        "start": 184,
+        "end": 195
+      },
+      {
+        "label": "PERSON",
+        "start": 196,
+        "end": 205
+      },
+      {
+        "label": "DATE",
+        "start": 263,
+        "end": 269
+      },
+      {
+        "label": "PERSON",
+        "start": 288,
+        "end": 296
+      },
+      {
+        "label": "PERSON",
+        "start": 298,
+        "end": 317
+      },
+      {
+        "label": "PERSON",
+        "start": 323,
+        "end": 339
+      }
+    ],
+    "ms": 39.17360003106296
+  },
+  "data/raw/hr_intake_050.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 39,
+        "end": 41
+      },
+      {
+        "label": "DATE",
+        "start": 42,
+        "end": 54
+      },
+      {
+        "label": "PERSON",
+        "start": 106,
+        "end": 111
+      },
+      {
+        "label": "DATE",
+        "start": 120,
+        "end": 131
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 132,
+        "end": 145
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 173,
+        "end": 188
+      },
+      {
+        "label": "CARDINAL",
+        "start": 190,
+        "end": 192
+      },
+      {
+        "label": "LOC",
+        "start": 193,
+        "end": 206
+      },
+      {
+        "label": "GPE",
+        "start": 208,
+        "end": 223
+      },
+      {
+        "label": "GPE",
+        "start": 225,
+        "end": 230
+      },
+      {
+        "label": "ORG",
+        "start": 312,
+        "end": 333
+      }
+    ],
+    "ms": 45.96549994312227
+  },
+  "data/raw/hr_intake_052.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 31,
+        "end": 33
+      },
+      {
+        "label": "DATE",
+        "start": 34,
+        "end": 44
+      },
+      {
+        "label": "ORG",
+        "start": 81,
+        "end": 87
+      },
+      {
+        "label": "PERSON",
+        "start": 89,
+        "end": 107
+      },
+      {
+        "label": "DATE",
+        "start": 122,
+        "end": 126
+      },
+      {
+        "label": "ORG",
+        "start": 159,
+        "end": 171
+      },
+      {
+        "label": "CARDINAL",
+        "start": 173,
+        "end": 176
+      },
+      {
+        "label": "ORG",
+        "start": 192,
+        "end": 203
+      },
+      {
+        "label": "GPE",
+        "start": 205,
+        "end": 218
+      },
+      {
+        "label": "CARDINAL",
+        "start": 227,
+        "end": 238
+      },
+      {
+        "label": "ORG",
+        "start": 303,
+        "end": 313
+      },
+      {
+        "label": "CARDINAL",
+        "start": 315,
+        "end": 317
+      },
+      {
+        "label": "DATE",
+        "start": 318,
+        "end": 328
+      }
+    ],
+    "ms": 43.2194999884814
+  },
+  "data/raw/hr_intake_054.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 41,
+        "end": 43
+      },
+      {
+        "label": "DATE",
+        "start": 44,
+        "end": 57
+      },
+      {
+        "label": "PERSON",
+        "start": 113,
+        "end": 130
+      },
+      {
+        "label": "CARDINAL",
+        "start": 175,
+        "end": 177
+      },
+      {
+        "label": "FAC",
+        "start": 178,
+        "end": 191
+      },
+      {
+        "label": "GPE",
+        "start": 193,
+        "end": 201
+      },
+      {
+        "label": "GPE",
+        "start": 203,
+        "end": 216
+      },
+      {
+        "label": "DATE",
+        "start": 225,
+        "end": 236
+      },
+      {
+        "label": "GPE",
+        "start": 309,
+        "end": 315
+      }
+    ],
+    "ms": 38.91449992079288
+  },
+  "data/raw/hr_intake_055.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 41,
+        "end": 43
+      },
+      {
+        "label": "DATE",
+        "start": 44,
+        "end": 54
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 89,
+        "end": 94
+      },
+      {
+        "label": "PERSON",
+        "start": 96,
+        "end": 111
+      },
+      {
+        "label": "CARDINAL",
+        "start": 175,
+        "end": 177
+      },
+      {
+        "label": "ORG",
+        "start": 178,
+        "end": 203
+      },
+      {
+        "label": "GPE",
+        "start": 205,
+        "end": 212
+      },
+      {
+        "label": "PERSON",
+        "start": 214,
+        "end": 223
+      },
+      {
+        "label": "CARDINAL",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "PERSON",
+        "start": 240,
+        "end": 249
+      },
+      {
+        "label": "DATE",
+        "start": 251,
+        "end": 262
+      },
+      {
+        "label": "PERSON",
+        "start": 304,
+        "end": 326
+      }
+    ],
+    "ms": 43.15490007866174
+  },
+  "data/raw/hr_intake_056.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 29,
+        "end": 41
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 42,
+        "end": 82
+      },
+      {
+        "label": "CARDINAL",
+        "start": 154,
+        "end": 157
+      },
+      {
+        "label": "FAC",
+        "start": 158,
+        "end": 170
+      },
+      {
+        "label": "GPE",
+        "start": 185,
+        "end": 198
+      },
+      {
+        "label": "CARDINAL",
+        "start": 204,
+        "end": 215
+      },
+      {
+        "label": "DATE",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "PERSON",
+        "start": 296,
+        "end": 307
+      }
+    ],
+    "ms": 37.005400052294135
+  },
+  "data/raw/hr_intake_058.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 39,
+        "end": 41
+      },
+      {
+        "label": "DATE",
+        "start": 42,
+        "end": 50
+      },
+      {
+        "label": "PERSON",
+        "start": 95,
+        "end": 111
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 125,
+        "end": 138
+      },
+      {
+        "label": "CARDINAL",
+        "start": 182,
+        "end": 184
+      },
+      {
+        "label": "FAC",
+        "start": 185,
+        "end": 206
+      },
+      {
+        "label": "GPE",
+        "start": 208,
+        "end": 215
+      },
+      {
+        "label": "CARDINAL",
+        "start": 230,
+        "end": 241
+      },
+      {
+        "label": "PERSON",
+        "start": 297,
+        "end": 311
+      }
+    ],
+    "ms": 47.41390002891421
+  },
+  "data/raw/hr_intake_059.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 41,
+        "end": 43
+      },
+      {
+        "label": "DATE",
+        "start": 44,
+        "end": 57
+      },
+      {
+        "label": "MONEY",
+        "start": 172,
+        "end": 190
+      },
+      {
+        "label": "GPE",
+        "start": 200,
+        "end": 213
+      },
+      {
+        "label": "CARDINAL",
+        "start": 222,
+        "end": 233
+      },
+      {
+        "label": "PERSON",
+        "start": 331,
+        "end": 343
+      }
+    ],
+    "ms": 53.86109999381006
+  },
+  "data/raw/hr_intake_064.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 41,
+        "end": 56
+      },
+      {
+        "label": "PERSON",
+        "start": 90,
+        "end": 106
+      },
+      {
+        "label": "CARDINAL",
+        "start": 108,
+        "end": 119
+      },
+      {
+        "label": "CARDINAL",
+        "start": 163,
+        "end": 165
+      },
+      {
+        "label": "FAC",
+        "start": 166,
+        "end": 178
+      },
+      {
+        "label": "DATE",
+        "start": 203,
+        "end": 214
+      },
+      {
+        "label": "DATE",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "PERSON",
+        "start": 271,
+        "end": 287
+      },
+      {
+        "label": "ORG",
+        "start": 304,
+        "end": 310
+      }
+    ],
+    "ms": 44.60940009448677
+  },
+  "data/raw/hr_intake_070.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 39,
+        "end": 41
+      },
+      {
+        "label": "DATE",
+        "start": 42,
+        "end": 55
+      },
+      {
+        "label": "PERSON",
+        "start": 106,
+        "end": 118
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 145,
+        "end": 158
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 182,
+        "end": 197
+      },
+      {
+        "label": "CARDINAL",
+        "start": 199,
+        "end": 202
+      },
+      {
+        "label": "GPE",
+        "start": 232,
+        "end": 245
+      },
+      {
+        "label": "ORG",
+        "start": 338,
+        "end": 360
+      }
+    ],
+    "ms": 49.71089994069189
+  },
+  "data/raw/hr_intake_071.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 29,
+        "end": 43
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 44,
+        "end": 100
+      },
+      {
+        "label": "CARDINAL",
+        "start": 166,
+        "end": 168
+      },
+      {
+        "label": "LOC",
+        "start": 169,
+        "end": 185
+      },
+      {
+        "label": "GPE",
+        "start": 196,
+        "end": 209
+      },
+      {
+        "label": "CARDINAL",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "CARDINAL",
+        "start": 241,
+        "end": 252
+      },
+      {
+        "label": "CARDINAL",
+        "start": 280,
+        "end": 292
+      }
+    ],
+    "ms": 98.89170003589243
+  },
+  "data/raw/hr_intake_074.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 31,
+        "end": 33
+      },
+      {
+        "label": "DATE",
+        "start": 34,
+        "end": 47
+      },
+      {
+        "label": "PERSON",
+        "start": 83,
+        "end": 96
+      },
+      {
+        "label": "ORG",
+        "start": 151,
+        "end": 163
+      },
+      {
+        "label": "CARDINAL",
+        "start": 165,
+        "end": 167
+      },
+      {
+        "label": "LOC",
+        "start": 168,
+        "end": 181
+      },
+      {
+        "label": "PERSON",
+        "start": 183,
+        "end": 188
+      },
+      {
+        "label": "PERSON",
+        "start": 190,
+        "end": 199
+      },
+      {
+        "label": "DATE",
+        "start": 204,
+        "end": 215
+      },
+      {
+        "label": "DATE",
+        "start": 224,
+        "end": 235
+      },
+      {
+        "label": "CARDINAL",
+        "start": 294,
+        "end": 296
+      },
+      {
+        "label": "DATE",
+        "start": 297,
+        "end": 310
+      },
+      {
+        "label": "PERSON",
+        "start": 331,
+        "end": 338
+      }
+    ],
+    "ms": 59.229300008155406
+  },
+  "data/raw/hr_intake_076.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 31,
+        "end": 33
+      },
+      {
+        "label": "DATE",
+        "start": 34,
+        "end": 43
+      },
+      {
+        "label": "PERSON",
+        "start": 86,
+        "end": 97
+      },
+      {
+        "label": "ORG",
+        "start": 163,
+        "end": 175
+      },
+      {
+        "label": "CARDINAL",
+        "start": 177,
+        "end": 180
+      },
+      {
+        "label": "GPE",
+        "start": 209,
+        "end": 214
+      },
+      {
+        "label": "DATE",
+        "start": 223,
+        "end": 234
+      },
+      {
+        "label": "CARDINAL",
+        "start": 310,
+        "end": 312
+      },
+      {
+        "label": "DATE",
+        "start": 313,
+        "end": 322
+      },
+      {
+        "label": "PERSON",
+        "start": 341,
+        "end": 354
+      }
+    ],
+    "ms": 41.234000003896654
+  },
+  "data/raw/hr_intake_077.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 36,
+        "end": 38
+      },
+      {
+        "label": "DATE",
+        "start": 39,
+        "end": 52
+      },
+      {
+        "label": "PERSON",
+        "start": 53,
+        "end": 61
+      },
+      {
+        "label": "CARDINAL",
+        "start": 133,
+        "end": 136
+      },
+      {
+        "label": "ORG",
+        "start": 151,
+        "end": 156
+      },
+      {
+        "label": "DATE",
+        "start": 175,
+        "end": 186
+      },
+      {
+        "label": "DATE",
+        "start": 231,
+        "end": 237
+      },
+      {
+        "label": "PERSON",
+        "start": 260,
+        "end": 273
+      },
+      {
+        "label": "PERSON",
+        "start": 289,
+        "end": 301
+      }
+    ],
+    "ms": 34.17680005077273
+  },
+  "data/raw/hr_intake_079.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 31,
+        "end": 43
+      },
+      {
+        "label": "DATE",
+        "start": 97,
+        "end": 108
+      },
+      {
+        "label": "ORG",
+        "start": 146,
+        "end": 158
+      },
+      {
+        "label": "CARDINAL",
+        "start": 160,
+        "end": 163
+      },
+      {
+        "label": "PERSON",
+        "start": 164,
+        "end": 181
+      },
+      {
+        "label": "GPE",
+        "start": 192,
+        "end": 205
+      },
+      {
+        "label": "ORG",
+        "start": 206,
+        "end": 209
+      },
+      {
+        "label": "DATE",
+        "start": 212,
+        "end": 223
+      },
+      {
+        "label": "CARDINAL",
+        "start": 228,
+        "end": 239
+      },
+      {
+        "label": "ORG",
+        "start": 311,
+        "end": 321
+      },
+      {
+        "label": "DATE",
+        "start": 323,
+        "end": 335
+      },
+      {
+        "label": "PERSON",
+        "start": 352,
+        "end": 366
+      }
+    ],
+    "ms": 36.68450005352497
+  },
+  "data/raw/hr_intake_084.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 39,
+        "end": 55
+      },
+      {
+        "label": "PERSON",
+        "start": 105,
+        "end": 121
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 141,
+        "end": 154
+      },
+      {
+        "label": "CARDINAL",
+        "start": 196,
+        "end": 199
+      },
+      {
+        "label": "PERSON",
+        "start": 207,
+        "end": 219
+      },
+      {
+        "label": "ORG",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "GPE",
+        "start": 234,
+        "end": 247
+      },
+      {
+        "label": "CARDINAL",
+        "start": 273,
+        "end": 284
+      },
+      {
+        "label": "GPE",
+        "start": 345,
+        "end": 351
+      }
+    ],
+    "ms": 42.20469994470477
+  },
+  "data/raw/hr_intake_088.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 29,
+        "end": 31
+      },
+      {
+        "label": "DATE",
+        "start": 32,
+        "end": 40
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 41,
+        "end": 49
+      },
+      {
+        "label": "PERSON",
+        "start": 78,
+        "end": 85
+      },
+      {
+        "label": "PERSON",
+        "start": 87,
+        "end": 103
+      },
+      {
+        "label": "PERSON",
+        "start": 172,
+        "end": 187
+      },
+      {
+        "label": "PERSON",
+        "start": 189,
+        "end": 193
+      },
+      {
+        "label": "DATE",
+        "start": 226,
+        "end": 237
+      },
+      {
+        "label": "ORG",
+        "start": 319,
+        "end": 323
+      },
+      {
+        "label": "GPE",
+        "start": 325,
+        "end": 334
+      }
+    ],
+    "ms": 24.334399960935116
+  },
+  "data/raw/hr_intake_093.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 41,
+        "end": 53
+      },
+      {
+        "label": "CARDINAL",
+        "start": 164,
+        "end": 167
+      },
+      {
+        "label": "PERSON",
+        "start": 202,
+        "end": 225
+      },
+      {
+        "label": "PERSON",
+        "start": 268,
+        "end": 291
+      }
+    ],
+    "ms": 24.394899955950677
+  },
+  "data/raw/hr_intake_098.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 31,
+        "end": 33
+      },
+      {
+        "label": "DATE",
+        "start": 34,
+        "end": 44
+      },
+      {
+        "label": "PERSON",
+        "start": 84,
+        "end": 98
+      },
+      {
+        "label": "ORG",
+        "start": 155,
+        "end": 167
+      },
+      {
+        "label": "CARDINAL",
+        "start": 169,
+        "end": 171
+      },
+      {
+        "label": "FAC",
+        "start": 172,
+        "end": 187
+      },
+      {
+        "label": "GPE",
+        "start": 189,
+        "end": 193
+      },
+      {
+        "label": "GPE",
+        "start": 195,
+        "end": 200
+      },
+      {
+        "label": "DATE",
+        "start": 205,
+        "end": 216
+      },
+      {
+        "label": "DATE",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "CARDINAL",
+        "start": 314,
+        "end": 316
+      },
+      {
+        "label": "DATE",
+        "start": 317,
+        "end": 327
+      },
+      {
+        "label": "PERSON",
+        "start": 346,
+        "end": 362
+      }
+    ],
+    "ms": 20.280000055208802
+  },
+  "data/raw/vendor_invoice_000.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 71,
+        "end": 73
+      },
+      {
+        "label": "DATE",
+        "start": 74,
+        "end": 86
+      },
+      {
+        "label": "PERSON",
+        "start": 99,
+        "end": 113
+      },
+      {
+        "label": "DATE",
+        "start": 115,
+        "end": 126
+      },
+      {
+        "label": "CARDINAL",
+        "start": 169,
+        "end": 172
+      },
+      {
+        "label": "ORG",
+        "start": 173,
+        "end": 198
+      },
+      {
+        "label": "GPE",
+        "start": 213,
+        "end": 226
+      },
+      {
+        "label": "DATE",
+        "start": 235,
+        "end": 246
+      },
+      {
+        "label": "PERSON",
+        "start": 247,
+        "end": 256
+      },
+      {
+        "label": "CARDINAL",
+        "start": 258,
+        "end": 269
+      },
+      {
+        "label": "PERSON",
+        "start": 312,
+        "end": 315
+      },
+      {
+        "label": "PERSON",
+        "start": 344,
+        "end": 361
+      }
+    ],
+    "ms": 29.891900019720197
+  },
+  "data/raw/vendor_invoice_002.txt": {
+    "spans": [
+      {
+        "label": "PERSON",
+        "start": 35,
+        "end": 45
+      },
+      {
+        "label": "PERSON",
+        "start": 50,
+        "end": 54
+      },
+      {
+        "label": "DATE",
+        "start": 79,
+        "end": 94
+      },
+      {
+        "label": "PERSON",
+        "start": 109,
+        "end": 127
+      },
+      {
+        "label": "DATE",
+        "start": 138,
+        "end": 146
+      },
+      {
+        "label": "ORG",
+        "start": 178,
+        "end": 192
+      },
+      {
+        "label": "CARDINAL",
+        "start": 194,
+        "end": 197
+      },
+      {
+        "label": "LOC",
+        "start": 198,
+        "end": 211
+      },
+      {
+        "label": "GPE",
+        "start": 213,
+        "end": 218
+      },
+      {
+        "label": "GPE",
+        "start": 220,
+        "end": 225
+      },
+      {
+        "label": "CARDINAL",
+        "start": 269,
+        "end": 280
+      },
+      {
+        "label": "PERSON",
+        "start": 372,
+        "end": 379
+      }
+    ],
+    "ms": 27.63919997960329
+  },
+  "data/raw/vendor_invoice_003.txt": {
+    "spans": [
+      {
+        "label": "NORP",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "label": "GPE",
+        "start": 25,
+        "end": 32
+      },
+      {
+        "label": "ORG",
+        "start": 37,
+        "end": 44
+      },
+      {
+        "label": "CARDINAL",
+        "start": 66,
+        "end": 68
+      },
+      {
+        "label": "DATE",
+        "start": 69,
+        "end": 78
+      },
+      {
+        "label": "PERSON",
+        "start": 80,
+        "end": 85
+      },
+      {
+        "label": "ORG",
+        "start": 92,
+        "end": 108
+      },
+      {
+        "label": "PERSON",
+        "start": 110,
+        "end": 127
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 160,
+        "end": 173
+      },
+      {
+        "label": "CARDINAL",
+        "start": 175,
+        "end": 177
+      },
+      {
+        "label": "FAC",
+        "start": 178,
+        "end": 190
+      },
+      {
+        "label": "GPE",
+        "start": 200,
+        "end": 213
+      },
+      {
+        "label": "PERSON",
+        "start": 354,
+        "end": 368
+      }
+    ],
+    "ms": 24.706299998797476
+  },
+  "data/raw/vendor_invoice_004.txt": {
+    "spans": [
+      {
+        "label": "PERSON",
+        "start": 37,
+        "end": 49
+      },
+      {
+        "label": "CARDINAL",
+        "start": 51,
+        "end": 53
+      },
+      {
+        "label": "DATE",
+        "start": 54,
+        "end": 66
+      },
+      {
+        "label": "PERSON",
+        "start": 83,
+        "end": 93
+      },
+      {
+        "label": "CARDINAL",
+        "start": 139,
+        "end": 141
+      },
+      {
+        "label": "ORG",
+        "start": 142,
+        "end": 164
+      },
+      {
+        "label": "GPE",
+        "start": 166,
+        "end": 173
+      },
+      {
+        "label": "ORG",
+        "start": 175,
+        "end": 204
+      },
+      {
+        "label": "CARDINAL",
+        "start": 206,
+        "end": 217
+      },
+      {
+        "label": "CARDINAL",
+        "start": 226,
+        "end": 228
+      },
+      {
+        "label": "PERSON",
+        "start": 291,
+        "end": 306
+      }
+    ],
+    "ms": 21.07739995699376
+  },
+  "data/raw/vendor_invoice_006.txt": {
+    "spans": [
+      {
+        "label": "NORP",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "label": "PERSON",
+        "start": 25,
+        "end": 36
+      },
+      {
+        "label": "ORG",
+        "start": 41,
+        "end": 48
+      },
+      {
+        "label": "CARDINAL",
+        "start": 70,
+        "end": 72
+      },
+      {
+        "label": "DATE",
+        "start": 73,
+        "end": 85
+      },
+      {
+        "label": "DATE",
+        "start": 114,
+        "end": 125
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 162,
+        "end": 175
+      },
+      {
+        "label": "PERSON",
+        "start": 177,
+        "end": 193
+      },
+      {
+        "label": "PERSON",
+        "start": 195,
+        "end": 209
+      },
+      {
+        "label": "CARDINAL",
+        "start": 220,
+        "end": 231
+      },
+      {
+        "label": "DATE",
+        "start": 239,
+        "end": 250
+      },
+      {
+        "label": "PERSON",
+        "start": 342,
+        "end": 357
+      }
+    ],
+    "ms": 24.79629998560995
+  },
+  "data/raw/vendor_invoice_010.txt": {
+    "spans": [
+      {
+        "label": "NORP",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "label": "CARDINAL",
+        "start": 60,
+        "end": 62
+      },
+      {
+        "label": "DATE",
+        "start": 63,
+        "end": 73
+      },
+      {
+        "label": "PERSON",
+        "start": 87,
+        "end": 94
+      },
+      {
+        "label": "PERSON",
+        "start": 96,
+        "end": 110
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 166,
+        "end": 179
+      },
+      {
+        "label": "CARDINAL",
+        "start": 181,
+        "end": 182
+      },
+      {
+        "label": "DATE",
+        "start": 241,
+        "end": 252
+      },
+      {
+        "label": "DATE",
+        "start": 266,
+        "end": 277
+      },
+      {
+        "label": "CARDINAL",
+        "start": 341,
+        "end": 353
+      },
+      {
+        "label": "PERSON",
+        "start": 371,
+        "end": 382
+      }
+    ],
+    "ms": 29.329100041650236
+  },
+  "data/raw/vendor_invoice_011.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 49,
+        "end": 60
+      },
+      {
+        "label": "CARDINAL",
+        "start": 67,
+        "end": 69
+      },
+      {
+        "label": "DATE",
+        "start": 70,
+        "end": 84
+      },
+      {
+        "label": "PERSON",
+        "start": 109,
+        "end": 126
+      },
+      {
+        "label": "CARDINAL",
+        "start": 164,
+        "end": 166
+      },
+      {
+        "label": "FAC",
+        "start": 167,
+        "end": 188
+      },
+      {
+        "label": "PERSON",
+        "start": 190,
+        "end": 206
+      },
+      {
+        "label": "GPE",
+        "start": 208,
+        "end": 221
+      },
+      {
+        "label": "CARDINAL",
+        "start": 267,
+        "end": 269
+      },
+      {
+        "label": "PERSON",
+        "start": 332,
+        "end": 347
+      }
+    ],
+    "ms": 34.111600019969046
+  },
+  "data/raw/vendor_invoice_013.txt": {
+    "spans": [
+      {
+        "label": "WORK_OF_ART",
+        "start": 38,
+        "end": 50
+      },
+      {
+        "label": "DATE",
+        "start": 52,
+        "end": 67
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 125,
+        "end": 141
+      },
+      {
+        "label": "CARDINAL",
+        "start": 143,
+        "end": 146
+      },
+      {
+        "label": "PERSON",
+        "start": 147,
+        "end": 159
+      },
+      {
+        "label": "ORG",
+        "start": 161,
+        "end": 166
+      },
+      {
+        "label": "CARDINAL",
+        "start": 178,
+        "end": 189
+      },
+      {
+        "label": "CARDINAL",
+        "start": 198,
+        "end": 200
+      },
+      {
+        "label": "PERSON",
+        "start": 259,
+        "end": 263
+      },
+      {
+        "label": "PERSON",
+        "start": 265,
+        "end": 280
+      }
+    ],
+    "ms": 28.69720000308007
+  },
+  "data/raw/vendor_invoice_014.txt": {
+    "spans": [
+      {
+        "label": "NORP",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "label": "ORG",
+        "start": 25,
+        "end": 44
+      },
+      {
+        "label": "CARDINAL",
+        "start": 62,
+        "end": 64
+      },
+      {
+        "label": "DATE",
+        "start": 65,
+        "end": 76
+      },
+      {
+        "label": "PERSON",
+        "start": 95,
+        "end": 114
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 166,
+        "end": 179
+      },
+      {
+        "label": "CARDINAL",
+        "start": 181,
+        "end": 183
+      },
+      {
+        "label": "ORG",
+        "start": 184,
+        "end": 200
+      },
+      {
+        "label": "DATE",
+        "start": 221,
+        "end": 232
+      },
+      {
+        "label": "PERSON",
+        "start": 328,
+        "end": 340
+      }
+    ],
+    "ms": 29.116899939253926
+  },
+  "data/raw/vendor_invoice_019.txt": {
+    "spans": [
+      {
+        "label": "PERSON",
+        "start": 37,
+        "end": 49
+      },
+      {
+        "label": "DATE",
+        "start": 51,
+        "end": 63
+      },
+      {
+        "label": "PERSON",
+        "start": 84,
+        "end": 95
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 123,
+        "end": 139
+      },
+      {
+        "label": "CARDINAL",
+        "start": 141,
+        "end": 143
+      },
+      {
+        "label": "FAC",
+        "start": 144,
+        "end": 156
+      },
+      {
+        "label": "GPE",
+        "start": 158,
+        "end": 163
+      },
+      {
+        "label": "ORG",
+        "start": 165,
+        "end": 194
+      },
+      {
+        "label": "CARDINAL",
+        "start": 196,
+        "end": 207
+      },
+      {
+        "label": "CARDINAL",
+        "start": 216,
+        "end": 218
+      },
+      {
+        "label": "PERSON",
+        "start": 241,
+        "end": 244
+      }
+    ],
+    "ms": 32.81150001566857
+  },
+  "data/raw/vendor_invoice_025.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 74,
+        "end": 76
+      },
+      {
+        "label": "DATE",
+        "start": 77,
+        "end": 89
+      },
+      {
+        "label": "PERSON",
+        "start": 104,
+        "end": 117
+      },
+      {
+        "label": "ORG",
+        "start": 173,
+        "end": 187
+      },
+      {
+        "label": "CARDINAL",
+        "start": 189,
+        "end": 191
+      },
+      {
+        "label": "FAC",
+        "start": 192,
+        "end": 213
+      },
+      {
+        "label": "CARDINAL",
+        "start": 242,
+        "end": 253
+      },
+      {
+        "label": "CARDINAL",
+        "start": 261,
+        "end": 272
+      },
+      {
+        "label": "CARDINAL",
+        "start": 320,
+        "end": 332
+      },
+      {
+        "label": "PERSON",
+        "start": 350,
+        "end": 358
+      }
+    ],
+    "ms": 33.38689997326583
+  },
+  "data/raw/vendor_invoice_026.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 45,
+        "end": 47
+      },
+      {
+        "label": "DATE",
+        "start": 48,
+        "end": 61
+      },
+      {
+        "label": "PERSON",
+        "start": 84,
+        "end": 98
+      },
+      {
+        "label": "CARDINAL",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "label": "ORG",
+        "start": 112,
+        "end": 128
+      },
+      {
+        "label": "CARDINAL",
+        "start": 130,
+        "end": 133
+      },
+      {
+        "label": "PERSON",
+        "start": 134,
+        "end": 151
+      },
+      {
+        "label": "PERSON",
+        "start": 153,
+        "end": 157
+      },
+      {
+        "label": "CARDINAL",
+        "start": 222,
+        "end": 224
+      },
+      {
+        "label": "CARDINAL",
+        "start": 249,
+        "end": 261
+      },
+      {
+        "label": "PERSON",
+        "start": 289,
+        "end": 306
+      }
+    ],
+    "ms": 28.266499983146787
+  },
+  "data/raw/vendor_invoice_035.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 52,
+        "end": 54
+      },
+      {
+        "label": "DATE",
+        "start": 55,
+        "end": 69
+      },
+      {
+        "label": "PERSON",
+        "start": 86,
+        "end": 101
+      },
+      {
+        "label": "CARDINAL",
+        "start": 147,
+        "end": 149
+      },
+      {
+        "label": "PERSON",
+        "start": 150,
+        "end": 166
+      },
+      {
+        "label": "GPE",
+        "start": 174,
+        "end": 179
+      },
+      {
+        "label": "DATE",
+        "start": 186,
+        "end": 197
+      },
+      {
+        "label": "CARDINAL",
+        "start": 206,
+        "end": 208
+      }
+    ],
+    "ms": 29.810999985784292
+  },
+  "data/raw/vendor_invoice_037.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 52,
+        "end": 54
+      },
+      {
+        "label": "DATE",
+        "start": 55,
+        "end": 64
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 125,
+        "end": 141
+      },
+      {
+        "label": "CARDINAL",
+        "start": 143,
+        "end": 145
+      },
+      {
+        "label": "FAC",
+        "start": 146,
+        "end": 159
+      },
+      {
+        "label": "PERSON",
+        "start": 161,
+        "end": 177
+      },
+      {
+        "label": "GPE",
+        "start": 179,
+        "end": 192
+      },
+      {
+        "label": "CARDINAL",
+        "start": 219,
+        "end": 221
+      },
+      {
+        "label": "CARDINAL",
+        "start": 248,
+        "end": 260
+      }
+    ],
+    "ms": 42.967400047928095
+  },
+  "data/raw/vendor_invoice_038.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 40,
+        "end": 51
+      },
+      {
+        "label": "CARDINAL",
+        "start": 58,
+        "end": 60
+      },
+      {
+        "label": "DATE",
+        "start": 61,
+        "end": 71
+      },
+      {
+        "label": "PERSON",
+        "start": 94,
+        "end": 112
+      },
+      {
+        "label": "ORG",
+        "start": 126,
+        "end": 142
+      },
+      {
+        "label": "CARDINAL",
+        "start": 144,
+        "end": 146
+      },
+      {
+        "label": "FAC",
+        "start": 147,
+        "end": 166
+      },
+      {
+        "label": "GPE",
+        "start": 168,
+        "end": 173
+      },
+      {
+        "label": "GPE",
+        "start": 175,
+        "end": 180
+      },
+      {
+        "label": "DATE",
+        "start": 193,
+        "end": 204
+      },
+      {
+        "label": "CARDINAL",
+        "start": 230,
+        "end": 232
+      }
+    ],
+    "ms": 53.015499957837164
+  },
+  "data/raw/vendor_invoice_042.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 45,
+        "end": 62
+      },
+      {
+        "label": "PERSON",
+        "start": 80,
+        "end": 88
+      },
+      {
+        "label": "PERSON",
+        "start": 90,
+        "end": 105
+      },
+      {
+        "label": "ORG",
+        "start": 119,
+        "end": 135
+      },
+      {
+        "label": "CARDINAL",
+        "start": 137,
+        "end": 140
+      },
+      {
+        "label": "FAC",
+        "start": 141,
+        "end": 153
+      },
+      {
+        "label": "GPE",
+        "start": 155,
+        "end": 162
+      },
+      {
+        "label": "CARDINAL",
+        "start": 213,
+        "end": 215
+      }
+    ],
+    "ms": 49.699499970301986
+  },
+  "data/raw/vendor_invoice_043.txt": {
+    "spans": [
+      {
+        "label": "ORG",
+        "start": 25,
+        "end": 39
+      },
+      {
+        "label": "DATE",
+        "start": 61,
+        "end": 73
+      },
+      {
+        "label": "PERSON",
+        "start": 87,
+        "end": 94
+      },
+      {
+        "label": "PERSON",
+        "start": 96,
+        "end": 111
+      },
+      {
+        "label": "DATE",
+        "start": 113,
+        "end": 124
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 159,
+        "end": 172
+      },
+      {
+        "label": "CARDINAL",
+        "start": 174,
+        "end": 176
+      },
+      {
+        "label": "PERSON",
+        "start": 177,
+        "end": 197
+      },
+      {
+        "label": "GPE",
+        "start": 199,
+        "end": 204
+      },
+      {
+        "label": "GPE",
+        "start": 206,
+        "end": 211
+      },
+      {
+        "label": "DATE",
+        "start": 220,
+        "end": 231
+      }
+    ],
+    "ms": 50.79679994378239
+  },
+  "data/raw/vendor_invoice_048.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 46,
+        "end": 48
+      },
+      {
+        "label": "DATE",
+        "start": 49,
+        "end": 61
+      },
+      {
+        "label": "ORG",
+        "start": 106,
+        "end": 122
+      },
+      {
+        "label": "CARDINAL",
+        "start": 124,
+        "end": 127
+      },
+      {
+        "label": "PERSON",
+        "start": 128,
+        "end": 145
+      },
+      {
+        "label": "GPE",
+        "start": 147,
+        "end": 152
+      },
+      {
+        "label": "GPE",
+        "start": 154,
+        "end": 159
+      },
+      {
+        "label": "CARDINAL",
+        "start": 218,
+        "end": 220
+      },
+      {
+        "label": "PERSON",
+        "start": 279,
+        "end": 294
+      }
+    ],
+    "ms": 53.94030001480132
+  },
+  "data/raw/vendor_invoice_060.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 72,
+        "end": 74
+      },
+      {
+        "label": "DATE",
+        "start": 75,
+        "end": 84
+      },
+      {
+        "label": "ORG",
+        "start": 175,
+        "end": 189
+      },
+      {
+        "label": "CARDINAL",
+        "start": 191,
+        "end": 194
+      },
+      {
+        "label": "PERSON",
+        "start": 195,
+        "end": 215
+      },
+      {
+        "label": "GPE",
+        "start": 217,
+        "end": 222
+      },
+      {
+        "label": "GPE",
+        "start": 224,
+        "end": 229
+      },
+      {
+        "label": "DATE",
+        "start": 256,
+        "end": 267
+      },
+      {
+        "label": "ORG",
+        "start": 268,
+        "end": 300
+      },
+      {
+        "label": "PERSON",
+        "start": 301,
+        "end": 310
+      },
+      {
+        "label": "DATE",
+        "start": 312,
+        "end": 323
+      },
+      {
+        "label": "PERSON",
+        "start": 367,
+        "end": 383
+      },
+      {
+        "label": "PERSON",
+        "start": 401,
+        "end": 407
+      },
+      {
+        "label": "PERSON",
+        "start": 409,
+        "end": 418
+      }
+    ],
+    "ms": 71.7575999442488
+  },
+  "data/raw/vendor_invoice_061.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 68,
+        "end": 70
+      },
+      {
+        "label": "DATE",
+        "start": 71,
+        "end": 79
+      },
+      {
+        "label": "PERSON",
+        "start": 92,
+        "end": 114
+      },
+      {
+        "label": "CARDINAL",
+        "start": 116,
+        "end": 127
+      },
+      {
+        "label": "CARDINAL",
+        "start": 173,
+        "end": 175
+      },
+      {
+        "label": "PERSON",
+        "start": 183,
+        "end": 195
+      },
+      {
+        "label": "GPE",
+        "start": 206,
+        "end": 219
+      },
+      {
+        "label": "CARDINAL",
+        "start": 228,
+        "end": 251
+      }
+    ],
+    "ms": 66.71270006336272
+  },
+  "data/raw/vendor_invoice_063.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 59,
+        "end": 61
+      },
+      {
+        "label": "DATE",
+        "start": 62,
+        "end": 71
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 155,
+        "end": 168
+      },
+      {
+        "label": "CARDINAL",
+        "start": 170,
+        "end": 172
+      },
+      {
+        "label": "FAC",
+        "start": 173,
+        "end": 194
+      },
+      {
+        "label": "GPE",
+        "start": 196,
+        "end": 211
+      },
+      {
+        "label": "GPE",
+        "start": 213,
+        "end": 218
+      },
+      {
+        "label": "DATE",
+        "start": 227,
+        "end": 238
+      },
+      {
+        "label": "PERSON",
+        "start": 239,
+        "end": 248
+      },
+      {
+        "label": "DATE",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "PERSON",
+        "start": 321,
+        "end": 347
+      },
+      {
+        "label": "ORG",
+        "start": 349,
+        "end": 358
+      },
+      {
+        "label": "PERSON",
+        "start": 360,
+        "end": 368
+      }
+    ],
+    "ms": 65.83690003026277
+  },
+  "data/raw/vendor_invoice_067.txt": {
+    "spans": [
+      {
+        "label": "PERSON",
+        "start": 12,
+        "end": 18
+      },
+      {
+        "label": "CARDINAL",
+        "start": 69,
+        "end": 71
+      },
+      {
+        "label": "PERSON",
+        "start": 102,
+        "end": 117
+      },
+      {
+        "label": "CARDINAL",
+        "start": 125,
+        "end": 136
+      },
+      {
+        "label": "CARDINAL",
+        "start": 179,
+        "end": 181
+      },
+      {
+        "label": "FAC",
+        "start": 182,
+        "end": 195
+      },
+      {
+        "label": "CARDINAL",
+        "start": 216,
+        "end": 227
+      },
+      {
+        "label": "PERSON",
+        "start": 309,
+        "end": 316
+      }
+    ],
+    "ms": 67.01540003996342
+  },
+  "data/raw/vendor_invoice_068.txt": {
+    "spans": [
+      {
+        "label": "PERSON",
+        "start": 35,
+        "end": 45
+      },
+      {
+        "label": "PERSON",
+        "start": 50,
+        "end": 54
+      },
+      {
+        "label": "CARDINAL",
+        "start": 81,
+        "end": 83
+      },
+      {
+        "label": "DATE",
+        "start": 84,
+        "end": 97
+      },
+      {
+        "label": "PERSON",
+        "start": 112,
+        "end": 131
+      },
+      {
+        "label": "ORG",
+        "start": 185,
+        "end": 199
+      },
+      {
+        "label": "CARDINAL",
+        "start": 201,
+        "end": 203
+      },
+      {
+        "label": "ORG",
+        "start": 204,
+        "end": 229
+      },
+      {
+        "label": "GPE",
+        "start": 231,
+        "end": 235
+      },
+      {
+        "label": "GPE",
+        "start": 237,
+        "end": 242
+      },
+      {
+        "label": "DATE",
+        "start": 269,
+        "end": 280
+      },
+      {
+        "label": "CARDINAL",
+        "start": 286,
+        "end": 297
+      },
+      {
+        "label": "CARDINAL",
+        "start": 303,
+        "end": 314
+      },
+      {
+        "label": "CARDINAL",
+        "start": 362,
+        "end": 374
+      },
+      {
+        "label": "PERSON",
+        "start": 392,
+        "end": 396
+      },
+      {
+        "label": "PERSON",
+        "start": 398,
+        "end": 414
+      }
+    ],
+    "ms": 89.81180004775524
+  },
+  "data/raw/vendor_invoice_069.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 46,
+        "end": 57
+      },
+      {
+        "label": "PERSON",
+        "start": 85,
+        "end": 92
+      },
+      {
+        "label": "DATE",
+        "start": 100,
+        "end": 111
+      },
+      {
+        "label": "CARDINAL",
+        "start": 130,
+        "end": 132
+      },
+      {
+        "label": "PERSON",
+        "start": 133,
+        "end": 149
+      },
+      {
+        "label": "PERSON",
+        "start": 151,
+        "end": 167
+      },
+      {
+        "label": "GPE",
+        "start": 169,
+        "end": 182
+      },
+      {
+        "label": "CARDINAL",
+        "start": 228,
+        "end": 230
+      },
+      {
+        "label": "CARDINAL",
+        "start": 255,
+        "end": 267
+      },
+      {
+        "label": "PERSON",
+        "start": 289,
+        "end": 294
+      },
+      {
+        "label": "PERSON",
+        "start": 296,
+        "end": 307
+      }
+    ],
+    "ms": 144.3678999785334
+  },
+  "data/raw/vendor_invoice_072.txt": {
+    "spans": [
+      {
+        "label": "NORP",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "label": "DATE",
+        "start": 63,
+        "end": 79
+      },
+      {
+        "label": "PERSON",
+        "start": 81,
+        "end": 86
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 167,
+        "end": 180
+      },
+      {
+        "label": "ORG",
+        "start": 182,
+        "end": 197
+      },
+      {
+        "label": "GPE",
+        "start": 207,
+        "end": 220
+      },
+      {
+        "label": "DATE",
+        "start": 226,
+        "end": 237
+      },
+      {
+        "label": "ORG",
+        "start": 325,
+        "end": 334
+      },
+      {
+        "label": "PERSON",
+        "start": 336,
+        "end": 346
+      }
+    ],
+    "ms": 31.840299954637885
+  },
+  "data/raw/vendor_invoice_078.txt": {
+    "spans": [
+      {
+        "label": "PERSON",
+        "start": 12,
+        "end": 25
+      },
+      {
+        "label": "PERSON",
+        "start": 30,
+        "end": 35
+      },
+      {
+        "label": "DATE",
+        "start": 82,
+        "end": 94
+      },
+      {
+        "label": "ORG",
+        "start": 188,
+        "end": 205
+      },
+      {
+        "label": "GPE",
+        "start": 207,
+        "end": 212
+      },
+      {
+        "label": "GPE",
+        "start": 214,
+        "end": 219
+      },
+      {
+        "label": "DATE",
+        "start": 225,
+        "end": 236
+      },
+      {
+        "label": "PERSON",
+        "start": 279,
+        "end": 282
+      },
+      {
+        "label": "PERSON",
+        "start": 311,
+        "end": 331
+      }
+    ],
+    "ms": 18.532300018705428
+  },
+  "data/raw/vendor_invoice_080.txt": {
+    "spans": [
+      {
+        "label": "NORP",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "label": "ORG",
+        "start": 25,
+        "end": 40
+      },
+      {
+        "label": "DATE",
+        "start": 62,
+        "end": 75
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 170,
+        "end": 183
+      },
+      {
+        "label": "CARDINAL",
+        "start": 185,
+        "end": 187
+      },
+      {
+        "label": "PERSON",
+        "start": 188,
+        "end": 208
+      },
+      {
+        "label": "GPE",
+        "start": 216,
+        "end": 221
+      },
+      {
+        "label": "CARDINAL",
+        "start": 230,
+        "end": 241
+      },
+      {
+        "label": "PERSON",
+        "start": 242,
+        "end": 251
+      },
+      {
+        "label": "DATE",
+        "start": 253,
+        "end": 264
+      }
+    ],
+    "ms": 22.67920004669577
+  },
+  "data/raw/vendor_invoice_082.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 52,
+        "end": 54
+      },
+      {
+        "label": "DATE",
+        "start": 55,
+        "end": 65
+      },
+      {
+        "label": "PERSON",
+        "start": 82,
+        "end": 94
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 122,
+        "end": 138
+      },
+      {
+        "label": "CARDINAL",
+        "start": 140,
+        "end": 143
+      },
+      {
+        "label": "ORG",
+        "start": 159,
+        "end": 164
+      },
+      {
+        "label": "CARDINAL",
+        "start": 176,
+        "end": 187
+      },
+      {
+        "label": "CARDINAL",
+        "start": 196,
+        "end": 198
+      }
+    ],
+    "ms": 17.540500033646822
+  },
+  "data/raw/vendor_invoice_085.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 46,
+        "end": 48
+      },
+      {
+        "label": "DATE",
+        "start": 49,
+        "end": 61
+      },
+      {
+        "label": "PERSON",
+        "start": 79,
+        "end": 93
+      },
+      {
+        "label": "ORG",
+        "start": 113,
+        "end": 129
+      },
+      {
+        "label": "CARDINAL",
+        "start": 131,
+        "end": 133
+      },
+      {
+        "label": "GPE",
+        "start": 154,
+        "end": 162
+      },
+      {
+        "label": "GPE",
+        "start": 164,
+        "end": 177
+      },
+      {
+        "label": "CARDINAL",
+        "start": 235,
+        "end": 237
+      },
+      {
+        "label": "CARDINAL",
+        "start": 262,
+        "end": 274
+      },
+      {
+        "label": "PERSON",
+        "start": 307,
+        "end": 317
+      }
+    ],
+    "ms": 19.872400094754994
+  },
+  "data/raw/vendor_invoice_086.txt": {
+    "spans": [
+      {
+        "label": "PERSON",
+        "start": 35,
+        "end": 47
+      },
+      {
+        "label": "CARDINAL",
+        "start": 73,
+        "end": 75
+      },
+      {
+        "label": "DATE",
+        "start": 76,
+        "end": 84
+      },
+      {
+        "label": "CARDINAL",
+        "start": 189,
+        "end": 191
+      },
+      {
+        "label": "ORG",
+        "start": 192,
+        "end": 217
+      },
+      {
+        "label": "PERSON",
+        "start": 219,
+        "end": 233
+      },
+      {
+        "label": "DATE",
+        "start": 244,
+        "end": 255
+      },
+      {
+        "label": "ORG",
+        "start": 256,
+        "end": 273
+      },
+      {
+        "label": "PERSON",
+        "start": 370,
+        "end": 380
+      }
+    ],
+    "ms": 19.833600032143295
+  },
+  "data/raw/vendor_invoice_087.txt": {
+    "spans": [
+      {
+        "label": "CARDINAL",
+        "start": 70,
+        "end": 72
+      },
+      {
+        "label": "DATE",
+        "start": 73,
+        "end": 87
+      },
+      {
+        "label": "PERSON",
+        "start": 100,
+        "end": 122
+      },
+      {
+        "label": "CARDINAL",
+        "start": 185,
+        "end": 187
+      },
+      {
+        "label": "FAC",
+        "start": 188,
+        "end": 200
+      },
+      {
+        "label": "ORG",
+        "start": 202,
+        "end": 213
+      },
+      {
+        "label": "GPE",
+        "start": 215,
+        "end": 228
+      },
+      {
+        "label": "CARDINAL",
+        "start": 250,
+        "end": 261
+      },
+      {
+        "label": "PERSON",
+        "start": 340,
+        "end": 352
+      }
+    ],
+    "ms": 21.973400027491152
+  },
+  "data/raw/vendor_invoice_090.txt": {
+    "spans": [
+      {
+        "label": "NORP",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "label": "PERSON",
+        "start": 25,
+        "end": 35
+      },
+      {
+        "label": "ORG",
+        "start": 40,
+        "end": 50
+      },
+      {
+        "label": "CARDINAL",
+        "start": 72,
+        "end": 74
+      },
+      {
+        "label": "DATE",
+        "start": 75,
+        "end": 84
+      },
+      {
+        "label": "PERSON",
+        "start": 102,
+        "end": 112
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 173,
+        "end": 186
+      },
+      {
+        "label": "CARDINAL",
+        "start": 188,
+        "end": 189
+      },
+      {
+        "label": "LOC",
+        "start": 190,
+        "end": 203
+      },
+      {
+        "label": "GPE",
+        "start": 213,
+        "end": 226
+      },
+      {
+        "label": "CARDINAL",
+        "start": 232,
+        "end": 243
+      },
+      {
+        "label": "PERSON",
+        "start": 331,
+        "end": 341
+      }
+    ],
+    "ms": 19.875400001183152
+  },
+  "data/raw/vendor_invoice_091.txt": {
+    "spans": [
+      {
+        "label": "WORK_OF_ART",
+        "start": 63,
+        "end": 75
+      },
+      {
+        "label": "DATE",
+        "start": 77,
+        "end": 93
+      },
+      {
+        "label": "PERSON",
+        "start": 119,
+        "end": 136
+      },
+      {
+        "label": "WORK_OF_ART",
+        "start": 150,
+        "end": 166
+      },
+      {
+        "label": "CARDINAL",
+        "start": 168,
+        "end": 170
+      },
+      {
+        "label": "LOC",
+        "start": 171,
+        "end": 186
+      },
+      {
+        "label": "PERSON",
+        "start": 196,
+        "end": 200
+      },
+      {
+        "label": "CARDINAL",
+        "start": 205,
+        "end": 216
+      },
+      {
+        "label": "CARDINAL",
+        "start": 225,
+        "end": 227
+      },
+      {
+        "label": "PERSON",
+        "start": 293,
+        "end": 300
+      }
+    ],
+    "ms": 26.340399985201657
+  },
+  "data/raw/vendor_invoice_094.txt": {
+    "spans": [
+      {
+        "label": "DATE",
+        "start": 53,
+        "end": 64
+      },
+      {
+        "label": "CARDINAL",
+        "start": 71,
+        "end": 73
+      },
+      {
+        "label": "DATE",
+        "start": 74,
+        "end": 85
+      },
+      {
+        "label": "DATE",
+        "start": 123,
+        "end": 134
+      },
+      {
+        "label": "ORG",
+        "start": 135,
+        "end": 151
+      },
+      {
+        "label": "ORG",
+        "start": 153,
+        "end": 170
+      },
+      {
+        "label": "PERSON",
+        "start": 172,
+        "end": 177
+      },
+      {
+        "label": "CARDINAL",
+        "start": 230,
+        "end": 232
+      },
+      {
+        "label": "CARDINAL",
+        "start": 257,
+        "end": 269
+      }
+    ],
+    "ms": 20.859200041741133
+  }
+}
