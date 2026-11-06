@@ -1,7 +1,7 @@
 # PROJECT_BRIEF: pii-redaction-benchmark
 
 ## Purpose
-A public, reproducible benchmark of local PII redaction on synthetic Nigerian-format business documents. Three configurations are compared: (A) spaCy en_core_web_sm NER only, (B) Presidio out-of-the-box, (C) Presidio plus custom BVN/NIN recognizers. The results will be published on LinkedIn, so every number must be honest and verifiable.
+A public, reproducible benchmark of local PII redaction on synthetic Nigerian-format business documents. Five configurations are evaluated: spaCy en_core_web_sm, Presidio default, Presidio ng_phone, Presidio custom_generic (archived experiment 01), and Presidio custom (archived experiment 02). Both tools use the full default spaCy pipeline. The results will be published on LinkedIn, so every number must be honest and verifiable.
 
 ## Rules (always apply)
 1. Never fabricate or hardcode results. Every number in any file must be produced by a script.
@@ -31,7 +31,7 @@ Create scripts/metrics.py and tests/test_metrics.py (tiny hand-built cases: exac
 - Strict match: same type and exact span.
 - Partial overlap: overlaps a ground-truth entity but not exact.
 - Leak rate (headline, type-agnostic): PII characters not covered by any predicted span, divided by total PII characters. Also report entity-level exposure: entities with at least one uncovered character, divided by all entities.
-- Precision: predicted spans that overlap no entity are false positives. Spans that hit decoys are reported separately as "decoy hits".
+- Precision: strict/overlap false positives equal mapped prediction count minus the corresponding true positives after overlap-first assignment. Decoy-hit counts inspect only unmatched mapped predictions, counting the first overlapping decoy per prediction; see docs/methodology.md for coverage and counting distinctions.
 - Recall: type-aware, per entity type.
 - Merge BVN and NIN into "ID" for per-type scores, since bare 11-digit numbers cannot be told apart by form.
 - Latency: ms per document, median and p95, excluding warm-up.
@@ -41,7 +41,7 @@ Create scripts/metrics.py and tests/test_metrics.py (tiny hand-built cases: exac
 The authoritative specification is [docs/PHASE3_SPEC.md](docs/PHASE3_SPEC.md), which supersedes this phase. It includes spaCy, Presidio default, the intended ng_phone configuration, and custom recognizers, with per-split predictions and a recorded freeze protocol.
 
 ## Phase 4: Evaluate
-scripts/evaluate.py scores all three configs on the test split and writes results/results.csv and results/results.md. It also writes results/error_analysis.md listing misses and decoy hits with a short context snippet.
+scripts/evaluate.py scores all five configurations on the test split and writes results/results.csv and results/results.md. It also writes results/error_analysis.md listing misses and decoy hits with a short context snippet.
 
 ## Phase 5: README
 Include methodology, how to reproduce (PowerShell commands), results (copied from the generated files), and limitations: synthetic, template-based, small scale, and one spaCy model.

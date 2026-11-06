@@ -8,7 +8,7 @@ This document details the scoring protocol, matching algorithms, and formal metr
 
 To prevent overfitting and maintain verifiable evaluation integrity:
 - **Dev Split (100 documents)**: Used strictly for development, regex pattern refinement, recognizer tuning, and threshold selection.
-- **Test Split (200 documents)**: Held out and frozen. Evaluated only once per configuration to produce publishable benchmark results.
+- **Test Split (200 documents)**: Used for reporting, not tuning. The recorded sequence includes baseline dev/test prediction generation for spaCy, Presidio default, and ng_phone in `dd6b474`; dev-only custom experiments in `26ed015`; two-source freeze in `853bcbb`; then test prediction regeneration for all five configurations in `da55731`. Phase 4 (`f3ba55c`) and subsequent reporting corrections rescore those archived predictions without running models. Prediction generation and rescoring are distinct operations; test error records were first generated after freeze. This history is not a single test prediction run per configuration.
 - **Split Guard**: The scoring harness defaults to `split="test"` and explicitly forbids evaluating the development split unless `split="dev"` is passed directly. All documents within the target split must have predictions or evaluation raises an error.
 
 ---
@@ -44,19 +44,21 @@ Predictions and ground truth entities are matched using deterministic one-to-one
    - Lower prediction index ($p.\text{idx}$)
 3. **Assignment**: Candidates are selected iteratively. Once an entity or prediction is assigned, it cannot be matched to any other span. No span is counted twice.
 
+Label correctness and exact-match status are checked only after assignment. Ranking does not prioritise correct labels or exact spans. If competing labels have equal spans and other ranking fields tie, prediction order can decide which label is assigned. The runners sort stored predictions by start, end, and raw label, so that stored order can affect such ties.
+
 ---
 
 ## 4. Match Categories and Confusion Matrix
 
-Matched pairs are categorized as follows:
+Assignment outcomes and match categories are defined as follows:
 - **Strict Match**: The mapped predicted type matches the ground truth type, and the start and end offsets are identical ($p.\text{start} = g.\text{start}$ and $p.\text{end} = g.\text{end}$).
 - **Partial Match**: The mapped predicted type matches the ground truth type, with $\text{overlap} > 0$, but offsets do not exactly match.
-- **Type Confusion**: A prediction overlaps a ground truth entity, but the mapped labels differ (e.g., predicting `ADDRESS` over a `PERSON` span).
-- **Miss (False Negative)**: A ground truth entity with no overlapping prediction.
-- **False Positive**: A prediction that does not overlap any ground truth entity.
+- **Type Confusion**: An assigned prediction and entity have different mapped labels (e.g., predicting `ADDRESS` over a `PERSON` span).
+- **Matcher Miss**: An entity left unmatched after one-to-one assignment. It can still have predicted characters covering it, for example when a spanning prediction was assigned to another entity.
+- **Unmatched Prediction**: A mapped prediction left unassigned. It may overlap PII already assigned to another prediction. This category is distinct from strict/overlap false positives, which equal prediction count minus the corresponding true positives, as defined in Section 8. Assigned wrong-type or partial-span predictions can also contribute to those false-positive totals.
 
 ### Confusion Matrix Structure
-The confusion matrix includes rows for each canonical ground-truth type plus `NONE` (false positives), and columns for each canonical predicted type plus `NONE` (misses):
+The confusion matrix includes rows for each canonical ground-truth type plus `NONE` (unmatched predictions), and columns for each canonical predicted type plus `NONE` (matcher misses):
 
 | Ground Truth \ Predicted | `ADDRESS` | `EMAIL` | `ID` | `PERSON` | `PHONE` | `NONE` (Miss) |
 |---|---|---|---|---|---|---|
@@ -65,13 +67,15 @@ The confusion matrix includes rows for each canonical ground-truth type plus `NO
 | `ID` | Type Confusion | Type Confusion | Strict + Partial | Type Confusion | Type Confusion | Misses |
 | `PERSON` | Type Confusion | Type Confusion | Type Confusion | Strict + Partial | Type Confusion | Misses |
 | `PHONE` | Type Confusion | Type Confusion | Type Confusion | Type Confusion | Strict + Partial | Misses |
-| `NONE` (False Positives) | Extra Preds | Extra Preds | Extra Preds | Extra Preds | Extra Preds | 0 |
+| `NONE` (Unmatched Predictions) | Extra Preds | Extra Preds | Extra Preds | Extra Preds | Extra Preds | 0 |
 
 ---
 
 ## 5. Leak Rate (Type-Agnostic Character Union)
 
 Leak rate evaluates whether sensitive character positions remain exposed, regardless of whether the predicted label was correct:
+
+Coverage uses the union of **all mapped predicted spans**, independently of matching assignment and label correctness. Both matched and unmatched predictions contribute. This same union is used for entity exposure and character-level over-redaction; unmapped labels do not contribute.
 
 1. **Prediction Union**: For each document, all valid (mapped) predicted spans are flattened into a set of character index positions:
    $$C_{\text{pred}} = \bigcup_{p \in \text{preds}} [p.\text{start}, p.\text{end})$$
@@ -90,10 +94,12 @@ Leak rates are reported:
 ## 6. Entity-Level Exposure
 
 Beyond raw character counts, entity exposure measures how many individual records are exposed:
-- **Fully Leaked**: Entities where 0 characters are covered by any prediction ($|C_g \cap C_{\text{pred}}| = 0$).
+- **Fully Uncovered** (the scorer's `fully_leaked_count`): Entities where 0 characters are covered by mapped predictions ($|C_g \cap C_{\text{pred}}| = 0$).
 - **Partially Exposed**: Entities where at least one character is covered, but at least one character remains exposed ($0 < |C_g \cap C_{\text{pred}}| < |C_g|$).
-- **Total Exposed Entities**: $\text{Fully Leaked} + \text{Partially Exposed}$.
+- **Total Exposed Entities**: Fully uncovered count plus partially exposed count.
 - **Exposure Rate**: Total exposed entities divided by total ground truth entities.
+
+The generated reports export fully uncovered and partially exposed counts alongside the total entity denominator. Exposure is a character-coverage measure, not the count of matcher misses.
 
 ---
 
@@ -103,11 +109,15 @@ Over-redaction quantifies unnecessary masking of non-sensitive text:
 $$\text{Over-Redaction Rate} = \frac{|C_{\text{pred}} \setminus C_{\text{PII}}|}{|C_{\text{doc}} \setminus C_{\text{PII}}|}$$
 where $C_{\text{PII}} = \bigcup_{g} C_g$ is the set of all PII character positions and $C_{\text{doc}}$ is the set of all character positions in the document.
 
+This rate counts non-PII characters covered by the mapped prediction union. Decoy-hit prediction counts and distinct ORDER_ID decoys hit by ID predictions are separate counting measures; neither substitutes for character-level over-redaction.
+
 ---
 
 ## 8. Precision, Recall, and F1
 
 Metrics are reported per canonical type and micro-averaged overall, under two evaluation standards:
+
+True positives below are counted among pairs already selected by the overlap-first assignment. The matcher is not rerun to favour label correctness or exactness for either standard. `N_pred` counts mapped predictions, including those assigned to PII and those left unmatched.
 
 ### Strict Evaluation
 - $\text{TP}_{\text{strict}}$: Correct type, exact start and end offsets.
@@ -131,9 +141,10 @@ Metrics are reported per canonical type and micro-averaged overall, under two ev
 
 Decoys represent non-PII numerical tokens (11-digit `ORDER_ID` strings, invoice references, PO numbers, currency amounts) designed to test over-triggering.
 
-- Predictions that overlap no ground truth entity are classified as false positives.
-- A false positive that overlaps a decoy span is recorded as a **Decoy Hit**.
-- Decoy hits are tracked in total and broken down by decoy category (`ORDER_ID`, `INVOICE_NUMBER`, `PO_NUMBER`, `AMOUNT`).
+- The scorer inspects only **unmatched mapped predictions**. It checks decoys in their stored order and counts the first overlapping decoy per prediction, then stops inspecting that prediction's remaining decoys.
+- These decoy-hit prediction counts are tracked in total and by decoy category (`ORDER_ID`, `INVOICE_NUMBER`, `PO_NUMBER`, `AMOUNT`). Multiple unmatched predictions can each count against the same decoy.
+- Predictions matched to PII can also cover decoy characters without appearing in this count. Their covered non-PII characters still contribute to over-redaction.
+- The separate **distinct ORDER_ID decoys hit by ID predictions** diagnostic counts each ORDER_ID annotation once if any mapped ID prediction touches it, regardless of assignment. Its unit, prediction scope, and assignment restriction differ from the scorer's decoy-hit measure. Neither count measures the share of non-PII characters redacted.
 
 ---
 
@@ -145,12 +156,15 @@ Ground truth `ID` entities (BVN and NIN) are flagged as:
 
 Strict and overlap recall are reported independently for cued and bare subsets to measure the model's reliance on context cues versus token patterns.
 
+The five evaluated configurations are spaCy, Presidio default, ng_phone, custom_generic (archived experiment 01), and custom (archived experiment 02). The generator's `gen_11digit()` never emits IDs starting with 0. Excluding such candidates improved custom's ID precision on this dataset. Both custom variants have equal reported character leakage and over-redaction rates; equal aggregate rates do not imply identical covered character positions. Historical experiment records retain their original timing and decisions.
+
 ---
 
 ## 11. Latency Measurement
 
-- Execution time in milliseconds (`ms`) is recorded per document by the pipeline runners.
-- The first 5 documents are excluded from latency aggregation as a warm-up period.
-- Latency is reported as:
-  - **Median (p50)**: Middle document processing time.
-  - **95th Percentile (p95)**: Tail latency excluding extreme outliers.
+- The shared runner sorts documents, selects the first five **dev** documents, and makes five preliminary analysis calls before the recorded loop. These calls are unrecorded and never use test documents, including when only test was requested.
+- Each stored `ms` is measured with `perf_counter` around the analysis call only. Model loading, document reads, span extraction, and JSON writing are outside that interval.
+- The main generated report uses **all stored test timings** after those preliminary warm-ups. Median and p95 use the existing Phase 2 percentile helper with linear interpolation on sorted timing values.
+- The unchanged Phase 2 scorer separately drops the first five stored timings when more than five exist. Its original median/p95 and exclusion count remain in `evaluation_details.json` and the explicitly named `scorer_*` CSV columns. That extra exclusion and the main calculation are both preserved.
+- **Median (p50)** is the 50th percentile; **p95** is the 95th percentile. Computing p95 does not remove outliers.
+- Timings come from single sequential runs on this machine; host load, caches, and run order limit claims about relative speed. Regenerating reports reads existing timings and does not run models again.

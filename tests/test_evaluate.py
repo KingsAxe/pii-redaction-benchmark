@@ -9,11 +9,50 @@ from pathlib import Path
 from unittest.mock import patch
 
 from scripts.analysis_common import id_diagnostics
-from scripts.evaluate import CONFIGS, error_records, main as evaluate_main, measured_latency
+from scripts.evaluate import (CONFIGS, error_records, main as evaluate_main, measured_latency,
+                              result_row, write_reports)
+from scripts.metrics import score
 from scripts.runner_common import write_json
 
 
 class TestDiagnostics(unittest.TestCase):
+    def test_domain_over_redaction_and_exposure_exports_use_scorer_outputs(self):
+        docs = [{"file": "alpha", "split": "test", "doc_type": "alpha", "length": 12,
+                 "entities": [{"type": "PERSON", "start": start, "end": start + 2}
+                              for start in (0, 4, 8)], "decoys": []},
+                {"file": "beta", "split": "test", "doc_type": "beta", "length": 12,
+                 "entities": [{"type": "PERSON", "start": 0, "end": 2}], "decoys": []}]
+        predictions = {"alpha": {"ms": 1.0, "spans": [
+            {"label": "PERSON", "start": 0, "end": 1},
+            {"label": "PERSON", "start": 4, "end": 6},
+            {"label": "ID", "start": 10, "end": 12}]},
+            "beta": {"ms": 2.0, "spans": [{"label": "PERSON", "start": 0, "end": 2}]}}
+        metrics = score(docs, predictions, split="test")
+        row = result_row("fixture", metrics, id_diagnostics(docs, predictions, "test", metrics),
+                         measured_latency(docs, predictions))
+        with tempfile.TemporaryDirectory() as temporary:
+            output = Path(temporary)
+            write_reports(output, [row], {"fixture": {"phase2": metrics, "errors": []}})
+            with (output / "results.csv").open(encoding="utf-8", newline="") as handle:
+                exported = next(csv.DictReader(handle))
+            for domain, value in metrics["leak_rate"]["per_doc_type"].items():
+                self.assertEqual(float(exported[f"leak_rate_domain_{domain}"]), value)
+            self.assertEqual(float(exported["over_redaction_rate"]), metrics["over_redaction"]["rate"])
+            for field, source in (("fully_uncovered_entities", "fully_leaked_count"),
+                                  ("partially_exposed_entities", "partially_exposed_count"),
+                                  ("total_entities", "total_entities")):
+                self.assertEqual(int(exported[field]), metrics["entity_exposure"][source])
+            markdown = (output / "results.md").read_text(encoding="utf-8")
+            self.assertIn("## Character leak by document domain", markdown)
+            self.assertIn("| Config | alpha | beta |", markdown)
+            domain_values = [f"{100 * metrics['leak_rate']['per_doc_type'][domain]:.2f}%"
+                             for domain in ("alpha", "beta")]
+            self.assertIn("| fixture | " + " | ".join(domain_values) + " |", markdown)
+            exposure = metrics["entity_exposure"]
+            self.assertIn(f"| fixture | {100 * metrics['over_redaction']['rate']:.2f}% | "
+                          f"{exposure['fully_leaked_count']} | {exposure['partially_exposed_count']} | "
+                          f"{exposure['total_entities']} | {100 * exposure['exposure_rate']:.2f}% |", markdown)
+
     def test_id_phone_coverage_partial_exposure_and_unique_decoy_counts(self):
         docs = [{"file": "fixture", "doc_id": "exact", "split": "dev", "doc_type": "fixture", "length": 40,
                  "entities": [{"type": "BVN", "start": a, "end": a + 4, "cued": False}

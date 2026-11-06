@@ -1,6 +1,6 @@
 # Current phase
 
-Phase 4 complete. Stop at the Phase 5 gate; README publication work is not yet requested.
+Phase 4 reporting and methodology corrections complete. Stop at the Phase 5 gate; README and publication work remain outside this patch.
 
 ## Done
 
@@ -19,11 +19,17 @@ Phase 4 complete. Stop at the Phase 5 gate; README publication work is not yet r
 - All five configurations regenerated on test after freeze; all test files passed structural validation and LF checks. results/test_run_manifest.json records provenance.
 - Phase 4 results.csv, results.md, evaluation_details.json, and complete error_analysis.md generated from frozen, validated test predictions. Report miss/decoy/exposure counts cross-check against the unchanged Phase 2 scorer.
 - Evaluator fixture tests, freeze guards, and original scoring tests pass. Custom source hashes and the Phase 2 scorer were verified unchanged; no new tuning experiments occurred.
+- Bounded reporting patch exports the scorer's domain-level leak rates and entity exposure counts/denominator; generated Markdown now includes character over-redaction. Existing columns, scores, timing calculations, and error records are preserved.
+- Methodology and generated wording now describe overlap-first assignment, prediction-order ties, unmatched versus metric false positives, decoy counting restrictions, independent character coverage, the actual prediction/rescoring sequence, and both timing summaries accurately. Brief references five evaluated configurations.
+- Temporary baselines of all existing reports were retained outside tracked outputs before regeneration. All 185 pre-existing numeric CSV values (195 CSV fields including identifiers) match exactly; all 8,312 error records and Markdown tables are unchanged. New fields match scorer outputs directly.
+- Repository suite passes 39 tests, including one focused reporting-export fixture. All 345 protected-file hashes match before/after, as do both custom freeze hashes. results/reporting_integrity.json records the hashes and comparisons. No inference, tuning, data generation, dependency changes, or scorer changes occurred.
+- Visual search covered repository scripts, notebooks, hidden/ignored files outside venv/.git, and annotation/rendering/redaction/visualisation names and code. No suitable renderer or existing example image was found. No image generated; renderer creation is deferred to a separate task.
 
 ## Next
 
 - User reviews the generated test results and error analysis.
 - Phase 5 README work remains behind its gate. No new tuning experiments and no pushes.
+- A new synthetic example renderer requires a separate task because none exists in the repository; do not invent a previous rendering command or claim an example is representative.
 
 ## Decisions
 
@@ -42,6 +48,7 @@ Phase 4 complete. Stop at the Phase 5 gate; README publication work is not yet r
 - Phase 4 adapts exact document-ID prediction keys to Phase 2 file keys in memory. Matching, label mapping, leak, precision, recall, and decoy definitions remain the Phase 2 implementation.
 - Error analysis contains every scorer miss and decoy-hit prediction, with additional type-confusion, partial-match, and character-exposure records. Categories can overlap; they must not be summed as unique entity counts.
 - Test latencies are single sequential machine runs; cache and host-load effects prevent universal speed-ranking claims.
+- Decoy-hit predictions and distinct ORDER_ID decoys hit by ID predictions have different units and scopes; neither substitutes for character-level over-redaction. Equal reported custom-variant leakage and over-redaction rates do not establish identical covered character positions.
 - Source snapshots, experiment timestamps, hashes, raw dev predictions, and full dev metrics are archived under results/tuning/. The standard custom dev file matches the selected archived run; restoring it did not trigger a new experiment.
 - This file is updated in every commit. Each entry describes its containing commit by subject; its hash is recorded in the next commit to avoid self-referential hashes.
 
@@ -55,7 +62,8 @@ Phase 4 complete. Stop at the Phase 5 gate; README publication work is not yet r
 - `26ed015`: `phase 3b: dev tuning for review`.
 - `853bcbb`: `freeze custom config`.
 - `da55731`: `phase 3: frozen test predictions`.
-- Containing commit: `phase 4: evaluation and error analysis`.
+- `f3ba55c`: `phase 4: evaluation and error analysis`.
+- Containing commit: `fix: complete benchmark reporting and clarify methodology`.
 
 ## Open questions
 

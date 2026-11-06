@@ -1,6 +1,6 @@
 # Test error analysis
 
-Generated after freeze. Offsets are start-inclusive/end-exclusive. Misses, type confusions, partial matches, and coverage exposure are distinct categories and may describe the same entity. Decoy-hit rows count unmatched predictions as in the Phase 2 scorer. Context is synthetic text.
+Generated after freeze. Offsets are start-inclusive/end-exclusive. Misses, type confusions, partial matches, and coverage exposure are distinct categories and may describe the same entity. A miss means unmatched after one-to-one assignment, not necessarily zero predicted character coverage. Assignment ranks overlap and deterministic tie-breaks before checking labels or exactness; prediction order can resolve equal-span competing labels. Unmatched predictions differ from strict/overlap false positives (prediction count minus corresponding true positives). Decoy-hit rows inspect only unmatched mapped predictions and count their first overlapping decoy; PII-matched predictions can cover decoy characters without appearing here. Coverage uses every mapped span independently of assignment and label correctness. Context is synthetic text.
 
 ## spacy
 
