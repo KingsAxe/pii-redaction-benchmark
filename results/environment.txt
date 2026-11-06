@@ -1,0 +1,4 @@
+Python: 3.12.6
+spaCy: 3.8.18
+Model: en_core_web_sm 3.8.0
+Presidio: 2.2.366

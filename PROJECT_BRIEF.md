@@ -38,8 +38,7 @@ Create scripts/metrics.py and tests/test_metrics.py (tiny hand-built cases: exac
 - Label mapping: spaCy PERSON to PERSON, GPE/LOC/FAC to ADDRESS. Presidio PERSON to PERSON, PHONE_NUMBER to PHONE, EMAIL_ADDRESS to EMAIL, LOCATION to ADDRESS. Custom recognizers output ID.
 
 ## Phase 3: Runners
-- scripts/run_spacy.py: en_core_web_sm NER only. Output data/predictions_spacy.json.
-- scripts/run_presidio.py: configure the AnalyzerEngine with NlpEngineProvider to use en_core_web_sm explicitly, so both tools use the same spaCy model. Two configs: default recognizers, and default plus custom BVN/NIN PatternRecognizers with context words. Tune the custom ones on dev only.
+The authoritative specification is [docs/PHASE3_SPEC.md](docs/PHASE3_SPEC.md), which supersedes this phase. It includes spaCy, Presidio default, the intended ng_phone configuration, and custom recognizers, with per-split predictions and a recorded freeze protocol.
 
 ## Phase 4: Evaluate
 scripts/evaluate.py scores all three configs on the test split and writes results/results.csv and results/results.md. It also writes results/error_analysis.md listing misses and decoy hits with a short context snippet.
