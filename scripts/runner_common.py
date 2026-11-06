@@ -11,6 +11,10 @@ DEFAULT_GT = ROOT / "data/ground_truth.json"
 DEFAULT_RAW = ROOT / "data/raw"
 DEFAULT_OUTPUT = ROOT / "data/predictions"
 CUSTOM_SOURCE = ROOT / "scripts/custom_recognizers.py"
+CUSTOM_SOURCES = {
+    "custom": CUSTOM_SOURCE,
+    "custom_generic": ROOT / "scripts/custom_generic_recognizers.py",
+}
 FREEZE_PATH = ROOT / "results/freeze.json"
 
 
@@ -72,12 +76,17 @@ def seed_and_record_environment():
             handle.write(f"{name}=={version}\n")
 
 
-def require_custom_freeze(freeze_path=FREEZE_PATH, source_path=CUSTOM_SOURCE):
+def require_custom_freeze(freeze_path=FREEZE_PATH, source_path=None, config="custom"):
+    if config not in CUSTOM_SOURCES:
+        raise ValueError("Unknown custom configuration")
+    source_path = CUSTOM_SOURCES[config] if source_path is None else source_path
     try:
         freeze = json.loads(Path(freeze_path).read_text(encoding="utf-8"))
         actual = hashlib.sha256(Path(source_path).read_bytes()).hexdigest()
-        if not isinstance(freeze, dict) or freeze.get("sha256") != actual:
-            raise ValueError("Custom freeze hash mismatch")
+        configs = freeze.get("configs", {}) if isinstance(freeze, dict) else {}
+        entry = configs.get(config, {}) if isinstance(configs, dict) else {}
+        if not isinstance(entry, dict) or entry.get("sha256") != actual:
+            raise ValueError(f"Custom freeze hash mismatch: {config}")
     except (OSError, json.JSONDecodeError) as exc:
         raise ValueError("A valid results/freeze.json is required for custom test") from exc
 

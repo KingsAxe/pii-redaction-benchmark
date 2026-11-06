@@ -85,26 +85,37 @@ class TestRunners(unittest.TestCase):
                 self.assertEqual(error.exception.code, 2)
 
     def test_freeze_missing(self):
-        with self.assertRaisesRegex(ValueError, "freeze"):
-            require_custom_freeze(self.root / "missing.json", self.gt)
+        for config in ("custom", "custom_generic"):
+            with self.subTest(config=config), self.assertRaisesRegex(ValueError, "freeze"):
+                require_custom_freeze(self.root / "missing.json", self.gt, config=config)
 
     def test_freeze_hash_mismatch(self):
         freeze = self.root / "freeze.json"
-        write_json(freeze, {"sha256": "wrong"})
-        with self.assertRaisesRegex(ValueError, "mismatch"):
-            require_custom_freeze(freeze, self.gt)
+        write_json(freeze, {"configs": {"custom": {"sha256": "wrong"},
+                                     "custom_generic": {"sha256": "wrong"}}})
+        for config in ("custom", "custom_generic"):
+            with self.subTest(config=config), self.assertRaisesRegex(ValueError, "mismatch"):
+                require_custom_freeze(freeze, self.gt, config=config)
 
     def test_freeze_hash_matches(self):
         freeze = self.root / "freeze.json"
-        write_json(freeze, {"sha256": hashlib.sha256(self.gt.read_bytes()).hexdigest()})
-        require_custom_freeze(freeze, self.gt)
+        digest = hashlib.sha256(self.gt.read_bytes()).hexdigest()
+        write_json(freeze, {"configs": {"custom": {"sha256": digest},
+                                     "custom_generic": {"sha256": digest}}})
+        for config in ("custom", "custom_generic"):
+            require_custom_freeze(freeze, self.gt, config=config)
+        write_json(freeze, {"configs": {"custom": {"sha256": digest}}})
+        with self.assertRaisesRegex(ValueError, "mismatch"):
+            require_custom_freeze(freeze, self.gt, config="custom_generic")
 
     def test_custom_test_guard_precedes_loading(self):
-        with patch.object(run_presidio, "require_custom_freeze", side_effect=ValueError("no freeze")):
-            with patch.object(run_presidio, "build_analyzer") as build:
-                with self.assertRaisesRegex(ValueError, "no freeze"):
-                    run_presidio.main(["--config", "custom", "--splits", "dev", "test"])
-                build.assert_not_called()
+        for config in ("custom", "custom_generic"):
+            with patch.object(run_presidio, "require_custom_freeze", side_effect=ValueError("no freeze")) as guard:
+                with patch.object(run_presidio, "build_analyzer") as build:
+                    with self.assertRaisesRegex(ValueError, "no freeze"):
+                        run_presidio.main(["--config", config, "--splits", "dev", "test"])
+                    build.assert_not_called()
+                    guard.assert_called_once_with(config=config)
 
     def test_ng_phone_preserves_default_registry_and_small_model(self):
         from types import SimpleNamespace

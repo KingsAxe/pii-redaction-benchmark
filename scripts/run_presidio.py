@@ -17,18 +17,22 @@ def build_analyzer(config):
     from presidio_analyzer import AnalyzerEngine
     from presidio_analyzer.nlp_engine import NlpEngineProvider
     from presidio_analyzer.predefined_recognizers import PhoneRecognizer
-    if config not in ("default", "ng_phone", "custom"):
+    if config not in ("default", "ng_phone", "custom", "custom_generic"):
         raise ValueError("Unknown Presidio configuration")
     engine = NlpEngineProvider(nlp_configuration={
         "nlp_engine_name": "spacy",
         "models": [{"lang_code": "en", "model_name": "en_core_web_sm"}],
     }).create_engine()
     analyzer = AnalyzerEngine(nlp_engine=engine, supported_languages=["en"])
-    if config in ("ng_phone", "custom"):
+    if config in ("ng_phone", "custom", "custom_generic"):
         analyzer.registry.add_recognizer(PhoneRecognizer(
             supported_regions=["NG"], name="NigeriaPhoneRecognizer"))
-    if config == "custom":
-        if __package__:
+    if config in ("custom", "custom_generic"):
+        if config == "custom_generic" and __package__:
+            from .custom_generic_recognizers import configure_custom
+        elif config == "custom_generic":
+            from custom_generic_recognizers import configure_custom
+        elif __package__:
             from .custom_recognizers import configure_custom
         else:
             from custom_recognizers import configure_custom
@@ -42,12 +46,12 @@ def extract_spans(results):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--config", choices=("default", "ng_phone", "custom"), default="default")
+    parser.add_argument("--config", choices=("default", "ng_phone", "custom", "custom_generic"), default="default")
     add_common_arguments(parser)
     args = parser.parse_args(argv)
     check_splits(args.splits)
-    if args.config == "custom" and "test" in args.splits:
-        require_custom_freeze()
+    if args.config in ("custom", "custom_generic") and "test" in args.splits:
+        require_custom_freeze(config=args.config)
     docs = load_ground_truth(args.ground_truth)
     seed_and_record_environment()
     analyzer = build_analyzer(args.config)

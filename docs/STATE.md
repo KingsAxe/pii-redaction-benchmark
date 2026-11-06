@@ -1,6 +1,6 @@
 # Current phase
 
-Phase 3, Stage B complete for review. STOPPED before freeze and custom test execution.
+Phase 3 freeze accepted and recorded in the containing commit; test generation next.
 
 ## Done
 
@@ -12,13 +12,16 @@ Phase 3, Stage B complete for review. STOPPED before freeze and custom test exec
 - Phase 1-2 source and data files unchanged.
 - Custom dev experiments completed and archived; review recommendation and exact metrics are in results/tuning_log.md and results/tuning_summary.json.
 - Selected experiment 02-nonzero restored byte-for-byte along with its dev predictions; its structural validation passes.
-- No results/freeze.json or custom test predictions exist. No test error records or analysis were inspected.
+- Accepted review diagnostics computed from archived dev predictions only; no new tuning or inference experiments.
+- custom_generic copied byte-for-byte from experiment 01; custom remains byte-for-byte experiment 02.
+- results/freeze.json records both source hashes; both configurations reject missing/mismatched freezes on test. Guard and diagnostic tests pass.
+- No custom test predictions or test error inspection occurred before this freeze commit.
 
 ## Next
 
-- Show results/tuning_log.md to the user and wait for review.
-- Only after explicit approval: write the selected custom source SHA-256 to results/freeze.json and commit `freeze custom config`, updating this file in that commit.
-- Only after approval and a matching freeze: run and validate custom test predictions; proceed to Phase 4 at its gate.
+- Regenerate test predictions for spacy, default, ng_phone, custom_generic, and custom; validate and commit.
+- Implement Phase 4 evaluation using the unchanged scorer; generate results.csv, results.md, and error_analysis.md; update state and commit.
+- No new tuning experiments and no pushes. User explicitly authorized freeze, all test runs, and Phase 4.
 
 ## Decisions
 
@@ -31,6 +34,8 @@ Phase 3, Stage B complete for review. STOPPED before freeze and custom test exec
 - Stage B reports both strict and overlap ID recall and overall micro precision from the unchanged scorer.
 - Stage B selected the highest observed strict dev ID recall, breaking ties with overall strict micro precision. This comparison rule was applied after the three experiments; it was not preregistered.
 - Nonzero-leading ID candidates reduce phone-shaped matches on this synthetic dev set. This is a dataset-specific assumption, not a universal rule for real identifiers. Cued-only matching was rejected for its recall loss.
+- The generator's gen_11digit() never emits IDs starting with zero; the accepted review addendum makes this dependency explicit.
+- Freeze schema: configs.custom and configs.custom_generic each hold source and sha256; runner selects the corresponding source and checks its digest before any custom test processing.
 - Source snapshots, experiment timestamps, hashes, raw dev predictions, and full dev metrics are archived under results/tuning/. The standard custom dev file matches the selected archived run; restoring it did not trigger a new experiment.
 - This file is updated in every commit. Each entry describes its containing commit by subject; its hash is recorded in the next commit to avoid self-referential hashes.
 
@@ -41,12 +46,13 @@ Phase 3, Stage B complete for review. STOPPED before freeze and custom test exec
 - `431d6b6`: Repository setup, parent of the handoff commit.
 - `31c0e58`: `docs: agent handoff files`.
 - `dd6b474`: `phase 3a: baseline runners`.
-- Containing commit: `phase 3b: dev tuning for review` (not a freeze).
+- `26ed015`: `phase 3b: dev tuning for review`.
+- Containing commit: `freeze custom config`.
 
 ## Open questions
 
 - User may override the documented legacy-ID compatibility assumption.
-- User must review the dev tuning log before any freeze or custom test run.
+- User accepted review and authorized both freezes and all five test configurations.
 - The unchanged Phase 2 scorer discards another five timing values even though runners already use unrecorded warm-up. Dev tuning precision/recall are unaffected; its archived latency values must not be published as the final Phase 4 runner latency summary without resolving this mismatch.
 
 ## Commands (PowerShell, repository root)

@@ -20,3 +20,10 @@ Tuning protocol
 
 validate_predictions.py: per file, every doc_id of that split present, no extras, 0 <= start < end <= len(text), labels are str, ms is float. Print label counts; exit non-zero on failure.
 tests/test_runners.py: validator (good file, missing doc, out-of-range span), split rejection, freeze check (refuses without freeze.json, refuses on hash mismatch).
+
+## Accepted review amendments
+
+- Add custom_generic from archived experiment 01 alongside custom from experiment 02. Do not run new tuning experiments.
+- Add ID-only dev diagnostics to the log using archived predictions only; disclose that the generator never emits IDs starting with zero.
+- results/freeze.json stores a configs object with separate custom and custom_generic source paths and sha256 hashes. Both test configurations must refuse missing or mismatched hashes.
+- Commit the freeze before regenerating test predictions for all five configurations. Then validate, commit predictions, and evaluate the test split with the unchanged Phase 2 scorer.

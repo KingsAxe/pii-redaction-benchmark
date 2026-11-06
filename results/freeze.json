@@ -1,0 +1,16 @@
+{
+  "configs": {
+    "custom": {
+      "source": "scripts/custom_recognizers.py",
+      "sha256": "a10d7fa8e88be4633c998c294a540ee00ce90dc6a1f7f9eb2edfc4a36f6fde18"
+    },
+    "custom_generic": {
+      "source": "scripts/custom_generic_recognizers.py",
+      "sha256": "1cc272db3674b3e3d59cc8a8ed791419a3f45457fdfdfde69389f965b79b06f1"
+    }
+  },
+  "seed": 42,
+  "created_utc": "2026-11-06T08:33:07.498909+00:00",
+  "parent_commit": "26ed015ca2ecfcd1119cf6763547a657831a82bf",
+  "approval": "User accepted review and authorized freeze plus test runs for both configs; no new tuning"
+}
