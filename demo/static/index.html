@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Synthetic masking review</title>
+  <link rel="stylesheet" href="/static/review.css">
+  <script type="module" src="/static/review.js"></script>
+</head>
+<body>
+<main>
+  <h1>Synthetic masking review</h1>
+  <p>Local demonstration with the frozen custom_generic configuration. Detection can miss PII or mask unnecessary text. Review and correct the proposal before approving it.</p>
+  <form id="submission">
+    <label for="input-text">Synthetic English text (at most 20,000 Unicode code points)</label>
+    <textarea id="input-text" rows="7" required spellcheck="false"></textarea>
+    <label><input id="synthetic" type="checkbox" required> I acknowledge that this input is synthetic.</label>
+    <button id="submit" type="submit">Create review</button>
+  </form>
+  <p id="message" role="status" aria-live="polite">No review submitted.</p>
+  <button id="refresh" type="button" disabled>Refresh current review</button>
+  <section id="review" hidden>
+    <h2>Review the current mask</h2>
+    <p id="review-status"></p>
+    <div class="panels">
+      <div>
+        <label for="original">Canonical original — select text here to change masking</label>
+        <textarea id="original" rows="13" readonly spellcheck="false"></textarea>
+      </div>
+      <div>
+        <label for="proposal">Current masked proposal — read only</label>
+        <textarea id="proposal" rows="13" readonly spellcheck="false"></textarea>
+      </div>
+    </div>
+    <p id="selection">Select text in the canonical original.</p>
+    <button id="add" type="button" disabled>Add masking to selection</button>
+    <button id="remove" type="button" disabled>Remove masking from selection</button>
+    <p>Corrections change coverage, never the source text. Line breaks stay visible even when covered. Original # characters can also be covered without changing their display.</p>
+    <details>
+      <summary>Inspect detected and current coverage</summary>
+      <p>Underlined marks identify detected coverage (including covered line breaks). These are detections, not a complete PII annotation.</p>
+      <pre id="detected-text"></pre>
+      <h3>Initial automatic proposal</h3>
+      <pre id="initial-proposal"></pre>
+      <h3>Sorted, merged half-open code-point intervals</h3>
+      <pre id="intervals"></pre>
+      <h3>Automatic detection counts and current coverage counts</h3>
+      <pre id="counts"></pre>
+    </details>
+    <p><label><input id="approval-ack" type="checkbox"> I have reviewed this current revision and explicitly approve its synthetic output.</label></p>
+    <button id="approve" type="button" disabled>Approve current revision</button>
+    <button id="reject" type="button" disabled>Reject review</button>
+    <button id="download" type="button" disabled>Retrieve and download approved output</button>
+    <h3>Retrieved approved output</h3>
+    <pre id="approved-output">No approved output retrieved.</pre>
+  </section>
+  <p>Temporary process-local reviews expire 30 minutes after creation; capacity is 32 reviews. Restart clears them. No login or user authorization is implemented. A successful request or human approval does not establish suitability for unrestricted further use.</p>
+  <p>Local review is being verified before Activepieces integration. Timing trials and video remain pending.</p>
+</main>
+</body>
+</html>

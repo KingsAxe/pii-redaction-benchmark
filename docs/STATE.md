@@ -1,6 +1,6 @@
 # Current phase
 
-Benchmark publication verified at c0337b68015a512365be1da9b3e5bc5c934f37ef on origin/main. Phase 6 increment 1 implements an isolated local masking-proposal API on phase6/internal-redaction-demo for draft PR #1. Activepieces, human correction/approval, measurements, and recorded demonstration remain pending. Work continues through draft review; no merge is authorized.
+Benchmark publication remains verified at c0337b68015a512365be1da9b3e5bc5c934f37ef on origin/main. Phase 6 increment 2 adds explicit coverage identity and local human-review code on phase6/internal-redaction-demo for draft PR #1. Live HTTP review verification passes; interactive browser inspection, Activepieces, timing trials, and video remain pending. Work continues through draft review; no merge is authorized.
 
 ## Done
 
@@ -49,11 +49,20 @@ Benchmark publication verified at c0337b68015a512365be1da9b3e5bc5c934f37ef on or
 - Verified the smoke listener at 127.0.0.1:8000 with one serving process; both redirected logs were empty. Stopped the test service afterward. The API has no processing deadline, cancellation mechanism, or bounded request queue; client HTTP timeouts do not cancel inference. Detailed setup, tests, launch, requests, response semantics, and this limitation are in demo/README.md.
 - Docker client 28.0.4 is installed but its Linux-engine daemon pipe is unavailable. No Podman or Activepieces/ap executable or existing repository setup was found; no Activepieces instance was identified in inspected locations. Running-container inventory and Activepieces history/retention remain unverified. Nothing was installed or configured for Activepieces.
 - All 375 pre-existing tracked files outside the authorized .gitignore and STATE.md edits retain their before/after hashes. Both frozen custom sources match freeze.json; current report hashes, figure source hashes, and original PNG hashes match their existing manifests. No benchmark inference, tuning, data generation, report regeneration, or historical hash edits occurred. demo/verification.json records checks; environments, caches, temporary logs, and default smoke output are ignored by Git.
+- Increment 2 fetched origin and confirmed a clean feature branch matching remote d71ce3d, with no newer feature changes and the intended KingsAxe/pii-redaction-benchmark destination. No unrelated work was present or changed.
+- Fixed the named revision-identity defect: masking an original # or preserving covered LF could leave displayed text unchanged while coverage differed. Proposals now return canonical sorted/merged half-open mask_intervals, and coverage-v2 identity binds that explicit representation. Overlapping/reordered/adjacent equivalent coverage has the same proposal identity; detection/count semantics are unchanged. Historical demo smoke/environment/verification records and dependency pins remain untouched.
+- Added demo/reviews.py and local plain HTML/JavaScript at /. Review creation, inspection, interval-based add/remove corrections, explicit approval, rejection, and current-approved output are implemented. The page keeps originals read-only, converts UTF-16 selections to code points, renders text without parsing submitted HTML, shows detected/current coverage separately, and clears stale client controls/output. No frontend framework, database, infrastructure, or dependencies were added.
+- Server review revisions bind canonical input, fixed configuration/source hash, explicit current coverage, review ID, and increasing version. Every correction (including no-op), approval, and rejection consumes its expected revision. Edits invalidate approval; rejected reviews are terminal. State/output checks and output copying are atomic under one lock; stale/replayed/competing actions cannot consume the same revision. Downloads require the current approved revision and cannot recall previously delivered bytes after a later change.
+- Review storage is bounded to 32 process-local records with fixed 1,800-second expiry from creation. Approved/rejected records count toward capacity; there is no live eviction or renewal. Full capacity returns 503; missing/expired reviews return text-free 404. Expired content is lazily removed at the next review operation, and restart/shutdown loses all reviews/approvals. Existing no-store, input/error sanitization, loopback binding, and logging behavior remain. No processing deadline, inference cancellation, or bounded request queue is claimed.
+- All 39 demo tests pass in demo/.venv, including actual browser helper execution with installed Node v22.23.1; all 45 benchmark tests pass in venv. New checks cover invisible coverage identity, interval validation/canonicalization, original #/LF, Unicode, safe text nodes, no-op/edit-back invalidation, terminal rejection, capacity/expiry, restart clearing, replay, and simultaneous edit/approve/output cases. pip check passes; the existing Starlette HTTPX deprecation warning remains documented.
+- Live actual-analyzer review walkthrough passed on custom_generic with data/raw/health_report_007.txt, first lexicographic dev ID, not selected by performance. Annotation-assisted inspection chose ADDRESS [184,213) addition and ORDER_ID [243,254) removal. Approved retrieval matched the mask exactly. Removing covered LF [213,214) changed revision and invalidated approval without changing displayed text; stale and pending output returned 409, then reapproval/retrieval passed. demo/review_walkthrough_evidence.json records actual steps/counts/hashes separately from benchmark results; this is not blind human review, accuracy evaluation, productivity evidence, or a timing trial.
+- Browser connection setup returned no available browser. No interactive page/visual/download verification is claimed. Actual JavaScript conversion/rendering helpers and HTML/API contracts were tested; live processing/review/output were verified over HTTP. The test service was verified at 127.0.0.1:8000 with one serving process and empty stdout/stderr, then stopped. Temporary input/key/proposal inspection copies were removed.
+- All 376 original non-demo tracked files except authorized STATE.md edits retain their initial hashes. Both frozen recognizers, benchmark sources/data/predictions/reports/manifests/figures, and earlier demo evidence/requirements remain unchanged. Current reports and original PNGs still match their historical manifests. demo/review_verification.json records this increment; historical hashes were not relabeled to accommodate new work.
 
 ## Next
 
-- Continue draft PR #1 (https://github.com/KingsAxe/pii-redaction-benchmark/pull/1) through review on phase6/internal-redaction-demo; leave it draft and unmerged. Review this proposal-only increment before extending it.
-- Next authorized increment must establish Activepieces runtime availability and review/resume support, local/container connectivity, history/retention, and reproducible export. Implement human correction and explicit revision-bound approval with stale-output prevention before any final-output route.
+- Continue draft PR #1 (https://github.com/KingsAxe/pii-redaction-benchmark/pull/1) through review on phase6/internal-redaction-demo; leave it draft and unmerged. Perform interactive browser selection/correction/approval/download inspection before presenting the page; that check was unavailable here.
+- Local review is being verified before Activepieces integration because no instance has yet been identified. Activepieces installation/integration remains a later authorized task: establish runtime/review-resume support, host/container connectivity, history/retention, and reproducible flow export. The original plan remains a historical proposal; the current sequence is documented here and in demo/README.md.
 - Preselect fixtures and trial order before fair manual/assisted timing and remaining-error measurements; record the end-to-end demonstration afterward. No workflow outcome is measured yet. Cloud models, production deployment, OCR, expanded governance logging, and social-media publication remain separate work.
 
 ## Decisions
@@ -61,8 +70,10 @@ Benchmark publication verified at c0337b68015a512365be1da9b3e5bc5c934f37ef on or
 - Phase 1-2 files and benchmark evidence remain unchanged. Earlier phases did not push; the user's final publication instruction explicitly authorizes this task's Git fetch/push to KingsAxe/pii-redaction-benchmark and overrides the earlier push restriction for this task.
 - The Phase 6 instruction separately authorizes feature-branch creation/push and a draft PR, not merge or implementation. Preserve frozen benchmark evidence and historical manifests; new demo dependencies and observations will be isolated under demo/ only in a later authorized task.
 - The subsequent increment-1 instruction authorizes implementation, isolated demo dependency installation, and task-related pushes to the existing PR branch only. Main and PR merge remain outside scope. The plan at 5bffe61 records the original proposal; its broader unchecked workflow criteria are not claimed complete by this API increment.
+- The subsequent increment-2 instruction authorizes revision identity and local human-review implementation plus task-related feature-branch pushes. No merge, Activepieces installation/integration, timing trials, or video is authorized in this increment. Browser verification remains explicitly unclaimed rather than substituting HTTP evidence for an interactive inspection.
 - custom_generic is fixed in the API, with no client configuration selection. Startup checks its existing frozen source hash; this default avoids the generator-dependent leading-zero assumption and is not a newly measured performance advantage. Analyzer construction and mapped labels are imported without calling benchmark runner entry points or results/environment writers.
 - The proposal API uses a 20,000-code-point submitted-text design limit, LF canonicalization, code-point-aligned # replacement, deterministic document/revision digests, and review_required=true even for zero detections. Digests are not authorization tokens. No application deadline or inference cancellation is implemented; this limitation is explicit rather than treating a client timeout as stopped processing.
+- coverage-v2 adds explicit canonical intervals to proposal identity. Review identity additionally includes its random review ID and monotonic version, preventing edit-back/replay collisions. Detection counts retain the automatic detections while coverage_counts describes the current corrected mask. No count or approval establishes completeness, user identity, or authorization. Existing demo evidence files retain their historical earlier identities.
 - Default spaCy pipeline stays enabled; NG phone recognition is additive.
 - Before freeze, test predictions may be structurally validated, but no test error analysis is viewed.
 - Compatibility assumption: use doc_id exactly when present; otherwise use the exact legacy file value as ID. Ground truth is not rewritten. The user was asked about this choice; no answer received before implementation proceeded with this documented assumption.
@@ -96,7 +107,8 @@ Benchmark publication verified at c0337b68015a512365be1da9b3e5bc5c934f37ef on or
 - `054a1ff`: `feat: add reproducible benchmark visuals`.
 - `c0337b6`: `docs: publish benchmark results and reproduction guide` (publication verified).
 - `5bffe61`: `phase 6: plan internal redaction workflow demo` (draft PR #1).
-- Containing commit: `phase 6: add local masking proposal service`.
+- `d71ce3d`: `phase 6: add local masking proposal service`.
+- Containing commit: `phase 6: add revision-bound local review`.
 
 ## Open questions
 
@@ -104,7 +116,7 @@ Benchmark publication verified at c0337b68015a512365be1da9b3e5bc5c934f37ef on or
 - User accepted review and authorized both freezes and all five test configurations.
 - No unresolved benchmark-reporting blockers were found at publication. The Phase 6 local API now has runtime smoke evidence; the complete workflow remains unverified. Review the explicit all-timings versus scorer-extra-drop latency distinction before quoting benchmark results; use results.md's main latency columns.
 - Original figure hashes remain authoritative for the supplied PNGs. Historical README hash differences on the publication branch are intentional and documented, not evidence updates. Future runs require new reviewed provenance rather than relabeling the old snapshots.
-- The initial design and broader unchecked workflow acceptance criteria remain in docs/PHASE6_DEMO_PLAN.md. FastAPI/Uvicorn are now installed and tested only in demo/.venv. Activepieces availability, integration, retained history, correction/approval design, timeout/queue policy, and fair trial schedule still need review; no speed or quality improvement is measured yet.
+- The initial design and broader unchecked workflow acceptance criteria remain in docs/PHASE6_DEMO_PLAN.md. FastAPI/Uvicorn are installed and tested only in demo/.venv. Review code and HTTP semantics are verified; interactive browser behavior, Activepieces availability/integration/history, timeout/queue policy, and fair trial schedule still need review. No speed or quality improvement is measured yet.
 
 ## Demo commands (PowerShell, repository root)
 
@@ -114,9 +126,10 @@ Benchmark publication verified at c0337b68015a512365be1da9b3e5bc5c934f37ef on or
 .\demo\.venv\Scripts\python.exe -m demo
 # In another terminal while the service is running:
 .\demo\.venv\Scripts\python.exe -m demo.smoke_test
+.\demo\.venv\Scripts\python.exe -m demo.review_walkthrough
 ```
 
-The smoke command selects development data only and writes ignored demo/output/smoke.json. See [demo/README.md](../demo/README.md) for setup and an explicit synthetic request. Do not run the historical benchmark generation commands below as part of demo development.
+Open http://127.0.0.1:8000/ for local review while the service runs. The smoke and annotation-assisted review walkthrough select development data only and write ignored demo/output/smoke.json and demo/output/review_walkthrough.json. Recorded IDs expire and are lost on restart. See [demo/README.md](../demo/README.md) for setup, the API contract, explicit requests, state/expiry behavior, and browser verification limits. Do not run the historical benchmark generation commands below as part of demo development.
 
 ## Commands (PowerShell, repository root)
 
