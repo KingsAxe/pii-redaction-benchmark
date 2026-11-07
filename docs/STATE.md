@@ -1,6 +1,6 @@
 # Current phase
 
-Phase 5 benchmark documentation complete. User authorized publication of the completed local benchmark history to KingsAxe/pii-redaction-benchmark. This documentation commit records prepared content; remote publication is verified and reported separately after a normal push.
+Benchmark publication verified at c0337b68015a512365be1da9b3e5bc5c934f37ef on origin/main. Phase 6 internal workflow plan proposed on phase6/internal-redaction-demo for a draft PR. Implementation, measurements, and recorded demonstration remain pending.
 
 ## Done
 
@@ -35,15 +35,22 @@ Phase 5 benchmark documentation complete. User authorized publication of the com
 - The historical reporting inventory includes the old README. The authorized publication README intentionally changes that documentation hash; all benchmark inputs, reports, figure source inputs, and original PNGs remain unchanged. Direct figure rendering from the publication tree therefore rejects the README mismatch. Rerendering is documented at 054a1ff with recorded line endings restored only for AGENTS.md and requirements.txt; an in-memory Git-blob audit verified this reconstruction against every historical protected entry.
 - Publication checks cover numeric values, relative links/images, documented script arguments, the existing suite, custom source freezes, report/PNG hashes, and tracked/history credential or temporary-file patterns. No new inference, data generation, installation, dependency changes, or social-media posting occurred.
 - Pre-push validation passed all 45 tests, ground-truth verification, 20 README result-percentage comparisons, dataset/test counts, 12 local links/images, and CLI-help checks. All 344 historical protected entries other than the explicitly superseded README match, as do current report hashes, figure source inputs, and both original PNG hashes. The old README itself still matches the pinned historical Git blob. Credential/path pattern scans found no matches in tracked files or unpublished history.
+- Publication was subsequently pushed normally and verified on GitHub main at c0337b68015a512365be1da9b3e5bc5c934f37ef; the complete benchmark history is published. No LinkedIn posting occurred.
+- Phase 6 task fetched origin, confirmed KingsAxe/pii-redaction-benchmark and no newer origin/main changes, and found no existing Phase 6 branch/PR before creating phase6/internal-redaction-demo from origin/main.
+- Added docs/PHASE6_DEMO_PLAN.md proposing an isolated FastAPI/Activepieces synthetic-text workflow with imported analyzer/mapping helpers, a fixed custom_generic default, character-union masking, human correction/approval, local output, and a fair manual/assisted measurement protocol. Environment availability has not been established.
+- This initial Phase 6 diff contains only the plan and this handoff update. Documentation checks are sufficient at this gate; no runtime acceptance checks, implementation, timing trials, or video are claimed complete.
+- Phase 6 documentation validation checked seven local Markdown links/anchors, thirteen unchecked future acceptance criteria, both existing freeze hashes, branch/base identity, changed-file scope, and git diff --check. No benchmark runtime tests were run for this planning-only change.
 
 ## Next
 
-- Publish the prepared documentation and completed benchmark commits by normal push to origin/main, verifying the remote commit afterwards. Do not force-push or rewrite history; use a task branch/PR only if branch protection requires it.
-- LinkedIn posting, post drafts, gateway, OCR, and governance remain separate work. No additional engineering or tuning is authorized by this publication task.
+- Use a draft PR from phase6/internal-redaction-demo to main for the planning change; leave it open and unmerged. Continue through review on this feature branch, not on main.
+- Review the proposed default, environment/dependency availability, correction and stale-approval handling, Activepieces review/resume mechanism, local networking, retention, fixture selection, and trial design before a subsequent implementation task.
+- Implementation, observations/results, and video are pending. Cloud-model integration, production deployment, OCR, expanded governance logging, and social-media publication remain separate work.
 
 ## Decisions
 
 - Phase 1-2 files and benchmark evidence remain unchanged. Earlier phases did not push; the user's final publication instruction explicitly authorizes this task's Git fetch/push to KingsAxe/pii-redaction-benchmark and overrides the earlier push restriction for this task.
+- The Phase 6 instruction separately authorizes feature-branch creation/push and a draft PR, not merge or implementation. Preserve frozen benchmark evidence and historical manifests; new demo dependencies and observations will be isolated under demo/ only in a later authorized task.
 - Default spaCy pipeline stays enabled; NG phone recognition is additive.
 - Before freeze, test predictions may be structurally validated, but no test error analysis is viewed.
 - Compatibility assumption: use doc_id exactly when present; otherwise use the exact legacy file value as ID. Ground truth is not rewritten. The user was asked about this choice; no answer received before implementation proceeded with this documented assumption.
@@ -75,14 +82,16 @@ Phase 5 benchmark documentation complete. User authorized publication of the com
 - `f3ba55c`: `phase 4: evaluation and error analysis`.
 - `d80433e`: `fix: complete benchmark reporting and clarify methodology`.
 - `054a1ff`: `feat: add reproducible benchmark visuals`.
-- Containing commit: `docs: publish benchmark results and reproduction guide`.
+- `c0337b6`: `docs: publish benchmark results and reproduction guide` (publication verified).
+- Containing commit: `phase 6: plan internal redaction workflow demo`.
 
 ## Open questions
 
 - User may override the documented legacy-ID compatibility assumption.
 - User accepted review and authorized both freezes and all five test configurations.
-- No implementation blockers remain. Review the explicit all-timings versus scorer-extra-drop latency distinction before quoting results; use results.md's main latency columns.
+- No unresolved benchmark-reporting blockers were found at publication. Phase 6 runtime readiness is unverified. Review the explicit all-timings versus scorer-extra-drop latency distinction before quoting benchmark results; use results.md's main latency columns.
 - Original figure hashes remain authoritative for the supplied PNGs. Historical README hash differences on the publication branch are intentional and documented, not evidence updates. Future runs require new reviewed provenance rather than relabeling the old snapshots.
+- Phase 6 design questions and all unchecked runtime acceptance criteria are in docs/PHASE6_DEMO_PLAN.md. FastAPI, an ASGI server, and Activepieces availability must be inspected before implementation; no speed or quality improvement is measured yet.
 
 ## Commands (PowerShell, repository root)
 
