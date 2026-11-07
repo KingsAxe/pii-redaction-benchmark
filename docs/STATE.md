@@ -1,6 +1,6 @@
 # Current phase
 
-Benchmark visuals complete from existing reports and frozen predictions. Stop at the Phase 5 gate; README and publication work remain outside this task.
+Phase 5 benchmark documentation complete. User authorized publication of the completed local benchmark history to KingsAxe/pii-redaction-benchmark. This documentation commit records prepared content; remote publication is verified and reported separately after a normal push.
 
 ## Done
 
@@ -30,16 +30,20 @@ Benchmark visuals complete from existing reports and frozen predictions. Stop at
 - Coverage uses all mapped predicted character positions, ignoring greedy assignment and unmapped labels. Visible category counts plus preserved line-break counts match the source sets; the selected example includes one mapped line break, explicitly preserved and counted.
 - Repository suite passes 45 tests, including overlap, partial-coverage, over-redaction, wrapping, selection, and CSV ordering checks. All 356 original protected inputs and existing result files remain byte-for-byte unchanged; both custom freeze hashes and current report hashes match reporting_integrity.json.
 - results/figures/manifest.json records input/font/output hashes, exact commands, selection, scales, counts, library version, and verification. PNGs have binary Git attributes to prevent newline conversion. Matplotlib/CairoSVG were unavailable; Pillow does not export SVG, so PNG is the delivered format.
+- Publication README now explains scope, dataset/test denominators, all five configurations, observed selection criterion, freeze/run history, results, figures, metrics, limitations, and repository layout. Table percentages are derived from current results.csv; dataset counts are derived from ground truth.
+- Reproduction instructions distinguish read-only inspection, rerendering the historical evidence clone, and fresh data/inference/report generation in a separate clone. They identify tracked-file writes, variable timings, and provenance ordering without bypassing integrity checks or promising automatic rebaselining.
+- The historical reporting inventory includes the old README. The authorized publication README intentionally changes that documentation hash; all benchmark inputs, reports, figure source inputs, and original PNGs remain unchanged. Direct figure rendering from the publication tree therefore rejects the README mismatch. Rerendering is documented at 054a1ff with recorded line endings restored only for AGENTS.md and requirements.txt; an in-memory Git-blob audit verified this reconstruction against every historical protected entry.
+- Publication checks cover numeric values, relative links/images, documented script arguments, the existing suite, custom source freezes, report/PNG hashes, and tracked/history credential or temporary-file patterns. No new inference, data generation, installation, dependency changes, or social-media posting occurred.
+- Pre-push validation passed all 45 tests, ground-truth verification, 20 README result-percentage comparisons, dataset/test counts, 12 local links/images, and CLI-help checks. All 344 historical protected entries other than the explicitly superseded README match, as do current report hashes, figure source inputs, and both original PNG hashes. The old README itself still matches the pinned historical Git blob. Credential/path pattern scans found no matches in tracked files or unpublished history.
 
 ## Next
 
-- User reviews the generated test results and error analysis.
-- Phase 5 README work remains behind its gate. No new tuning experiments and no pushes.
-- User reviews the new comparison and document illustration. README rewrite, post drafts, and broader work remain unstarted.
+- Publish the prepared documentation and completed benchmark commits by normal push to origin/main, verifying the remote commit afterwards. Do not force-push or rewrite history; use a task branch/PR only if branch protection requires it.
+- LinkedIn posting, post drafts, gateway, OCR, and governance remain separate work. No additional engineering or tuning is authorized by this publication task.
 
 ## Decisions
 
-- Phase 1-2 files remain unchanged; no pushes.
+- Phase 1-2 files and benchmark evidence remain unchanged. Earlier phases did not push; the user's final publication instruction explicitly authorizes this task's Git fetch/push to KingsAxe/pii-redaction-benchmark and overrides the earlier push restriction for this task.
 - Default spaCy pipeline stays enabled; NG phone recognition is additive.
 - Before freeze, test predictions may be structurally validated, but no test error analysis is viewed.
 - Compatibility assumption: use doc_id exactly when present; otherwise use the exact legacy file value as ID. Ground truth is not rewritten. The user was asked about this choice; no answer received before implementation proceeded with this documented assumption.
@@ -70,13 +74,15 @@ Benchmark visuals complete from existing reports and frozen predictions. Stop at
 - `da55731`: `phase 3: frozen test predictions`.
 - `f3ba55c`: `phase 4: evaluation and error analysis`.
 - `d80433e`: `fix: complete benchmark reporting and clarify methodology`.
-- Containing commit: `feat: add reproducible benchmark visuals`.
+- `054a1ff`: `feat: add reproducible benchmark visuals`.
+- Containing commit: `docs: publish benchmark results and reproduction guide`.
 
 ## Open questions
 
 - User may override the documented legacy-ID compatibility assumption.
 - User accepted review and authorized both freezes and all five test configurations.
 - No implementation blockers remain. Review the explicit all-timings versus scorer-extra-drop latency distinction before quoting results; use results.md's main latency columns.
+- Original figure hashes remain authoritative for the supplied PNGs. Historical README hash differences on the publication branch are intentional and documented, not evidence updates. Future runs require new reviewed provenance rather than relabeling the old snapshots.
 
 ## Commands (PowerShell, repository root)
 
