@@ -1,0 +1,33 @@
+{
+  "observed_utc": "2026-11-07T10:33:14.938749+00:00",
+  "document_id": "data/raw/health_report_007.txt",
+  "split": "dev",
+  "selection_rule": "First development document in lexicographic document-ID order",
+  "input_sha256": "a160de53decd73a36b84677d87b39ffe3940532d3ba520168fb5c1fdc2186be5",
+  "configuration": "custom_generic",
+  "frozen_source_sha256": "1cc272db3674b3e3d59cc8a8ed791419a3f45457fdfdfde69389f965b79b06f1",
+  "health_http_status": 200,
+  "mask_http_status": 200,
+  "invalid_acknowledgement_http_status": 422,
+  "canonical_code_points": 348,
+  "detection_counts": {
+    "raw_span_count": 20,
+    "mapped_span_count": 7,
+    "ignored_span_count": 13,
+    "spans_by_mapped_label": {
+      "EMAIL": 1,
+      "ID": 2,
+      "PERSON": 2,
+      "PHONE": 2
+    },
+    "covered_code_point_count": 82,
+    "masked_code_point_count": 81,
+    "covered_lf_count": 1
+  },
+  "proposal_sha256": "839d761efe67c3d63708092e70b2dd973e55b5a101f007b15589ca2eaa168aef",
+  "document_digest": "a160de53decd73a36b84677d87b39ffe3940532d3ba520168fb5c1fdc2186be5",
+  "revision_id": "08a4dcdcd8b5db06a532b40ff7bc1caade0941a94ca9da82e32de7739118f178",
+  "review_required": true,
+  "checks": "Canonical text, aligned proposal, LF positions, source hash, counts, and text-free validation error passed",
+  "scope": "Real frozen analyzer HTTP smoke only; no accuracy or workflow timing trial"
+}

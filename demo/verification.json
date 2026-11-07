@@ -1,0 +1,124 @@
+{
+  "verified_utc": "2026-11-07T10:37:09.196649+00:00",
+  "base_commit": "5bffe61fb6c09654e93a5bcea3c342794cf330f3",
+  "tests": [
+    {
+      "command": ".\\demo\\.venv\\Scripts\\python.exe -m unittest discover -s demo/tests -v",
+      "tests_run": 19,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "successful": true
+    },
+    {
+      "command": ".\\venv\\Scripts\\python.exe -m unittest discover -s tests -v",
+      "tests_run": 45,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "successful": true
+    }
+  ],
+  "test_notes": [
+    "Initial sandboxed demo run had a temporary-directory permission failure; normal-access runs passed.",
+    "Starlette HTTPX TestClient integration emits a deprecation warning; no test failures."
+  ],
+  "preservation": {
+    "scope": "All pre-existing tracked files except authorized .gitignore and docs/STATE.md edits; no unrelated initial changes",
+    "file_count": 375,
+    "inventory_algorithm": "SHA-256 of UTF-8 JSON path-to-SHA256 mapping; sorted keys, compact separators",
+    "before_inventory_sha256": "11ca2a0db9dd5fa31f9e8b5a0d66a99a5140ccc691b709f5dd7e1726054cd067",
+    "after_inventory_sha256": "11ca2a0db9dd5fa31f9e8b5a0d66a99a5140ccc691b709f5dd7e1726054cd067",
+    "changed_files": [],
+    "critical_files": {
+      "scripts/metrics.py": {
+        "before_sha256": "585cf0425f6c2c8d3c23482fa5205decea40767c842631a4c262521e07d4a919",
+        "after_sha256": "585cf0425f6c2c8d3c23482fa5205decea40767c842631a4c262521e07d4a919"
+      },
+      "scripts/run_presidio.py": {
+        "before_sha256": "3a17080a771a3c64859e35d845782fb478e8d88fae1e396a6e13ec005e72440e",
+        "after_sha256": "3a17080a771a3c64859e35d845782fb478e8d88fae1e396a6e13ec005e72440e"
+      },
+      "scripts/runner_common.py": {
+        "before_sha256": "231ae0ca66195efb26b8c9235102c02d54a3e98ff4dd5116349f2581d44b735e",
+        "after_sha256": "231ae0ca66195efb26b8c9235102c02d54a3e98ff4dd5116349f2581d44b735e"
+      },
+      "requirements.txt": {
+        "before_sha256": "d35b5370d9e7dfc51ba6479e6747ccf7c3cfa757bca95c1b8691f584b8ed4ea8",
+        "after_sha256": "d35b5370d9e7dfc51ba6479e6747ccf7c3cfa757bca95c1b8691f584b8ed4ea8"
+      },
+      "data/ground_truth.json": {
+        "before_sha256": "f3484456cbc4db2396947510965a22087545aee4089bfe3f1301b49b55ec42e7",
+        "after_sha256": "f3484456cbc4db2396947510965a22087545aee4089bfe3f1301b49b55ec42e7"
+      },
+      "results/freeze.json": {
+        "before_sha256": "25ae9a259ec65b93a2f97630be3a4f40b888fda9473e7110b93e7b0c82f222df",
+        "after_sha256": "25ae9a259ec65b93a2f97630be3a4f40b888fda9473e7110b93e7b0c82f222df"
+      },
+      "results/reporting_integrity.json": {
+        "before_sha256": "b329aca6a64e58cb727ff4a561c51ae0a4a60d622319185fc80b957a93be77fd",
+        "after_sha256": "b329aca6a64e58cb727ff4a561c51ae0a4a60d622319185fc80b957a93be77fd"
+      },
+      "results/figures/manifest.json": {
+        "before_sha256": "7b73167795b3379fc7dcc078bab977b7dc6b7a5f85ab3546d3a6c673fc6820cf",
+        "after_sha256": "7b73167795b3379fc7dcc078bab977b7dc6b7a5f85ab3546d3a6c673fc6820cf"
+      }
+    },
+    "both_custom_freezes": {
+      "custom": {
+        "source": "scripts/custom_recognizers.py",
+        "expected_sha256": "a10d7fa8e88be4633c998c294a540ee00ce90dc6a1f7f9eb2edfc4a36f6fde18",
+        "actual_sha256": "a10d7fa8e88be4633c998c294a540ee00ce90dc6a1f7f9eb2edfc4a36f6fde18",
+        "matches": true
+      },
+      "custom_generic": {
+        "source": "scripts/custom_generic_recognizers.py",
+        "expected_sha256": "1cc272db3674b3e3d59cc8a8ed791419a3f45457fdfdfde69389f965b79b06f1",
+        "actual_sha256": "1cc272db3674b3e3d59cc8a8ed791419a3f45457fdfdfde69389f965b79b06f1",
+        "matches": true
+      }
+    },
+    "reports_against_reporting_integrity": {
+      "results/results.csv": {
+        "expected_sha256": "753e150c168745ba4139a5888352d5ea7a4d32ab400db2d7d2eb6bd4484fb640",
+        "actual_sha256": "753e150c168745ba4139a5888352d5ea7a4d32ab400db2d7d2eb6bd4484fb640"
+      },
+      "results/results.md": {
+        "expected_sha256": "a59e92e0e62802036c17cb250b783bc99c34a7171e8fdf0ccce80387f6a50bcf",
+        "actual_sha256": "a59e92e0e62802036c17cb250b783bc99c34a7171e8fdf0ccce80387f6a50bcf"
+      },
+      "results/error_analysis.md": {
+        "expected_sha256": "295d49848bada51b28c7b16482029ddbd80cc9d60b281cfe4da5bb276854acdc",
+        "actual_sha256": "295d49848bada51b28c7b16482029ddbd80cc9d60b281cfe4da5bb276854acdc"
+      },
+      "results/evaluation_details.json": {
+        "expected_sha256": "2cc6375aabf67197a38b398ef21abf52b3b0cee3b38c182ea7ae79ca67020d7b",
+        "actual_sha256": "2cc6375aabf67197a38b398ef21abf52b3b0cee3b38c182ea7ae79ca67020d7b"
+      }
+    },
+    "original_pngs_against_manifest": {
+      "results/figures/benchmark_comparison.png": {
+        "expected_sha256": "d5bf9648da232158aefe2acc6e24d9dcf355865bb07f23f4fdf1505167038809",
+        "actual_sha256": "d5bf9648da232158aefe2acc6e24d9dcf355865bb07f23f4fdf1505167038809"
+      },
+      "results/figures/document_example.png": {
+        "expected_sha256": "27acb81322eb0d24c2f602bed965d428a824e31a64982d4ebb1649a9a268bc40",
+        "actual_sha256": "27acb81322eb0d24c2f602bed965d428a824e31a64982d4ebb1649a9a268bc40"
+      }
+    },
+    "all_figure_input_hashes_match": true,
+    "historical_manifests_rewritten": false
+  },
+  "actual_analyzer_smoke": {
+    "record": "demo/smoke_evidence.json",
+    "record_sha256": "48c4f3c066af88274e3b4c083a8c553139a248daed4d7ce08cc23248fb66cabc",
+    "document_id": "data/raw/health_report_007.txt",
+    "configuration": "custom_generic",
+    "loopback_listener": "127.0.0.1:8000",
+    "serving_process_count": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0,
+    "server_stopped_after_check": true
+  },
+  "runtime_scope": "Proposal API only; no Activepieces workflow, correction/approval UI, trial results, or video"
+}
