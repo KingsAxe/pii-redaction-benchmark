@@ -1,0 +1,199 @@
+{
+  "renderer": "Pillow",
+  "pillow_version": "13.0.0",
+  "seed": 42,
+  "svg_status": "Not generated: Pillow does not export SVG",
+  "figures": {
+    "benchmark_comparison": {
+      "inputs": [
+        {
+          "path": "results/results.csv",
+          "sha256": "753e150c168745ba4139a5888352d5ea7a4d32ab400db2d7d2eb6bd4484fb640"
+        },
+        {
+          "path": "scripts/plot_benchmark.py",
+          "sha256": "f15038790d0b0a5180613c5b3db275fe642708847feeba71bff98f2549d4d1d6"
+        },
+        {
+          "path": "scripts/figure_common.py",
+          "sha256": "91d3e3135ea7de20c22058408643f7ed96917e99c6bdab1f65d49122f055eae5"
+        },
+        {
+          "path": "scripts/evaluate.py",
+          "sha256": "6d979cf802f4ffb37be23a5d6fd6721512b738e2b8b4e2e97948e0acb3dba415"
+        },
+        {
+          "path": "results/reporting_integrity.json",
+          "sha256": "b329aca6a64e58cb727ff4a561c51ae0a4a60d622319185fc80b957a93be77fd"
+        }
+      ],
+      "fonts": [
+        {
+          "path": "C:\\Windows\\Fonts\\arial.ttf",
+          "sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+        },
+        {
+          "path": "C:\\Windows\\Fonts\\arialbd.ttf",
+          "sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+        },
+        {
+          "path": "C:\\Windows\\Fonts\\consola.ttf",
+          "sha256": "cf00b507b3286870cc5064ebd0633c303f70b491a4af25eec2d32df413db0179"
+        }
+      ],
+      "reproduction_command": ".\\venv\\Scripts\\python.exe scripts/plot_benchmark.py",
+      "outputs": [
+        "benchmark_comparison.png"
+      ],
+      "output_sha256": "d5bf9648da232158aefe2acc6e24d9dcf355865bb07f23f4fdf1505167038809",
+      "dimensions_px": [
+        2400,
+        1450
+      ],
+      "configuration_order": [
+        "spacy",
+        "presidio_default",
+        "presidio_ng_phone",
+        "presidio_custom_generic",
+        "presidio_custom"
+      ],
+      "panel_scales": {
+        "leak_rate": {
+          "minimum_percent": 0,
+          "maximum_percent": 80
+        },
+        "over_redaction_rate": {
+          "minimum_percent": 0,
+          "maximum_percent": 10
+        }
+      },
+      "percentages": {
+        "spacy": {
+          "leak_rate": 69.35483870967742,
+          "over_redaction_rate": 5.382751183938458
+        },
+        "presidio_default": {
+          "leak_rate": 46.162402669632925,
+          "over_redaction_rate": 6.421059652711386
+        },
+        "presidio_ng_phone": {
+          "leak_rate": 46.162402669632925,
+          "over_redaction_rate": 6.421059652711386
+        },
+        "presidio_custom_generic": {
+          "leak_rate": 35.15016685205784,
+          "over_redaction_rate": 7.912933277008248
+        },
+        "presidio_custom": {
+          "leak_rate": 35.15016685205784,
+          "over_redaction_rate": 7.912933277008248
+        }
+      }
+    },
+    "document_example": {
+      "inputs": [
+        {
+          "path": "data/ground_truth.json",
+          "sha256": "f3484456cbc4db2396947510965a22087545aee4089bfe3f1301b49b55ec42e7"
+        },
+        {
+          "path": "data/raw/health_report_107.txt",
+          "sha256": "974aaaa16a1efbdf381e684b0ba0d95a81d9f6984f2adabdcc305ef4655daef8"
+        },
+        {
+          "path": "data/predictions/presidio_custom__test.json",
+          "sha256": "f7e84fd219e93946acfc08ec7dd2b0c3bf90d0a4b4dee936ce931c3126ec2e97"
+        },
+        {
+          "path": "results/freeze.json",
+          "sha256": "25ae9a259ec65b93a2f97630be3a4f40b888fda9473e7110b93e7b0c82f222df"
+        },
+        {
+          "path": "scripts/metrics.py",
+          "sha256": "585cf0425f6c2c8d3c23482fa5205decea40767c842631a4c262521e07d4a919"
+        },
+        {
+          "path": "scripts/runner_common.py",
+          "sha256": "231ae0ca66195efb26b8c9235102c02d54a3e98ff4dd5116349f2581d44b735e"
+        },
+        {
+          "path": "scripts/render_document_example.py",
+          "sha256": "c74848763477cc2e22e56c8806b8d3d4af229b3ab9261e69aecbb4992d7a532f"
+        },
+        {
+          "path": "scripts/figure_common.py",
+          "sha256": "91d3e3135ea7de20c22058408643f7ed96917e99c6bdab1f65d49122f055eae5"
+        },
+        {
+          "path": "scripts/evaluate.py",
+          "sha256": "6d979cf802f4ffb37be23a5d6fd6721512b738e2b8b4e2e97948e0acb3dba415"
+        }
+      ],
+      "fonts": [
+        {
+          "path": "C:\\Windows\\Fonts\\arial.ttf",
+          "sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a"
+        },
+        {
+          "path": "C:\\Windows\\Fonts\\arialbd.ttf",
+          "sha256": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+        },
+        {
+          "path": "C:\\Windows\\Fonts\\consola.ttf",
+          "sha256": "cf00b507b3286870cc5064ebd0633c303f70b491a4af25eec2d32df413db0179"
+        }
+      ],
+      "reproduction_command": ".\\venv\\Scripts\\python.exe scripts/render_document_example.py --config presidio_custom",
+      "outputs": [
+        "document_example.png"
+      ],
+      "output_sha256": "27acb81322eb0d24c2f602bed965d428a824e31a64982d4ebb1649a9a268bc40",
+      "dimensions_px": [
+        2600,
+        1490
+      ],
+      "selected_document": "data/raw/health_report_107.txt",
+      "configuration": "presidio_custom",
+      "selection_rule": "First test document in lexicographic document-ID order; no performance search",
+      "coverage_policy": "Union of all mapped prediction spans, independent of assignment and label correctness",
+      "character_counts": {
+        "masked_pii": 77,
+        "missed_pii": 47,
+        "over_redacted": 25,
+        "other": 205
+      },
+      "rendered_character_counts": {
+        "masked_pii": 77,
+        "missed_pii": 47,
+        "over_redacted": 24,
+        "other": 193
+      },
+      "preserved_line_break_counts": {
+        "masked_pii": 0,
+        "missed_pii": 0,
+        "over_redacted": 1,
+        "other": 12
+      },
+      "wrap_columns": 58,
+      "mask_character": "#",
+      "newlines_preserved": true
+    }
+  },
+  "verification": {
+    "protected_file_count": 356,
+    "protected_inventory_sha256_before": "3e4f5fb7164514090c70c3683c6ac6199cea0a54d1d74405c3e0af9d275d5dda",
+    "protected_inventory_sha256_after": "3e4f5fb7164514090c70c3683c6ac6199cea0a54d1d74405c3e0af9d275d5dda",
+    "all_original_benchmark_inputs_and_existing_reports_unchanged": true,
+    "reporting_integrity_and_both_freeze_checks": "passed",
+    "input_and_output_hashes_match": true,
+    "chart_percentages_match_csv": true,
+    "visible_category_counts_plus_preserved_line_breaks_match_character_sets": true,
+    "repository_tests_passed": 45,
+    "visual_inspection": "Both final PNGs opened and inspected: readable labels and legends, no clipping, aligned character annotations",
+    "limitations": [
+      "Pillow cannot export SVG",
+      "Example selected by ID only; no claim of representativeness",
+      "Mapped line breaks preserve layout and are counted separately from visible cells"
+    ]
+  }
+}

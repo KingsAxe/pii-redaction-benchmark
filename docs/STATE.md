@@ -1,6 +1,6 @@
 # Current phase
 
-Phase 4 reporting and methodology corrections complete. Stop at the Phase 5 gate; README and publication work remain outside this patch.
+Benchmark visuals complete from existing reports and frozen predictions. Stop at the Phase 5 gate; README and publication work remain outside this task.
 
 ## Done
 
@@ -23,13 +23,19 @@ Phase 4 reporting and methodology corrections complete. Stop at the Phase 5 gate
 - Methodology and generated wording now describe overlap-first assignment, prediction-order ties, unmatched versus metric false positives, decoy counting restrictions, independent character coverage, the actual prediction/rescoring sequence, and both timing summaries accurately. Brief references five evaluated configurations.
 - Temporary baselines of all existing reports were retained outside tracked outputs before regeneration. All 185 pre-existing numeric CSV values (195 CSV fields including identifiers) match exactly; all 8,312 error records and Markdown tables are unchanged. New fields match scorer outputs directly.
 - Repository suite passes 39 tests, including one focused reporting-export fixture. All 345 protected-file hashes match before/after, as do both custom freeze hashes. results/reporting_integrity.json records the hashes and comparisons. No inference, tuning, data generation, dependency changes, or scorer changes occurred.
-- Visual search covered repository scripts, notebooks, hidden/ignored files outside venv/.git, and annotation/rendering/redaction/visualisation names and code. No suitable renderer or existing example image was found. No image generated; renderer creation is deferred to a separate task.
+- At reporting commit d80433e, visual search found no suitable renderer or example image. No image was generated in that earlier task; the subsequently authorized visual task below adds the renderers.
+- Created scripts/plot_benchmark.py, scripts/render_document_example.py, and shared figure_common.py using installed Pillow, with no inference, network calls, dependency changes, or new benchmark measurements.
+- Generated results/figures/benchmark_comparison.png (two independent zero-based percentage axes) and results/figures/document_example.png (aligned original/coverage views). Both final images opened and visually inspected for clipping, legibility, labels, and alignment.
+- Default example: data/raw/health_report_107.txt with presidio_custom, first test document in lexicographic document-ID order, without performance search. Optional --doc-id and --config arguments are supported. It is an illustration, not a representative-result claim or production masking tool.
+- Coverage uses all mapped predicted character positions, ignoring greedy assignment and unmapped labels. Visible category counts plus preserved line-break counts match the source sets; the selected example includes one mapped line break, explicitly preserved and counted.
+- Repository suite passes 45 tests, including overlap, partial-coverage, over-redaction, wrapping, selection, and CSV ordering checks. All 356 original protected inputs and existing result files remain byte-for-byte unchanged; both custom freeze hashes and current report hashes match reporting_integrity.json.
+- results/figures/manifest.json records input/font/output hashes, exact commands, selection, scales, counts, library version, and verification. PNGs have binary Git attributes to prevent newline conversion. Matplotlib/CairoSVG were unavailable; Pillow does not export SVG, so PNG is the delivered format.
 
 ## Next
 
 - User reviews the generated test results and error analysis.
 - Phase 5 README work remains behind its gate. No new tuning experiments and no pushes.
-- A new synthetic example renderer requires a separate task because none exists in the repository; do not invent a previous rendering command or claim an example is representative.
+- User reviews the new comparison and document illustration. README rewrite, post drafts, and broader work remain unstarted.
 
 ## Decisions
 
@@ -63,7 +69,8 @@ Phase 4 reporting and methodology corrections complete. Stop at the Phase 5 gate
 - `853bcbb`: `freeze custom config`.
 - `da55731`: `phase 3: frozen test predictions`.
 - `f3ba55c`: `phase 4: evaluation and error analysis`.
-- Containing commit: `fix: complete benchmark reporting and clarify methodology`.
+- `d80433e`: `fix: complete benchmark reporting and clarify methodology`.
+- Containing commit: `feat: add reproducible benchmark visuals`.
 
 ## Open questions
 
@@ -83,6 +90,8 @@ Phase 4 reporting and methodology corrections complete. Stop at the Phase 5 gate
 .\venv\Scripts\python.exe scripts/validate_predictions.py data/predictions/presidio_custom__dev.json --split dev --report results/custom_validation_dev.json
 .\venv\Scripts\python.exe scripts/summarize_dev_ids.py
 .\venv\Scripts\python.exe scripts/evaluate.py
+.\venv\Scripts\python.exe scripts/plot_benchmark.py
+.\venv\Scripts\python.exe scripts/render_document_example.py --config presidio_custom
 ```
 
 No further tuning experiments are authorized. Recompute archived dev diagnostics with summarize_dev_ids.py; regenerate reports with evaluate.py without inference. Do not overwrite archives or change either frozen source.

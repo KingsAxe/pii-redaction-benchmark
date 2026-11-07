@@ -1,5 +1,10 @@
 data/predictions/** text eol=lf
 results/** text eol=lf
+results/figures/*.png binary
+scripts/figure_common.py text eol=lf
+scripts/plot_benchmark.py text eol=lf
+scripts/render_document_example.py text eol=lf
+tests/test_figures.py text eol=lf
 scripts/run_*.py text eol=lf
 scripts/runner_common.py text eol=lf
 scripts/custom_recognizers.py text eol=lf
