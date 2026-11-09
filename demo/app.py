@@ -115,7 +115,7 @@ def create_app(*, analyzer_factory=None, hash_verifier=None, review_store=None):
         return response
 
     @app.get("/", include_in_schema=False)
-    async def review_page():
+    async def review_page(review_id: Annotated[str | None, Query(pattern=r"^[0-9a-f]{32}$")] = None):
         return FileResponse(STATIC / "index.html")
 
     @app.get("/static/review.js", include_in_schema=False)

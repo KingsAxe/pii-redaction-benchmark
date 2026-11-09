@@ -11,6 +11,12 @@ class BrowserHelperTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn("checks passed", result.stdout)
 
+    def test_activepieces_code_contract_and_no_retry(self):
+        result = subprocess.run(["node", str(Path(__file__).with_name("activepieces_checks.mjs"))],
+                                capture_output=True, text=True, timeout=20)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("checks passed", result.stdout)
+
 
 if __name__ == "__main__":
     unittest.main()

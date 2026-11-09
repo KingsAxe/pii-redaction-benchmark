@@ -1,0 +1,27 @@
+{
+  "recorded_utc": "2026-11-09T09:13:38.095489+00:00",
+  "status": "blocked",
+  "exact_blocker": "Browser runtime returned No browser is available; browser discovery returned []",
+  "available_browser_connections": [],
+  "fixture": "data/raw/health_report_007.txt",
+  "selection_rule": "First development document in lexicographic document-ID order",
+  "review_url": "http://127.0.0.1:8000/?review_id=2bda55dbb32f49f19394335ec5c25768",
+  "page_http_status": 200,
+  "review_http_status_at_recording": 404,
+  "review_status_at_recording": null,
+  "interactive_checks": {
+    "select_text": "not performed",
+    "add_remove_mask": "not performed",
+    "approve": "not performed",
+    "download_matches_approved_output": "not performed",
+    "correction_requires_reapproval": "not performed",
+    "reject": "not performed"
+  },
+  "manual_walkthrough": [
+    "Open the supplied review link, or create a fresh synthetic review if it expired.",
+    "Select text in Canonical original; add and remove masking.",
+    "Correct the mask, explicitly approve, then retrieve/download. Compare the UTF-8 download to the current approved masked_text.",
+    "Make another correction; output must require fresh approval. Reapprove, then reject; output must be unavailable."
+  ],
+  "note": "HTTP page/API success and Node helper checks do not establish interactive browser success. Human response/approval has not been recorded."
+}

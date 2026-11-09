@@ -285,6 +285,17 @@ class ReviewApiTests(unittest.TestCase):
             self.assertTrue(output.headers['content-type'].startswith('text/plain'))
             self.assertEqual(output.text, text)
 
+    def test_existing_review_link_is_validated_and_never_injects_text(self):
+        with self.client() as client:
+            review = self.create(client)
+            page = client.get('/', params={"review_id": review["review_id"]})
+            self.assertEqual(page.status_code, 200)
+            self.assertNotIn(review["review_id"], page.text)
+            self.assertEqual(client.get(f'/reviews/{review["review_id"]}').status_code, 200)
+            bad = client.get('/', params={"review_id": "<script>SYNTHETIC_CANARY</script>"})
+            self.assertEqual(bad.status_code, 422)
+            self.assertNotIn('SYNTHETIC_CANARY', bad.text)
+
 
 if __name__ == "__main__":
     unittest.main()

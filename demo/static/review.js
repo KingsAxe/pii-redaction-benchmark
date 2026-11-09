@@ -18,6 +18,16 @@ export function selectionInterval(text, start, end) {
     return interval;
 }
 
+export function reviewIdFromSearch(search) {
+    if (!search) return null;
+    const params = new URLSearchParams(search);
+    const reviewId = params.get("review_id");
+    if (params.size !== 1 || !reviewId || !/^[0-9a-f]{32}$/.test(reviewId)) {
+        throw new Error("Invalid review link; use one 32-character lowercase hexadecimal review_id");
+    }
+    return reviewId;
+}
+
 export function showCoverage(container, text, intervals) {
     // Never parse submitted text as HTML, including text inside marked coverage.
     const points = Array.from(text);
@@ -54,6 +64,7 @@ if (typeof document !== "undefined") {
     function display(review) {
         current = review;
         activeId = review.review_id;
+        window.history.replaceState(null, "", `/?review_id=${review.review_id}`);
         clearOutput();
         element("review").hidden = false;
         element("original").value = review.canonical_original;
@@ -106,6 +117,7 @@ if (typeof document !== "undefined") {
         generation += 1;
         current = null;
         activeId = null;
+        window.history.replaceState(null, "", "/");
         clearOutput();
         element("review").hidden = true;
         element("message").textContent = "Input changed; create a new review.";
@@ -176,4 +188,19 @@ if (typeof document !== "undefined") {
         element("message").textContent = "Approved output retrieved and download requested.";
     }));
     controls();
+    try {
+        const linkedId = reviewIdFromSearch(window.location.search);
+        if (linkedId) {
+            activeId = linkedId;
+            act(async (epoch) => {
+                const review = await (await request(`/reviews/${linkedId}`)).json();
+                if (epoch !== generation) return;
+                display(review);
+                element("input-text").value = review.canonical_original;
+                element("message").textContent = "Existing review loaded. Inspect the current revision before acting.";
+            });
+        }
+    } catch (error) {
+        element("message").textContent = error.message;
+    }
 }

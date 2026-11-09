@@ -3,7 +3,12 @@ import assert from "node:assert/strict";
 import {readFileSync} from "node:fs";
 
 const source = readFileSync(new URL("../static/review.js", import.meta.url), "utf8");
-const {codePointOffset, selectionInterval, showCoverage} = await import(`data:text/javascript;base64,${Buffer.from(source).toString("base64")}`);
+const {codePointOffset, selectionInterval, showCoverage, reviewIdFromSearch} = await import(`data:text/javascript;base64,${Buffer.from(source).toString("base64")}`);
+assert.equal(reviewIdFromSearch(""), null);
+assert.equal(reviewIdFromSearch("?review_id=" + "a".repeat(32)), "a".repeat(32));
+for (const search of ["?review_id=bad", "?review_id=" + "a".repeat(32) + "&extra=1", "?review_id=" + "a".repeat(32) + "&review_id=" + "b".repeat(32), "?other=value", "?review_id=%3Cscript%3E"]) {
+    assert.throws(() => reviewIdFromSearch(search));
+}
 const text = "A😀e\u0301\nB";
 assert.equal(codePointOffset(text, 0), 0);
 assert.equal(codePointOffset(text, 1), 1);
