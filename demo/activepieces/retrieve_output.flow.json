@@ -1,0 +1,65 @@
+{
+  "name": "PII demo: Retrieve approved output",
+  "type": "SHARED",
+  "summary": "",
+  "description": "",
+  "tags": [],
+  "blogUrl": "",
+  "metadata": {
+    "externalId": "29lT1CnBt4XeVLG44jq48"
+  },
+  "author": "Synthetic Reviewer",
+  "categories": [],
+  "pieces": [
+    "@activepieces/piece-manual-trigger"
+  ],
+  "flows": [
+    {
+      "displayName": "PII demo: Retrieve approved output",
+      "trigger": {
+        "name": "trigger",
+        "valid": true,
+        "displayName": "Manual Trigger",
+        "nextAction": {
+          "name": "step_1",
+          "type": "CODE",
+          "valid": true,
+          "settings": {
+            "input": {
+              "review_id": "401d9eeac2934745a844738479b2c3c8",
+              "expected_revision": "baa0b1cb8af2fbba401b61b3ad0152b16a2889f591445797d64e805eee623559"
+            },
+            "sampleData": {},
+            "sourceCode": {
+              "code": "// Supply the exact approved revision; never silently refresh a stale token.\nexport const code = async (inputs) => {\n    if (!/^[0-9a-f]{32}$/.test(inputs.review_id) || !/^[0-9a-f]{64}$/.test(inputs.expected_revision)) {\n        throw new Error('Supply a review ID and its expected approved revision');\n    }\n    const response = await fetch(`http://host.docker.internal:8000/reviews/${inputs.review_id}/output?expected_revision=${inputs.expected_revision}`);\n    if (response.status !== 200) {\n        const failure = await response.json().catch(() => null);\n        const known = ['review_not_approved', 'stale_revision', 'review_rejected', 'review_missing_or_expired'];\n        const reason = known.includes(failure?.detail?.code) ? failure.detail.code : 'request_failed';\n        throw new Error(`Output denied: HTTP ${response.status} (${reason})`);\n    }\n    if (response.headers.get('X-Review-Revision') !== inputs.expected_revision) throw new Error('Output revision mismatch');\n    return {review_id: inputs.review_id, revision_id: inputs.expected_revision, masked_text: await response.text()};\n};\n",
+              "packageJson": "{}"
+            },
+            "errorHandlingOptions": {
+              "retryOnFailure": {
+                "value": false
+              },
+              "continueOnFailure": {
+                "value": false
+              }
+            }
+          },
+          "displayName": "Retrieve approved output",
+          "lastUpdatedDate": "2026-11-09T08:33:53.090Z"
+        },
+        "lastUpdatedDate": "2026-11-09T08:22:39.374Z",
+        "type": "PIECE_TRIGGER",
+        "settings": {
+          "propertySettings": {},
+          "pieceName": "@activepieces/piece-manual-trigger",
+          "pieceVersion": "0.0.8",
+          "triggerName": "manual_trigger",
+          "input": {}
+        }
+      },
+      "valid": true,
+      "schemaVersion": "28",
+      "notes": []
+    }
+  ],
+  "status": "PUBLISHED"
+}

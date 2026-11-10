@@ -1,0 +1,59 @@
+# Phase 6: internal redaction workflow demonstration
+
+Status: proposed design for a draft PR. Implementation, runtime checks, timing trials, and video are pending. This change contains planning documentation only.
+
+## Purpose and boundary
+
+Turn the published benchmark into a working synthetic-text demonstration: submit text, propose masking, let a person correct it, and produce explicitly approved local output. Then compare manual and assisted completion of the same reviewed, corrected masked document.
+
+The [published results](../results/results.md) show that automated detection still misses PII. Human review is necessary; a successful API response cannot establish that text is suitable for unrestricted further use. Detection counts are not a completeness guarantee.
+
+Use only synthetic English plain text from development examples or new annotated demo fixtures. Keep held-out test documents outside workflow development, fixture selection, and timing trials. End at reviewed local synthetic output. Cloud-model integration, OCR, production deployment, and expanded governance logging belong to later work.
+
+## Implementation sequence and proposed decisions
+
+1. **Establish the environment before coding.** Inspect Windows/Python, ports, any container runtime, and whether FastAPI, an ASGI server, and Activepieces are available. Their availability has not been established. Record versions, installation approach, and any missing prerequisites for review. Keep demo code, a separate virtual environment, and dependency pins under `demo/`; do not change the benchmark environment or root requirements.
+2. **Fix fixtures and the analyzer.** Record selected dev document IDs or new fixture IDs, source hashes, and annotation keys under `demo/`. Use seed 42 for any new randomized fixture construction. Import `build_analyzer` from [run_presidio.py](../scripts/run_presidio.py), `require_custom_freeze` from [runner_common.py](../scripts/runner_common.py), and `DEFAULT_PRED_LABEL_MAP` from [metrics.py](../scripts/metrics.py). Do not copy recognizers or alter the scorer. Check the matching frozen source hash before analyzer construction; fail startup if it does not match. Construct the analyzer once at application startup, keep one process/worker for the initial demo, and reuse it across requests.
+3. **Propose `custom_generic` as the fixed default.** This avoids depending on the generator's exclusion of leading-zero IDs. It is a design choice for review, not a newly measured performance advantage. It retains the existing NG phone handling, generic ID patterns, and offline email-validator behavior. No tuning, dynamic recognizer edits, or arbitrary client-supplied configuration should be introduced.
+4. **Validate and process text through FastAPI.** Accept a bounded, nonempty Unicode text field and a synthetic-only input acknowledgement; define size limits and useful validation errors before implementation. An acknowledgement does not verify data origin. Canonicalize CRLF/CR to LF once, before analysis, and display that same canonical original for review. Document offsets as Python Unicode code-point indices, including conversion for any client using UTF-16 indices.
+5. **Build the mask from character unions.** Union every mapped predicted span independently of greedy assignment and label correctness; ignore unmapped labels. Replace each covered non-LF code point with `#`, preserving string length and LF positions. Account for preserved covered line breaks explicitly. Propose human corrections as mask additions/removals over the canonical original so final output stays aligned with its annotation key. Do not claim that a raw/mapped span count is a unique-person count or total PII count.
+6. **Return a review proposal, not a completion claim.** The proposed response includes masked text, the fixed configuration, raw and mapped detection counts with clearly named units, a document/revision identifier, and `review_required: true`. Processing errors, invalid spans, unavailable analyzer state, and timeouts return errors. Never return the unmasked input as a successful fallback.
+7. **Implement correction and approval.** Present original and proposed masked text together, allow mask corrections, and require explicit approval of the final revision. Bind approval to the canonical input, configuration/source hash, proposed mask, and current correction revision. Any input or correction change invalidates earlier approval; retries must not emit an old approved revision. A failed or rejected run must not produce a final-success output.
+8. **Build and export the local Activepieces flow.** Connect synthetic input -> FastAPI processing -> human review/correction -> explicit approval -> final synthetic output. First check the installed Activepieces version and whether its local review/wait/resume facilities support this sequence. If they do not, propose a small local review page and a revision-bound resume action for review before implementing it. Export the actual working flow with reproducible PowerShell setup instructions under `demo/`, without credentials or machine-specific secrets.
+9. **Verify networking and stored content.** Decide host versus container execution only after the environment check. Bind host access to loopback; if containers are used, restrict host-published ports to loopback and document the supported internal address used by Activepieces. Test actual connectivity rather than assuming container loopback reaches the host. Do not publicly expose the service. Inspect API access/error logging and Activepieces run/history retention, including retries and failures. Disclose what original, proposed, corrected, or approved text is stored, where, for how long, and how local history is cleared. Use synthetic input throughout and keep content out of API logs where practical; do not promise that Activepieces retains nothing without verifying it.
+
+## Measurement protocol
+
+Results remain pending until actual trials exist. Do not reuse benchmark latency numbers as workflow-time results.
+
+- **Preselect before timing:** save a fixture manifest by ID, annotation-key version/hash, and selection rule before trials. Use development examples or new annotated fixtures, never held-out test documents. Keep the same canonical source, replacement convention, and reviewed output requirements in both routes. Set trial assignments and planned summaries before observing times; disclose any later changes.
+- **Manual route:** start immediately before the participant first reads the document for the trial. Include reading, masking, inspection, correction, and the explicit completion action. Stop when the final reviewed masked output is saved.
+- **Assisted route:** start immediately before submission. Include submission, detection, all Activepieces transitions/waits, review, human correction, approval, and final output. Stop when that approved output is saved. Record failures and retries; do not discard their time to make the route appear faster.
+- **Order and familiarity:** counterbalance manual/assisted order across documents for each participant, recording the assignment in advance. If a participant sees the same document twice, disclose recall/practice effects and the interval; counterbalancing does not remove them. Use separate practice fixtures and record prior familiarity.
+- **Observations:** record pseudonymous participant ID, document ID/key hash, route, route order, prior exposure, start/stop boundaries and timestamps, elapsed time from a monotonic clock, interruptions/failures, final output revision/hash, and remaining errors against the annotation key. Measure residual exposed PII characters/entities and unnecessary masking on the final reviewed output, using the same definitions for both routes. Keep the annotation key out of the participant's task view and assess errors after completion; no alteration of benchmark scoring is needed.
+- **Separate timings:** record API-only processing latency separately from end-to-end completion time. A fast API call is not evidence of faster reviewed completion. Report elapsed time alongside remaining errors, not speed alone.
+- **Storage and summaries:** keep observations, final synthetic outputs, annotation keys, and derived summaries in a separate `demo/observations/` area, never in existing benchmark results. Derive every summary from recorded trials, state sample sizes and exclusions, and label the scope as an internal synthetic demonstration. Leave all outcome and improvement claims pending.
+
+## Implementation acceptance criteria
+
+All items below are unchecked future work; no runtime acceptance result is claimed by this plan.
+
+- [ ] Record environment availability and versions for FastAPI, an ASGI server, and Activepieces; isolate demo dependencies and document reproducible Windows setup.
+- [ ] Validate synthetic plain-text inputs, sizes, empty/malformed requests, unavailable analyzer state, and timeouts; return useful errors with no successful unmasked fallback.
+- [ ] Verify the `custom_generic` frozen hash before use and demonstrate analyzer construction once at startup with request reuse.
+- [ ] Test mapped-span unions with overlapping predictions, partial PII coverage, predictions extending into non-PII, and ignored labels, independently of greedy assignment.
+- [ ] Test Unicode code-point/client offset conversion, combining characters, non-BMP characters, CRLF normalization, LF preservation, and correction alignment. Reconcile visible masking counts with preserved line breaks.
+- [ ] Show original and proposed masked text, human mask correction, rejection, and explicit final approval; prevent approval or emission of stale output after edits, retries, or input changes.
+- [ ] Execute the complete local Activepieces flow, including review and approval, and export that executed flow plus setup/networking instructions reproducible from a clean demo environment.
+- [ ] Verify local/container connectivity and confirm there is no public service exposure.
+- [ ] Verify and disclose API logging and Activepieces history/retention for success and failure; demonstrate history clearing and confirm exported files contain no credentials.
+- [ ] Run preselected, counterbalanced manual/assisted timing trials to the same reviewed deliverable; record remaining errors and disclose familiarity, failures, and interruptions. Keep API latency separate.
+- [ ] Generate summaries solely from observations kept outside benchmark results; leave results pending until trials are complete.
+- [ ] Run existing benchmark tests and evidence-preservation checks without modifying frozen benchmark files or historical hashes.
+- [ ] Record a short end-to-end demonstration with the selected fixture ID/rule, configuration, review edits, approval, final local output, and known limitations disclosed. Do not present the example as representative without evidence.
+
+## Preservation and review gate
+
+Preserve the scorer, frozen sources, dataset, ground truth, predictions, reports, original figures, and historical manifests. Do not rewrite historical hashes to accommodate this plan or later demo documentation. The [README's integrity caveat](../README.md#1-inspect-supplied-results-and-rerender-without-inference) and [Phase 3 specification](PHASE3_SPEC.md) remain applicable. Refer to the [current handoff](STATE.md) for branch and phase status.
+
+Before implementation, review: environment availability and isolated dependency pins; fixed `custom_generic` default; input limit and correction interface; Activepieces review/resume support; host/container networking and retained history; fixture selection, participant/trial schedule, and timing boundaries. Work continues on `phase6/internal-redaction-demo` through review. This draft does not authorize merging or claim that any implementation, trial, or video is complete.

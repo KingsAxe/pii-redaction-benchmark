@@ -1,0 +1,96 @@
+{
+  "verified_utc": "2026-11-09T09:18:06.117886+00:00",
+  "base_commit": "af3f61b32bae4fe1cf9df093ae48deffce1db0c9",
+  "tests": [
+    {
+      "command": ".\\demo\\.venv\\Scripts\\python.exe -m unittest discover -s demo/tests -v",
+      "tests_run": 41,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "successful": true
+    },
+    {
+      "command": ".\\venv\\Scripts\\python.exe -m unittest discover -s tests -v",
+      "tests_run": 45,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "successful": true
+    }
+  ],
+  "preservation": {
+    "scope": "All original non-demo tracked files except authorized docs/STATE.md; initial working tree clean",
+    "file_count": 376,
+    "inventory_algorithm": "SHA256 of UTF-8 path-to-SHA256 JSON; sorted keys, compact separators",
+    "before_inventory_sha256": "a0744655a25ee4dacbd4e60aaa50e4db5e6725361714e2604e287c59b56292ae",
+    "after_inventory_sha256": "a0744655a25ee4dacbd4e60aaa50e4db5e6725361714e2604e287c59b56292ae",
+    "changed_files": [],
+    "both_frozen_sources": {
+      "custom": {
+        "source": "scripts/custom_recognizers.py",
+        "expected_sha256": "a10d7fa8e88be4633c998c294a540ee00ce90dc6a1f7f9eb2edfc4a36f6fde18",
+        "actual_sha256": "a10d7fa8e88be4633c998c294a540ee00ce90dc6a1f7f9eb2edfc4a36f6fde18"
+      },
+      "custom_generic": {
+        "source": "scripts/custom_generic_recognizers.py",
+        "expected_sha256": "1cc272db3674b3e3d59cc8a8ed791419a3f45457fdfdfde69389f965b79b06f1",
+        "actual_sha256": "1cc272db3674b3e3d59cc8a8ed791419a3f45457fdfdfde69389f965b79b06f1"
+      }
+    },
+    "historical_demo_files": {
+      "demo/environment.json": {
+        "before_sha256": "d8e95cbc4c6a13c3c9be8a2ce63414f852d93b96ec69087d19d701402f753549",
+        "after_sha256": "d8e95cbc4c6a13c3c9be8a2ce63414f852d93b96ec69087d19d701402f753549"
+      },
+      "demo/smoke_evidence.json": {
+        "before_sha256": "48c4f3c066af88274e3b4c083a8c553139a248daed4d7ce08cc23248fb66cabc",
+        "after_sha256": "48c4f3c066af88274e3b4c083a8c553139a248daed4d7ce08cc23248fb66cabc"
+      },
+      "demo/verification.json": {
+        "before_sha256": "1fd6b2ae1d6591292377d614ef4ade82799a9edc27cf2de1d29044803b298635",
+        "after_sha256": "1fd6b2ae1d6591292377d614ef4ade82799a9edc27cf2de1d29044803b298635"
+      },
+      "demo/requirements.txt": {
+        "before_sha256": "76c3aaa48f7cf71674eb5144c65465d11ab38836463b437d5659757d22376a81",
+        "after_sha256": "76c3aaa48f7cf71674eb5144c65465d11ab38836463b437d5659757d22376a81"
+      },
+      "demo/review_verification.json": {
+        "before_sha256": "8aa02170cb18cf3af6dfb06596b8cdb528af168d6d27264a7ea58bc0036c5ab6",
+        "after_sha256": "8aa02170cb18cf3af6dfb06596b8cdb528af168d6d27264a7ea58bc0036c5ab6"
+      },
+      "demo/review_walkthrough_evidence.json": {
+        "before_sha256": "82678fcddd03b4c1b3de950db73a54464a9dd660f304cc12345b38d3fd5386a1",
+        "after_sha256": "82678fcddd03b4c1b3de950db73a54464a9dd660f304cc12345b38d3fd5386a1"
+      }
+    },
+    "current_report_hashes_match_reporting_integrity": {
+      "results/results.csv": "753e150c168745ba4139a5888352d5ea7a4d32ab400db2d7d2eb6bd4484fb640",
+      "results/results.md": "a59e92e0e62802036c17cb250b783bc99c34a7171e8fdf0ccce80387f6a50bcf",
+      "results/error_analysis.md": "295d49848bada51b28c7b16482029ddbd80cc9d60b281cfe4da5bb276854acdc",
+      "results/evaluation_details.json": "2cc6375aabf67197a38b398ef21abf52b3b0cee3b38c182ea7ae79ca67020d7b"
+    },
+    "original_png_hashes_match_manifest": {
+      "results/figures/benchmark_comparison.png": "d5bf9648da232158aefe2acc6e24d9dcf355865bb07f23f4fdf1505167038809",
+      "results/figures/document_example.png": "27acb81322eb0d24c2f602bed965d428a824e31a64982d4ebb1649a9a268bc40"
+    },
+    "all_figure_input_hashes_match": true
+  },
+  "new_evidence_and_exports": {
+    "demo/activepieces/browser_check.json": "ae448f40e870900b3bddcd7fbd13f0ae91736abbc768ba5878322f96b0226158",
+    "demo/activepieces/workflow_evidence.json": "ed4061aabdefff6a68a6a9765170410bc1e944c99e9034b68f8b7eb7017f3619",
+    "demo/activepieces/create_review.flow.json": "ca89980f71a40cc2dab618296efe6d7651483b32f3bfb8befd7f6fdabfce655f",
+    "demo/activepieces/retrieve_output.flow.json": "48cc1d28169e432a173115454b528a922dbc8a701655744994d5663fab6da2f8"
+  },
+  "logging_observations": {
+    "fastapi_stdout_bytes": 0,
+    "fastapi_stderr_bytes": 0,
+    "full_synthetic_fixture_found_in_docker_stdout_stderr": false,
+    "scope": "This scan does not imply Activepieces history or other storage is empty; complete synthetic inputs/outputs were observed in run records."
+  },
+  "browser_status": "Blocked: no Browser connection; interactive checks not performed; supplied human review expired without recorded completion",
+  "workflow_status": "Actual local runtime connectivity and five sequential native Code-step tests recorded; positive output fixture was approved through API only",
+  "services_left_running_on_loopback": true,
+  "no_benchmark_inference_tuning_data_or_report_regeneration": true,
+  "no_timing_trials_or_video": true
+}

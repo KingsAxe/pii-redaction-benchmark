@@ -1,0 +1,115 @@
+{
+  "verified_utc": "2026-11-07T23:12:07.669488+00:00",
+  "base_commit": "d71ce3d5dc03bb1b19f180cac9b62e9d6e936cdd",
+  "tests": [
+    {
+      "command": ".\\demo\\.venv\\Scripts\\python.exe -m unittest discover -s demo/tests -v",
+      "tests_run": 39,
+      "result": "OK; zero failures/errors/skips"
+    },
+    {
+      "command": ".\\venv\\Scripts\\python.exe -m unittest discover -s tests -v",
+      "tests_run": 45,
+      "result": "OK; zero failures/errors/skips"
+    }
+  ],
+  "test_result_basis": "Successful command outputs observed in this increment; discovery rechecked the test counts without rerunning inference or tests.",
+  "node": "v22.23.1",
+  "pip_check": "No broken requirements found",
+  "warning": "Existing Starlette HTTPX TestClient deprecation warning; no dependencies changed",
+  "preservation": {
+    "scope": "All pre-existing non-demo tracked files except authorized docs/STATE.md edit; initial working tree clean",
+    "file_count": 376,
+    "inventory_algorithm": "SHA-256 of UTF-8 JSON path-to-SHA256 mapping; sorted keys, compact separators",
+    "before_inventory_sha256": "a0744655a25ee4dacbd4e60aaa50e4db5e6725361714e2604e287c59b56292ae",
+    "after_inventory_sha256": "a0744655a25ee4dacbd4e60aaa50e4db5e6725361714e2604e287c59b56292ae",
+    "changed_files": [],
+    "both_custom_freezes": {
+      "custom": {
+        "source": "scripts/custom_recognizers.py",
+        "expected_sha256": "a10d7fa8e88be4633c998c294a540ee00ce90dc6a1f7f9eb2edfc4a36f6fde18",
+        "actual_sha256": "a10d7fa8e88be4633c998c294a540ee00ce90dc6a1f7f9eb2edfc4a36f6fde18"
+      },
+      "custom_generic": {
+        "source": "scripts/custom_generic_recognizers.py",
+        "expected_sha256": "1cc272db3674b3e3d59cc8a8ed791419a3f45457fdfdfde69389f965b79b06f1",
+        "actual_sha256": "1cc272db3674b3e3d59cc8a8ed791419a3f45457fdfdfde69389f965b79b06f1"
+      }
+    },
+    "reports_against_reporting_integrity": {
+      "results/results.csv": {
+        "expected_sha256": "753e150c168745ba4139a5888352d5ea7a4d32ab400db2d7d2eb6bd4484fb640",
+        "actual_sha256": "753e150c168745ba4139a5888352d5ea7a4d32ab400db2d7d2eb6bd4484fb640"
+      },
+      "results/results.md": {
+        "expected_sha256": "a59e92e0e62802036c17cb250b783bc99c34a7171e8fdf0ccce80387f6a50bcf",
+        "actual_sha256": "a59e92e0e62802036c17cb250b783bc99c34a7171e8fdf0ccce80387f6a50bcf"
+      },
+      "results/error_analysis.md": {
+        "expected_sha256": "295d49848bada51b28c7b16482029ddbd80cc9d60b281cfe4da5bb276854acdc",
+        "actual_sha256": "295d49848bada51b28c7b16482029ddbd80cc9d60b281cfe4da5bb276854acdc"
+      },
+      "results/evaluation_details.json": {
+        "expected_sha256": "2cc6375aabf67197a38b398ef21abf52b3b0cee3b38c182ea7ae79ca67020d7b",
+        "actual_sha256": "2cc6375aabf67197a38b398ef21abf52b3b0cee3b38c182ea7ae79ca67020d7b"
+      }
+    },
+    "original_pngs_against_manifest": {
+      "results/figures/benchmark_comparison.png": {
+        "expected_sha256": "d5bf9648da232158aefe2acc6e24d9dcf355865bb07f23f4fdf1505167038809",
+        "actual_sha256": "d5bf9648da232158aefe2acc6e24d9dcf355865bb07f23f4fdf1505167038809"
+      },
+      "results/figures/document_example.png": {
+        "expected_sha256": "27acb81322eb0d24c2f602bed965d428a824e31a64982d4ebb1649a9a268bc40",
+        "actual_sha256": "27acb81322eb0d24c2f602bed965d428a824e31a64982d4ebb1649a9a268bc40"
+      }
+    },
+    "all_figure_input_hashes_match": true,
+    "historical_demo_files": {
+      "demo/environment.json": {
+        "before_sha256": "d8e95cbc4c6a13c3c9be8a2ce63414f852d93b96ec69087d19d701402f753549",
+        "after_sha256": "d8e95cbc4c6a13c3c9be8a2ce63414f852d93b96ec69087d19d701402f753549"
+      },
+      "demo/smoke_evidence.json": {
+        "before_sha256": "48c4f3c066af88274e3b4c083a8c553139a248daed4d7ce08cc23248fb66cabc",
+        "after_sha256": "48c4f3c066af88274e3b4c083a8c553139a248daed4d7ce08cc23248fb66cabc"
+      },
+      "demo/verification.json": {
+        "before_sha256": "1fd6b2ae1d6591292377d614ef4ade82799a9edc27cf2de1d29044803b298635",
+        "after_sha256": "1fd6b2ae1d6591292377d614ef4ade82799a9edc27cf2de1d29044803b298635"
+      },
+      "demo/requirements.txt": {
+        "before_sha256": "76c3aaa48f7cf71674eb5144c65465d11ab38836463b437d5659757d22376a81",
+        "after_sha256": "76c3aaa48f7cf71674eb5144c65465d11ab38836463b437d5659757d22376a81"
+      }
+    },
+    "historical_manifests_rewritten": false
+  },
+  "walkthrough": {
+    "command": ".\\demo\\.venv\\Scripts\\python.exe -m demo.review_walkthrough --output demo/review_walkthrough_evidence.json",
+    "record": "demo/review_walkthrough_evidence.json",
+    "record_sha256": "82678fcddd03b4c1b3de950db73a54464a9dd660f304cc12345b38d3fd5386a1",
+    "runtime": {
+      "port": 8000,
+      "stderr_bytes": 0,
+      "stdout_bytes": 0,
+      "serving_process_count": 1,
+      "listener_address": "127.0.0.1"
+    },
+    "server_stopped_after_verification": true,
+    "temporary_text_copies_removed": true,
+    "scope": "Live API and actual analyzer on first dev ID; annotation-assisted corrections; not an accuracy, productivity, or timing trial"
+  },
+  "browser": {
+    "connection": "No available browser returned by Browser runtime discovery",
+    "interactive_or_visual_checks_passed": false,
+    "checks_available": "Actual JavaScript Unicode/text-node helper tests and HTML/API contracts; no interactive page or browser download verification claimed"
+  },
+  "remaining": [
+    "Interactive browser walkthrough",
+    "Activepieces installation/integration/export and networking/history checks",
+    "Timing trials",
+    "Video",
+    "Deadline/cancellation/queue policy"
+  ]
+}

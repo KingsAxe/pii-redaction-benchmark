@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Synthetic masking review</title>
+  <link rel="stylesheet" href="/static/review.css">
+  <script type="module" src="/static/review.js"></script>
+</head>
+<body>
+<main>
+  <header class="page-header">
+    <p class="eyebrow">Local demonstration · synthetic text</p>
+    <h1>Review the masking proposal</h1>
+    <p class="intro">Compare the text, correct the coverage, then approve the current revision.</p>
+  </header>
+  <details id="input-panel" class="input-panel" open>
+    <summary>Create a synthetic review</summary>
+    <form id="submission">
+      <label for="input-text">Synthetic English text <span class="hint">Up to 20,000 Unicode code points</span></label>
+      <textarea id="input-text" rows="6" required spellcheck="false"></textarea>
+      <div class="submission-actions">
+        <label class="check-label"><input id="synthetic" type="checkbox" required> I acknowledge that this input is synthetic.</label>
+        <button id="submit" class="button-primary" type="submit">Create review</button>
+      </div>
+    </form>
+  </details>
+  <div class="notice-bar">
+    <p id="message" role="status" aria-live="polite">No review submitted.</p>
+    <button id="refresh" class="button-quiet" type="button" disabled>Refresh review</button>
+  </div>
+  <section id="review" class="review-workspace" data-status="pending" hidden>
+    <header class="review-header">
+      <div><h2>Original and current proposal</h2><p id="review-status" class="review-meta"></p></div>
+      <span id="review-state" class="status-badge" role="status">Pending review</span>
+    </header>
+    <div class="panels">
+      <section class="document-panel">
+        <div class="panel-heading"><label for="original">Canonical original</label><p>Select text here to adjust masking.</p></div>
+        <textarea id="original" rows="17" readonly spellcheck="false"></textarea>
+      </section>
+      <section class="document-panel">
+        <div class="panel-heading"><label for="proposal">Current masked proposal</label><p>Read only. Review every part of the text.</p></div>
+        <textarea id="proposal" rows="17" readonly spellcheck="false"></textarea>
+      </section>
+    </div>
+    <section class="correction-controls" aria-labelledby="correction-heading">
+      <div><h3 id="correction-heading">1. Correct coverage</h3><p id="selection">Select text in the canonical original.</p></div>
+      <div class="button-group">
+        <button id="add" type="button" disabled>Add masking to selection</button>
+        <button id="remove" type="button" disabled>Remove masking from selection</button>
+      </div>
+      <p class="step-note">Corrections change the mask, never the source text. Line breaks stay in place.</p>
+    </section>
+    <div class="workflow-actions">
+      <section class="workflow-step" aria-labelledby="approval-heading">
+        <h3 id="approval-heading">2. Approve this revision</h3>
+        <label class="check-label approval-label"><input id="approval-ack" type="checkbox"> I have reviewed this current revision and explicitly approve its synthetic output.</label>
+        <div class="button-group">
+          <button id="approve" class="button-primary" type="button" disabled>Approve current revision</button>
+          <button id="reject" class="button-danger" type="button" disabled>Reject review</button>
+        </div>
+      </section>
+      <section class="workflow-step" aria-labelledby="download-heading">
+        <h3 id="download-heading">3. Retrieve approved output</h3>
+        <p class="step-note">Download is available only for the current approved revision. Any correction requires fresh approval.</p>
+        <button id="download" class="button-primary" type="button" disabled>Retrieve and download approved output</button>
+      </section>
+    </div>
+    <section class="output-panel" aria-labelledby="output-heading">
+      <h3 id="output-heading">Retrieved approved output</h3>
+      <pre id="approved-output">No approved output retrieved.</pre>
+    </section>
+    <details class="diagnostics">
+      <summary>Coverage and diagnostics</summary>
+      <p>Underlined marks identify detected coverage, including covered line breaks. These are detections, not a complete PII annotation.</p>
+      <pre id="detected-text"></pre>
+      <h3>Initial automatic proposal</h3><pre id="initial-proposal"></pre>
+      <h3>Sorted, merged half-open code-point intervals</h3><pre id="intervals"></pre>
+      <h3>Automatic detections and current coverage counts</h3><pre id="counts"></pre>
+      <p>Original # characters and covered LF can have unchanged display while their coverage differs.</p>
+    </details>
+  </section>
+  <footer>
+    <p>Detection can miss PII or mask unnecessary text. A request or approval does not establish that all PII was found.</p>
+    <p>Configuration: <code>custom_generic</code>. Reviews expire 30 minutes after creation; capacity is 32. Restart clears them. No login or user authorization is implemented.</p>
+    <p>Illustration of predicted span coverage; not a production redaction tool. Timing trials and recording remain separate work.</p>
+  </footer>
+</main>
+</body>
+</html>

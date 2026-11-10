@@ -1,0 +1,209 @@
+# Local synthetic-text masking review
+
+This Phase 6 demonstration exposes the frozen `custom_generic` analyzer through FastAPI and a plain HTML/JavaScript review page. Submit synthetic text, inspect the proposal, correct the mask, reject or explicitly approve the current revision, and retrieve its output. Neither detection nor human approval establishes that all PII has been found.
+
+Use synthetic English text only. Development documents and tiny hand-built fixtures are used here; held-out test documents are excluded from demo development. The broader workflow remains in [the Phase 6 plan](../docs/PHASE6_DEMO_PLAN.md).
+
+## Setup (PowerShell, repository root)
+
+Keep the existing benchmark environment and root requirements unchanged. Create a separate environment without system site packages:
+
+```powershell
+python --version
+python -m venv demo/.venv
+.\demo\.venv\Scripts\python.exe -m pip install --cache-dir demo/.cache/pip --timeout 60 -r demo/requirements.txt
+.\demo\.venv\Scripts\python.exe -m pip check
+```
+
+Tested on Windows 11 Pro with Python 3.12.6 and PowerShell 5.1. Exact installed package versions are pinned in [requirements.txt](requirements.txt); [environment.json](environment.json) records the inspection. Key versions: FastAPI 0.162.0, Uvicorn 0.54.0, Starlette 1.10.0, spaCy 3.8.18, Presidio Analyzer 2.2.366, and `en_core_web_sm` 3.8.0. Compatibility was checked with pip's resolver, `pip check`, tests, and the actual analyzer smoke test. Shared runtime packages were constrained to the benchmark's installed pins during resolution. The lock records the resulting separate environment.
+
+Installation downloads packages and the hash-pinned model wheel. Runtime uses the installed model and the imported analyzer's offline email-validator handling. A missing model or mismatched recognizer freeze prevents startup. No benchmark runner entry point or environment/results writer is called.
+
+The original model download succeeded, but a subsequent resolver download timed out. Installation used the cached wheel after verifying its SHA-256 against the existing model requirement; the lock retains the portable upstream URL, not a local cache path.
+
+## Tests
+
+```powershell
+.\demo\.venv\Scripts\python.exe -m unittest discover -s demo/tests -v
+.\venv\Scripts\python.exe -m unittest discover -s tests -v
+```
+
+The first command uses injected analyzers and tiny synthetic fixtures. It checks unions, partial and unnecessary masking, unmapped labels, Unicode/newlines, limits, errors, freeze/startup refusal, analyzer reuse, and stateless proposal behavior. The second command uses the existing benchmark environment. It does not run benchmark inference.
+
+All 42 demo tests and 45 benchmark tests passed in the presentation increment. Starlette emits a deprecation warning for the installed HTTPX TestClient integration; it still passed. Tests cover revision collisions, correction validation, approval/rejection, stale/replayed and competing updates, atomic output, expiry/capacity, safe text rendering, validated review links, and the Activepieces Code-step contracts with no action retries. The actual page controller also runs against DOM/HTTP doubles to check selection offsets, add/remove masking, approval, Blob download bytes, and approval invalidation with the reorganized markup. This is not a substitute for browser rendering/visual inspection. JavaScript tests use installed Node v22.23.1; no frontend framework or packages were added. Historical [connection_verification.json](connection_verification.json), [review_verification.json](review_verification.json), [verification.json](verification.json), and [environment.json](environment.json) were not rewritten.
+
+## Launch and request
+
+Run one worker, without reload, on loopback only:
+
+```powershell
+.\demo\.venv\Scripts\python.exe -m demo
+```
+
+From another PowerShell terminal at the repository root:
+
+```powershell
+Invoke-RestMethod -Uri http://127.0.0.1:8000/health
+$demoBody = @{
+    text = "Name: Ada Example`r`nBVN: 12345678901"
+    synthetic_input = $true
+} | ConvertTo-Json -Compress
+Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8000/mask -ContentType 'application/json; charset=utf-8' -Body ([System.Text.Encoding]::UTF8.GetBytes($demoBody))
+```
+
+Stop the foreground service with Ctrl+C. Do not change the binding to a public interface or add workers for this increment. The smoke-test server used during implementation was stopped after verification.
+
+Open **http://127.0.0.1:8000/** for local review:
+
+1. Paste synthetic English text, check the synthetic acknowledgement, and create a review.
+2. Compare the canonical original and current proposed mask. Expand the coverage details to inspect detected marks, the initial automatic proposal, canonical intervals, and counts.
+3. Select text in the read-only canonical original. Use **Add masking** or **Remove masking**; the source is never rewritten. Covered LF and original `#` positions remain explicit in the intervals even when their displayed text is unchanged.
+4. Inspect the current revision, check the explicit approval acknowledgement, and approve; alternatively reject the review. Rejection is terminal for that review.
+5. Retrieve/download the approved output. Each click fetches the expected current revision from the server; it does not download a cached proposal. Any later correction requires fresh approval. Changing input clears the page's current review/output and requires a new review.
+
+The page uses text nodes, textarea values, and `textContent`, never submitted HTML. Its UTF-16 selection indices are converted to Python Unicode code-point offsets; selections splitting a surrogate pair are rejected. Combining code points remain separate. Input changes invalidate in-flight page responses; a stale-state error hides approval/output controls until refresh. No login or user authorization is implemented. Review IDs and revision digests do not establish identity or authority.
+
+An externally created review opens at `http://127.0.0.1:8000/?review_id=<id>`. The server and page validate a lowercase 32-character hexadecimal ID; the page accepts only that one query parameter, fetches the current snapshot, and leaves approval unchecked. It does not resubmit input or infer approval from the link. A missing/expired review shows the existing error. Input changes remove the old review URL; successful snapshots update it to the current review. Live page HTTP and helper/API validation checks passed; interactive browser navigation remains unverified.
+
+For the manual check, use the first development fixture (not test data):
+
+```powershell
+Get-Content data/raw/health_report_007.txt -Raw | Set-Clipboard
+```
+
+Paste it at the root page, create a review, select a range in **Canonical original**, add/remove masking, correct and approve, then download. Compare the UTF-8 file with that review's current `masked_text`. Make another correction and confirm retrieval requires reapproval; reject and confirm output is unavailable. The agent's Browser connection still returns **“No browser is available”** with discovery `[]`; direct agent interaction and current visual inspection remain unavailable. The later human-confirmed original download comparison is recorded below. A supplied review link may expire; create a fresh review rather than reusing an expired ID.
+
+`GET /health` returns `ready` and the fixed configuration, with 200 when initialized and 503 when unavailable. Startup failure aborts application startup, so a failed startup may have no listening HTTP endpoint. Readiness is not a statement about detection quality.
+
+`POST /mask` accepts only `text` and the Boolean `synthetic_input: true`. Empty or whitespace-only input, a missing/false acknowledgement, extra fields (including configuration), malformed JSON, and invalid Unicode return 422 without echoing the input. The acknowledgement does not verify the origin or language of the text.
+
+The demo design limit is **20,000 Python Unicode code points in the submitted text, before newline normalization**. This is a text-field limit, not a transport-level request-body cap. CRLF and CR become LF before analysis. Offsets and length refer to that canonical original. Non-BMP characters occupy one code point; combining characters occupy separate code points. Other clients using UTF-16 indices must convert them as the supplied page does.
+
+## Proposal semantics
+
+The service verifies `custom_generic` against [freeze.json](../results/freeze.json) before constructing the analyzer once at application startup. It imports analyzer construction and the scorer's label map. `custom_generic` avoids the generator-dependent leading-zero exclusion; choosing it is a design decision, not a newly measured performance advantage.
+
+Every raw span must have a string label and integer boundaries satisfying `0 <= start < end <= len(canonical_original)`, including spans with ignored labels. The mask is the union of all mapped span positions, independently of greedy entity assignment and label correctness. Each covered non-LF code point becomes `#`; LF positions and total canonical string length remain unchanged. Unmapped labels contribute no masking. Partial detection can leave PII visible and predictions can cover non-PII characters.
+
+The response contains:
+
+| Field | Meaning |
+| --- | --- |
+| `canonical_original`, `masked_proposal` | Aligned text for later human review. |
+| `configuration`, `frozen_source_sha256` | Fixed `custom_generic` and its verified source digest. |
+| `document_id` | SHA-256 of the canonical UTF-8 input, not a benchmark document ID. |
+| `mask_intervals` | Sorted, merged half-open code-point intervals for all mapped coverage, including covered LF/original `#`. |
+| `revision_id` | Version-2 SHA-256 binding configuration, source digest, canonical input, and explicit canonical coverage. |
+| `review_required` | Always `true`, including zero detections. |
+| `detection_counts.raw_span_count` | All analyzer results, before label mapping. |
+| `detection_counts.mapped_span_count`, `ignored_span_count` | Raw spans retained or ignored by the existing label map. |
+| `detection_counts.spans_by_mapped_label` | Span counts by mapped label; overlaps are still separate spans. |
+| `detection_counts.covered_code_point_count` | Size of the mapped character-position union, including LF. |
+| `detection_counts.masked_code_point_count`, `covered_lf_count` | Non-LF union positions masked and covered LF positions preserved. Their sum equals the union size. |
+
+These counts are neither unique entities nor an estimate of all PII present. An unchanged proposal with no detections is still awaiting review. `POST /mask` remains stateless and usable without creating a review. Its revision identity now distinguishes different coverage that displays identically, such as an original `#` or a preserved covered LF. Equivalent reordered/overlapping/adjacent coverage yields the same intervals and proposal digest. Prior proposal digests change under this version; historical smoke records remain untouched. Identifiers are not user identity or authorization tokens.
+
+Unavailable analyzer state returns 503. Analysis failures or invalid span data return 500 with a generic error code and message, without a proposal or submitted text. A processing failure never falls back to an unmasked success response.
+
+## Review API and state
+
+| Method and path | Contract |
+| --- | --- |
+| `POST /reviews` | Same body as `/mask`; analyze successfully, then create a pending review (201). No review is created on analysis failure. |
+| `GET /reviews/{review_id}` | Return a current review snapshot. |
+| `PATCH /reviews/{review_id}/mask` | Body: `expected_revision`, `operation` (`add` or `remove`), `intervals` (nonempty list of `[start,end]` code-point pairs). Union/subtract selected positions. Overlapping, adjacent, and reordered ranges are canonicalized. |
+| `POST /reviews/{review_id}/approve` | Body: `expected_revision`. Explicitly approve only the current pending revision; return its new approved revision. |
+| `POST /reviews/{review_id}/reject` | Body: `expected_revision`. Reject the review and deny further edits, approval, and output. |
+| `GET /reviews/{review_id}/output?expected_revision=...` | Require the current approved revision. Return aligned UTF-8 plain text with attachment filename and `X-Review-Revision`. |
+
+Every review response includes the proposal fields plus `review_id`, `revision_number`, `status`, `proposal_revision_id`, `detected_mask_intervals`, current `mask_intervals`, current `masked_text`, `coverage_counts`, and `expires_in_seconds`. `masked_proposal`, detected intervals, and `detection_counts` retain the automatic detections; corrections change only current coverage/counts. `review_required` is false only for approved state; it does not certify detection completeness.
+
+Review identity additionally binds its random review ID and increasing revision number. Every edit, including a no-op, invalidates approval and advances the revision. Approval and rejection also consume the old revision. Editing back to earlier coverage cannot revive an earlier token. Competing actions use one state lock: one consumes a revision and later actions with it return 409. Repeated output retrieval is allowed only while that exact revision remains approved. Repeated approval is rejected. All review mutations require the expected revision; the page uses the latest response.
+
+Output status/revision checks and copying the entire output occur under the same lock. A download is a snapshot valid at that check. A subsequent edit/rejection cannot recall bytes already delivered to a client. Stale tokens return 409 rather than fetching a different newly approved revision. Current unapproved/rejected state also returns 409. Missing or expired IDs both return 404 `review_missing_or_expired`; malformed contracts return sanitized 422. Errors contain no submitted text.
+
+Capacity is **32 reviews**, including approved and rejected ones. Each expires **1,800 seconds after creation**, without renewal on reads, edits, or approval. Full capacity returns 503 without evicting live reviews; the check occurs after successful analysis. Expired entries are purged on the next review operation; idle expired content may therefore remain in process memory until that operation or shutdown, although expired reviews cannot be retrieved. No intermediate revision history or database is retained. Shutdown/restart loses all reviews and approvals, including the IDs recorded in walkthrough evidence. There is no delete endpoint yet; wait for expiry or stop the process to clear state. Keep one worker.
+
+Example PowerShell contract (inspect the current source/mask before the approval command):
+
+```powershell
+$review = Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8000/reviews -ContentType 'application/json; charset=utf-8' -Body ([System.Text.Encoding]::UTF8.GetBytes($demoBody))
+$review | Select-Object canonical_original, masked_text, mask_intervals, revision_id, status
+# For the tiny Name: Ada Example fixture above, [6,17) selects Ada Example.
+$edit = @{ expected_revision = $review.revision_id; operation = 'add'; intervals = @(, @(6,17)) } | ConvertTo-Json -Depth 4
+$review = Invoke-RestMethod -Method Patch -Uri "http://127.0.0.1:8000/reviews/$($review.review_id)/mask" -ContentType 'application/json' -Body $edit
+$approval = @{ expected_revision = $review.revision_id } | ConvertTo-Json
+$review = Invoke-RestMethod -Method Post -Uri "http://127.0.0.1:8000/reviews/$($review.review_id)/approve" -ContentType 'application/json' -Body $approval
+New-Item -ItemType Directory -Force -Path demo/output | Out-Null
+Invoke-WebRequest -UseBasicParsing -Uri "http://127.0.0.1:8000/reviews/$($review.review_id)/output?expected_revision=$($review.revision_id)" -OutFile demo/output/reviewed.txt
+```
+
+## Concurrency, timeouts, and logging
+
+One analyzer is reused, with calls serialized by an application lock. Inference runs in a thread so health checks remain responsive. There is **no application processing deadline, inference cancellation, or bounded request queue** in this increment. The smoke client's 120-second HTTP timeout limits its wait; it does not cancel underlying inference. Uvicorn's connection keep-alive timeout is not an inference deadline. Do not infer successful processing or cancellation from a client disconnect or timeout.
+
+The page's fetch calls have no explicit processing timeout. A stalled request can leave controls busy until it fails or completes. Changing input clears the local review view and ignores an older response; it does not cancel inference. The review-store capacity bounds retained records, not requests waiting for analysis.
+
+The supplied launcher disables access logging and uses warning-level server logs. Application validation/analysis errors are sanitized without logging request bodies, analyzer exceptions, or their arguments. Responses carry `Cache-Control: no-store`; the page restricts scripts/styles to local files. `/mask` has no request persistence; `/reviews` retains canonical originals, the initial proposal, current mask, and state only in the bounded process-local store described below. Clients can retain displayed or downloaded text beyond server expiry; the page does not write local/session storage. Do not enable request-body debugging or assume the caller retains nothing. Both redirected server logs were empty during the recorded live walkthrough; fake error tests also check text-free responses and absence of error logs. This is bounded verification, not a retention guarantee for future integrations.
+
+## Reproduce the real-analyzer smoke test
+
+With the service running:
+
+```powershell
+.\demo\.venv\Scripts\python.exe -m demo.smoke_test
+```
+
+This selects the first development document in lexicographic document-ID order: `data/raw/health_report_007.txt`, configuration `custom_generic`. Selection is by ID, not performance. It checks HTTP readiness, a proposal's source hash, canonical text, length, LF positions and counts, plus a text-free acknowledgement error. It does not evaluate accuracy or workflow completion time.
+
+The default output, `demo/output/smoke.json`, is ignored by Git and contains metadata, counts, and digests rather than request/response text. The implementation run was saved with `--output demo/smoke_evidence.json`; [that record](smoke_evidence.json) reports health/masking 200 and invalid acknowledgement 422. Demo JSON uses LF Git attributes to preserve its recorded file digest across checkout. It is separate from benchmark predictions and results. Do not overwrite the recorded evidence when rerunning casually.
+
+## Reproduce the review walkthrough
+
+With the service running:
+
+```powershell
+.\demo\.venv\Scripts\python.exe -m demo.review_walkthrough
+```
+
+This live API verification selects the same first development ID and uses its existing annotation key to choose corrections: add the incomplete ADDRESS range and remove the ORDER_ID decoy range. It verifies denied pre-approval output, rejects stale approval, approves/retrieves the exact mask, and then removes a covered LF to verify invisible-change invalidation before reapproval/retrieval. Selection is by ID, not performance. It is annotation-assisted functional verification, **not a blind human trial, accuracy evaluation, or productivity measurement**. Other PII may still be visible after these limited corrections.
+
+The recorded run used `--output demo/review_walkthrough_evidence.json`; [the record](review_walkthrough_evidence.json) contains intervals, counts, status codes, source/output hashes, and revisions without original/output text. Default reruns write ignored `demo/output/review_walkthrough.json`. The output matched the approved mask exactly; stale and pending output returned 409. The service was verified on loopback and stopped after testing, clearing its temporary reviews. Temporary input/key/proposal inspection copies were removed; server logs were empty.
+
+During that earlier API-only walkthrough, the Browser connection was unavailable. No interactive page or visual inspection was claimed for that run. Its helper/API evidence remains historical; the subsequent human-confirmed download comparison is described next.
+
+## Presentation and human download check
+
+The presentation keeps both document panels in the main space, collapses new-input controls after loading, and groups correction, approval, and download in that order. Explicit Pending review / Approved / Rejected badges use text and colour. The header stays visible while scrolling to output; diagnostics remain expandable. Panels sit side by side on desktop and stack below 860px. Only three presentation assignments were added to the controller; API contracts, masks, IDs, approval rules, expiry, and logging are unchanged.
+
+The user confirmed correcting, approving, and downloading review `0804860fed2e41d3af796c1beab08461` in the browser. Activepieces Retrieve run `TloeKfltX9KekvPJ4C1iJ` succeeded for its exact approved revision. Direct comparison of the user-specified local file with returned UTF-8 text found **348 equal bytes**, SHA-256 `b7415d6492a106ab9d53c5ac3b2f7420d92ea38d8f9a03f47119cadeabd5ce0c`. See [the human comparison record](activepieces/human_browser_comparison.json).
+
+That original review expired immediately afterward; the server returned 404. Expiry is not stale-revision evidence. Later checks used fresh reviews on the polished page, without extending the lifetime or changing approval behavior.
+
+For polished review `e63b981b90a44500b50c1ef45b6e32ed`, Create run `7X13xpRtAZU97jlpdrTog` succeeded once. After the user confirmed approval/download, Retrieve run `ifcKqBKAwqnHd2UC48Hzh` succeeded using its captured approved revision. Its output matched the exact browser download and approved snapshot: **348 equal UTF-8 bytes**, SHA-256 `81161394d1fd1229a87e523e6b9e8d1e8d1cebe498448e216552dac237a43afc`. This review also expired before the next correction, so the stale check used a separate fresh review.
+
+For review `414846e52ac94c8ba96b0aef8d927d7c`, Create run `IzpP9pFkfbTGiL5dRPqXz` succeeded once. The user corrected and approved it; the agent captured Approved revision `d5c78f6a07bbef6ec35063e39766151a44daad60a8296ef249a143b1dfb357cf` before requesting another human edit without reapproval. The next snapshot was Pending with different mask coverage and revision, with 834 seconds remaining. Retrieve run `Mm06eI7XxUxh2b9I4VSlh`, using the captured old approved revision, failed with **HTTP 409 `stale_revision`** and returned no output. These are native Code-step tests with automatic retries disabled. [The polished human verification record](activepieces/polished_human_verification.json) preserves both results separately from benchmark data; they are not accuracy or productivity findings.
+
+The Browser connection was unavailable for those earlier human checks. [The manual capture guide](newsletter_capture.md) specifies the dev example, states, framing, expected human-workflow PNG paths, and the order needed to test the previous approved revision. The later standalone Chromium check below now supplies actual capture evidence; it does not replace the separate human recording session.
+
+## Light colours and recording check
+
+The CSS uses page background `#F7F9FC`, white document panels, original header `#EAF2FF`, proposal header `#E6F6F2`, Pending `#FFF3D6`, Approved `#E8F5E9`, and primary actions `#2459C4`. Dark text, status words, and the visible three-pixel keyboard focus outline remain. No HTML, controller, API, or dependency changes were needed.
+
+Standalone installed Playwright Core 1.65.0 and Chromium 158.0.8127.18 captured the real local page on Windows at **1920 x 1080**, using a separate automated review of `data/raw/health_report_007.txt`. Both document panels and all text in this selected document fit the frame without internal scrolling. The five-second WebM was reopened and played in Chromium; its decoded frame and the automatic/corrected/approved PNGs were opened for inspection. Text is legible at native size, both panels fit, and account controls/credentials are absent. This is an automated functional/capture check, not a human recording, full-flow execution, or performance finding.
+
+Actual browser checks passed for keyboard text selection, add/remove masking, unchanged source, explicit approval, download bytes equal to the approved mask, approval invalidation after another correction, stale-output denial, and rejection. A keyboard Tab produced visible focus. All 42 demo tests passed again; the existing Starlette HTTPX deprecation warning remains. [colour_verification.json](colour_verification.json) records observed checks, dimensions, filenames, and hashes. Benchmark evidence and both frozen sources remain unchanged.
+
+Capture tooling is separate from app dependencies: existing machine-installed Playwright/Chromium/FFmpeg were reused, with audit helpers in ignored `demo/.cache/colour_capture.cjs` and `colour_playback.cjs`. Their machine-specific installation paths are not a portable capture setup. No packages were installed. Local rerun commands are `node demo/.cache/colour_capture.cjs` and `node demo/.cache/colour_playback.cjs`; the first creates its own automated dev review. Video/PNGs and raw recording stay under ignored `demo/output/newsletter/`, separately from benchmark figures.
+
+The fresh Activepieces review for the human recording is deliberately not created until the user is ready. Keep that one review throughout correction, approval, download, and Activepieces retrieval. After approval, immediately send the actual download path and leave the review unchanged until its exact approved revision has been retrieved and byte-compared. The five-second trial does not claim this future session has happened.
+
+## Environment findings and remaining work
+
+Ports 8000, 8001, 8080, and 3000 could be bound on loopback during inspection; availability can change. The actual smoke listener was verified at `127.0.0.1:8000`, with one serving process.
+
+The increment-1 inspection found Docker client 28.0.4 with an unavailable engine and no identified Activepieces instance. The connection increment subsequently started Docker Desktop 4.40.0, verified Engine 28.0.4, and installed pinned Activepieces 0.93.0 locally. Both actual listeners remain on loopback. The Activepieces runtime reached FastAPI `/health` after adding Docker's explicit host-gateway alias; no broader FastAPI binding was used.
+
+Two manual Activepieces Code operations are configured and exported: Create review succeeded; pending/stale/rejected output was denied; a separate API-approved fixture verified positive output equality. Subsequent user-confirmed browser reviews verified download equality and a post-approval human edit followed by stale-output denial. These observations use native step tests in unpublished flows, not a published end-to-end flow. Full setup, exact configuration, failures/recovery, retained content, and reset commands are in [activepieces/README.md](activepieces/README.md). Actual browser and workflow records are separate there. Services were left running locally for manual verification; previous smoke-test shutdown notes refer to the earlier increments.
+
+Human-confirmed browser correction/approval/download, exact Activepieces retrieval equality, and live post-approval correction/invalidation are recorded. The separate automated Chromium capture/control check now also has inspected PNGs and a played five-second video. A fresh human recording session, its matching Activepieces retrieval, counterbalanced manual/assisted trials, and a full demonstration remain pending. No workflow improvement is measured. The published benchmark still shows missed PII; an API response cannot establish suitability for unrestricted further use. Cloud models, OCR, production deployment, and expanded governance work remain separate.
