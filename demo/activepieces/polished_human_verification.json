@@ -1,0 +1,59 @@
+{
+  "scope": "Actual user-confirmed browser actions and existing manual Activepieces Code-step tests; not a published full-flow run, accuracy evaluation, productivity measurement or timing trial",
+  "configuration": "custom_generic",
+  "development_document": "data/raw/health_report_007.txt",
+  "selection_rule": "First development document in lexicographic document-ID order, not selected by performance",
+  "polished_download_comparison": {
+    "checked_utc": "2026-11-10T14:40:13.257067+00:00",
+    "review_id": "e63b981b90a44500b50c1ef45b6e32ed",
+    "approved_revision": "22c3cf2fbeeaefd8ee936b93326f5c28aae1d700a5485bd184e43737031bae2f",
+    "create_run_id": "7X13xpRtAZU97jlpdrTog",
+    "retrieve_run_id": "ifcKqBKAwqnHd2UC48Hzh",
+    "retrieve_status": "SUCCEEDED",
+    "download_filename": "synthetic-reviewed (1).txt",
+    "download_byte_count": 348,
+    "retrieved_utf8_byte_count": 348,
+    "download_sha256": "81161394d1fd1229a87e523e6b9e8d1e8d1cebe498448e216552dac237a43afc",
+    "retrieved_utf8_sha256": "81161394d1fd1229a87e523e6b9e8d1e8d1cebe498448e216552dac237a43afc",
+    "bytes_equal": true,
+    "retrieved_matches_approved_snapshot": true
+  },
+  "human_correction_invalidation": {
+    "review_id": "414846e52ac94c8ba96b0aef8d927d7c",
+    "create_run_id": "IzpP9pFkfbTGiL5dRPqXz",
+    "create_status": "SUCCEEDED",
+    "approved_snapshot_utc": "2026-11-10T15:17:03.239958+00:00",
+    "approved_revision": "d5c78f6a07bbef6ec35063e39766151a44daad60a8296ef249a143b1dfb357cf",
+    "approved_revision_number": 3,
+    "after_human_edit_snapshot_utc": "2026-11-10T15:23:55.612324+00:00",
+    "current_revision": "c887feb80e271a29ec4849cb9abb7beefbd3614ddfdfe7311b65cf896283ee29",
+    "current_revision_number": 4,
+    "current_status": "pending",
+    "mask_coverage_changed": true,
+    "remaining_lifetime_seconds_at_check": 834,
+    "retrieve_run_id": "Mm06eI7XxUxh2b9I4VSlh",
+    "retrieve_expected_revision": "d5c78f6a07bbef6ec35063e39766151a44daad60a8296ef249a143b1dfb357cf",
+    "retrieve_status": "FAILED",
+    "error_message": "Output denied: HTTP 409 (stale_revision)",
+    "output_returned": false,
+    "create_invocations": 1,
+    "retrieve_invocations": 1,
+    "automatic_retries": false,
+    "passed": true,
+    "action_basis": "User confirmed browser correction and approval, agent captured Approved snapshot, then user confirmed another edit without reapproval; agent observed Pending with changed coverage and retrieved using the captured OLD revision"
+  },
+  "verification": {
+    "both_frozen_sources_match": true,
+    "pre_existing_protected_file_count": 410,
+    "protected_hash_comparison": "All 410 pre-existing tracked files outside demo/README.md and docs/STATE.md unchanged before/after this evidence/documentation update",
+    "code_changes": false,
+    "test_scope": "Live Activepieces stale-revision check; documentation/evidence-only update. Unit suites not rerun; prior presentation commit recorded 42 demo and 45 benchmark tests passing.",
+    "protected_hashes_unchanged": true,
+    "local_markdown_link_checks": 16
+  },
+  "visual_capture": {
+    "agent_browser": "Unavailable in the presentation increment; no agent PNG or visual pass claimed",
+    "newsletter_pngs_present": [],
+    "remaining": "Visual inspection and actual newsletter PNG capture remain unverified; previous manual capture guide applies to newly created live reviews"
+  }
+}
