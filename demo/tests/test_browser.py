@@ -17,6 +17,12 @@ class BrowserHelperTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn("checks passed", result.stdout)
 
+    def test_review_page_workflow_handlers_after_presentation_changes(self):
+        result = subprocess.run(["node", str(Path(__file__).with_name("review_page_checks.mjs"))],
+                                capture_output=True, text=True, timeout=20)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("checks passed", result.stdout)
+
 
 if __name__ == "__main__":
     unittest.main()

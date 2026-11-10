@@ -67,6 +67,9 @@ if (typeof document !== "undefined") {
         window.history.replaceState(null, "", `/?review_id=${review.review_id}`);
         clearOutput();
         element("review").hidden = false;
+        element("input-panel").open = false;
+        element("review").dataset.status = review.status;
+        element("review-state").textContent = {pending: "Pending review", approved: "Approved", rejected: "Rejected"}[review.status] || "Review";
         element("original").value = review.canonical_original;
         element("proposal").value = review.masked_text;
         element("initial-proposal").textContent = review.masked_proposal;
