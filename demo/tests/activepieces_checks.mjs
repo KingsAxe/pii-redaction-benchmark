@@ -2,6 +2,8 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const load = async (name) => {
     const source = readFileSync(new URL(`../activepieces/${name}.ts`, import.meta.url), 'utf8');
+    const flow = JSON.parse(readFileSync(new URL(`../activepieces/${name}.flow.json`, import.meta.url), 'utf8'));
+    assert.equal(flow.flows[0].trigger.nextAction.settings.sourceCode.code, source.replaceAll('\r\n', '\n'));
     return (await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`)).code;
 };
 const create = await load('create_review');
@@ -19,9 +21,9 @@ assert.equal(created.review_url, `http://127.0.0.1:8000/?review_id=${id}`);
 calls = [];
 globalThis.fetch = async (url) => {
     calls.push(url);
-    return {status: 200, headers: {get: () => revision}, text: async () => '###\n'};
+    return new Response('\uFEFF###\n', {headers: {'X-Review-Revision': revision}});
 };
-assert.deepEqual(await retrieve({review_id: id, expected_revision: revision}), {review_id: id, revision_id: revision, masked_text: '###\n'});
+assert.deepEqual(await retrieve({review_id: id, expected_revision: revision}), {review_id: id, revision_id: revision, masked_text: '\uFEFF###\n'});
 assert.equal(calls.length, 1);
 await assert.rejects(retrieve({review_id: '<script>', expected_revision: revision}));
 assert.equal(calls.length, 1); // Invalid IDs never make a request.

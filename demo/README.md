@@ -6,6 +6,8 @@ Use synthetic English text only. Development documents and tiny hand-built fixtu
 
 ## Setup (PowerShell, repository root)
 
+Use Python 3.12 for the demo environment. The test suite also requires Node.js on `PATH` (tested with Node 22).
+
 Keep the existing benchmark environment and root requirements unchanged. Create a separate environment without system site packages:
 
 ```powershell
@@ -28,7 +30,7 @@ The original model download succeeded, but a subsequent resolver download timed 
 .\venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-The first command uses injected analyzers and tiny synthetic fixtures. It checks unions, partial and unnecessary masking, unmapped labels, Unicode/newlines, limits, errors, freeze/startup refusal, analyzer reuse, and stateless proposal behavior. The second command uses the existing benchmark environment. It does not run benchmark inference.
+The first command uses injected analyzers and tiny synthetic fixtures. It checks unions, partial and unnecessary masking, unmapped labels, Unicode/newlines, limits, errors, freeze/startup refusal, analyzer reuse, and stateless proposal behavior. The second command uses the separate [benchmark environment](../README.md#2-reproduce-detection-and-evaluation-in-a-fresh-environment). It does not run benchmark inference.
 
 All 42 demo tests and 45 benchmark tests passed in the presentation increment. Starlette emits a deprecation warning for the installed HTTPX TestClient integration; it still passed. Tests cover revision collisions, correction validation, approval/rejection, stale/replayed and competing updates, atomic output, expiry/capacity, safe text rendering, validated review links, and the Activepieces Code-step contracts with no action retries. The actual page controller also runs against DOM/HTTP doubles to check selection offsets, add/remove masking, approval, Blob download bytes, and approval invalidation with the reorganized markup. This is not a substitute for browser rendering/visual inspection. JavaScript tests use installed Node v22.23.1; no frontend framework or packages were added. Historical [connection_verification.json](connection_verification.json), [review_verification.json](review_verification.json), [verification.json](verification.json), and [environment.json](environment.json) were not rewritten.
 
@@ -63,7 +65,7 @@ Open **http://127.0.0.1:8000/** for local review:
 
 The page uses text nodes, textarea values, and `textContent`, never submitted HTML. Its UTF-16 selection indices are converted to Python Unicode code-point offsets; selections splitting a surrogate pair are rejected. Combining code points remain separate. Input changes invalidate in-flight page responses; a stale-state error hides approval/output controls until refresh. No login or user authorization is implemented. Review IDs and revision digests do not establish identity or authority.
 
-An externally created review opens at `http://127.0.0.1:8000/?review_id=<id>`. The server and page validate a lowercase 32-character hexadecimal ID; the page accepts only that one query parameter, fetches the current snapshot, and leaves approval unchecked. It does not resubmit input or infer approval from the link. A missing/expired review shows the existing error. Input changes remove the old review URL; successful snapshots update it to the current review. Live page HTTP and helper/API validation checks passed; interactive browser navigation remains unverified.
+An externally created review opens at `http://127.0.0.1:8000/?review_id=<id>`. The server and page validate a lowercase 32-character hexadecimal ID; the page accepts only that one query parameter, fetches the current snapshot, and leaves approval unchecked. It does not resubmit input or infer approval from the link. A missing/expired review shows the existing error. Input changes remove the old review URL; successful snapshots update it to the current review. See the [human download check](#presentation-and-human-download-check) for the observed review-link workflow.
 
 For the manual check, use the first development fixture (not test data):
 
@@ -71,7 +73,7 @@ For the manual check, use the first development fixture (not test data):
 Get-Content data/raw/health_report_007.txt -Raw | Set-Clipboard
 ```
 
-Paste it at the root page, create a review, select a range in **Canonical original**, add/remove masking, correct and approve, then download. Compare the UTF-8 file with that review's current `masked_text`. Make another correction and confirm retrieval requires reapproval; reject and confirm output is unavailable. The agent's Browser connection still returns **“No browser is available”** with discovery `[]`; direct agent interaction and current visual inspection remain unavailable. The later human-confirmed original download comparison is recorded below. A supplied review link may expire; create a fresh review rather than reusing an expired ID.
+Paste it at the root page, create a review, select a range in **Canonical original**, add/remove masking, correct and approve, then download. Compare the UTF-8 file with that review's current `masked_text`. Make another correction and confirm retrieval requires reapproval; reject and confirm output is unavailable. If a supplied review link expires, create a fresh review. See the [standalone Chromium check](#light-colours-and-recording-check) for browser evidence.
 
 `GET /health` returns `ready` and the fixed configuration, with 200 when initialized and 503 when unavailable. Startup failure aborts application startup, so a failed startup may have no listening HTTP endpoint. Readiness is not a statement about detection quality.
 

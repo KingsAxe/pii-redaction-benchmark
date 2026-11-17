@@ -11,5 +11,6 @@ export const code = async (inputs) => {
         throw new Error(`Output denied: HTTP ${response.status} (${reason})`);
     }
     if (response.headers.get('X-Review-Revision') !== inputs.expected_revision) throw new Error('Output revision mismatch');
-    return {review_id: inputs.review_id, revision_id: inputs.expected_revision, masked_text: await response.text()};
+    const maskedText = new TextDecoder('utf-8', {ignoreBOM: true}).decode(await response.arrayBuffer());
+    return {review_id: inputs.review_id, revision_id: inputs.expected_revision, masked_text: maskedText};
 };

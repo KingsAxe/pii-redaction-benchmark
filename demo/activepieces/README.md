@@ -2,6 +2,8 @@
 
 This increment connects two manual operations to the existing review API. The observed executions are **native Code-step tests in two unpublished flows**, using Activepieces' `POST /api/v1/sample-data/test-step` endpoint. They are real worker executions in the `TESTING` environment, not a published end-to-end human workflow. Automatic action retries and continue-on-failure are disabled. Requests were invoked sequentially; status reads did not retrigger execution.
 
+The retrieval source and its flow JSON now preserve a leading UTF-8 BOM in approved text. The [Code-step contract test](../tests/activepieces_checks.mjs) checks this behavior and confirms the embedded code matches the source. The recorded worker runs predate this change.
+
 ## Version and local setup
 
 Tested: Docker Desktop 4.40.0, Engine 28.0.4, WSL 2.3.26.0, and **Activepieces 0.93.0**, image digest `sha256:151c2a4326c30a6a8086297136644da9b58072212c35bca7c87dcb5724e7d687`.

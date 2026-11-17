@@ -178,11 +178,11 @@ if (typeof document !== "undefined") {
     element("download").addEventListener("click", () => act(async (epoch) => {
         const expected = current.revision_id;
         const response = await request(`/reviews/${activeId}/output?expected_revision=${encodeURIComponent(expected)}`);
-        const text = await response.text();
+        const bytes = await response.arrayBuffer();
         if (epoch !== generation || !current || current.revision_id !== expected) return;
         if (response.headers.get("X-Review-Revision") !== expected) throw new Error("Output revision mismatch");
-        element("approved-output").textContent = text;
-        const url = URL.createObjectURL(new Blob([text], {type: "text/plain;charset=utf-8"}));
+        element("approved-output").textContent = new TextDecoder("utf-8", {ignoreBOM: true}).decode(bytes);
+        const url = URL.createObjectURL(new Blob([bytes], {type: "text/plain;charset=utf-8"}));
         const link = document.createElement("a");
         link.href = url;
         link.download = "synthetic-reviewed.txt";

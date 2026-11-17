@@ -28,15 +28,17 @@ globalThis.window = {location: {search: ''}, history: {replaceState() {}}};
 URL.createObjectURL = (blob) => {const id = `blob:test-${blobs.size}`; blobs.set(id, blob); return id;};
 URL.revokeObjectURL = () => {};
 
-const text = 'A😀e\u0301\nZ', reviewId = 'a'.repeat(32);
+const text = '\uFEFFA😀e\u0301\nZ', reviewId = 'a'.repeat(32);
 let version = 0, status = 'pending', covered = new Set();
 const revision = () => version.toString(16).padStart(64, '0');
 const masked = () => Array.from(text, (char, i) => covered.has(i) && char !== '\n' ? '#' : char).join('');
 const snapshot = () => ({review_id: reviewId, revision_id: revision(), revision_number: version, status,
     canonical_original: text, masked_text: masked(), masked_proposal: text, detected_mask_intervals: [],
     mask_intervals: [], detection_counts: {}, coverage_counts: {}, expires_in_seconds: 1800});
-const response = (body, code = 200) => ({ok: code < 400, status: code,
-    json: async () => structuredClone(body), text: async () => body, headers: {get: () => revision()}});
+const response = (body, status = 200) => new Response(
+    typeof body === 'string' ? body : JSON.stringify(body),
+    {status, headers: {'X-Review-Revision': revision()}}
+);
 let lastEdit;
 globalThis.fetch = async (path, options) => {
     const body = options.body ? JSON.parse(options.body) : null;
@@ -76,16 +78,16 @@ await event('submission', 'submit');
 assert.equal(elements['input-panel'].open, false);
 assert.equal(elements['review-state'].textContent, 'Pending review');
 assert.equal(elements.download.disabled, true);
-elements.original.selectionStart = 1; elements.original.selectionEnd = 5;
+elements.original.selectionStart = 2; elements.original.selectionEnd = 6;
 await event('original', 'select');
-assert.match(elements.selection.textContent, /\[1, 4\)/);
+assert.match(elements.selection.textContent, /\[2, 5\)/);
 await event('add', 'click');
-assert.deepEqual(lastEdit.intervals, [[1, 4]]);
-assert.equal(elements.proposal.value, 'A###\nZ');
+assert.deepEqual(lastEdit.intervals, [[2, 5]]);
+assert.equal(elements.proposal.value, '\uFEFFA###\nZ');
 assert.equal(elements.original.value, text);
-elements.original.selectionStart = 1; elements.original.selectionEnd = 3;
+elements.original.selectionStart = 2; elements.original.selectionEnd = 4;
 await event('remove', 'click');
-assert.equal(elements.proposal.value, 'A😀##\nZ');
+assert.equal(elements.proposal.value, '\uFEFFA😀##\nZ');
 await event('add', 'click');
 elements['approval-ack'].checked = true;
 await event('approval-ack', 'change');
@@ -95,9 +97,9 @@ assert.equal(elements['review-state'].textContent, 'Approved');
 const approved = revision();
 await event('download', 'click');
 assert.equal(downloads[0].name, 'synthetic-reviewed.txt');
-assert.deepEqual(Buffer.from(await downloads[0].blob.arrayBuffer()), Buffer.from('A###\nZ', 'utf8'));
-assert.equal(elements['approved-output'].textContent, 'A###\nZ');
-elements.original.selectionStart = 6; elements.original.selectionEnd = 7;
+assert.deepEqual(Buffer.from(await downloads[0].blob.arrayBuffer()), Buffer.from('\uFEFFA###\nZ', 'utf8'));
+assert.equal(elements['approved-output'].textContent, '\uFEFFA###\nZ');
+elements.original.selectionStart = 7; elements.original.selectionEnd = 8;
 await event('add', 'click');
 assert.notEqual(revision(), approved);
 assert.equal(elements.review.dataset.status, 'pending');
