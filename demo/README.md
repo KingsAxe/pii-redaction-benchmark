@@ -200,6 +200,16 @@ Capture tooling is separate from app dependencies: existing machine-installed Pl
 
 The fresh Activepieces review for the human recording is deliberately not created until the user is ready. Keep that one review throughout correction, approval, download, and Activepieces retrieval. After approval, immediately send the actual download path and leave the review unchanged until its exact approved revision has been retrieved and byte-compared. The five-second trial does not claim this future session has happened.
 
+## Local BOM retrieval verification
+
+The supplied review patch was applied with `git am` to a clean checkout as local commit `5f44809`. Browser downloads now retain the response bytes directly; the displayed output and Activepieces text decode with BOM preservation. The flow export embeds the same patched source. Neither configuration nor approval behavior changed.
+
+Windows verification passed **45 benchmark tests and 42 demo tests** in their documented separate environments. A hand-built synthetic fixture began with U+FEFF and included CRLF, an emoji, and a combining accent. Actual standalone Chromium submitted, corrected, approved, and downloaded it. The browser download and native Activepieces output were each compared **independently** against `httpx`'s raw `response.content` from the same approved-output endpoint: all **85 bytes** matched, including leading `EF BB BF`. Displayed text re-encoded to UTF-8 matched those raw bytes too. The reference was not reconstructed from the review JSON or passed through a BOM-stripping text decoder.
+
+Native worker run `C5yDMIMJczM0vOLlY8bpZ` succeeded. A subsequent Chromium correction returned the same review to Pending; retrieval with its old approved revision returned **409 `stale_revision`** both directly and through native worker run `3zTtWdjVZ458o9r0Ejdcg` (failed as expected, no output). Retries remained disabled. [bom_verification.json](bom_verification.json) records this automated integration check separately from human walkthroughs and benchmark evidence. Both listeners remain on loopback; the demo logs were empty. This local verification did not require manual account access, install dependencies, regenerate benchmark evidence, push commits, or update PR #1.
+
+The in-app Browser connection remains unavailable, but installed standalone Chromium completed this bounded check. Full Activepieces GUI navigation/import, a published complete flow, a human recording, and fair timing trials remain separate work.
+
 ## Environment findings and remaining work
 
 Ports 8000, 8001, 8080, and 3000 could be bound on loopback during inspection; availability can change. The actual smoke listener was verified at `127.0.0.1:8000`, with one serving process.

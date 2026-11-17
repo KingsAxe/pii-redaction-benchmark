@@ -2,7 +2,7 @@
 
 This increment connects two manual operations to the existing review API. The observed executions are **native Code-step tests in two unpublished flows**, using Activepieces' `POST /api/v1/sample-data/test-step` endpoint. They are real worker executions in the `TESTING` environment, not a published end-to-end human workflow. Automatic action retries and continue-on-failure are disabled. Requests were invoked sequentially; status reads did not retrigger execution.
 
-The retrieval source and its flow JSON now preserve a leading UTF-8 BOM in approved text. The [Code-step contract test](../tests/activepieces_checks.mjs) checks this behavior and confirms the embedded code matches the source. The recorded worker runs predate this change.
+The retrieval source and its flow JSON now preserve a leading UTF-8 BOM in approved text. The [Code-step contract test](../tests/activepieces_checks.mjs) checks this behavior and confirms the embedded code matches the source. The historical worker records below predate this change. The later [local BOM verification](../bom_verification.json) ran the patched source in this actual native worker: successful run `C5yDMIMJczM0vOLlY8bpZ` matched all 85 bytes from the raw approved-output endpoint, including `EF BB BF`; after a Chromium edit, run `3zTtWdjVZ458o9r0Ejdcg` denied the old approved revision with HTTP 409 `stale_revision`. No automatic retries or published full-flow execution were used.
 
 ## Version and local setup
 
