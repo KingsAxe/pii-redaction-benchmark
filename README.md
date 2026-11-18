@@ -6,6 +6,14 @@ Names, addresses, phone formats, and administrative identifiers can vary across 
 
 The benchmark evaluates existing detection configurations. It does not train new models or provide a production document-protection service. All documents and personal details are synthetic.
 
+## Start here
+
+- Read the [held-out benchmark results](results/results.md) and [CSV](results/results.csv) for all five configurations on 200 synthetic test documents.
+- [Replay scores from stored predictions](#replay-stored-predictions) without running inference or replacing the published reports.
+- Follow the [local review demo guide](demo/README.md). The [Windows byte-preservation verification](demo/bom_verification.json) records the synthetic BOM download comparison and stale-revision checks.
+
+On this held-out synthetic test set, the custom Presidio rules left less annotated PII visible and masked more non-PII text than the default and NG-phone configurations. Better coverage came with more over-redaction. Detection and human approval do not establish that all PII was found.
+
 ## Data and scope
 
 | Split | Documents | PII entities | Decoy annotations |
@@ -23,6 +31,8 @@ Full-dataset decoy totals: INVOICE_NUMBER 220, PO_NUMBER 60, ORDER_ID 150, AMOUN
 Test ID denominators: 257 IDs (151 cued, 106 bare). Full-dataset totals are not test-set denominators.
 
 Documents are built from five templates per domain, with offsets recorded during construction. Entity types are PERSON, PHONE, EMAIL, ADDRESS, BVN, and NIN. BVN/NIN are merged into ID for scoring because bare 11-digit strings cannot be distinguished by format alone.
+
+For readers outside Nigeria: BVN means Bank Verification Number, a banking identifier; NIN means National Identification Number, a national identity number. This dataset represents both with synthetic 11-digit strings. `NG` denotes Nigeria. Phone examples use the international country code `+234` or a local format starting with `0`. The documents model health referrals, staff intake forms, and vendor invoices; their personal details are generated, not collected from people.
 
 ## Five configurations
 
@@ -82,6 +92,21 @@ Read the [methodology](docs/methodology.md), [full generated results](results/re
 ## Reproduce in Windows PowerShell
 
 The recorded environment used Python 3.12.6; pinned packages, including the spaCy model wheel, are in [requirements.txt](requirements.txt). Arial and Consolas Windows fonts and Pillow are required for figures. Font paths, versions, input hashes, commands, and original PNG hashes are in the [figure manifest](results/figures/manifest.json). Pillow exports PNG here, not SVG.
+
+### Replay stored predictions
+
+With the [benchmark environment](#2-reproduce-detection-and-evaluation-in-a-fresh-environment) already installed, run these commands from the repository root. This evaluates the supplied test spans and stored per-document timings. It does not load detection models, run inference, or regenerate data or timings.
+
+```powershell
+.\venv\Scripts\python.exe scripts/evaluate.py --predictions-dir data/predictions --output-dir demo/output/score-replay
+if ($LASTEXITCODE -ne 0) { throw 'Stored-prediction replay failed' }
+
+$publishedHash = (Get-FileHash results/results.csv -Algorithm SHA256).Hash
+$replayHash = (Get-FileHash demo/output/score-replay/results.csv -Algorithm SHA256).Hash
+if ($replayHash -ne $publishedHash) { throw 'Replay CSV differs from the published CSV' }
+```
+
+The separate, ignored `demo/output/score-replay/` directory receives `results.csv`, `results.md`, `error_analysis.md`, and `evaluation_details.json`. Repeating the command replaces only those replay files. The published CSV should match byte for byte. The replay's JSON records its current timestamp, evaluation commit, and input/source hashes; Windows checkout line endings can change those hashes without changing scores. Keep the original reports and historical manifests unchanged. This replay does not rerender figures or refresh their historical integrity records.
 
 ### 1. Inspect supplied results and rerender without inference
 

@@ -1,0 +1,158 @@
+{
+  "recorded_utc": "2026-11-09T09:13:38.095489+00:00",
+  "base_commit": "af3f61b32bae4fe1cf9df093ae48deffce1db0c9",
+  "activepieces_version": "0.93.0",
+  "image_digest": "sha256:151c2a4326c30a6a8086297136644da9b58072212c35bca7c87dcb5724e7d687",
+  "docker_desktop": "4.40.0",
+  "docker_engine": "28.0.4",
+  "wsl": "2.3.26.0",
+  "container": "pii-demo-activepieces",
+  "data_volume": "pii-demo-activepieces-data",
+  "container_state": "running",
+  "port_bindings": {
+    "80/tcp": [
+      {
+        "HostIp": "127.0.0.1",
+        "HostPort": "8080"
+      }
+    ]
+  },
+  "extra_hosts": [
+    "host.docker.internal:host-gateway"
+  ],
+  "nonsecret_runtime_settings": {
+    "AP_DB_TYPE": "PGLITE",
+    "AP_REDIS_TYPE": "MEMORY",
+    "AP_FRONTEND_URL": "http://127.0.0.1:8080",
+    "AP_CONFIG_PATH": "/root/.activepieces",
+    "AP_TELEMETRY_ENABLED": "false",
+    "AP_WORKER_CONCURRENCY": "1",
+    "AP_DEFAULT_CONCURRENT_JOBS_LIMIT": "1",
+    "AP_EXECUTION_DATA_RETENTION_DAYS": "2",
+    "AP_PAUSED_FLOW_TIMEOUT_DAYS": "1",
+    "AP_FLOW_TIMEOUT_SECONDS": "120",
+    "AP_EXECUTION_MODE": "UNSANDBOXED",
+    "AP_NETWORK_MODE": "UNRESTRICTED"
+  },
+  "activepieces_health_http_status": 200,
+  "fastapi_health_from_actual_activepieces_container": {
+    "status": 200,
+    "body": {
+      "ready": true,
+      "configuration": "custom_generic"
+    }
+  },
+  "configuration": "custom_generic",
+  "frozen_source_sha256": "1cc272db3674b3e3d59cc8a8ed791419a3f45457fdfdfde69389f965b79b06f1",
+  "execution_method": "One explicit POST /api/v1/sample-data/test-step per case; sequential TESTING executions of native Code actions in unpublished flows; no action retries. GET status polling did not trigger executions.",
+  "fixture": "data/raw/health_report_007.txt",
+  "fixture_selection": "First lexicographic development ID, no performance search",
+  "flows": [
+    {
+      "name": "PII demo: Create review",
+      "flow_id": "SFEE6RYu3SPVvhU6o0P6f",
+      "flow_version_id": "CovzQoPQi3uQThzba4sw4",
+      "status": "DISABLED",
+      "schema_version": "28",
+      "export": "create_review.flow.json",
+      "action_retries": false,
+      "continue_on_failure": false
+    },
+    {
+      "name": "PII demo: Retrieve approved output",
+      "flow_id": "zQIp1RElUtbDFd7CMOWlx",
+      "flow_version_id": "lkcuQCXOvMpfvH5OiwGRk",
+      "status": "DISABLED",
+      "schema_version": "28",
+      "export": "retrieve_output.flow.json",
+      "action_retries": false,
+      "continue_on_failure": false
+    }
+  ],
+  "runs": [
+    {
+      "case": "create_review",
+      "run_id": "TjGcF9Eyv1YMRxrMYgkqV",
+      "environment": "TESTING",
+      "status": "SUCCEEDED",
+      "action_status": "SUCCEEDED",
+      "review_id": "2bda55dbb32f49f19394335ec5c25768",
+      "input_sha256": "a160de53decd73a36b84677d87b39ffe3940532d3ba520168fb5c1fdc2186be5"
+    },
+    {
+      "case": "pending",
+      "run_id": "1wIGFAMEoJ2kraZlyPDD0",
+      "environment": "TESTING",
+      "status": "FAILED",
+      "action_status": "FAILED",
+      "review_id": "2bda55dbb32f49f19394335ec5c25768",
+      "error_message": "Output denied: HTTP 409 (review_not_approved)"
+    },
+    {
+      "case": "stale",
+      "run_id": "3uXJa4pdkwjLdQ3TMpNq3",
+      "environment": "TESTING",
+      "status": "FAILED",
+      "action_status": "FAILED",
+      "review_id": "4b231a0e8a0241c0b096ade090ef6c60",
+      "error_message": "Output denied: HTTP 409 (stale_revision)"
+    },
+    {
+      "case": "rejected",
+      "run_id": "nNNAkor96IBISkE76cjIK",
+      "environment": "TESTING",
+      "status": "FAILED",
+      "action_status": "FAILED",
+      "review_id": "4b231a0e8a0241c0b096ade090ef6c60",
+      "error_message": "Output denied: HTTP 409 (review_rejected)"
+    },
+    {
+      "case": "approved_api_fixture",
+      "run_id": "TJmpl7R1a2iKmYl8C4QDR",
+      "environment": "TESTING",
+      "status": "SUCCEEDED",
+      "action_status": "SUCCEEDED",
+      "review_id": "401d9eeac2934745a844738479b2c3c8",
+      "approval_actor": "API fixture setup, not browser/human",
+      "output_matches_approved_mask": true,
+      "output_sha256": "bb2968cea10d15c9fd075c6fc50393e6a59a8f9b53938c80e98de26d2e233560"
+    }
+  ],
+  "manual_invocation_count": 5,
+  "retention_observation": {
+    "archive_request_http_status": 200,
+    "archive_target_environment": "TESTING",
+    "archived_run_get_http_status": 200,
+    "archived_at_set": false,
+    "original_synthetic_input_still_retrievable": true,
+    "input_sha256": "a160de53decd73a36b84677d87b39ffe3940532d3ba520168fb5c1fdc2186be5",
+    "observed_behavior": "Archive request did not archive this TESTING run; full input/output remained retrievable. Version-pinned source filters archive targets to PRODUCTION runs. Do not treat archive as deletion."
+  },
+  "failures_and_recovery": [
+    {
+      "check": "Docker before Desktop startup",
+      "result": "Missing dockerDesktopLinuxEngine pipe",
+      "action": "Start installed Docker Desktop; engine became available"
+    },
+    {
+      "check": "Container host.docker.internal lookup",
+      "result": "ENOTFOUND with external DNS resolvers",
+      "action": "Recreate task container with --add-host=host.docker.internal:host-gateway; actual runtime health became 200"
+    },
+    {
+      "check": "Activepieces worker liveness",
+      "result": "Poll loop stalled; exit 1; OOMKilled=false; subsequent configuration connection refused",
+      "action": "Manually docker start pii-demo-activepieces, verify health, then perform the new configuration request; no flow replay"
+    }
+  ],
+  "human_browser_workflow": "Not verified: Browser connector unavailable and no human completion response recorded. Positive output case uses a separate API-approved fixture.",
+  "services_left_running_locally": true,
+  "timing_trials_performed": false,
+  "video_recorded": false,
+  "source_references": [
+    "https://github.com/activepieces/activepieces/blob/0.93.0/docs/install/options/docker.mdx",
+    "https://github.com/activepieces/activepieces/blob/0.93.0/docs/install/reference/environment-variables.mdx",
+    "https://github.com/activepieces/activepieces/blob/0.93.0/packages/server/api/src/app/flows/step-run/sample-data.controller.ts",
+    "https://github.com/activepieces/activepieces/blob/0.93.0/packages/server/api/src/app/flows/flow-run/flow-run-service.ts"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "protected_original_file_count": 402,
+  "all_hashes_unchanged": true,
+  "both_frozen_sources_match": true,
+  "before_inventory_sha256": "eb22db8e427e01ce921658fd137d1420fcf470002539dfbdd984e42947cca166",
+  "after_inventory_sha256": "eb22db8e427e01ce921658fd137d1420fcf470002539dfbdd984e42947cca166",
+  "scope": "All pre-existing tracked files except the six authorized presentation/test/documentation files",
+  "demo_tests": 42,
+  "benchmark_tests": 45,
+  "test_status": "Both actual suites passed with no failures; existing Starlette deprecation warning persists",
+  "browser_visual_inspection": "Unavailable; no screenshot or visual pass claimed",
+  "original_human_comparison": "demo/activepieces/human_browser_comparison.json",
+  "capture_guide": "demo/newsletter_capture.md",
+  "fresh_live_invalidation": "Pending; original review expired before additional correction"
+}

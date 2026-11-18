@@ -1,0 +1,72 @@
+{
+  "observed_utc": "2026-11-07T10:35:35.930995+00:00",
+  "system": {
+    "os": "Microsoft Windows 11 Pro",
+    "version": "10.0.26300",
+    "architecture": "64bit",
+    "python": "3.12.6",
+    "powershell": "5.1.26100.9711 Desktop"
+  },
+  "demo_environment": {
+    "path": "demo/.venv",
+    "system_site_packages": false,
+    "packages": {
+      "pip": "24.2",
+      "fastapi": "0.162.0",
+      "uvicorn": "0.54.0",
+      "starlette": "1.10.0",
+      "httpx": "0.28.1",
+      "spacy": "3.8.18",
+      "presidio-analyzer": "2.2.366",
+      "pydantic": "2.14.2",
+      "en-core-web-sm": "3.8.0"
+    },
+    "lock": "demo/requirements.txt",
+    "locked_distribution_count": 57,
+    "pip_check": "No broken requirements found"
+  },
+  "benchmark_environment": {
+    "path": "venv",
+    "unchanged_by_this_task": true,
+    "packages_rechecked": {
+      "fastapi": null,
+      "uvicorn": null,
+      "starlette": null,
+      "spacy": "3.8.18",
+      "presidio-analyzer": "2.2.366",
+      "en-core-web-sm": "3.8.0"
+    }
+  },
+  "ports": {
+    "inspection_method": "Temporary socket.bind on 127.0.0.1, then released",
+    "available_at_inspection": [
+      8000,
+      8001,
+      8080,
+      3000
+    ],
+    "smoke_listener": "127.0.0.1:8000",
+    "smoke_service_stopped": true
+  },
+  "containers": {
+    "docker_client": "28.0.4, build b8034c0",
+    "daemon": "Unavailable: dockerDesktopLinuxEngine named pipe not found",
+    "running_containers": "Not verified; daemon unavailable",
+    "podman_on_path": false
+  },
+  "activepieces": {
+    "executable_on_path": false,
+    "ap_executable_on_path": false,
+    "existing_repository_setup_found": false,
+    "instance_identified": false,
+    "scope": "PATH, repository configuration, listeners; container inventory unavailable",
+    "installed_or_configured_by_task": false,
+    "history_and_retention": "Not verified; integration pending"
+  },
+  "installation": {
+    "compatibility": "pip dry-run with benchmark runtime constraints, pip check, tests, actual analyzer smoke",
+    "model_wheel_sha256": "1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85",
+    "model_download_retry": "Second resolver download timed out; installed the first cached wheel after hash verification",
+    "benchmark_requirements_changed": false
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "checked_utc": "2026-11-10T15:55:54.877Z",
+  "scope": "Automated real-Chromium capture/control check using a separate dev review; not human approval or Activepieces recording-session evidence",
+  "fixture": "data/raw/health_report_007.txt",
+  "selection_rule": "First development document in lexicographic document-ID order; not selected by performance",
+  "configuration": "custom_generic",
+  "automated_trial_review_id": "cd170d6270c243c79f34c81888bbd3fb",
+  "tooling": {
+    "playwright_core": "1.65.0",
+    "chromium": "158.0.8127.18",
+    "ffmpeg": "n7.0.1-playwright-build-1013",
+    "installation": "Existing standalone machine installation; outside app environments. No dependencies installed or changed. Machine-specific capture helpers remain ignored in demo/.cache/.",
+    "browser_connection": "Browser skill setup/troubleshooting: No browser is available; discovery []. Explicit standalone Playwright request used installed Chromium after sandbox EPERM retry with normal access."
+  },
+  "frame": {
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "panels": [
+      {
+        "x": 256,
+        "y": 390.203125,
+        "width": 694,
+        "height": 514.9375,
+        "right": 950,
+        "bottom": 905.140625
+      },
+      {
+        "x": 970,
+        "y": 390.203125,
+        "width": 694,
+        "height": 514.9375,
+        "right": 1664,
+        "bottom": 905.140625
+      }
+    ],
+    "textareas": [
+      {
+        "x": 257,
+        "y": 464.140625,
+        "width": 692,
+        "height": 440,
+        "right": 949,
+        "bottom": 904.140625,
+        "clientHeight": 440,
+        "scrollHeight": 440,
+        "clientWidth": 692,
+        "scrollWidth": 692,
+        "font": "15px / 24.75px ui-monospace, Consolas, monospace"
+      },
+      {
+        "x": 971,
+        "y": 464.140625,
+        "width": 692,
+        "height": 440,
+        "right": 1663,
+        "bottom": 904.140625,
+        "clientHeight": 440,
+        "scrollHeight": 440,
+        "clientWidth": 692,
+        "scrollWidth": 692,
+        "font": "15px / 24.75px ui-monospace, Consolas, monospace"
+      }
+    ],
+    "pageBackground": "rgb(247, 249, 252)",
+    "panelBackgrounds": [
+      "rgb(255, 255, 255)",
+      "rgb(255, 255, 255)"
+    ],
+    "headerBackgrounds": [
+      "rgb(234, 242, 255)",
+      "rgb(230, 246, 242)"
+    ],
+    "pendingBackground": "rgb(255, 243, 214)",
+    "primaryBackground": "rgb(36, 89, 196)"
+  },
+  "video": {
+    "duration_seconds": 5,
+    "width": 1920,
+    "height": 1080,
+    "opened_and_decoded_in_chromium": true,
+    "playback": {
+      "current_time": 1.0768,
+      "decoded_frames": 31,
+      "error": null
+    },
+    "trim": "Retained final five seconds of the real-page recording using existing FFmpeg; no synthetic recreation of page content."
+  },
+  "checks": {
+    "native_keyboard_selection": true,
+    "add_masking": true,
+    "remove_masking": true,
+    "source_unchanged": true,
+    "approval": true,
+    "browser_download_bytes_equal_approved": true,
+    "correction_invalidates_approval": true,
+    "old_approved_output_http_status": 409,
+    "rejection": true,
+    "page_errors": [],
+    "visible_keyboard_focus": {
+      "element": "SUMMARY",
+      "visible": true,
+      "outline": "rgb(36, 89, 196) solid 3px",
+      "offset": "3px"
+    }
+  },
+  "visual_inspection": "Opened automatic/corrected/approved PNGs and the reopened-video playback PNG. Native-size document text is legible; both panels fit the frame; no credentials or account controls visible.",
+  "artifacts": [
+    {
+      "path": "demo/output/newsletter/colour-check-20261110T155503Z-5s-1080p.webm",
+      "bytes": 472320,
+      "sha256": "c7554b4cd0766fdab3ce1cc017a9d7ed2c342a6c57f4f9daa3ea5289e2fa8942"
+    },
+    {
+      "path": "demo/output/newsletter/colour-check-20261110T155503Z-raw/page@ba199091669d626283f8be02311fd9bc.webm",
+      "bytes": 1131892,
+      "sha256": "b3e4cd15bcd2bb3ce9b548d33273d9a46dfa4b0626ad2c535c6a469f50853e4d"
+    },
+    {
+      "path": "demo/output/newsletter/colour-check-20261110T155503Z-video-opened.png",
+      "bytes": 497152,
+      "sha256": "ecec965ae830c9f2b346a6700403e7ce3567287c9693a46147710597af4d5939"
+    },
+    {
+      "path": "demo/output/newsletter/colour-check-20261110T155503Z-automatic.png",
+      "bytes": 81340,
+      "sha256": "02e29cbe950eaf47896c3744cef3a9b7dbd76f6b36894526fca1d48aedd7148a"
+    },
+    {
+      "path": "demo/output/newsletter/colour-check-20261110T155503Z-corrected.png",
+      "bytes": 84263,
+      "sha256": "3223abbbeddf93fa3aefa0e5b3235b8464d8f5fa2c87b9b55e5ea774d3ed1ec8"
+    },
+    {
+      "path": "demo/output/newsletter/colour-check-20261110T155503Z-approved.png",
+      "bytes": 83394,
+      "sha256": "77fb63a598ee8d683d64aee377beb72364c07d18b7111c411081d67969a123e0"
+    },
+    {
+      "path": "demo/output/newsletter/colour-check-20261110T155503Z-browser-download.txt",
+      "bytes": 348,
+      "sha256": "0962579fa6e9c461a07778db01726911f17a798dc064f80b9ae7ecfc8061056b"
+    },
+    {
+      "path": "demo/output/newsletter/colour-check-20261110T155503Z-verification.json",
+      "bytes": 4197,
+      "sha256": "455d3a24e617fe1ec83f746f75bc8a35579fceaa7d24608f8f00ccc013d89a66"
+    }
+  ],
+  "verification": {
+    "demo_tests": 42,
+    "demo_tests_passed": true,
+    "test_warning": "Existing Starlette HTTPX TestClient deprecation warning",
+    "protected_pre_existing_files": 409,
+    "protected_hashes_unchanged": true,
+    "excluded_authorized_files": [
+      "demo/static/review.css",
+      "demo/README.md",
+      "demo/newsletter_capture.md",
+      "docs/STATE.md"
+    ],
+    "both_frozen_sources_match": true,
+    "local_markdown_links_checked": 18,
+    "benchmark_tests": "Not rerun for CSS-only product changes; protected benchmark files unchanged."
+  },
+  "human_recording_session": {
+    "status": "Awaiting user readiness; no Activepieces Create invocation for this session yet",
+    "next": "Create once on readiness, preserve that review through human correction/approval/download, immediately retrieve its approved revision and compare actual UTF-8 bytes."
+  }
+}

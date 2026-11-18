@@ -1,0 +1,64 @@
+{
+  "name": "PII demo: Create review",
+  "type": "SHARED",
+  "summary": "",
+  "description": "",
+  "tags": [],
+  "blogUrl": "",
+  "metadata": {
+    "externalId": "3lMVdKOsDy4eAJBdfEmjN"
+  },
+  "author": "Synthetic Reviewer",
+  "categories": [],
+  "pieces": [
+    "@activepieces/piece-manual-trigger"
+  ],
+  "flows": [
+    {
+      "displayName": "PII demo: Create review",
+      "trigger": {
+        "name": "trigger",
+        "valid": true,
+        "displayName": "Manual Trigger",
+        "nextAction": {
+          "name": "step_1",
+          "type": "CODE",
+          "valid": true,
+          "settings": {
+            "input": {
+              "text": "MENTAL HEALTH REFERRAL LETTER\nDate: 19 September 2023\nReferring Facility: Wright-Barker Hospital\n\nPatient: Promise Udoh\nPhone: +234 708 418 1911\nEmail: folake.shehu@gmail.com\nAddress: 78 Ikorodu Road, Garki, Abuja\nBVN - 29488614274\nOrder Ref: 09063713925\n\nReason for referral: Acute anxiety disorder, recommended CBT.\nReferred by: Obi, Precious P.\n"
+            },
+            "sampleData": {},
+            "sourceCode": {
+              "code": "// Native Activepieces Code step. Invoke manually; retries stay disabled.\nexport const code = async (inputs) => {\n    const response = await fetch('http://host.docker.internal:8000/reviews', {\n        method: 'POST',\n        headers: {'Content-Type': 'application/json'},\n        body: JSON.stringify({text: inputs.text, synthetic_input: true}),\n    });\n    if (response.status !== 201) throw new Error(`Create review failed: HTTP ${response.status}`);\n    const review = await response.json();\n    if (!/^[0-9a-f]{32}$/.test(review.review_id)) throw new Error('Invalid review identifier');\n    return {\n        review_id: review.review_id,\n        revision_id: review.revision_id,\n        review_url: `http://127.0.0.1:8000/?review_id=${review.review_id}`,\n        configuration: review.configuration,\n        review_required: true,\n    };\n};\n",
+              "packageJson": "{}"
+            },
+            "errorHandlingOptions": {
+              "retryOnFailure": {
+                "value": false
+              },
+              "continueOnFailure": {
+                "value": false
+              }
+            }
+          },
+          "displayName": "Create review",
+          "lastUpdatedDate": "2026-11-09T08:22:39.273Z"
+        },
+        "lastUpdatedDate": "2026-11-09T08:22:39.272Z",
+        "type": "PIECE_TRIGGER",
+        "settings": {
+          "propertySettings": {},
+          "pieceName": "@activepieces/piece-manual-trigger",
+          "pieceVersion": "0.0.8",
+          "triggerName": "manual_trigger",
+          "input": {}
+        }
+      },
+      "valid": true,
+      "schemaVersion": "28",
+      "notes": []
+    }
+  ],
+  "status": "PUBLISHED"
+}

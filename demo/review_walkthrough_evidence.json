@@ -1,0 +1,132 @@
+{
+  "observed_utc": "2026-11-07T23:03:29.971662+00:00",
+  "document_id": "data/raw/health_report_007.txt",
+  "split": "dev",
+  "selection_rule": "First development document in lexicographic document-ID order, not performance",
+  "correction_selection": "Annotation-assisted inspection: complete the first ADDRESS and remove coverage of the first ORDER_ID decoy; then test covered-LF invalidation",
+  "input_sha256": "a160de53decd73a36b84677d87b39ffe3940532d3ba520168fb5c1fdc2186be5",
+  "annotation_key_sha256": "f3484456cbc4db2396947510965a22087545aee4089bfe3f1301b49b55ec42e7",
+  "configuration": "custom_generic",
+  "frozen_source_sha256": "1cc272db3674b3e3d59cc8a8ed791419a3f45457fdfdfde69389f965b79b06f1",
+  "review_id": "ff34f41a573243029f9441c405acf9a1",
+  "initial_mask_intervals": [
+    [
+      127,
+      144
+    ],
+    [
+      152,
+      174
+    ],
+    [
+      208,
+      231
+    ],
+    [
+      232,
+      241
+    ],
+    [
+      243,
+      254
+    ]
+  ],
+  "final_mask_intervals": [
+    [
+      127,
+      144
+    ],
+    [
+      152,
+      174
+    ],
+    [
+      184,
+      213
+    ],
+    [
+      214,
+      231
+    ],
+    [
+      232,
+      241
+    ]
+  ],
+  "detection_counts": {
+    "raw_span_count": 20,
+    "mapped_span_count": 7,
+    "ignored_span_count": 13,
+    "spans_by_mapped_label": {
+      "EMAIL": 1,
+      "ID": 2,
+      "PERSON": 2,
+      "PHONE": 2
+    },
+    "covered_code_point_count": 82,
+    "masked_code_point_count": 81,
+    "covered_lf_count": 1
+  },
+  "final_coverage_counts": {
+    "covered_code_point_count": 94,
+    "masked_code_point_count": 94,
+    "covered_lf_count": 0
+  },
+  "steps": [
+    {
+      "action": "create_inspect_and_deny_unapproved_output",
+      "create_status": 201,
+      "inspect_status": 200,
+      "output_status": 409
+    },
+    {
+      "action": "add",
+      "annotation_type": "ADDRESS",
+      "interval": [
+        184,
+        213
+      ],
+      "http_status": 200,
+      "revision_id": "b5ba52163d774ab88d48792337fea1a27c349fbcb151f87969c7031f46a40472"
+    },
+    {
+      "action": "remove",
+      "annotation_type": "ORDER_ID",
+      "interval": [
+        243,
+        254
+      ],
+      "http_status": 200,
+      "revision_id": "f6374b909aac7aa3c58c6623e9533daf1308a25d31797ce0ae67ea2b8d770c30"
+    },
+    {
+      "action": "approve_and_retrieve",
+      "stale_approval_status": 409,
+      "http_status": 200,
+      "revision_id": "4504c98f5a148cbebb064dd69c25c9bef5b4d875f92873c98917d559b87c8ffd",
+      "output_sha256": "bb2968cea10d15c9fd075c6fc50393e6a59a8f9b53938c80e98de26d2e233560",
+      "matches_approved_mask": true
+    },
+    {
+      "action": "remove_covered_lf_and_invalidate",
+      "interval": [
+        213,
+        214
+      ],
+      "display_unchanged": true,
+      "revision_changed": true,
+      "old_output_status": 409,
+      "pending_output_status": 409
+    },
+    {
+      "action": "approve_current_and_retrieve",
+      "http_status": 200,
+      "revision_id": "a33f3a2f99022f68857b58ed11faa0aededf26dd31bcb6b6aea7bd25c5bf312e",
+      "output_sha256": "bb2968cea10d15c9fd075c6fc50393e6a59a8f9b53938c80e98de26d2e233560",
+      "matches_approved_mask": true
+    }
+  ],
+  "final_status_at_verification": "approved",
+  "scope": "Real analyzer and live HTTP review workflow verification; not a blind human review, accuracy evaluation, productivity study, or timing trial",
+  "browser_status": "Browser connection unavailable; no interactive browser or visual inspection claimed. Actual JS offset/text-rendering helpers tested separately."
+}

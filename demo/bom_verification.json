@@ -1,0 +1,97 @@
+{
+  "checked_utc": "2026-11-17T21:22:29.546190+00:00",
+  "fix_commit": "5f448098b9c606ca3d4714e7f58fc8543839125a",
+  "patch_sha256": "3b3dd7960c4b01e0e3001cc9690044903dfe0159b0be0f7b550196b934e736c0",
+  "patch_application": "Initial feature checkout clean, missing fix; forward git apply --check passed; git am applied supplied patch. No push.",
+  "environment": {
+    "platform": "Windows PowerShell",
+    "benchmark_python": "3.12.6",
+    "demo_python": "3.12.6",
+    "node": "v22.23.1",
+    "capture_tooling": "Existing standalone Playwright Core 1.65.0 / Chromium, outside app dependencies; no installation. Browser skill connection unavailable; installed Chromium succeeded after sandbox spawn EPERM retry.",
+    "activepieces": "Existing local pinned 0.93.0 container restarted; actual native Code-step TESTING runs, disabled retries. Worker-to-host health returned 200. Runtime credentials remain ignored."
+  },
+  "tests": {
+    "benchmark": {
+      "command": ".\\venv\\Scripts\\python.exe -m unittest discover -s tests -v",
+      "count": 45,
+      "passed": true
+    },
+    "demo": {
+      "command": ".\\demo\\.venv\\Scripts\\python.exe -m unittest discover -s demo/tests -v",
+      "count": 42,
+      "passed": true,
+      "warning": "Existing Starlette HTTPX TestClient deprecation warning"
+    }
+  },
+  "fixture": {
+    "source": "Hand-built synthetic fixture in ignored demo/.cache/pr1-bom-check/fixture.txt; no held-out test documents",
+    "leading_code_point": "U+FEFF",
+    "submitted_newlines": "CRLF; canonical output LF",
+    "unicode": "Contains a non-BMP emoji and combining accent",
+    "approval": "Automated actual Chromium selection/correction/approval via existing page; not human-review or productivity evidence"
+  },
+  "positive_comparison": {
+    "checked_utc": "2026-11-17T21:20:28.921719+00:00",
+    "review_id": "4d4f62d13821431cb7b6588931e2ee3f",
+    "approved_revision": "a6ee4e3805dc4852c3dcdfad18378811f43583f38565deb53532d8266eb7d32c",
+    "raw_server_bytes": 85,
+    "raw_server_sha256": "7b42101a25ac7d58383eacdc10fb814810a3d07ca25d498e38b40ff1a2db7da4",
+    "raw_server_leading_bytes_hex": "efbbbf",
+    "chromium_download": {
+      "bytes": 85,
+      "sha256": "7b42101a25ac7d58383eacdc10fb814810a3d07ca25d498e38b40ff1a2db7da4",
+      "independently_equals_server_raw": true
+    },
+    "chromium_display_utf8": {
+      "independently_equals_server_raw": true
+    },
+    "activepieces": {
+      "run_id": "C5yDMIMJczM0vOLlY8bpZ",
+      "status": "SUCCEEDED",
+      "bytes": 85,
+      "sha256": "7b42101a25ac7d58383eacdc10fb814810a3d07ca25d498e38b40ff1a2db7da4",
+      "leading_bytes_hex": "efbbbf",
+      "independently_equals_server_raw": true
+    },
+    "scope": "Automated Chromium correction/approval/download and native Activepieces Code-step execution. Each compared independently to httpx response.content from the approved-output endpoint, without text decoding. Synthetic hand-built BOM fixture; not a human or performance trial."
+  },
+  "post_edit_denial": {
+    "checked_utc": "2026-11-17T21:21:38.019885+00:00",
+    "review_id": "4d4f62d13821431cb7b6588931e2ee3f",
+    "old_approved_revision": "a6ee4e3805dc4852c3dcdfad18378811f43583f38565deb53532d8266eb7d32c",
+    "edited_revision": "f7848034d990ae2807c50ce5945d5573d20b0c1bfde227f3918dc7e95d85843b",
+    "edited_status": "pending",
+    "mask_coverage_changed": true,
+    "remaining_lifetime_seconds_after_browser_edit": 1660,
+    "server_http_status": 409,
+    "server_error_code": "stale_revision",
+    "activepieces_run_id": "3zTtWdjVZ458o9r0Ejdcg",
+    "activepieces_status": "FAILED",
+    "activepieces_message": "Output denied: HTTP 409 (stale_revision)",
+    "output_returned": false,
+    "browser_download_disabled": true,
+    "automatic_retries": false
+  },
+  "preservation": {
+    "protected_file_count": 376,
+    "all_unchanged": true,
+    "both_frozen_sources_match": {
+      "custom": true,
+      "custom_generic": true
+    },
+    "inventory_sha256": "bcb9e0ce4273d4e849fde4f7df310e18094822b671f4d9adc32a1ab24ae70005",
+    "scope": "Every pre-existing tracked non-demo file excluding authorized docs/STATE.md; includes scorer, generation code, raw documents, ground truth, frozen recognizers, predictions, reports, original figures and historical manifests.",
+    "source_and_export_match": true
+  },
+  "artifacts": "Ignored demo/.cache/pr1-bom-check/: raw server-approved-output.bin, chromium-download.txt, chromium-display.txt, activepieces-output.bin, snapshots, browser scripts/screenshots, before inventory and comparison records. Full native runs remain in ignored demo/.cache/activepieces/.",
+  "remaining": "No integration blocker for this bounded check. In-app Browser connection unavailable, but standalone Chromium passed. Activepieces GUI import/navigation and a published complete workflow, fair timing trials and human recording remain separate.",
+  "publication": "Leave both local commits unpushed; PR #1 observed OPEN and draft at remote eb2fd05.",
+  "verification_documentation_checks": {
+    "all_protected_hashes_rechecked": true,
+    "local_links_checked": 27,
+    "json_parses": true,
+    "sensitive_field_scan": "New evidence and added documentation passed; historical placeholder Bearer command preserved",
+    "git_diff_check": "passed"
+  }
+}
