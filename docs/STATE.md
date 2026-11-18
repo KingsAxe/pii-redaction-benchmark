@@ -1,6 +1,6 @@
 # Current phase
 
-Benchmark publication remains verified at c0337b68015a512365be1da9b3e5bc5c934f37ef on origin/main. Draft PR #1 remains open and unmerged on phase6/internal-redaction-demo. The supplied BOM-preservation patch is applied locally as 5f44809 and verified on Windows: 45 benchmark and 42 demo tests pass; actual Chromium download and native Activepieces text each independently equal the raw approved-output endpoint's 85 bytes, including EF BB BF. A subsequent browser edit makes the old approved revision return 409 stale_revision directly and in the native worker. Nothing from this verification is pushed or added to the remote PR. Human recording, fair timing trials and a published complete workflow remain separate work.
+Benchmark publication remains at origin/main c0337b68015a512365be1da9b3e5bc5c934f37ef. Reviewer documentation is prepared locally in a clean worktree based on fetched draft PR #1 head c138b9b941446ac91a91f9d78bc9b8bf0646b334, which contains the byte-preservation fix and prior Windows verification record. New Windows checks pass 45 benchmark and 42 demo tests; replayed stored predictions/timings produce the identical published CSV. No new Chromium/Activepieces run is claimed in this documentation task. PR #1 remains draft and unmerged; the README commit is left unpushed for review. The original checkout, including uncommitted screenshot UI work, is preserved.
 
 ## Done
 
@@ -90,6 +90,12 @@ Benchmark publication remains verified at c0337b68015a512365be1da9b3e5bc5c934f37
 - A further Chromium mask edit on that same review without reapproval made it Pending with changed coverage and 1660 seconds remaining. Direct raw-endpoint retrieval and native worker run 3zTtWdjVZ458o9r0Ejdcg, both using the captured old approved revision, returned HTTP 409 stale_revision; the failed worker returned no output. Retries were disabled; these are actual native Code-step TESTING executions, not a published full-flow or human approval claim.
 - demo/bom_verification.json records the bounded local checks. All 376 tracked non-demo files outside this authorized handoff retain their before/after SHA-256, including scorer, frozen recognizers, data, predictions, reports, figures and historical manifests. Both freeze hashes match. Full raw references, browser files, snapshots, run records and audit tooling stay ignored under demo/.cache/. PR #1 was read-only verified OPEN/draft at remote eb2fd05. Local verification commits remain unpushed; no PR description was edited.
 
+The reviewer-documentation follow-up inspected the original dirty checkout, fetched main and PR #1, and created branch review/pr1-readme-20261118 in demo/.tmp/pr1-readme-review from the fetched PR head. No existing Start here or dedicated stored-prediction replay instructions were present. README now links to held-out results, replay instructions, demo guidance and the historical BOM verification, summarizes the observed coverage/over-redaction trade-off, and gives a PowerShell command writing only to ignored demo/output/score-replay/.
+
+New verification used the original checkout's separate benchmark/demo Python environments with the clean worktree as the working directory. All 45 benchmark and 42 demo tests passed after initial sandbox WinError 5 temporary-directory failures were resolved by rerunning with normal access. The existing Starlette warning remains. Replay used no inference: all five CSV rows / 45 columns / 225 fields match, including stored timing metrics; CSV SHA-256 is 753e150c168745ba4139a5888352d5ea7a4d32ab400db2d7d2eb6bd4484fb640. Generated results.md and error_analysis.md match byte for byte, as do all per-config JSON scores/latencies/error records. JSON timestamp/commit describe this replay. Ground-truth/scorer raw hashes differ only because this clean Windows checkout converted their LF Git blobs to CRLF; the published hashes match those Git blobs. No benchmark file or historical provenance was rewritten. Before/after hashes preserve all 413 pre-existing worktree files outside README/STATE and both frozen sources.
+
+GitHub read-only checks found PR #1 OPEN/draft at c138b9b, MERGEABLE, no submitted reviews or unresolved threads, no reported CI checks or branch workflow runs, and unprotected main at c0337b6. Fetched main is an ancestor; git merge-tree --write-tree completed without conflicts. Earlier Chromium/Activepieces byte-preservation/stale-revision evidence was inspected in demo/bom_verification.json, not rerun. Logs and machine-readable replay verification remain ignored under this worktree's demo/.cache/reviewer/. Review the local README/STATE diff, then authorize a normal push of this worktree's HEAD to phase6/internal-redaction-demo; no push, ready-for-review transition or merge is performed here.
+
 ## Next
 
 - Continue draft PR #1 (https://github.com/KingsAxe/pii-redaction-benchmark/pull/1) through review on phase6/internal-redaction-demo; leave it draft and unmerged. On user readiness, run existing Activepieces Create review once; keep that same review through human correction/approval/download and immediately retrieve its current approved revision for byte comparison. Follow demo/newsletter_capture.md framing; do not use expired trial links or substitute automated approval for human recording.
@@ -147,7 +153,8 @@ Benchmark publication remains verified at c0337b68015a512365be1da9b3e5bc5c934f37
 - `c46b368`: `phase 6: record human stale-revision verification`.
 - `eb2fd05`: `phase 6: refine review colours and verify local recording`.
 - `5f44809`: `phase 6: preserve approved output bytes during retrieval` (supplied patch; local only).
-- Containing commit: `phase 6: verify patched BOM retrieval locally` (local only).
+- `c138b9b`: `phase 6: verify patched BOM retrieval locally` (fetched PR head for the documentation review).
+- Containing commit: `docs: guide reviewers through results and score replay` (local review-worktree commit only).
 
 ## Open questions
 
