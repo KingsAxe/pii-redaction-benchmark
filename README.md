@@ -32,6 +32,8 @@ Test ID denominators: 257 IDs (151 cued, 106 bare). Full-dataset totals are not 
 
 Documents are built from five templates per domain, with offsets recorded during construction. Entity types are PERSON, PHONE, EMAIL, ADDRESS, BVN, and NIN. BVN/NIN are merged into ID for scoring because bare 11-digit strings cannot be distinguished by format alone.
 
+For readers outside Nigeria: BVN means Bank Verification Number, a banking identifier; NIN means National Identification Number, a national identity number. This dataset represents both with synthetic 11-digit strings. `NG` denotes Nigeria. Phone examples use the international country code `+234` or a local format starting with `0`. The documents model health referrals, staff intake forms, and vendor invoices; their personal details are generated, not collected from people.
+
 ## Five configurations
 
 All configurations use the full default `en_core_web_sm` spaCy pipeline. Presidio adds its recognizer framework; the spaCy baseline uses only the pipeline's returned NER entities as predictions.

@@ -4,6 +4,8 @@ This Phase 6 demonstration exposes the frozen `custom_generic` analyzer through 
 
 Use synthetic English text only. Development documents and tiny hand-built fixtures are used here; held-out test documents are excluded from demo development. The broader workflow remains in [the Phase 6 plan](../docs/PHASE6_DEMO_PLAN.md).
 
+In the examples, BVN means Bank Verification Number and NIN means National Identification Number. These Nigerian identifiers are represented by synthetic 11-digit values; no real identity or account is being validated. See the benchmark's [data context](../README.md#data-and-scope) for the document types and Nigerian phone formats.
+
 ## Setup (PowerShell, repository root)
 
 Use Python 3.12 for the demo environment. The test suite also requires Node.js on `PATH` (tested with Node 22).
@@ -196,7 +198,7 @@ Standalone installed Playwright Core 1.65.0 and Chromium 158.0.8127.18 captured 
 
 Actual browser checks passed for keyboard text selection, add/remove masking, unchanged source, explicit approval, download bytes equal to the approved mask, approval invalidation after another correction, stale-output denial, and rejection. A keyboard Tab produced visible focus. All 42 demo tests passed again; the existing Starlette HTTPX deprecation warning remains. [colour_verification.json](colour_verification.json) records observed checks, dimensions, filenames, and hashes. Benchmark evidence and both frozen sources remain unchanged.
 
-Capture tooling is separate from app dependencies: existing machine-installed Playwright/Chromium/FFmpeg were reused, with audit helpers in ignored `demo/.cache/colour_capture.cjs` and `colour_playback.cjs`. Their machine-specific installation paths are not a portable capture setup. No packages were installed. Local rerun commands are `node demo/.cache/colour_capture.cjs` and `node demo/.cache/colour_playback.cjs`; the first creates its own automated dev review. Video/PNGs and raw recording stay under ignored `demo/output/newsletter/`, separately from benchmark figures.
+Capture tooling was separate from app dependencies: machine-installed Playwright/Chromium/FFmpeg and ignored helpers under `demo/.cache/` were used for that recorded check. Those helpers and their machine-specific installation paths are not shipped in a clean clone. Use the [manual capture sequence](newsletter_capture.md) with your own running local review page; save under your clone's `demo/output/newsletter/`. Historical records and the capture guide's original absolute paths describe the recording machine, not a required installation location. Video/PNGs stay ignored, separately from benchmark figures. No capture dependency was added to the app.
 
 The fresh Activepieces review for the human recording is deliberately not created until the user is ready. Keep that one review throughout correction, approval, download, and Activepieces retrieval. After approval, immediately send the actual download path and leave the review unchanged until its exact approved revision has been retrieved and byte-compared. The five-second trial does not claim this future session has happened.
 

@@ -7,3 +7,5 @@ __pycache__/
 /demo/.cache/
 /demo/.tmp/
 /demo/output/
+# Unpublished predictions and reports from the README fresh-run workflow.
+/reproduction/

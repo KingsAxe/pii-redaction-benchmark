@@ -1,6 +1,6 @@
 # Current phase
 
-Benchmark publication remains at origin/main c0337b68015a512365be1da9b3e5bc5c934f37ef. Reviewer documentation is prepared locally in a clean worktree based on fetched draft PR #1 head c138b9b941446ac91a91f9d78bc9b8bf0646b334, which contains the byte-preservation fix and prior Windows verification record. New Windows checks pass 45 benchmark and 42 demo tests; replayed stored predictions/timings produce the identical published CSV. No new Chromium/Activepieces run is claimed in this documentation task. PR #1 remains draft and unmerged; the README commit is left unpushed for review. The original checkout, including uncommitted screenshot UI work, is preserved.
+Benchmark publication remains at origin/main c0337b68015a512365be1da9b3e5bc5c934f37ef. Public-readiness review continues locally in demo/.tmp/pr1-readme-review, based on draft PR #1 head c138b9b941446ac91a91f9d78bc9b8bf0646b334. Local README commit 0709f78 was reviewed. The audit found no credentials or non-synthetic personal records in reachable tracked history; a focused follow-up adds Nigerian identifier context, clarifies clean-clone capture guidance, and ignores unpublished reproduction outputs. Prior Windows verification passed 45 benchmark and 42 demo tests with identical stored-score replay. No new inference or Chromium/Activepieces run is claimed in this audit. PR #1 stays draft; both documentation commits remain unpushed. The original checkout and newsletter artifacts are preserved.
 
 ## Done
 
@@ -96,6 +96,10 @@ New verification used the original checkout's separate benchmark/demo Python env
 
 GitHub read-only checks found PR #1 OPEN/draft at c138b9b, MERGEABLE, no submitted reviews or unresolved threads, no reported CI checks or branch workflow runs, and unprotected main at c0337b6. Fetched main is an ancestor; git merge-tree --write-tree completed without conflicts. Earlier Chromium/Activepieces byte-preservation/stale-revision evidence was inspected in demo/bom_verification.json, not rerun. Logs and machine-readable replay verification remain ignored under this worktree's demo/.cache/reviewer/. Review the local README/STATE diff, then authorize a normal push of this worktree's HEAD to phase6/internal-redaction-demo; no push, ready-for-review transition or merge is performed here.
 
+Public-readiness follow-up reviewed 0709f78, confirmed remote PR #1 remains draft at c138b9b, and checked all 415 tracked files plus 481 unique blobs reachable from 0709f78 and all 10 PR commit messages, plus the follow-up additions. No credential candidates were found, including private comparisons against current local credential values without printing them. Contact-like strings were traced to generated documents, scorer context fragments, or hand-built tests. No environments, credential files, cache trees or unpublished demo outputs appear in tracked history. Intentional synthetic fixtures, native flow exports and verification metadata remain public; recorded machine paths describe historical capture/font environments and are not portable setup requirements.
+
+Existing ignore rules protect the actual venvs, private Activepieces files, caches, temporary outputs, test bytecode, score replay and newsletter captures. Added only /reproduction/ because the README's fresh-run workflow writes unpublished predictions/reports there. Representative git check-ignore checks pass, while tracked benchmark data, published reports/figures and intentional demo evidence remain available. README/demo guide now define BVN, NIN, NG and phone-format context, and replace references to unavailable capture helper commands with clean-clone manual-capture guidance. The executable PowerShell setup/replay blocks did not change; 39 local links/anchors, evaluation CLI help, both existing environments' pip check, protected hashes and git diff --check pass. Audit notes stay ignored under demo/.cache/public-readiness/. No dependency installation or historical-manifest edits occurred. One focused local follow-up commit is prepared for review; do not push or merge automatically. GitHub still has no CI/review evidence, as recorded in the preceding review.
+
 ## Next
 
 - Continue draft PR #1 (https://github.com/KingsAxe/pii-redaction-benchmark/pull/1) through review on phase6/internal-redaction-demo; leave it draft and unmerged. On user readiness, run existing Activepieces Create review once; keep that same review through human correction/approval/download and immediately retrieve its current approved revision for byte comparison. Follow demo/newsletter_capture.md framing; do not use expired trial links or substitute automated approval for human recording.
@@ -154,7 +158,8 @@ GitHub read-only checks found PR #1 OPEN/draft at c138b9b, MERGEABLE, no submitt
 - `eb2fd05`: `phase 6: refine review colours and verify local recording`.
 - `5f44809`: `phase 6: preserve approved output bytes during retrieval` (supplied patch; local only).
 - `c138b9b`: `phase 6: verify patched BOM retrieval locally` (fetched PR head for the documentation review).
-- Containing commit: `docs: guide reviewers through results and score replay` (local review-worktree commit only).
+- `0709f78`: `docs: guide reviewers through results and score replay` (local review-worktree commit).
+- Containing commit: `docs: clarify public benchmark context and local outputs` (local review-worktree commit only).
 
 ## Open questions
 
